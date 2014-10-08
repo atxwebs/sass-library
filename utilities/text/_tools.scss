@@ -1,0 +1,157 @@
+// =============================================================================
+// TEXT (Tools)
+// =============================================================================
+
+
+// Width Mixins
+// -----------------------------------------------------------------------------
+
+@mixin u-textKern($important: false) {
+
+    // -------------------------------------------------------------------------
+    //
+    // 1. Chrome (not Windows), Firefox, Safari 6+, iOS, Android
+    // 2. Chrome (not Windows), Firefox, IE 10+
+    // 3. Safari 7 and future browsers
+    //
+    // -------------------------------------------------------------------------
+
+    @if $important == true {
+
+        // Appearance
+        text-rendering: optimizeLegibility !important; // 1
+        font-feature-settings: "kern" 1 !important; // 2
+        font-kerning: normal !important; // 3
+
+    } @else {
+
+        // Appearance
+        text-rendering: optimizeLegibility; // 1
+        font-feature-settings: "kern" 1; // 2
+        font-kerning: normal; // 3
+    }
+}
+
+@mixin u-textTruncate($important: false) {
+
+    // -------------------------------------------------------------------------
+    //
+    // 1. Ensure that the node has a maximum width after which truncation 
+    //    can occur.
+    // 2. Fix for IE 8/9 if `word-wrap: break-word` is in effect on ancestor
+    //    nodes.
+    //
+    // -------------------------------------------------------------------------
+
+    @if $important == true {
+
+        // Layout
+        max-width: 100% !important; // 1
+
+        // Appearance
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
+        word-wrap: normal !important; // 2
+
+    } @else {
+
+        // Layout
+        max-width: 100%; // 1
+
+        // Appearance
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal; // 2
+    }
+}
+
+@mixin u-textLead($important: false) {
+
+    @if $important == true {
+
+        // Appearance
+        line-height: 1.6 !important;
+        font-size: 1.1em !important;
+
+    } @else {
+
+        // Appearance
+        line-height: 1.6;
+        font-size: 1.1em;
+    }
+}
+
+@mixin u-textNoWrap($important: false) {
+
+    @if $important == true {
+
+        white-space: nowrap !important;
+
+    } @else {
+
+        white-space: nowrap;
+    }
+}
+
+@mixin u-textBreak($important: false) {
+
+    @if $important == true {
+
+        word-wrap: break-word !important;
+
+    } @else {
+
+        word-wrap: break-word;
+    }
+}
+
+@mixin u-textInheritColor($important: false) {
+
+    @if $important == true {
+
+        color: inherit !important;
+
+    } @else {
+
+        color: inherit;
+    }
+}
+
+@mixin u-textLeft($important: false) {
+
+    @if $important == true {
+
+        text-align: left !important;
+
+    } @else {
+
+        text-align: left;
+    }
+}
+
+@mixin u-textRight($important: false) {
+
+    @if $important == true {
+
+        text-align: right !important;
+
+    } @else {
+
+        text-align: right;
+    }
+}
+
+@mixin u-textCenter($important: false) {
+
+    @if $important == true {
+
+        text-align: center !important;
+
+    } @else {
+
+        text-align: center;
+    }
+}
+

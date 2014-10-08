@@ -1,0 +1,167 @@
+// =============================================================================
+// COLORS
+// =============================================================================
+
+
+// Basic Colors
+// -----------------------------------------------------------------------------
+
+$colorBlack:                    #000;
+$colorWhite:                    #fff;
+$colorGrey:                     #575859; // old blue-grey - #5f6a7d
+
+
+// Brand Colors
+// -----------------------------------------------------------------------------
+
+$colorPrimary:                  #212222;
+$colorSecondary:                #d1d2d2;
+$colorHighlight:                #d52d17;
+
+
+// State Colors
+// -----------------------------------------------------------------------------
+
+$colorSuccess:                  #5cb85c;
+$colorAlert:                    #d9534f;
+$colorWarning:                  #f0ad4e;
+$colorInfo:                     #1eb8bd;
+
+
+// Color Map
+// -----------------------------------------------------------------------------
+
+$colorMap: (
+
+    // Base colors
+
+    black: (
+        base:                   $colorBlack
+    ),
+
+    white: (
+        base:                   $colorWhite
+    ),
+
+    grey: (
+        base:                   $colorGrey,
+        darkest:                darken($colorGrey, 27.6%),
+        darker:                 darken($colorGrey, 21.3%),
+        dark:                   darken($colorGrey, 14.9%),
+        mediumDark:             darken($colorGrey, 5%),
+        medium:                 lighten($colorGrey, 10%),
+        mediumLight:            lighten($colorGrey, 23%),
+        light:                  lighten($colorGrey, 47.75%),
+        lighter:                lighten($colorGrey, 52.5%),
+        lightest:               lighten($colorGrey, 61%)
+    ),
+
+
+    // Branding
+
+    primary: (
+        base:                   $colorPrimary,
+        dark:                   darken($colorPrimary, 6.25%),
+        light:                  lighten($colorPrimary, 21.66%)
+    ),
+
+    secondary: (
+        base:                   $colorSecondary,
+        dark:                   lighten($colorGrey, 23%),
+        light:                  lighten($colorGrey, 52.5%)
+    ),
+
+    highlight: (
+        base:                   $colorHighlight,
+        dark:                   darken($colorHighlight, 10%),
+        light:                  lighten($colorHighlight, 10%)
+    ),
+
+
+    // State maps
+
+    success: (
+        base:                   $colorSuccess,
+        dark:                   darken($colorSuccess, 10%),
+        light:                  lighten($colorSuccess, 10%)
+    ),
+
+    alert: (
+        base:                   $colorAlert,
+        dark:                   darken($colorAlert, 10%),
+        light:                  lighten($colorAlert, 10%)
+    ),
+
+    warning: (
+        base:                   $colorWarning,
+        dark:                   darken($colorWarning, 10%),
+        light:                  lighten($colorWarning, 10%)
+    ),
+
+    info: (
+        base:                   $colorInfo,
+        dark:                   darken($colorInfo, 10%),
+        light:                  lighten($colorInfo, 10%)
+    ),
+
+
+    // Links map
+
+    link: (
+        base:                   $colorPrimary,
+        hover:                  darken($colorGrey, 14.9%)
+    ),
+
+
+    // Text Selection map
+
+    selection: (
+        base:                   $colorGrey,
+        light:                  lighten($colorGrey, 52.5%)
+    ),
+
+
+    // Faction maps
+
+    factions: (
+        "red":                  #d6313a,    // Fire
+        "green":                #009c74,    // Leaf
+        "blue":                 #0085bb,    // Water
+        "purple":               #3f4bb9,    // Wind
+        "yellow":               #ff8331,    // Lightning
+        "orange":               #ff5a42     // Ice
+    ),
+
+
+    // Events maps
+
+    events: (
+        release:                #d6313a,
+        dlc:                    #3f4bb9,
+        demo:                   #ff8331,
+        event:                  #2fb263,
+        competition:            #0085bb
+    )
+);
+
+
+// Color Map Function
+// -----------------------------------------------------------------------------
+
+@function color($color, $tone: 'base') {
+    @return map-get(map-get($colorMap, $color), $tone);
+}
+
+
+// Faction Colors
+// -----------------------------------------------------------------------------
+
+// @each $factionName, $faction in (map-get($colorMap, "factions")) {
+
+//    .faction-#{$factionName} {
+
+//        // Appearance
+//        background-color: $faction;
+//    }
+// }
+

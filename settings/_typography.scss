@@ -1,0 +1,155 @@
+// =============================================================================
+// TYPOGRAPHY
+// =============================================================================
+
+
+// Font Sizes
+// -----------------------------------------------------------------------------
+// 
+// 1. Set up the REM units for the rest of the framework (pixel value).
+// 2. Your base font size should always start at 1rem;
+// 
+// -----------------------------------------------------------------------------
+
+$fontSizeRoot:                  16px; // 1
+$fontSizeBase:                  1rem; // 2
+
+
+// Line Height
+// -----------------------------------------------------------------------------
+
+$lineHeightBase:                1.5;
+
+
+// Font Weights
+// -----------------------------------------------------------------------------
+
+$fontWeightThin:                300;
+$fontWeightNormal:              400;
+$fontWeightSemiBold:            600;
+$fontWeightBold:                700;
+$fontWeightBlack:               900;
+
+
+// Font Families
+// -----------------------------------------------------------------------------
+
+$fontFamilySans:                "Open Sans",
+                                "Helvetica Neue", Arial, sans-serif;
+
+$fontFamilySerif:               "Helvetica Neue",
+                                Georgia, "Times New Roman", serif;
+
+$fontFamilyMono:                Menlo,
+                                Monaco, Consolas, monospace;
+
+
+// Typography Maps
+// -----------------------------------------------------------------------------
+
+$fontSizeMap: (
+
+    base:                   $fontSizeBase,
+    hero:                   $fontSizeBase * 3,
+    largest:                $fontSizeBase * 2.5,
+    larger:                 $fontSizeBase * 2,
+    large:                  $fontSizeBase * 1.5,
+    small:                  $fontSizeBase * 1.25,
+    smaller:                $fontSizeBase * 1.125,
+    smallest:               $fontSizeBase * 0.875,
+    tiny:                   $fontSizeBase * 0.75
+);
+
+$lineHeightMap: (
+
+    base:                   1.5,
+    hero:                   2.5,
+    largest:                2.25,
+    larger:                 2,
+    large:                  1.75,
+    small:                  1.25,
+    smaller:                1.1,
+    smallest:               1,
+    tiny:                   0.9
+);
+
+$letterSpacingMap: (
+
+    largest:                remCalc(6px),
+    larger:                 remCalc(5px),
+    large:                  remCalc(4px),
+    small:                  remCalc(3px),
+    smaller:                remCalc(2px),
+    smallest:               remCalc(1px)
+);
+
+$fontFamilyMap: (
+
+    sans:                   $fontFamilySans,
+    serif:                  $fontFamilySerif,
+    mono:                   $fontFamilyMono
+);
+
+$fontWeightMap: (
+
+    thin:                   $fontWeightThin,
+    normal:                 $fontWeightNormal,
+    semibold:               $fontWeightSemiBold,
+    bold:                   $fontWeightBold,
+    black:                  $fontWeightBlack
+);
+
+
+// Typography Functions
+// -----------------------------------------------------------------------------
+
+@function fontSize($key) {
+
+    @if map-has-key($fontSizeMap, $key) {
+        @return map-get($fontSizeMap, $key);
+    }
+
+    @warn "Unknown `#{$key}` in $fontSizeMap.";
+    @return null;
+}
+
+@function lineHeight($key) {
+
+    @if map-has-key($lineHeightMap, $key) {
+        @return map-get($lineHeightMap, $key);
+    }
+
+    @warn "Unknown `#{$key}` in $lineHeightMap.";
+    @return null;
+}
+
+@function letterSpacing($key) {
+
+    @if map-has-key($letterSpacingMap, $key) {
+        @return map-get($letterSpacingMap, $key);
+    }
+
+    @warn "Unknown `#{$key}` in $letterSpacingMap.";
+    @return null;
+}
+
+@function fontFamily($key) {
+
+    @if map-has-key($fontFamilyMap, $key) {
+        @return map-get($fontFamilyMap, $key);
+    }
+
+    @warn "Unknown `#{$key}` in $fontFamilyMap.";
+    @return null;
+}
+
+@function fontWeight($key) {
+
+    @if map-has-key($fontWeightMap, $key) {
+        @return map-get($fontWeightMap, $key);
+    }
+
+    @warn "Unknown `#{$key}` in $fontWeightMap.";
+    @return null;
+}
+
