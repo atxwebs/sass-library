@@ -1,0 +1,87 @@
+// =============================================================================
+// FLEXBOX (Tools)
+// =============================================================================
+
+
+@mixin u-flex($important: false) {
+
+    // -------------------------------------------------------------------------
+    //
+    // Enable flexbox on an element.
+    //
+    // -------------------------------------------------------------------------
+
+    @if $important == true {
+
+        // Layout
+        display: flex !important;
+
+    } @else {
+
+        // Layout
+        display: flex;
+    }
+}
+
+@mixin u-flexCenter($important: false) {
+
+    // -------------------------------------------------------------------------
+    //
+    // Align your flexbox items horizontally and vertically.
+    //
+    // -------------------------------------------------------------------------
+
+    @if $important == true {
+
+        // Layout
+        justify-content: center !important;
+        align-items: center !important;
+
+    } @else {
+
+        // Layout
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@mixin u-flexEqual($important: false) {
+
+    // -------------------------------------------------------------------------
+    //
+    // 1. Divides flexbox items evenly.
+    //
+    // -------------------------------------------------------------------------
+
+    @if $important == true {
+
+        // Layout
+        flex: 1 !important; // 1
+
+    } @else {
+
+        // Layout
+        flex: 1; // 1
+    }
+}
+
+@mixin u-flexWrap ($important: false) {
+
+    // -------------------------------------------------------------------------
+    //
+    // 1. Mimics float: left; and tiles items horizontally.
+    //
+    // -------------------------------------------------------------------------
+
+    @if $important == true {
+
+        // Layout
+        flex-wrap: wrap !important;
+
+    } @else {
+
+        // Layout
+        flex-wrap: wrap;
+    }
+}
+

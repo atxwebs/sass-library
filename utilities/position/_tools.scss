@@ -1,0 +1,59 @@
+// =============================================================================
+// POSITION (Tools)
+// =============================================================================
+
+
+@mixin u-posAbsoluteCenter($important: false) {
+
+    // -------------------------------------------------------------------------
+    //
+    // Pins to all corners by default. But when a width and/or height are
+    // provided, the element will be centered in its nearest 
+    // relatively-positioned ancestor.
+    //
+    // -------------------------------------------------------------------------
+
+    @if $important == true {
+
+        // Layout
+        position: absolute !important;
+        top: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        margin: auto !important;
+
+    } @else {
+
+        // Layout
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+
+@mixin u-posFixed($important: false) {
+
+    // -------------------------------------------------------------------------
+    //
+    // 1. Make sure fixed elements are promoted into a new layer, for 
+    //    performance reasons.
+    //
+    // -------------------------------------------------------------------------
+
+    @if $important == true {
+
+        // Layout
+        position: fixed !important;
+        backface-visibility: hidden !important;
+
+    } @else {
+
+        // Layout
+        position: fixed;
+        backface-visibility: hidden; // 1
+    }
+}

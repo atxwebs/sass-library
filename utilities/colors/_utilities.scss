@@ -1,0 +1,87 @@
+// =============================================================================
+// COLORS (CSS)
+// =============================================================================
+
+
+// Bigcommerce Utility Classes
+// -----------------------------------------------------------------------------
+//
+// 1. If set to false, there is no outputted CSS for this component.
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--colorUtilities { // 1
+
+    // Background Utilities - Brand
+    // -------------------------------------------------------------------------
+
+    .u-bgPrimary                { @include u-bgPrimary; }
+
+    .u-bgPrimaryDark            { @include u-bgPrimaryDark; }
+
+    .u-bgPrimaryLight           { @include u-bgPrimaryLight; }
+
+    .u-bgSecondary              { @include u-bgSecondary; }
+
+    .u-bgSecondaryDark          { @include u-bgSecondaryDark; }
+
+    .u-bgSecondaryLight         { @include u-bgSecondaryLight; }
+
+    .u-bgHighlight              { @include u-bgHighlight; }
+
+    .u-bgHighlightDark          { @include u-bgHighlightDark; }
+
+    .u-bgHighlightLight         { @include u-bgHighlightLight; }
+
+
+    // Background Utilities - Events
+    // -------------------------------------------------------------------------
+
+    .u-bgEvent                  { @include u-bgEvent; }
+
+    .u-bgRelease                { @include u-bgRelease; }
+
+    .u-bgDlc                    { @include u-bgDlc; }
+
+    .u-bgCompetition            { @include u-bgCompetition; }
+
+    .u-bgDemo                   { @include u-bgDemo; }
+
+
+    // Color Utilities - Brand
+    // -------------------------------------------------------------------------
+
+    .u-colorPrimary             { @include u-colorPrimary; }
+
+    .u-colorPrimaryDark         { @include u-colorPrimaryDark; }
+
+    .u-colorPrimaryLight        { @include u-colorPrimaryLight; }
+
+    .u-colorSecondary           { @include u-colorSecondary; }
+
+    .u-colorSecondaryDark       { @include u-colorSecondaryDark; }
+
+    .u-colorSecondaryLight      { @include u-colorSecondaryLight; }
+
+    .u-colorHighlight           { @include u-colorHighlight; }
+
+    .u-colorHighlightDark       { @include u-colorHighlightDark; }
+
+    .u-colorHighlightLight      { @include u-colorHighlightLight; }
+
+
+    // Color Utilities - Events
+    // -------------------------------------------------------------------------
+
+    .u-colorEvent               { @include u-colorEvent; }
+
+    .u-colorRelease             { @include u-colorRelease; }
+
+    .u-colorDlc                 { @include u-colorDlc; }
+
+    .u-colorCompetition         { @include u-colorCompetition; }
+
+    .u-colorDemo                { @include u-colorDemo; }
+
+}
+

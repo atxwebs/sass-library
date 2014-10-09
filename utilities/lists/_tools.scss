@@ -1,0 +1,127 @@
+// =============================================================================
+// LISTS (Tools)
+// =============================================================================
+
+
+// Width Mixins
+// -----------------------------------------------------------------------------
+
+@mixin u-listBullets($type: "none", $important: false) {
+
+    @if $type == "none" {
+
+        @if $important == true {
+
+            // Layout
+            margin-#{$default-float}: $list-side-margin-no-bullet !important;
+
+            // Appearance
+            list-style: none;
+
+            ul, ol {
+
+                // Layout
+                margin-bottom: 0 !important;
+
+                // Appearance
+                list-style: none !important;
+            }
+
+        } @else {
+
+            // Layout
+            margin-#{$default-float}: $list-side-margin-no-bullet;
+
+            // Appearance
+            list-style: none;
+
+            ul, ol {
+
+                // Layout
+                margin-bottom: 0;
+
+                // Appearance
+                list-style: inherit;
+            }
+        }
+    }
+
+    @if $type == "disc" {
+
+        @if $important == true {
+
+            // Appearance
+            list-style-type: disc !important;
+
+            ul {
+
+                // Appearance
+                list-style: inherit !important;
+            }
+
+        } @else {
+
+            // Appearance
+            list-style-type: disc;
+
+            ul {
+
+                // Appearance
+                list-style: inherit;
+            }
+        }
+    }
+
+    @if $type == "circle" {
+
+        @if $important == true {
+
+            // Appearance
+            list-style-type: circle !important;
+
+            ul {
+
+                // Appearance
+                list-style: inherit !important;
+            }
+
+        } @else {
+
+            // Appearance
+            list-style-type: circle;
+
+            ul {
+
+                // Appearance
+                list-style: inherit;
+            }
+        }
+    }
+
+    @if $type == "square" {
+
+        @if $important == true {
+
+            // Appearance
+            list-style-type: square !important;
+
+            ul {
+
+                // Appearance
+                list-style: inherit !important;
+            }
+
+        } @else {
+
+            // Appearance
+            list-style-type: square;
+
+            ul {
+
+                // Appearance
+                list-style: inherit;
+            }
+        }
+    }
+}
+

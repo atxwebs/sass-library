@@ -8,7 +8,7 @@
 
 $colorBlack:                    #000;
 $colorWhite:                    #fff;
-$colorGrey:                     #777;
+$colorGrey:                     #798289;
 
 
 // Brand Colors
@@ -22,10 +22,10 @@ $colorHighlight:                #777;
 // State Colors
 // -----------------------------------------------------------------------------
 
-$colorSuccess:                  green;
-$colorAlert:                    red;
-$colorWarning:                  orange;
-$colorInfo:                     blue;
+$colorSuccess:                  #95db89;
+$colorAlert:                    #db636b;
+$colorWarning:                  #ffb800;
+$colorInfo:                     #00abc9;
 
 
 // Color Map
@@ -45,15 +45,13 @@ $colorMap: (
 
     grey: (
         base:                   $colorGrey,
-        darkest:                darken($colorGrey, 27.6%),
-        darker:                 darken($colorGrey, 21.3%),
-        dark:                   darken($colorGrey, 14.9%),
-        mediumDark:             darken($colorGrey, 5%),
-        medium:                 lighten($colorGrey, 10%),
-        mediumLight:            lighten($colorGrey, 23%),
-        light:                  lighten($colorGrey, 47.75%),
-        lighter:                lighten($colorGrey, 52.5%),
-        lightest:               lighten($colorGrey, 61%)
+        darkest:                #313b47,
+        darker:                 #3c4043,
+        dark:                   #556273,
+        medium:                 #acb3be,
+        light:                  #e1e6eb,
+        lighter:                #f1f3f7,
+        lightest:               #f8f9fb
     ),
 
 
@@ -83,25 +81,25 @@ $colorMap: (
     success: (
         base:                   $colorSuccess,
         dark:                   darken($colorSuccess, 10%),
-        light:                  lighten($colorSuccess, 10%)
+        light:                  lighten($colorSuccess, 15%)
     ),
 
     alert: (
         base:                   $colorAlert,
         dark:                   darken($colorAlert, 10%),
-        light:                  lighten($colorAlert, 10%)
+        light:                  lighten($colorAlert, 15%)
     ),
 
     warning: (
         base:                   $colorWarning,
         dark:                   darken($colorWarning, 10%),
-        light:                  lighten($colorWarning, 10%)
+        light:                  lighten($colorWarning, 15%)
     ),
 
     info: (
         base:                   $colorInfo,
         dark:                   darken($colorInfo, 10%),
-        light:                  lighten($colorInfo, 10%)
+        light:                  lighten($colorInfo, 15%)
     ),
 
 

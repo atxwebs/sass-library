@@ -1,0 +1,54 @@
+// =============================================================================
+// WIDTHS (CSS)
+// =============================================================================
+
+
+// Bigcommerce Utility Classes
+// -----------------------------------------------------------------------------
+//
+// 1. If set to false, there is no outputted CSS for this component.
+//
+// Width utility classes to be applied to any element
+// Example: <input type="text" class="u-width-3-4" />
+
+// Widths are based on fractions
+// Example: .width-3-4 is equivalent to 3/4 or 75% in width
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--widthUtilities { // 1
+
+    .u-widthMax                 { @include u-widthMax(true); }
+
+    .u-widthFixed               { @include u-widthFixed(true); }
+
+    .u-width-1-1                { @include u-width-1-1(true); }
+
+    .u-width-4-5                { @include u-width-4-5(true); }
+
+    .u-width-3-4                { @include u-width-3-4(true); }
+
+    .u-width-2-3                { @include u-width-2-3(true); }
+
+    .u-width-3-5                { @include u-width-3-5(true); }
+
+    .u-width-1-2                { @include u-width-1-2(true); }
+
+    .u-width-2-5                { @include u-width-2-5(true); }
+
+    .u-width-1-3                { @include u-width-1-3(true); }
+
+    .u-width-1-4                { @include u-width-1-4(true); }
+
+    .u-width-1-5                { @include u-width-1-5(true); }
+
+    .u-width-1-6                { @include u-width-1-6(true); }
+
+    .u-width-1-7                { @include u-width-1-7(true); }
+
+    .u-width-1-8                { @include u-width-1-8(true); }
+
+    .u-width-1-10               { @include u-width-1-10(true); }
+
+}
+

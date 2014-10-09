@@ -1,0 +1,21 @@
+// =============================================================================
+// LAYOUT (CSS)
+// =============================================================================
+
+
+// Bigcommerce Utility Classes
+// -----------------------------------------------------------------------------
+//
+// 1. If set to false, there is no outputted CSS for this component.
+// Adapted from SUIT CSS: https://github.com/suitcss/utils-layout/
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--layoutUtilities { // 1
+
+    .u-floatLeft                { @include u-floatLeft(true); }
+    .u-floatRight               { @include u-floatRight(true); }
+
+    .u-clearFloats              { @include u-clearFloats; }
+}
+

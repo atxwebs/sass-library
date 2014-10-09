@@ -1,0 +1,94 @@
+// =============================================================================
+// DISPLAY (Tools)
+// =============================================================================
+
+
+@mixin u-block($important: false) {
+
+    @if $important == true {
+
+        // Layout
+        display: block !important;
+    
+    } @else {
+
+        // Layout
+        display: block;
+    }
+}
+
+@mixin u-inlineBlock($important: false) {
+
+    // -------------------------------------------------------------------------
+    //
+    // 1. Fix for Firefox bug: an image styled `max-width:100%` within an
+    //    inline-block will display at its default size, and not limit its
+    //    width to 100% of an ancestral container.
+    //
+    // -------------------------------------------------------------------------
+
+    @if $important == true {
+
+        // Layout
+        display: inline-block !important;
+        max-width: 100% !important; // 1
+
+    } @else {
+
+        // Layout
+        display: inline-block;
+        max-width: 100%; // 1
+    }
+}
+
+@mixin u-hidden($important: false) {
+
+    @if $important == true {
+
+        // Layout
+        display: none !important;
+
+    } @else {
+
+        // Layout
+        display: none;
+    }
+}
+
+@mixin u-hiddenVisually($important: false) {
+
+    // -------------------------------------------------------------------------
+    //
+    // Completely remove from the flow but have it remain available to
+    // screen readers.
+    //
+    // -------------------------------------------------------------------------
+
+    @if $important == true {
+
+        // Layout
+        position: absolute !important;
+        overflow: hidden !important;
+        clip: rect(1px, 1px, 1px, 1px) !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+
+        // Appearance
+        border: 0 !important;
+
+    } @else {
+
+        // Layout
+        position: absolute;
+        overflow: hidden;
+        clip: rect(1px, 1px, 1px, 1px);
+        width: 1px;
+        height: 1px;
+        padding: 0;
+
+        // Appearance
+        border: 0;
+    }
+}
+
