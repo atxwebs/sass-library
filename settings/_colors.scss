@@ -8,24 +8,24 @@
 
 $colorBlack:                    #000;
 $colorWhite:                    #fff;
-$colorGrey:                     #575859; // old blue-grey - #5f6a7d
+$colorGrey:                     #777;
 
 
 // Brand Colors
 // -----------------------------------------------------------------------------
 
-$colorPrimary:                  #212222;
-$colorSecondary:                #d1d2d2;
-$colorHighlight:                #d52d17;
+$colorPrimary:                  #00abc9;
+$colorSecondary:                #fff;
+$colorHighlight:                #777;
 
 
 // State Colors
 // -----------------------------------------------------------------------------
 
-$colorSuccess:                  #5cb85c;
-$colorAlert:                    #d9534f;
-$colorWarning:                  #f0ad4e;
-$colorInfo:                     #1eb8bd;
+$colorSuccess:                  green;
+$colorAlert:                    red;
+$colorWarning:                  orange;
+$colorInfo:                     blue;
 
 
 // Color Map
@@ -118,29 +118,6 @@ $colorMap: (
     selection: (
         base:                   $colorGrey,
         light:                  lighten($colorGrey, 52.5%)
-    ),
-
-
-    // Faction maps
-
-    factions: (
-        "red":                  #d6313a,    // Fire
-        "green":                #009c74,    // Leaf
-        "blue":                 #0085bb,    // Water
-        "purple":               #3f4bb9,    // Wind
-        "yellow":               #ff8331,    // Lightning
-        "orange":               #ff5a42     // Ice
-    ),
-
-
-    // Events maps
-
-    events: (
-        release:                #d6313a,
-        dlc:                    #3f4bb9,
-        demo:                   #ff8331,
-        event:                  #2fb263,
-        competition:            #0085bb
     )
 );
 
@@ -151,17 +128,4 @@ $colorMap: (
 @function color($color, $tone: 'base') {
     @return map-get(map-get($colorMap, $color), $tone);
 }
-
-
-// Faction Colors
-// -----------------------------------------------------------------------------
-
-// @each $factionName, $faction in (map-get($colorMap, "factions")) {
-
-//    .faction-#{$factionName} {
-
-//        // Appearance
-//        background-color: $faction;
-//    }
-// }
 
