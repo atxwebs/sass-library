@@ -1,0 +1,35 @@
+# BC configuration
+linters:
+
+  EmptyLineBetweenBlocks:
+    enabled: true
+    ignore_single_line_blocks: false
+
+  Indentation:
+    enabled: true
+    character: space # or 'tab'
+    width: 4
+
+  LeadingZero:
+    enabled: true
+    style: include_zero # or 'exclude_zero'
+
+  NameFormat:
+    enabled: false
+    convention: hyphenated_lowercase # or 'BEM', or a regex pattern
+
+  SelectorDepth:
+    enabled: true
+    max_depth: 2
+
+  SelectorFormat:
+    enabled: true
+    # convention: camel_case # or 'snake_case', or 'hyphenated_lowercase', or a regex pattern
+    convention: ^[a-z][a-z]*([A-Z][a-z]*)*((\.is-|-+)[a-z][a-z]*([A-Z][a-z]*)*)*$
+
+  StringQuotes:
+    enabled: true
+    style: double_quotes # or single_quotes
+
+  TrailingZero:
+    enabled: true
