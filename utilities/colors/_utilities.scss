@@ -15,73 +15,77 @@
     // Background Utilities - Brand
     // -------------------------------------------------------------------------
 
-    .u-bgPrimary                { @include u-bgPrimary; }
+    .u-bgPrimary                { background-color: color(primary) !important; }
 
-    .u-bgPrimaryDark            { @include u-bgPrimaryDark; }
+    .u-bgPrimaryDark            { background-color: color(primary, dark) !important; }
 
-    .u-bgPrimaryLight           { @include u-bgPrimaryLight; }
+    .u-bgPrimaryLight           { background-color: color(primary, light) !important; }
 
-    .u-bgSecondary              { @include u-bgSecondary; }
+    .u-bgSecondary              { background-color: color(secondary) !important; }
 
-    .u-bgSecondaryDark          { @include u-bgSecondaryDark; }
+    .u-bgSecondaryDark          { background-color: color(secondary, dark) !important; }
 
-    .u-bgSecondaryLight         { @include u-bgSecondaryLight; }
+    .u-bgSecondaryLight         { background-color: color(secondary, light) !important; }
 
-    .u-bgHighlight              { @include u-bgHighlight; }
+    .u-bgHighlight              { background-color: color(highlight) !important; }
 
-    .u-bgHighlightDark          { @include u-bgHighlightDark; }
+    .u-bgHighlightDark          { background-color: color(highlight, dark) !important; }
 
-    .u-bgHighlightLight         { @include u-bgHighlightLight; }
+    .u-bgHighlightLight         { background-color: color(highlight, light) !important; }
 
 
-    // Background Utilities - Events
+    // Background Utilities - Status
     // -------------------------------------------------------------------------
 
-    .u-bgEvent                  { @include u-bgEvent; }
+    .u-bgAlert                  { background-color: color(alert) !important; }
 
-    .u-bgRelease                { @include u-bgRelease; }
+    .u-bgInfo                   { background-color: color(info) !important; }
 
-    .u-bgDlc                    { @include u-bgDlc; }
+    .u-bgSuccess                { background-color: color(success) !important; }
 
-    .u-bgCompetition            { @include u-bgCompetition; }
+    .u-bgWarning                { background-color: color(warning) !important; }
 
-    .u-bgDemo                   { @include u-bgDemo; }
+    .u-bgAlertLight             { background-color: color(alert, light) !important; }
+
+    .u-bgInfoLight              { background-color: color(info, light) !important; }
+
+    .u-bgSuccessLight           { background-color: color(success, light) !important; }
+
+    .u-bgWarningLight           { background-color: color(warning, light) !important; }
 
 
     // Color Utilities - Brand
     // -------------------------------------------------------------------------
 
-    .u-colorPrimary             { @include u-colorPrimary; }
+    .u-colorPrimary             { color: color(primary) !important; }
 
-    .u-colorPrimaryDark         { @include u-colorPrimaryDark; }
+    .u-colorPrimaryDark         { color: color(primary, dark) !important; }
 
-    .u-colorPrimaryLight        { @include u-colorPrimaryLight; }
+    .u-colorPrimaryLight        { color: color(primary, light) !important; }
 
-    .u-colorSecondary           { @include u-colorSecondary; }
+    .u-colorSecondary           { color: color(secondary) !important; }
 
-    .u-colorSecondaryDark       { @include u-colorSecondaryDark; }
+    .u-colorSecondaryDark       { color: color(secondary, dark) !important; }
 
-    .u-colorSecondaryLight      { @include u-colorSecondaryLight; }
+    .u-colorSecondaryLight      { color: color(secondary, light) !important; }
 
-    .u-colorHighlight           { @include u-colorHighlight; }
+    .u-colorHighlight           { color: color(highlight) !important; }
 
-    .u-colorHighlightDark       { @include u-colorHighlightDark; }
+    .u-colorHighlightDark       { color: color(highlight, dark) !important; }
 
-    .u-colorHighlightLight      { @include u-colorHighlightLight; }
+    .u-colorHighlightLight      { color: color(highlight, light) !important; }
 
 
-    // Color Utilities - Events
+    // Color Utilities - Status
     // -------------------------------------------------------------------------
 
-    .u-colorEvent               { @include u-colorEvent; }
+    .u-colorAlert                  { color: color(alert) !important; }
 
-    .u-colorRelease             { @include u-colorRelease; }
+    .u-colorInfo                   { color: color(info) !important; }
 
-    .u-colorDlc                 { @include u-colorDlc; }
+    .u-colorSuccess                { color: color(success) !important; }
 
-    .u-colorCompetition         { @include u-colorCompetition; }
-
-    .u-colorDemo                { @include u-colorDemo; }
+    .u-colorWarning                { color: color(warning) !important; }
 
 }
 

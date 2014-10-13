@@ -13,13 +13,13 @@
 
 @if $exportCSS--alignUtilities { // 1
 
-    .u-alignBaseline            { @include u-alignBaseline; }
+    .u-alignBaseline            { vertical-align: baseline !important; }
 
-    .u-alignBottom              { @include u-alignBottom; }
+    .u-alignBottom              { vertical-align: bottom !important; }
 
-    .u-alignMiddle              { @include u-alignMiddle; }
+    .u-alignMiddle              { vertical-align: middle !important; }
 
-    .u-alignTop                 { @include u-alignTop; }
+    .u-alignTop                 { vertical-align: top !important; }
 
 }
 

@@ -3,92 +3,46 @@
 // =============================================================================
 
 
-@mixin u-block($important: false) {
+@mixin u-display($variant, $important: null) {
 
-    @if $important == true {
+    @if $variant == "none" {
 
-        // Layout
-        display: block !important;
-    
-    } @else {
+        display: none $important;
 
-        // Layout
-        display: block;
+    } @else if $variant == "block" {
+
+        display: block $important;
+
+    } @else if $variant == "inlineBlock" {
+
+        // ---------------------------------------------------------------------
+        //
+        // 1. Fix for Firefox bug: an image styled `max-width:100%` within an
+        //    inline-block will display at its default size, and not limit its
+        //    width to 100% of an ancestral container.
+        //
+        // ---------------------------------------------------------------------
+
+        display: inline-block $important;
+        max-width: 100% $important; // 1
     }
 }
 
-@mixin u-inlineBlock($important: false) {
+@mixin u-hidden($variant, $important: null) {
 
-    // -------------------------------------------------------------------------
-    //
-    // 1. Fix for Firefox bug: an image styled `max-width:100%` within an
-    //    inline-block will display at its default size, and not limit its
-    //    width to 100% of an ancestral container.
-    //
-    // -------------------------------------------------------------------------
+    @if $variant == "fully" {
 
-    @if $important == true {
+        display: none $important;
 
-        // Layout
-        display: inline-block !important;
-        max-width: 100% !important; // 1
+    } @else if $variant == "visually" {
 
-    } @else {
-
-        // Layout
-        display: inline-block;
-        max-width: 100%; // 1
-    }
-}
-
-@mixin u-hidden($important: false) {
-
-    @if $important == true {
-
-        // Layout
-        display: none !important;
-
-    } @else {
-
-        // Layout
-        display: none;
-    }
-}
-
-@mixin u-hiddenVisually($important: false) {
-
-    // -------------------------------------------------------------------------
-    //
-    // Completely remove from the flow but have it remain available to
-    // screen readers.
-    //
-    // -------------------------------------------------------------------------
-
-    @if $important == true {
-
-        // Layout
-        position: absolute !important;
-        overflow: hidden !important;
-        clip: rect(1px, 1px, 1px, 1px) !important;
-        width: 1px !important;
-        height: 1px !important;
-        padding: 0 !important;
-
-        // Appearance
-        border: 0 !important;
-
-    } @else {
-
-        // Layout
-        position: absolute;
-        overflow: hidden;
-        clip: rect(1px, 1px, 1px, 1px);
-        width: 1px;
-        height: 1px;
-        padding: 0;
-
-        // Appearance
-        border: 0;
+        border: 0 $important;
+        clip: rect(1px, 1px, 1px, 1px) $important;
+        height: 1px $important;
+        overflow: hidden $important;
+        padding: 0 $important;
+        position: absolute $important;
+        width: 1px $important;
     }
 }
 

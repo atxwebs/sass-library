@@ -21,13 +21,11 @@
 
     .breadcrumbs {
 
-    // Mixins
-    @include crumb-container;
-}
+        @include crumb-container;
+    }
 
     .breadcrumb {
 
-        // Mixins
         @include crumbs;
 
 
@@ -47,31 +45,26 @@
 
         %breadcrumb--activeState { // 1
 
-            // Appearance
             color: color(primary);
         }
 
         %breadcrumb--unavailableState { // 2
 
-            // Appearance
             color: color(grey, light);
         }
 
         %breadcrumb--defaultState { // 3
 
-            // Appearance
             cursor: default;
             text-decoration: none;
         }
 
         &.is-active {
 
-            // Extends
             @extend %breadcrumb--activeState;
 
             > .breadcrumb-label {
 
-                // Extends
                 @extend %breadcrumb--defaultState;
                 @extend %breadcrumb--activeState;
             }
@@ -79,12 +72,10 @@
 
         &.is-unavailable {
 
-            // Extends
             @extend %breadcrumb--unavailableState;
 
             > .breadcrumb-label {
 
-                // Extends
                 @extend %breadcrumb--defaultState;
                 @extend %breadcrumb--unavailableState;
             }

@@ -13,13 +13,13 @@
 
 @if $exportCSS--displayUtilities { // 1
 
-    .u-block                    { @include u-block(true); }
+    .u-block                    { @include u-display("block", !important); }
 
-    .u-inlineBlock              { @include u-inlineBlock(true); }
+    .u-inlineBlock              { @include u-display("inlineBlock", !important); }
 
-    .u-hidden                   { @include u-hidden(true); }
+    .u-hidden                   { @include u-hidden("fully", !important); }
 
-    .u-hiddenVisually           { @include u-hiddenVisually(true); }
+    .u-hiddenVisually           { @include u-hidden("visually", !important); }
 
 }
 

@@ -2,87 +2,30 @@
 // LAYOUT (Tools)
 // =============================================================================
 
+@mixin u-clearFloats($important: null) {
 
-@mixin u-floatLeft($important: false) {
+    &:before,
+    &:after {
 
-    @if $important == true {
+        // ---------------------------------------------------------------------
+        //
+        // 1. The space content is one way to avoid an Opera bug when the
+        //    'contenteditable' attribute is included anywhere else in the
+        //    document. Otherwise it causes space to appear at the top and
+        //    bottom of the element.
+        // 2. The use of `table` rather than `block` is only necessary if using
+        //    ':before' to contain the top-margins of child elements.
+        //
+        // ---------------------------------------------------------------------
 
         // Layout
-        float: left !important;
-
-    } @else {
-
-        // Layout
-        float: left;
+        content: " " $important; // 1
+        display: table $important; // 2
     }
-}
-@mixin u-floatRight($important: false) {
-
-    @if $important == true {
+    &:after {
 
         // Layout
-        float: right !important;
-
-    } @else {
-
-        // Layout
-        float: right;
-    }
-}
-
-@mixin u-clearFloats($important: false) {
-
-    @if $important == true {
-
-        &:before,
-        &:after {
-
-            // ---------------------------------------------------------------------
-            //
-            // 1. The space content is one way to avoid an Opera bug when the
-            //    'contenteditable' attribute is included anywhere else in the
-            //    document. Otherwise it causes space to appear at the top and
-            //    bottom of the element.
-            // 2. The use of `table` rather than `block` is only necessary if using
-            //    ':before' to contain the top-margins of child elements.
-            //
-            // ---------------------------------------------------------------------
-
-            // Layout
-            content: " " !important; // 1
-            display: table !important; // 2
-        }
-        &:after {
-
-            // Layout
-            clear: both !important;
-        }
-
-    } @else {
-
-        &:before,
-        &:after {
-
-            // ---------------------------------------------------------------------
-            //
-            // 1. The space content is one way to avoid an Opera bug when the
-            //    'contenteditable' attribute is included anywhere else in the
-            //    document. Otherwise it causes space to appear at the top and
-            //    bottom of the element.
-            // 2. The use of `table` rather than `block` is only necessary if using
-            //    ':before' to contain the top-margins of child elements.
-            //
-            // ---------------------------------------------------------------------
-
-            // Layout
-            content: " "; // 1
-            display: table; // 2
-        }
-        &:after {
-
-            // Layout
-            clear: both;
-        }
+        clear: both $important;
     }
 }
 
