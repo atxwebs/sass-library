@@ -18,13 +18,11 @@
         //
         // ---------------------------------------------------------------------
 
-        // Layout
         content: " " $important; // 1
         display: table $important; // 2
     }
     &:after {
 
-        // Layout
         clear: both $important;
     }
 }
