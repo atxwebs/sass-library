@@ -13,23 +13,23 @@
 
 @if $exportCSS--textUtilities { // 1
 
-    .u-textKern                 { @include u-textKern(true); }
+    .u-textAlignCenter          { text-align: center !important; }
 
-    .u-textTruncate             { @include u-textTruncate(true); }
+    .u-textAlignLeft            { text-align: left !important; }
 
-    .u-textLead                 { @include u-textLead(true); }
+    .u-textAlignRight           { text-align: right !important; }
 
-    .u-textNoWrap               { @include u-textNoWrap(true); }
+    .u-textBreak                { word-wrap: break-word !important; }
 
-    .u-textBreak                { @include u-textBreak(true); }
+    .u-textInheritColor         { color: inherit !important; }
 
-    .u-textInheritColor         { @include u-textInheritColor(true); }
+    .u-textKern                 { @include u-textKern(!important); }
 
-    .u-textLeft                 { @include u-textLeft(true); }
+    .u-textLead                 { @include u-textLead(!important); }
 
-    .u-textRight                { @include u-textRight(true); }
+    .u-textNoWrap               { white-space: nowrap !important; }
 
-    .u-textCenter               { @include u-textCenter(true); }
+    .u-textTruncate             { @include u-textTruncate(!important); }
 
 }
 

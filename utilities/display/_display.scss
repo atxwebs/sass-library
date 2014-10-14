@@ -1,21 +1,22 @@
 // =============================================================================
-// SETTINGS
+// DISPLAY
 // =============================================================================
 
 
-// Bigcommerce Variables
-// -----------------------------------------------------------------------------
-//
-// 1. Dimensions are dependant on Typography, so @import typography first.
-//
+// Bigcommerce Settings
 // -----------------------------------------------------------------------------
 
-// Globals
-@import "export";
+@import "settings";
 
-// Colors
-@import "colors";
 
-// Typography
-@import "typography"; // 1
+// Bigcommerce Tools
+// -----------------------------------------------------------------------------
+
+@import "tools";
+
+
+// Bigcommerce Utility Classes
+// -----------------------------------------------------------------------------
+
+@import "utilities";
 

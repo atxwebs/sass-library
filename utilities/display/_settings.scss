@@ -1,21 +1,16 @@
 // =============================================================================
-// SETTINGS
+// DISPLAY (Settings)
 // =============================================================================
 
 
 // Bigcommerce Variables
 // -----------------------------------------------------------------------------
 //
-// 1. Dimensions are dependant on Typography, so @import typography first.
+// These scoped variables are created by Bigcommerce.
+// All variables that are not from Foundation should be placed here.
+//
+// 1. Choose whether to include the Bigcommerce class names
 //
 // -----------------------------------------------------------------------------
 
-// Globals
-@import "export";
-
-// Colors
-@import "colors";
-
-// Typography
-@import "typography"; // 1
-
+$exportCSS--displayUtilities:           $exportCSS; // 1
