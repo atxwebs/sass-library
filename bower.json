@@ -1,0 +1,29 @@
+{
+    "name": "sass-library",
+    "version": "0.0.2",
+    "homepage": "https://github.com/bigcommerce-labs/sass-library.git",
+    "authors": [
+        "Bigcommerce"
+    ],
+    "description": "A SASS Library based on Foundation with opinionated naming conventions",
+    "main": "library.scss",
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "build",
+        "grunt",
+        "src",
+        "node_modules",
+        "bower_components",
+        "tests",
+        "Gemfile",
+        "Gemfile.lock",
+        "package.json",
+        "Gruntfile.js"
+    ],
+    "dependencies": {
+        "normalize-scss": "3.0.1",
+        "foundation": "5.4.5"
+    }
+}

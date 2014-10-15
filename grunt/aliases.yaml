@@ -1,0 +1,21 @@
+---
+default:
+  - "build"
+
+build:
+  - "clean:build"
+  - "copy:build"
+  - "scsslint"
+
+deploy:
+  - "build"
+  - "clean:release"
+  - "copy:release"
+
+release:
+  - "checkbranch:master"
+  - "prompt:deploy"
+
+run:
+  - "build"
+  - "watch:run"
