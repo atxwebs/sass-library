@@ -22,7 +22,7 @@
         "package.json",
         "Gruntfile.js"
     ],
-    "dependencies": {
+    "devDependencies": {
         "normalize-scss": "3.0.1",
         "foundation": "5.4.5"
     }
