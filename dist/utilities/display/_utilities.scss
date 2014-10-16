@@ -1,0 +1,25 @@
+// =============================================================================
+// DISPLAY (CSS)
+// =============================================================================
+
+
+// Bigcommerce Utility Classes
+// -----------------------------------------------------------------------------
+//
+// 1. If set to false, there is no outputted CSS for this component.
+// Adapted from SUIT CSS: https://github.com/suitcss/utils-display/
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--displayUtilities { // 1
+
+    .u-block                    { @include u-display("block", !important); }
+
+    .u-inlineBlock              { @include u-display("inlineBlock", !important); }
+
+    .u-hidden                   { @include u-hidden("fully", !important); }
+
+    .u-hiddenVisually           { @include u-hidden("visually", !important); }
+
+}
+

@@ -1,0 +1,143 @@
+// =============================================================================
+// BUTTONS (Settings)
+// =============================================================================
+
+
+// Bigcommerce Variables
+// -----------------------------------------------------------------------------
+//
+// These scoped variables are created by Bigcommerce.
+// All variables that are not from Foundation should be placed here.
+//
+// 1. Choose whether to include the Bigcommerce class names
+//
+// -----------------------------------------------------------------------------
+
+$exportCSS--buttons:                    $exportCSS; // 1
+
+$buttonVariant-color:                   color(grey, "darker") !default;
+$buttonVariant-colorHover:              null !default;
+$buttonVariant-backgroundColor:         color(white) !default;
+$buttonVariant-backgroundColorHover:    color("secondary", "dark") !default;
+$buttonVariant-borderColor:             color(grey, "light") !default;
+$buttonVariant-borderColorHover:        null !default;
+
+$buttonDisabled-color:                  color(grey) !default;
+$buttonDisabled-colorHover:             null !default;
+$buttonDisabled-backgroundColor:        color(grey, "light") !default;
+$buttonDisabled-backgroundColorHover:   color(grey, "light") !default;
+$buttonDisabled-borderColor:            color(grey, "light") !default;
+$buttonDisabled-borderColorHover:       color(grey, "light") !default;
+
+$buttonPrimary-color:                   color(white) !default;
+$buttonPrimary-colorHover:              null !default;
+$buttonPrimary-backgroundColor:         color("primary") !default;
+$buttonPrimary-backgroundColorHover:    color("primary", "dark") !default;
+$buttonPrimary-borderColor:             color("primary") !default;
+$buttonPrimary-borderColorHover:        color("primary", "dark") !default;
+
+$buttonSuccess-color:                   color(white) !default;
+$buttonSuccess-colorHover:              null !default;
+$buttonSuccess-backgroundColor:         color("success") !default;
+$buttonSuccess-backgroundColorHover:    color("success", "dark") !default;
+$buttonSuccess-borderColor:             color("success") !default;
+$buttonSuccess-borderColorHover:        color("success", "dark") !default;
+
+$buttonAlert-color:                     color(white) !default;
+$buttonAlert-colorHover:                null !default;
+$buttonAlert-backgroundColor:           color("alert") !default;
+$buttonAlert-backgroundColorHover:      color("alert", "dark") !default;
+$buttonAlert-borderColor:               color("alert") !default;
+$buttonAlert-borderColorHover:          color("alert", "dark") !default;
+
+$buttonWarning-color:                   color(white) !default;
+$buttonWarning-colorHover:              null !default;
+$buttonWarning-backgroundColor:         color("warning") !default;
+$buttonWarning-backgroundColorHover:    color("warning", "dark") !default;
+$buttonWarning-borderColor:             color("warning") !default;
+$buttonWarning-borderColorHover:        color("warning", "dark") !default;
+
+$buttonInfo-color:                      color(white) !default;
+$buttonInfo-colorHover:                 null !default;
+$buttonInfo-backgroundColor:            color("info") !default;
+$buttonInfo-backgroundColorHover:       color("info", "dark") !default;
+$buttonInfo-borderColor:                color("info") !default;
+$buttonInfo-borderColorHover:           color("info", "dark") !default;
+
+$buttonLink-color:                      color("link") !default;
+$buttonLink-colorHover:                 color("link", "hover") !default;
+$buttonLink-backgroundColor:            null !default;
+$buttonLink-backgroundColorHover:       null !default;
+$buttonLink-borderColor:                null !default;
+$buttonLink-borderColorHover:           null !default;
+
+
+// Foundation Variables
+// -----------------------------------------------------------------------------
+//
+// These variables come directly from:
+// /vendor/foundation/foundation/components/*
+// Declaring the variables here, you can adjust them all to your design,
+// leaving the vendor framework untouched.
+//
+// -----------------------------------------------------------------------------
+
+$include-html-button-classes: $include-html-classes;
+
+// We use these to build padding for buttons.
+$button-tny: spacing(quarter);
+$button-sml: spacing(quarter) + spacing(eighth);
+$button-med: spacing(half);
+$button-lrg: spacing(half) + spacing(eighth);
+
+// We use this to control the display property.
+$button-display: inline-block;
+$button-margin-bottom: spacing(base);
+
+// We use these to control button text styles.
+$button-font-family: $body-font-family;
+$button-font-color: color(white);
+$button-font-color-alt: color(black);
+$button-font-tny: fontSize(tiny);
+$button-font-sml: fontSize(smallest);
+$button-font-med: fontSize(base);
+$button-font-lrg: fontSize(smaller);
+$button-font-weight: fontWeight(normal);
+$button-font-align: center;
+
+// We use these to control various hover effects.
+$button-function-factor: 20%;
+
+// We use these to control button border styles.
+$button-border-width: 1px;
+$button-border-style: solid;
+
+
+// NOTE: Unused Foundation Variables
+// -----------------------------------------------------------------------------
+//
+// We have created our own BC mixin for button variants (@mixin buttonVariant).
+// Refer to the $buttonVariant vars set under 'Ragnarok Variables' above.
+//
+// -----------------------------------------------------------------------------
+//
+// $button-bg-color: $primary-color;
+// $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
+// $button-border-color: $button-bg-hover;
+// $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
+// $secondary-button-border-color: $secondary-button-bg-hover;
+// $success-button-bg-hover: scale-color($success-color, $lightness: $button-function-factor);
+// $success-button-border-color: $success-button-bg-hover;
+// $alert-button-bg-hover: scale-color($alert-color, $lightness: $button-function-factor);
+// $alert-button-border-color: $alert-button-bg-hover;
+//
+// -----------------------------------------------------------------------------
+
+// We use this to set the default radius used throughout the core.
+$button-radius: $global-radius;
+$button-round: $global-rounded;
+
+// We use this to set default opacity and cursor for disabled buttons.
+$button-disabled-opacity: 0.7;
+$button-disabled-cursor: $cursor-default-value;
+

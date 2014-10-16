@@ -1,0 +1,153 @@
+// =============================================================================
+// FOUNDATION 5.4.3
+// =============================================================================
+//
+// Settings
+// -----------------------------------------------------------------------------
+//
+// The SCSS below this comment block is copy/pasted from Foundation 5.4.3's
+// files: _functions.scss and _global.scss.
+//
+// Use the below variables at will, with complete control.
+// Anything commented out will fall back to the vendor's defaults.
+//
+// -----------------------------------------------------------------------------
+
+
+// Functions
+// -----------------------------------------------------------------------------
+
+// This is the default html and body font-size for the base rem value.
+$rem-base: $fontSizeRoot;
+
+
+// Global
+// -----------------------------------------------------------------------------
+
+// Data attribute namespace
+// styles get applied to [data-mysite-plugin], etc
+$namespace: false;
+
+// The default font-size is set to 100% of the browser style sheet (usually 16px)
+// for compatibility with browser-based text zoom or user-set defaults.
+
+// Since the typical default browser font-size is 16px, that makes the calculation for grid size.
+// If you want your base font-size to be different and not have it affect the grid breakpoints,
+// set $rem-base to $base-font-size and make sure $base-font-size is a px value.
+$base-font-size: $fontSizeBase;
+
+// $base-line-height is 24px while $base-font-size is 16px
+$base-line-height: lineHeight(base);
+
+// We use these as default colors throughout
+$primary-color: color("primary");
+$secondary-color: color("secondary");
+$alert-color: color("alert");
+$success-color: color("success");
+$warning-color: color("warning");
+$info-color: color("info");
+
+$white         : #FFFFFF;
+$ghost         : #FAFAFA;
+$snow          : #F9F9F9;
+$vapor         : #F6F6F6;
+$white-smoke   : #F5F5F5;
+$silver        : #EFEFEF;
+$smoke         : #EEEEEE;
+$gainsboro     : #DDDDDD;
+$iron          : #CCCCCC;
+$base          : #AAAAAA;
+$aluminum      : #999999;
+$jumbo         : #888888;
+$monsoon       : #777777;
+$steel         : #666666;
+$charcoal      : #555555;
+$tuatara       : #444444;
+$oil           : #333333;
+$jet           : #222222;
+$black         : #000000;
+
+// We use these to define default font weights
+$font-weight-normal: fontWeight("normal");
+$font-weight-bold: fontWeight("bold");
+
+// We use these to control various global styles
+$body-bg: color(white);
+$body-font-color: color(grey);
+$body-font-family: fontFamily("serif");
+$body-font-weight: fontWeight("normal");
+$body-font-style: normal;
+
+// We use this to control font-smoothing
+$font-smoothing: antialiased;
+
+// We use these to control text direction settings
+$text-direction: ltr;
+$default-float: left;
+$opposite-direction: right;
+@if $text-direction == ltr {
+  $default-float: left;
+  $opposite-direction: right;
+} @else {
+  $default-float: right;
+  $opposite-direction: left;
+}
+
+// We use these to make sure border radius matches unless we want it different.
+$global-radius: spacing(eighth);
+$global-rounded: 1000px;
+
+// We use these to control inset shadow shiny edges and depressions.
+$shiny-edge-size: 0 1px 0;
+$shiny-edge-color: rgba(color(white), 0.5);
+$shiny-edge-active-color: rgba(color(black), 0.2);
+
+// We use this to control whether or not CSS classes come through in the gem files.
+$include-html-classes: false;
+$include-print-styles: false;
+$include-html-global-classes: $include-html-classes;
+
+$column-gutter: spacing("base");
+
+// Media Query Ranges
+$small-range: (0em, 40em);
+$medium-range: (40.063em, 64em);
+$large-range: (64.063em, 90em);
+$xlarge-range: (90.063em, 120em);
+$xxlarge-range: (120.063em, 99999999em);
+
+
+$screen: "only screen";
+
+$landscape: "#{$screen} and (orientation: landscape)";
+$portrait: "#{$screen} and (orientation: portrait)";
+
+$small-up: $screen;
+$small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})";
+
+$medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";
+$medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})";
+
+$large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
+$large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})";
+
+$xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})";
+$xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})";
+
+$xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
+$xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
+
+// Legacy
+$small: $medium-up;
+$medium: $medium-up;
+$large: $large-up;
+
+
+//We use this as cursors values for enabling the option of having custom cursors in the whole site's stylesheet
+$cursor-auto-value: auto;
+$cursor-crosshair-value: crosshair;
+$cursor-default-value: default;
+$cursor-pointer-value: pointer;
+$cursor-help-value: help;
+$cursor-text-value: text;
+

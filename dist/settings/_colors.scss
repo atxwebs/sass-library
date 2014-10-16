@@ -1,0 +1,116 @@
+// =============================================================================
+// COLORS
+// =============================================================================
+
+
+// Color Map
+// -----------------------------------------------------------------------------
+
+$colorMap: (
+
+    // Basics
+    // -------------------------------------------------------------------------
+
+    black: (
+        base:                   #000
+    ),
+
+    white: (
+        base:                   #fff
+    ),
+
+    grey: (
+        base:                   #798289,
+        darkest:                #313b47,
+        darker:                 #3c4043,
+        dark:                   #556273,
+        medium:                 #acb3be,
+        light:                  #e1e6eb,
+        lighter:                #f1f3f7,
+        lightest:               #f8f9fb
+    ),
+
+
+    // Branding
+    // -------------------------------------------------------------------------
+
+    primary: (
+        base:                   #00abc9,
+        darker:                 #018ea6,
+        dark:                   #00a0bc
+    ),
+
+    secondary: (
+        base:                   #fff,
+        darker:                 #f1f3f7,
+        dark:                   #f8f9fb
+    ),
+
+    // highlight: (
+    //     base:                   #,
+    //     darker:                 #,
+    //     dark:                   #
+    // ),
+
+
+    // States
+    // -------------------------------------------------------------------------
+
+    alert: (
+        base:                   #db636b,
+        light:                  #f8e0e1
+    ),
+
+    info: (
+        base:                   #00abc9,
+        light:                  #e5f6f9
+    ),
+
+    success: (
+        base:                   #95db89,
+        light:                  #eaf8e7
+    ),
+
+    warning: (
+        base:                   #ffb800,
+        light:                  #fff9d9
+    ),
+
+
+    // Text
+    // -------------------------------------------------------------------------
+
+    link: (
+        base:                   #313b47,
+        hover:                  #556273,
+        active:                 #3c4043
+    ),
+
+
+    // Order status'
+    // -------------------------------------------------------------------------
+
+    orderStatus: (
+        awaitingFulfilment:     #6eccfc,
+        awaitingPayment:        #ffb800,
+        awaitingPickup:         #b186cb,
+        awaitingShipment:       #db6e63,
+        cancelled:              #3c4043,
+        completed:              #95db89,
+        declined:               #ca2f3a,
+        partiallyShipped:       #3e62a1,
+        pending:                #acb4be,
+        shipped:                #95db89,
+        refunded:               #ff8800,
+        verificationRequired:   #e89fae
+    )
+);
+
+
+// Color Map Function
+// -----------------------------------------------------------------------------
+
+@function color($color, $tone: 'base') {
+    @return map-get(map-get($colorMap, $color), $tone);
+}
+
