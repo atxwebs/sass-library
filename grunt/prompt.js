@@ -18,12 +18,12 @@ module.exports = function(grunt) {
                             {
                                 value: 'minor',
                                 name: 'Minor:  '.yellow + semver.inc(currentVersion, 'minor').yellow +
-                                    '   Changes needed to BCApp to make micro-app work.'
+                                    '   Component release or significant update to existing one.'
                             },
                             {
                                 value: 'major',
                                 name: 'Major:  '.yellow + semver.inc(currentVersion, 'major').yellow +
-                                    '   Incompatible API changes.'
+                                    '   Major UI refresh.'
                             },
                             {
                                 value: 'custom',
