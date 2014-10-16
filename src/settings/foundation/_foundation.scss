@@ -40,12 +40,12 @@ $base-font-size: $fontSizeBase;
 $base-line-height: lineHeight(base);
 
 // We use these as default colors throughout
-$primary-color: color(primary);
-$secondary-color: color(secondary);
-$alert-color: color(alert);
-$success-color: color(success);
-$warning-color: color(warning);
-$info-color: color(info);
+$primary-color: color("primary");
+$secondary-color: color("secondary");
+$alert-color: color("alert");
+$success-color: color("success");
+$warning-color: color("warning");
+$info-color: color("info");
 
 $white         : #FFFFFF;
 $ghost         : #FAFAFA;
@@ -68,14 +68,14 @@ $jet           : #222222;
 $black         : #000000;
 
 // We use these to define default font weights
-$font-weight-normal: fontWeight(normal);
-$font-weight-bold: fontWeight(bold);
+$font-weight-normal: fontWeight("normal");
+$font-weight-bold: fontWeight("bold");
 
 // We use these to control various global styles
 $body-bg: color(white);
 $body-font-color: color(grey);
-$body-font-family: fontFamily(serif);
-$body-font-weight: fontWeight(normal);
+$body-font-family: fontFamily("serif");
+$body-font-weight: fontWeight("normal");
 $body-font-style: normal;
 
 // We use this to control font-smoothing
@@ -99,15 +99,15 @@ $global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
 $shiny-edge-size: 0 1px 0;
-$shiny-edge-color: rgba(color(white), .5);
-$shiny-edge-active-color: rgba(color(black), .2);
+$shiny-edge-color: rgba(color(white), 0.5);
+$shiny-edge-active-color: rgba(color(black), 0.2);
 
 // We use this to control whether or not CSS classes come through in the gem files.
 $include-html-classes: false;
 $include-print-styles: false;
 $include-html-global-classes: $include-html-classes;
 
-$column-gutter: spacing(base);
+$column-gutter: spacing("base");
 
 // Media Query Ranges
 $small-range: (0em, 40em);

@@ -45,12 +45,12 @@
 
         %breadcrumb--activeState { // 1
 
-            color: color(primary);
+            color: color("primary");
         }
 
         %breadcrumb--unavailableState { // 2
 
-            color: color(grey, light);
+            color: color(grey, "light");
         }
 
         %breadcrumb--defaultState { // 3
