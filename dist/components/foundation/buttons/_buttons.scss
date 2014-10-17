@@ -1,22 +1,173 @@
 // =============================================================================
-// BUTTONS
+// BUTTONS (CSS)
 // =============================================================================
 
 
-// Foundation @import
+// Bigcommerce Component
+// -----------------------------------------------------------------------------
+//
+// The Bigcommerce Coding Standards, coupled with Foundation.
+// If any overrides / extra CSS is needed, declare it here.
+//
+// 1. If set to false, there is no outputted CSS for this component.
+//
 // -----------------------------------------------------------------------------
 
-@import "../../../vendor/foundation/foundation/components/buttons";
+@if $exportCSS--buttons { // 1
 
 
-// Bigcommerce @imports
-// -----------------------------------------------------------------------------
+    // Component
+    // -------------------------------------------------------------------------
 
-// Tools
-@import "tools";
+    .button {
 
-// Settings
-@import "settings";
+        @include button-base;
+        @include buttonVariant(
+            $buttonVariant-color,
+            $buttonVariant-colorHover,
+            $buttonVariant-backgroundColor,
+            $buttonVariant-backgroundColorHover,
+            $buttonVariant-borderColor,
+            $buttonVariant-borderColorHover
+        );
+    }
 
-// Component
-@import "component";
+
+    // Color/State Modifiers
+    // -------------------------------------------------------------------------
+
+    .button--primary {
+
+        @include buttonVariant(
+            $buttonPrimary-color,
+            $buttonPrimary-colorHover,
+            $buttonPrimary-backgroundColor,
+            $buttonPrimary-backgroundColorHover,
+            $buttonPrimary-borderColor,
+            $buttonPrimary-borderColorHover
+        );
+    }
+
+    .button--disabled {
+
+        @include buttonVariant(
+            $buttonDisabled-color,
+            $buttonDisabled-colorHover,
+            $buttonDisabled-backgroundColor,
+            $buttonDisabled-backgroundColorHover,
+            $buttonDisabled-borderColor,
+            $buttonDisabled-borderColorHover
+        );
+    }
+
+    .button--success {
+
+        @include buttonVariant(
+            $buttonSuccess-color,
+            $buttonSuccess-colorHover,
+            $buttonSuccess-backgroundColor,
+            $buttonSuccess-backgroundColorHover,
+            $buttonSuccess-borderColor,
+            $buttonSuccess-borderColorHover
+        );
+    }
+
+    .button--alert {
+
+        @include buttonVariant(
+            $buttonAlert-color,
+            $buttonAlert-colorHover,
+            $buttonAlert-backgroundColor,
+            $buttonAlert-backgroundColorHover,
+            $buttonAlert-borderColor,
+            $buttonAlert-borderColorHover
+        );
+    }
+
+    .button--warning {
+
+        @include buttonVariant(
+            $buttonWarning-color,
+            $buttonWarning-colorHover,
+            $buttonWarning-backgroundColor,
+            $buttonWarning-backgroundColorHover,
+            $buttonWarning-borderColor,
+            $buttonWarning-borderColorHover
+        );
+    }
+
+    .button--info {
+
+        @include buttonVariant(
+            $buttonInfo-color,
+            $buttonInfo-colorHover,
+            $buttonInfo-backgroundColor,
+            $buttonInfo-backgroundColorHover,
+            $buttonInfo-borderColor,
+            $buttonInfo-borderColorHover
+        );
+    }
+
+    .button--link {
+
+        @include buttonVariant(
+            $buttonLink-color,
+            $buttonLink-colorHover,
+            $buttonLink-backgroundColor,
+            $buttonLink-backgroundColorHover,
+            $buttonLink-borderColor,
+            $buttonLink-borderColorHover
+        );
+    }
+
+
+    // Size Modifiers
+    // -------------------------------------------------------------------------
+
+    .button--large {
+
+        @include buttonSize(
+            $button-lrg,
+            $button-font-lrg
+        );
+    }
+
+    .button--small {
+
+        @include buttonSize(
+            $button-sml,
+            $button-font-sml
+        );
+    }
+
+    .button--tiny {
+
+        @include buttonSize(
+            $button-tny,
+            $button-font-tny
+        );
+    }
+
+
+    // Expand Modifiers
+    // -------------------------------------------------------------------------
+
+    .button--expand {
+
+        width: 100%;
+    }
+
+    .button--expandAlignLeft {
+
+        @extend .button--expand;
+        text-align: left;
+    }
+
+    .button--expandAlignRight {
+
+        @extend .button--expand;
+        text-align: right;
+    }
+
+}
+

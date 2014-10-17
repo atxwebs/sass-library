@@ -1,23 +1,86 @@
 // =============================================================================
-// BREADCRUMBS
+// BREADCRUMBS (CSS)
 // =============================================================================
 
 
-// Foundation @import
+// Bigcommerce Component
+// -----------------------------------------------------------------------------
+//
+// The Bigcommerce Coding Standards, coupled with Foundation.
+// If any library overrides or extra CSS is needed, declare it here.
+//
+// 1. If set to false, there is no outputted CSS for this component.
+//
 // -----------------------------------------------------------------------------
 
-@import "../../../vendor/foundation/foundation/components/breadcrumbs";
+@if $exportCSS--breadcrumbs { // 1
 
 
-// Bigcommerce component @import's
-// -----------------------------------------------------------------------------
+    // Component
+    // -------------------------------------------------------------------------
 
-// Settings
-@import "settings";
+    .breadcrumbs {
 
-// Tools
-@import "tools";
+        @include crumb-container;
+    }
 
-// Component
-@import "component";
+    .breadcrumb {
+
+        @include crumbs;
+
+
+        // State Modifiers
+        // -------------------------------------------------------------------
+        //
+        // 1. Active state placeholder class.
+        //    Extend your modifiers to this class for shared styling.
+        //
+        // 2. Unavailable state placeholder class.
+        //    Extend your modifiers to this class for shared styling.
+        //
+        // 3. Default state placeholder class.
+        //    Extend your modifiers to this class for shared styling.
+        //
+        // -------------------------------------------------------------------
+
+        %breadcrumb--activeState { // 1
+
+            color: $crumb-font-color-current;
+        }
+
+        %breadcrumb--unavailableState { // 2
+
+            color: $crumb-font-color-unavailable;
+        }
+
+        %breadcrumb--defaultState { // 3
+
+            cursor: default;
+            text-decoration: $crumb-link-decor;
+        }
+
+        &.is-active {
+
+            @extend %breadcrumb--activeState;
+
+            > .breadcrumb-label {
+
+                @extend %breadcrumb--defaultState;
+                @extend %breadcrumb--activeState;
+            }
+        }
+
+        &.is-unavailable {
+
+            @extend %breadcrumb--unavailableState;
+
+            > .breadcrumb-label {
+
+                @extend %breadcrumb--defaultState;
+                @extend %breadcrumb--unavailableState;
+            }
+        }
+    }
+
+}
 
