@@ -15,61 +15,61 @@
 
 $exportCSS--buttons:                    $exportCSS; // 1
 
-$buttonVariant-color:                   color(grey, "darker") !default;
-$buttonVariant-colorHover:              null !default;
-$buttonVariant-backgroundColor:         color(white) !default;
-$buttonVariant-backgroundColorHover:    color("secondary", "dark") !default;
-$buttonVariant-borderColor:             color(grey, "light") !default;
-$buttonVariant-borderColorHover:        null !default;
+$buttonVariant-color:                   color(grey, "darker");
+$buttonVariant-colorHover:              null;
+$buttonVariant-backgroundColor:         color(white);
+$buttonVariant-backgroundColorHover:    color("secondary", "dark");
+$buttonVariant-borderColor:             color(grey, "light");
+$buttonVariant-borderColorHover:        null;
 
-$buttonDisabled-color:                  color(grey) !default;
-$buttonDisabled-colorHover:             null !default;
-$buttonDisabled-backgroundColor:        color(grey, "light") !default;
-$buttonDisabled-backgroundColorHover:   color(grey, "light") !default;
-$buttonDisabled-borderColor:            color(grey, "light") !default;
-$buttonDisabled-borderColorHover:       color(grey, "light") !default;
+$buttonDisabled-color:                  color(grey);
+$buttonDisabled-colorHover:             null;
+$buttonDisabled-backgroundColor:        color(grey, "light");
+$buttonDisabled-backgroundColorHover:   color(grey, "light");
+$buttonDisabled-borderColor:            color(grey, "light");
+$buttonDisabled-borderColorHover:       color(grey, "light");
 
-$buttonPrimary-color:                   color(white) !default;
-$buttonPrimary-colorHover:              null !default;
-$buttonPrimary-backgroundColor:         color("primary") !default;
-$buttonPrimary-backgroundColorHover:    color("primary", "dark") !default;
-$buttonPrimary-borderColor:             color("primary") !default;
-$buttonPrimary-borderColorHover:        color("primary", "dark") !default;
+$buttonPrimary-color:                   color(white);
+$buttonPrimary-colorHover:              null;
+$buttonPrimary-backgroundColor:         color("primary");
+$buttonPrimary-backgroundColorHover:    color("primary", "dark");
+$buttonPrimary-borderColor:             color("primary");
+$buttonPrimary-borderColorHover:        color("primary", "dark");
 
-$buttonSuccess-color:                   color(white) !default;
-$buttonSuccess-colorHover:              null !default;
-$buttonSuccess-backgroundColor:         color("success") !default;
-$buttonSuccess-backgroundColorHover:    color("success", "dark") !default;
-$buttonSuccess-borderColor:             color("success") !default;
-$buttonSuccess-borderColorHover:        color("success", "dark") !default;
+$buttonSuccess-color:                   color(white);
+$buttonSuccess-colorHover:              null;
+$buttonSuccess-backgroundColor:         color("success");
+$buttonSuccess-backgroundColorHover:    color("success", "dark");
+$buttonSuccess-borderColor:             color("success");
+$buttonSuccess-borderColorHover:        color("success", "dark");
 
-$buttonAlert-color:                     color(white) !default;
-$buttonAlert-colorHover:                null !default;
-$buttonAlert-backgroundColor:           color("alert") !default;
-$buttonAlert-backgroundColorHover:      color("alert", "dark") !default;
-$buttonAlert-borderColor:               color("alert") !default;
-$buttonAlert-borderColorHover:          color("alert", "dark") !default;
+$buttonAlert-color:                     color(white);
+$buttonAlert-colorHover:                null;
+$buttonAlert-backgroundColor:           color("alert");
+$buttonAlert-backgroundColorHover:      color("alert", "dark");
+$buttonAlert-borderColor:               color("alert");
+$buttonAlert-borderColorHover:          color("alert", "dark");
 
-$buttonWarning-color:                   color(white) !default;
-$buttonWarning-colorHover:              null !default;
-$buttonWarning-backgroundColor:         color("warning") !default;
-$buttonWarning-backgroundColorHover:    color("warning", "dark") !default;
-$buttonWarning-borderColor:             color("warning") !default;
-$buttonWarning-borderColorHover:        color("warning", "dark") !default;
+$buttonWarning-color:                   color(white);
+$buttonWarning-colorHover:              null;
+$buttonWarning-backgroundColor:         color("warning");
+$buttonWarning-backgroundColorHover:    color("warning", "dark");
+$buttonWarning-borderColor:             color("warning");
+$buttonWarning-borderColorHover:        color("warning", "dark");
 
-$buttonInfo-color:                      color(white) !default;
-$buttonInfo-colorHover:                 null !default;
-$buttonInfo-backgroundColor:            color("info") !default;
-$buttonInfo-backgroundColorHover:       color("info", "dark") !default;
-$buttonInfo-borderColor:                color("info") !default;
-$buttonInfo-borderColorHover:           color("info", "dark") !default;
+$buttonInfo-color:                      color(white);
+$buttonInfo-colorHover:                 null;
+$buttonInfo-backgroundColor:            color("info");
+$buttonInfo-backgroundColorHover:       color("info", "dark");
+$buttonInfo-borderColor:                color("info");
+$buttonInfo-borderColorHover:           color("info", "dark");
 
-$buttonLink-color:                      color("link") !default;
-$buttonLink-colorHover:                 color("link", "hover") !default;
-$buttonLink-backgroundColor:            null !default;
-$buttonLink-backgroundColorHover:       null !default;
-$buttonLink-borderColor:                null !default;
-$buttonLink-borderColorHover:           null !default;
+$buttonLink-color:                      color("link");
+$buttonLink-colorHover:                 color("link", "hover");
+$buttonLink-backgroundColor:            null;
+$buttonLink-backgroundColorHover:       null;
+$buttonLink-borderColor:                null;
+$buttonLink-borderColorHover:           null;
 
 
 // Foundation Variables
@@ -82,35 +82,35 @@ $buttonLink-borderColorHover:           null !default;
 //
 // -----------------------------------------------------------------------------
 
-$include-html-button-classes: $include-html-classes;
+$include-html-button-classes:           $include-html-classes;
 
 // We use these to build padding for buttons.
-$button-tny: spacing(quarter);
-$button-sml: spacing(quarter) + spacing(eighth);
-$button-med: spacing(half);
-$button-lrg: spacing(half) + spacing(eighth);
+$button-tny:                            spacing(quarter);
+$button-sml:                            spacing(quarter) + spacing(eighth);
+$button-med:                            spacing(half);
+$button-lrg:                            spacing(half) + spacing(eighth);
 
 // We use this to control the display property.
-$button-display: inline-block;
-$button-margin-bottom: spacing(base);
+$button-display:                        inline-block;
+$button-margin-bottom:                  spacing(base);
 
 // We use these to control button text styles.
-$button-font-family: $body-font-family;
-$button-font-color: color(white);
-$button-font-color-alt: color(black);
-$button-font-tny: fontSize(tiny);
-$button-font-sml: fontSize(smallest);
-$button-font-med: fontSize(base);
-$button-font-lrg: fontSize(smaller);
-$button-font-weight: fontWeight(normal);
-$button-font-align: center;
+$button-font-family:                    $body-font-family;
+$button-font-color:                     color(white);
+$button-font-color-alt:                 color(black);
+$button-font-tny:                       fontSize(tiny);
+$button-font-sml:                       fontSize(smallest);
+$button-font-med:                       fontSize(base);
+$button-font-lrg:                       fontSize(smaller);
+$button-font-weight:                    fontWeight(normal);
+$button-font-align:                     center;
 
 // We use these to control various hover effects.
-$button-function-factor: 20%;
+$button-function-factor:                20%;
 
 // We use these to control button border styles.
-$button-border-width: 1px;
-$button-border-style: solid;
+$button-border-width:                   1px;
+$button-border-style:                   solid;
 
 
 // NOTE: Unused Foundation Variables
@@ -121,23 +121,23 @@ $button-border-style: solid;
 //
 // -----------------------------------------------------------------------------
 //
-// $button-bg-color: $primary-color;
-// $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
-// $button-border-color: $button-bg-hover;
-// $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
-// $secondary-button-border-color: $secondary-button-bg-hover;
-// $success-button-bg-hover: scale-color($success-color, $lightness: $button-function-factor);
-// $success-button-border-color: $success-button-bg-hover;
-// $alert-button-bg-hover: scale-color($alert-color, $lightness: $button-function-factor);
-// $alert-button-border-color: $alert-button-bg-hover;
+// $button-bg-color:                    $primary-color;
+// $button-bg-hover:                    scale-color($button-bg-color, $lightness: $button-function-factor);
+// $button-border-color:                $button-bg-hover;
+// $secondary-button-bg-hover:          scale-color($secondary-color, $lightness: $button-function-factor);
+// $secondary-button-border-color:      $secondary-button-bg-hover;
+// $success-button-bg-hover:            scale-color($success-color, $lightness: $button-function-factor);
+// $success-button-border-color:        $success-button-bg-hover;
+// $alert-button-bg-hover:              scale-color($alert-color, $lightness: $button-function-factor);
+// $alert-button-border-color:          $alert-button-bg-hover;
 //
 // -----------------------------------------------------------------------------
 
 // We use this to set the default radius used throughout the core.
-$button-radius: $global-radius;
-$button-round: $global-rounded;
+$button-radius:                         $global-radius;
+$button-round:                          $global-rounded;
 
 // We use this to set default opacity and cursor for disabled buttons.
-$button-disabled-opacity: 0.7;
-$button-disabled-cursor: $cursor-default-value;
+$button-disabled-opacity:               0.7;
+$button-disabled-cursor:                $cursor-default-value;
 
