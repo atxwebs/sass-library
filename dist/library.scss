@@ -15,8 +15,11 @@
 // SETTINGS
 // =============================================================================
 
-// Global Settings
+// BC Global Settings
 @import "settings/settings";
+
+// Foundation (5.4.3) Global Settings
+@import "settings/foundation/foundation";
 
 
 // =============================================================================
@@ -31,10 +34,10 @@
 // COMPONENTS
 // =============================================================================
 
-// Foundation Components
+// Foundation (5.4.3) Components
 @import "components/foundation/foundation";
 
-// Bigcommerce Components
+// BC Components
 @import "components/bigcommerce/bigcommerce";
 
 

@@ -1,33 +1,20 @@
 // =============================================================================
-// FOUNDATION COMPONENTS
+// FOUNDATION 5.4.3 COMPONENTS
 // =============================================================================
 
-
-// Foundation @import
-// -----------------------------------------------------------------------------
-//
-// @import Foundation's variables and mixins for use
-//
-// -----------------------------------------------------------------------------
-
-@import "../../../vendor/foundation/foundation";
-
-
-// Bigcommerce (Foundation-ified) Components
+// Bigcommerce (Foundation) Components
 // -----------------------------------------------------------------------------
 //
 // To maintain the naming conventions and coding standards of Bigcommerce, we
-// must re-create components. They utilise all of the available Foundation
-// variables and mixins, but are structured with our naming conventions and
-// best practices set out in the SASS Style Guide:
-//
-// Style Guide: https://github.com/bigcommerce-labs/sass-style-guide
+// must create mapped components, which utilise all of the available Foundation
+// variables and mixins
 //
 // -----------------------------------------------------------------------------
 
+
 // Breadcrumbs
-@import "breadcrumbs/component";
+@import "breadcrumbs/breadcrumbs";
 
 // Buttons
-@import "buttons/component";
+@import "buttons/buttons";
 

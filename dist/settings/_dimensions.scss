@@ -56,8 +56,7 @@ $spacingRhythm:                 $fontSizeBase * $lineHeightBase;
 // -----------------------------------------------------------------------------
 
 $spacingMap: (
-    base:                       1rem,
-    single:                     $spacingRhythm,
+    base:                       $spacingRhythm,
     double:                     $spacingRhythm * 2,
     half:                       $spacingRhythm / 2,
     quarter:                    $spacingRhythm / 4,
