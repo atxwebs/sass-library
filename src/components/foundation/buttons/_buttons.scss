@@ -24,11 +24,14 @@
         @include button-base;
         @include buttonVariant(
             $buttonVariant-color,
-            $buttonVariant-colorHover,
             $buttonVariant-backgroundColor,
-            $buttonVariant-backgroundColorHover,
             $buttonVariant-borderColor,
-            $buttonVariant-borderColorHover
+            $buttonVariant-colorHover,
+            $buttonVariant-backgroundColorHover,
+            $buttonVariant-borderColorHover,
+            $buttonVariant-colorActive,
+            $buttonVariant-backgroundColorActive,
+            $buttonVariant-borderColorActive
         );
     }
 
@@ -36,27 +39,48 @@
     // Color/State Modifiers
     // -------------------------------------------------------------------------
 
-    .button--primary {
-
-        @include buttonVariant(
-            $buttonPrimary-color,
-            $buttonPrimary-colorHover,
-            $buttonPrimary-backgroundColor,
-            $buttonPrimary-backgroundColorHover,
-            $buttonPrimary-borderColor,
-            $buttonPrimary-borderColorHover
-        );
-    }
-
     .button--disabled {
 
         @include buttonVariant(
             $buttonDisabled-color,
-            $buttonDisabled-colorHover,
             $buttonDisabled-backgroundColor,
-            $buttonDisabled-backgroundColorHover,
             $buttonDisabled-borderColor,
-            $buttonDisabled-borderColorHover
+            $buttonDisabled-colorHover,
+            $buttonDisabled-backgroundColorHover,
+            $buttonDisabled-borderColorHover,
+            $buttonDisabled-colorActive,
+            $buttonDisabled-backgroundColorActive,
+            $buttonDisabled-borderColorActive
+        );
+    }
+
+    .button--primary {
+
+        @include buttonVariant(
+            $buttonPrimary-color,
+            $buttonPrimary-backgroundColor,
+            $buttonPrimary-borderColor,
+            $buttonPrimary-colorHover,
+            $buttonPrimary-backgroundColorHover,
+            $buttonPrimary-borderColorHover,
+            $buttonPrimary-colorActive,
+            $buttonPrimary-backgroundColorActive,
+            $buttonPrimary-borderColorActive
+        );
+    }
+
+    .button--action {
+
+        @include buttonVariant(
+            $buttonAction-color,
+            $buttonAction-backgroundColor,
+            $buttonAction-borderColor,
+            $buttonAction-colorHover,
+            $buttonAction-backgroundColorHover,
+            $buttonAction-borderColorHover,
+            $buttonAction-colorActive,
+            $buttonAction-backgroundColorActive,
+            $buttonAction-borderColorActive
         );
     }
 
@@ -64,11 +88,14 @@
 
         @include buttonVariant(
             $buttonSuccess-color,
-            $buttonSuccess-colorHover,
             $buttonSuccess-backgroundColor,
-            $buttonSuccess-backgroundColorHover,
             $buttonSuccess-borderColor,
-            $buttonSuccess-borderColorHover
+            $buttonSuccess-colorHover,
+            $buttonSuccess-backgroundColorHover,
+            $buttonSuccess-borderColorHover,
+            $buttonSuccess-colorActive,
+            $buttonSuccess-backgroundColorActive,
+            $buttonSuccess-borderColorActive
         );
     }
 
@@ -76,11 +103,14 @@
 
         @include buttonVariant(
             $buttonAlert-color,
-            $buttonAlert-colorHover,
             $buttonAlert-backgroundColor,
-            $buttonAlert-backgroundColorHover,
             $buttonAlert-borderColor,
-            $buttonAlert-borderColorHover
+            $buttonAlert-colorHover,
+            $buttonAlert-backgroundColorHover,
+            $buttonAlert-borderColorHover,
+            $buttonAlert-colorActive,
+            $buttonAlert-backgroundColorActive,
+            $buttonAlert-borderColorActive
         );
     }
 
@@ -88,11 +118,14 @@
 
         @include buttonVariant(
             $buttonWarning-color,
-            $buttonWarning-colorHover,
             $buttonWarning-backgroundColor,
-            $buttonWarning-backgroundColorHover,
             $buttonWarning-borderColor,
-            $buttonWarning-borderColorHover
+            $buttonWarning-colorHover,
+            $buttonWarning-backgroundColorHover,
+            $buttonWarning-borderColorHover,
+            $buttonWarning-colorActive,
+            $buttonWarning-backgroundColorActive,
+            $buttonWarning-borderColorActive
         );
     }
 
@@ -100,11 +133,14 @@
 
         @include buttonVariant(
             $buttonInfo-color,
-            $buttonInfo-colorHover,
             $buttonInfo-backgroundColor,
-            $buttonInfo-backgroundColorHover,
             $buttonInfo-borderColor,
-            $buttonInfo-borderColorHover
+            $buttonInfo-colorHover,
+            $buttonInfo-backgroundColorHover,
+            $buttonInfo-borderColorHover,
+            $buttonInfo-colorActive,
+            $buttonInfo-backgroundColorActive,
+            $buttonInfo-borderColorActive
         );
     }
 
@@ -112,11 +148,14 @@
 
         @include buttonVariant(
             $buttonLink-color,
-            $buttonLink-colorHover,
             $buttonLink-backgroundColor,
-            $buttonLink-backgroundColorHover,
             $buttonLink-borderColor,
-            $buttonLink-borderColorHover
+            $buttonLink-colorHover,
+            $buttonLink-backgroundColorHover,
+            $buttonLink-borderColorHover,
+            $buttonLink-colorActive,
+            $buttonLink-backgroundColorActive,
+            $buttonLink-borderColorActive
         );
     }
 
@@ -127,24 +166,27 @@
     .button--large {
 
         @include buttonSize(
-            $button-lrg,
-            $button-font-lrg
+            $buttonLarge-verticalPadding,
+            $buttonLarge-horizontalPadding,
+            $buttonLarge-fontSize
         );
     }
 
     .button--small {
 
         @include buttonSize(
-            $button-sml,
-            $button-font-sml
+            $buttonSmall-verticalPadding,
+            $buttonSmall-horizontalPadding,
+            $buttonSmall-fontSize
         );
     }
 
     .button--tiny {
 
         @include buttonSize(
-            $button-tny,
-            $button-font-tny
+            $buttonTiny-verticalPadding,
+            $buttonTiny-horizontalPadding,
+            $buttonTiny-fontSize
         );
     }
 

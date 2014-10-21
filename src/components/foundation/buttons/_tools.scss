@@ -18,37 +18,48 @@
     $color,
     $backgroundColor,
     $borderColor,
-    $colorHover:"",
-    $backgroundColorHover:"",
-    $borderColorHover:"" ){
+    $colorHover: null,
+    $backgroundColorHover: null,
+    $borderColorHover: null,
+    $colorActive: null,
+    $backgroundColorActive: null,
+    $borderColorActive: null ){
 
-    // Appearance
-    color: $color;
     background-color: $backgroundColor;
     border-color: $borderColor;
+    color: $color;
 
-    &:hover,
-    &:focus,
-    &:active,
-    &.is-active {
+    @if $colorHover or $backgroundColorHover or $borderColorHover != null {
 
-        // Appearance
-        color: unquote($colorHover);
-        background-color: unquote($backgroundColorHover);
-        border-color: unquote($borderColorHover);
+        &:hover,
+        &:focus,
+        &.is-active {
+
+            background-color: $backgroundColorHover;
+            border-color: $borderColorHover;
+            color: $colorHover;
+        }
+    }
+
+    @if $colorActive or $backgroundColorActive or $borderColorActive != null {
+
+        &:active {
+
+            background-color: $backgroundColorActive;
+            border-color: $borderColorActive;
+            color: $colorActive;
+        }
     }
 }
 
 @mixin buttonSize( // 2
 
     // Arguments
-    $padding,
+    $paddingVertical,
+    $paddingHorizontal,
     $fontSize ){
 
-    // Layout
-    padding: ($padding - remCalc(1px)) ($padding * 2);
-
-    // Appearance
     font-size: $fontSize;
+    padding: ($paddingVertical - remCalc(1px)) $paddingHorizontal;
 }
 

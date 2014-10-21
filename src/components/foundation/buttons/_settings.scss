@@ -15,61 +15,115 @@
 
 $exportCSS--buttons:                    $exportCSS; // 1
 
-$buttonVariant-color:                   color(grey, "darker");
-$buttonVariant-colorHover:              null;
-$buttonVariant-backgroundColor:         color(white);
-$buttonVariant-backgroundColorHover:    color("secondary", "dark");
-$buttonVariant-borderColor:             color(grey, "light");
-$buttonVariant-borderColorHover:        null;
 
-$buttonDisabled-color:                  color(grey);
+// Color/State Modifiers
+// -----------------------------------------------------------------------------
+
+$buttonVariant-color:                   color("primary");
+$buttonVariant-colorHover:              null;
+$buttonVariant-colorActive:             null;
+$buttonVariant-backgroundColor:         color("secondary");
+$buttonVariant-backgroundColorHover:    color("secondary", "dark");
+$buttonVariant-backgroundColorActive:   color("secondary", "darker");
+$buttonVariant-borderColor:             color("secondary", "darker");
+$buttonVariant-borderColorHover:        null;
+$buttonVariant-borderColorActive:       color(grey, "medium");
+
+$buttonDisabled-color:                  color(grey, "medium");
 $buttonDisabled-colorHover:             null;
-$buttonDisabled-backgroundColor:        color(grey, "light");
-$buttonDisabled-backgroundColorHover:   color(grey, "light");
+$buttonDisabled-colorActive:            null;
+$buttonDisabled-backgroundColor:        color(grey, "lightest");
+$buttonDisabled-backgroundColorHover:   null;
+$buttonDisabled-backgroundColorActive:  null;
 $buttonDisabled-borderColor:            color(grey, "light");
-$buttonDisabled-borderColorHover:       color(grey, "light");
+$buttonDisabled-borderColorHover:       null;
+$buttonDisabled-borderColorActive:      null;
 
 $buttonPrimary-color:                   color(white);
 $buttonPrimary-colorHover:              null;
+$buttonPrimary-colorActive:             null;
 $buttonPrimary-backgroundColor:         color("primary");
 $buttonPrimary-backgroundColorHover:    color("primary", "dark");
+$buttonPrimary-backgroundColorActive:   color("primary", "darker");
 $buttonPrimary-borderColor:             color("primary");
 $buttonPrimary-borderColorHover:        color("primary", "dark");
+$buttonPrimary-borderColorActive:       color("primary", "darker");
+
+$buttonAction-color:                    color(white);
+$buttonAction-colorHover:               null;
+$buttonAction-colorActive:              null;
+$buttonAction-backgroundColor:          color("highlight");
+$buttonAction-backgroundColorHover:     color("highlight", "dark");
+$buttonAction-backgroundColorActive:    color("highlight", "darker");
+$buttonAction-borderColor:              color("highlight");
+$buttonAction-borderColorHover:         color("highlight", "dark");
+$buttonAction-borderColorActive:        color("highlight", "darker");
 
 $buttonSuccess-color:                   color(white);
 $buttonSuccess-colorHover:              null;
+$buttonSuccess-colorActive:             null;
 $buttonSuccess-backgroundColor:         color("success");
 $buttonSuccess-backgroundColorHover:    color("success", "dark");
+$buttonSuccess-backgroundColorActive:   color("success", "darker");
 $buttonSuccess-borderColor:             color("success");
 $buttonSuccess-borderColorHover:        color("success", "dark");
+$buttonSuccess-borderColorActive:       color("success", "darker");
 
 $buttonAlert-color:                     color(white);
 $buttonAlert-colorHover:                null;
+$buttonAlert-colorActive:               null;
 $buttonAlert-backgroundColor:           color("alert");
 $buttonAlert-backgroundColorHover:      color("alert", "dark");
+$buttonAlert-backgroundColorActive:     color("alert", "darker");
 $buttonAlert-borderColor:               color("alert");
 $buttonAlert-borderColorHover:          color("alert", "dark");
+$buttonAlert-borderColorActive:         color("alert", "darker");
 
 $buttonWarning-color:                   color(white);
 $buttonWarning-colorHover:              null;
+$buttonWarning-colorActive:             null;
 $buttonWarning-backgroundColor:         color("warning");
 $buttonWarning-backgroundColorHover:    color("warning", "dark");
+$buttonWarning-backgroundColorActive:   color("warning", "darker");
 $buttonWarning-borderColor:             color("warning");
 $buttonWarning-borderColorHover:        color("warning", "dark");
+$buttonWarning-borderColorActive:       color("warning", "darker");
 
 $buttonInfo-color:                      color(white);
 $buttonInfo-colorHover:                 null;
+$buttonInfo-colorActive:                null;
 $buttonInfo-backgroundColor:            color("info");
 $buttonInfo-backgroundColorHover:       color("info", "dark");
+$buttonInfo-backgroundColorActive:      color("info", "darker");
 $buttonInfo-borderColor:                color("info");
 $buttonInfo-borderColorHover:           color("info", "dark");
+$buttonInfo-borderColorActive:          color("info", "darker");
 
 $buttonLink-color:                      color("link");
 $buttonLink-colorHover:                 color("link", "hover");
+$buttonLink-colorActive:                null;
 $buttonLink-backgroundColor:            null;
 $buttonLink-backgroundColorHover:       null;
+$buttonLink-backgroundColorActive:      null;
 $buttonLink-borderColor:                null;
 $buttonLink-borderColorHover:           null;
+$buttonLink-borderColorActive:          null;
+
+
+// Size Modifiers
+// -----------------------------------------------------------------------------
+
+$buttonLarge-verticalPadding:           spacing("half");
+$buttonLarge-horizontalPadding:         spacing("single");
+$buttonLarge-fontSize:                  fontSize("smaller");
+
+$buttonSmall-verticalPadding:           spacing("quarter") + spacing("eighth");
+$buttonSmall-horizontalPadding:         (spacing("quarter") + spacing("eighth")) * 2;
+$buttonSmall-fontSize:                  fontSize("smallest");
+
+$buttonTiny-verticalPadding:            spacing("quarter");
+$buttonTiny-horizontalPadding:          spacing("half");
+$buttonTiny-fontSize:                   fontSize("tiny");
 
 
 // Foundation Variables
@@ -84,25 +138,37 @@ $buttonLink-borderColorHover:           null;
 
 $include-html-button-classes:           $include-html-classes;
 
+// NOTE: Unused Foundation Variables
+// -----------------------------------------------------------------------------
+//
 // We use these to build padding for buttons.
-$button-tny:                            spacing(quarter);
-$button-sml:                            spacing(quarter) + spacing(eighth);
-$button-med:                            spacing(half);
-$button-lrg:                            spacing(half) + spacing(eighth);
+// $button-tny:                         spacing("quarter");
+// $button-sml:                         spacing("quarter") + spacing("eighth");
+// $button-med:                         spacing("half");
+// $button-lrg:                         spacing("half") + spacing("eighth");
+//
+// -----------------------------------------------------------------------------
 
 // We use this to control the display property.
 $button-display:                        inline-block;
-$button-margin-bottom:                  spacing(base);
+$button-margin-bottom:                  spacing("base");
 
 // We use these to control button text styles.
 $button-font-family:                    $body-font-family;
 $button-font-color:                     color(white);
 $button-font-color-alt:                 color(black);
-$button-font-tny:                       fontSize(tiny);
-$button-font-sml:                       fontSize(smallest);
-$button-font-med:                       fontSize(base);
-$button-font-lrg:                       fontSize(smaller);
-$button-font-weight:                    fontWeight(normal);
+
+// NOTE: Unused Foundation Variables
+// -----------------------------------------------------------------------------
+//
+// $button-font-tny:                    fontSize("tiny");
+// $button-font-sml:                    fontSize("smallest");
+// $button-font-med:                    fontSize("base");
+// $button-font-lrg:                    fontSize("smaller");
+//
+// -----------------------------------------------------------------------------
+
+$button-font-weight:                    fontWeight("normal");
 $button-font-align:                     center;
 
 // We use these to control various hover effects.
@@ -130,14 +196,18 @@ $button-border-style:                   solid;
 // $success-button-border-color:        $success-button-bg-hover;
 // $alert-button-bg-hover:              scale-color($alert-color, $lightness: $button-function-factor);
 // $alert-button-border-color:          $alert-button-bg-hover;
+
+
+// NOTE: Unused Foundation Variables
+// -----------------------------------------------------------------------------
+//
+// We use this to set the default radius used throughout the core.
+// $button-radius:                      $global-radius;
+// $button-round:                       $global-rounded;
+//
+// We use this to set default opacity and cursor for disabled buttons.
+// $button-disabled-opacity:            0.7;
+// $button-disabled-cursor:             $cursor-default-value;
 //
 // -----------------------------------------------------------------------------
-
-// We use this to set the default radius used throughout the core.
-$button-radius:                         $global-radius;
-$button-round:                          $global-rounded;
-
-// We use this to set default opacity and cursor for disabled buttons.
-$button-disabled-opacity:               0.7;
-$button-disabled-cursor:                $cursor-default-value;
 
