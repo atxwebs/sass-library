@@ -1,0 +1,65 @@
+// =============================================================================
+// BUTTONS (Tools)
+// =============================================================================
+
+
+// Bigcommerce Mixins
+// -----------------------------------------------------------------------------
+//
+// 1. Button variant; Creates the visuals of a button
+// 2. Button size; Creates the font-size and padding of the button
+//
+// -----------------------------------------------------------------------------
+
+
+@mixin buttonVariant( // 1
+
+    // Arguments
+    $color,
+    $backgroundColor,
+    $borderColor,
+    $colorHover: null,
+    $backgroundColorHover: null,
+    $borderColorHover: null,
+    $colorActive: null,
+    $backgroundColorActive: null,
+    $borderColorActive: null ){
+
+    background-color: $backgroundColor;
+    border-color: $borderColor;
+    color: $color;
+
+    @if $colorHover or $backgroundColorHover or $borderColorHover != null {
+
+        &:hover,
+        &:focus,
+        &.is-active {
+
+            background-color: $backgroundColorHover;
+            border-color: $borderColorHover;
+            color: $colorHover;
+        }
+    }
+
+    @if $colorActive or $backgroundColorActive or $borderColorActive != null {
+
+        &:active {
+
+            background-color: $backgroundColorActive;
+            border-color: $borderColorActive;
+            color: $colorActive;
+        }
+    }
+}
+
+@mixin buttonSize( // 2
+
+    // Arguments
+    $paddingVertical,
+    $paddingHorizontal,
+    $fontSize ){
+
+    font-size: $fontSize;
+    padding: ($paddingVertical - remCalc(1px)) $paddingHorizontal;
+}
+

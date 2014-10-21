@@ -13,7 +13,7 @@
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--breadcrumbs:           $exportCSS; // 1
+$exportCSS--breadcrumbs:            $exportCSS; // 1
 
 
 // Foundation Variables
@@ -26,31 +26,31 @@ $exportCSS--breadcrumbs:           $exportCSS; // 1
 //
 // -----------------------------------------------------------------------------
 
-$include-html-nav-classes: $include-html-classes;
+$include-html-nav-classes:          $include-html-classes;
 
 // We use this to set the background color for the breadcrumb container.
-$crumb-bg: color(grey, light)er;
+$crumb-bg:                          color(grey, "lighter");
 
 // We use these to set the padding around the breadcrumbs.
-$crumb-padding: spacing(half) spacing(base);
-$crumb-side-padding: spacing(half);
+$crumb-padding:                     spacing("half") spacing("single");
+$crumb-side-padding:                spacing("half");
 
 // We use these to control border styles.
-$crumb-function-factor: -10%;
-$crumb-border-size: 0;
-$crumb-border-style: solid;
-$crumb-border-color: color(grey, light)er;
-$crumb-radius: $global-radius;
+$crumb-function-factor:             -10%;
+$crumb-border-size:                 0;
+$crumb-border-style:                solid;
+$crumb-border-color:                color(grey, "lighter");
+$crumb-radius:                      $global-radius;
 
 // We use these to set various text styles for breadcrumbs.
-$crumb-font-size: fontSize(base);
-$crumb-font-color: color(grey);
-$crumb-font-color-current: color(grey);
-$crumb-font-color-unavailable: color(grey, light);
-$crumb-font-transform: inherit;
-$crumb-link-decor: none;
+$crumb-font-size:                   fontSize("base");
+$crumb-font-color:                  color(grey);
+$crumb-font-color-current:          color("primary");
+$crumb-font-color-unavailable:      color(grey, "light");
+$crumb-font-transform:              inherit;
+$crumb-link-decor:                  none;
 
 // We use these to control the slash between breadcrumbs
-$crumb-slash-color: $base;
-$crumb-slash: "/";
+$crumb-slash-color:                 $base;
+$crumb-slash:                       "/";
 
