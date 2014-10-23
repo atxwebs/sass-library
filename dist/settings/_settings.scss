@@ -6,16 +6,24 @@
 // Bigcommerce Variables
 // -----------------------------------------------------------------------------
 //
-// 1. Dimensions are dependant on Typography, so @import typography first.
+// 1. Layout is dependant on Typography, so @import typography first.
+// 2. @import Foundation global variables last as it will use variables from
+//    the majority, if not all of the other @imports.
 //
 // -----------------------------------------------------------------------------
 
-// Globals
-@import "export";
+// Export
+@import "export/export";
 
-// Colors
-@import "colors";
+// Color
+@import "color/color";
 
 // Typography
-@import "typography"; // 1
+@import "typography/typography"; // 1
+
+// Layout
+@import "layout/layout"; // 1
+
+// Foundation
+@import "foundation/foundation"; // 2
 
