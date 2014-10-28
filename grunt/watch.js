@@ -1,11 +1,12 @@
 module.exports = {
-    "run_sass_files": {
+    "sass_files": {
         "files": [
-            "src/**/*.{scss,sass}",
-            "!src/vendor/"
+            "src/**/*.scss",
         ],
         "tasks": [
-            "scsslint"
+            "scsslint",
+            "clean:release",
+            "copy:release"
         ]
     }
 };

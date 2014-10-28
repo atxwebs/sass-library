@@ -1,7 +1,7 @@
 SCSS Library
 ============
 
-Bigcommerce SCSS Framework &amp; Pattern Library
+Bigcommerce SCSS Framework
 
 Built based on the Bigcommerce [SASS Style Guide](https://github.com/bigcommerce-labs/sass-style-guide).
 
@@ -18,7 +18,20 @@ bundle install && npm install && bower install
 ```
 
 ## Development
-To have continuous code linting while you work, just:
+To have continuous code linting while you work and have the Sass files update
+in your working copy of the BCApp Pattern-Lab, first you should `bower link`
+[more details here](http://bower.io/docs/api/#link)
+the sass-library into the Pattern-Lab:
+
+```bash
+~/sass-library $ bower link
+```
+
+```bash
+~/bcapp-pattern-lab $ bower link sass-library
+```
+
+Now with your symlinked package, just:
 
 ```
 grunt run

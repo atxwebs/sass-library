@@ -18,4 +18,6 @@ release:
 
 run:
   - "build"
-  - "watch:run"
+  - "clean:release"
+  - "copy:release"
+  - "watch:sass_files"
