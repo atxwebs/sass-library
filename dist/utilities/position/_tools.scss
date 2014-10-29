@@ -22,7 +22,8 @@
         right: 0 $important;
         top: 0 $important;
 
-    } @else if $variant == "fixed" {
+    }
+    @else if $variant == "fixed" {
 
         // ---------------------------------------------------------------------
         //

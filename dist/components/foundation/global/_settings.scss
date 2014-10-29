@@ -1,16 +1,17 @@
 // =============================================================================
-// TEXT (Settings)
+// GLOBAL (Settings)
 // =============================================================================
 
 
-// Bigcommerce Variables
+// Ragnarok Variables
 // -----------------------------------------------------------------------------
 //
-// These scoped variables are created by Bigcommerce.
+// These scoped variables are created by Ragnarok.
 // All variables that are not from Foundation should be placed here.
 //
-// 1. Choose whether to include the Bigcommerce class names
+// 1. Choose whether to include the Ragnarok class names
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--textUtilities:             $exportCSS; // 1
+$exportCSS--global:             $exportCSS; // 1
+

@@ -1,0 +1,105 @@
+// =============================================================================
+// TYPE (Tools)
+// =============================================================================
+
+
+// Heading Style
+// -----------------------------------------------------------------------------
+
+@mixin headingStyle($variant: null, $base: null) {
+
+    @if $variant == null or $base == "base" {
+
+        color: $header-font-color;
+        margin-bottom: $header-bottom-margin;
+        margin-top: $header-top-margin;
+        text-rendering: $header-text-rendering;
+
+    }
+
+    @if $variant == "thin" {
+
+        font-family: fontFamily("sans");
+        font-style: $header-font-style;
+        font-weight: fontWeight("thin");
+
+    }
+    @else if $variant == "normal" {
+
+        font-family: fontFamily("sans");
+        font-style: $header-font-style;
+        font-weight: fontWeight("normal");
+
+    }
+    @else if $variant == "semibold" {
+
+        font-family: fontFamily("sans");
+        font-style: $header-font-style;
+        font-weight: fontWeight("semibold");
+
+    }
+    @else if $variant == "bold" {
+
+        font-family: fontFamily("sans");
+        font-style: $header-font-style;
+        font-weight: fontWeight("bold");
+
+    }
+    @else if $variant == "black" {
+
+        font-family: fontFamily("sans");
+        font-style: $header-font-style;
+        font-weight: fontWeight("black");
+
+    }
+}
+
+
+// Heading Size
+// -----------------------------------------------------------------------------
+
+@mixin headingSize($variant) {
+
+    @if $variant == "largest" {
+
+        font-size: $h1-font-size;
+        letter-spacing: letterSpacing("smaller");
+        line-height: lineHeight("small");
+
+    }
+    @else if $variant == "larger" {
+
+        font-size: $h2-font-size;
+        letter-spacing: letterSpacing("smallest");
+        line-height: lineHeight("small");
+
+    }
+    @else if $variant == "large" {
+
+        font-size: $h3-font-size;
+        letter-spacing: letterSpacing("smallest");
+        line-height: lineHeight("small");
+
+    }
+    @else if $variant == "small" {
+
+        font-size: $h4-font-size;
+        letter-spacing: 0;
+        line-height: lineHeight("small");
+
+    }
+    @else if $variant == "smaller" {
+
+        font-size: $h5-font-size;
+        letter-spacing: 0;
+        line-height: lineHeight("small");
+
+    }
+    @else if $variant == "smallest" {
+
+        font-size: $h6-font-size;
+        letter-spacing: 0;
+        line-height: lineHeight("small");
+
+    }
+}

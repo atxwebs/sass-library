@@ -17,7 +17,8 @@
             list-style: inherit $important;
         }
 
-    } @else if $type == "disc" {
+    }
+    @else if $type == "disc" {
 
         list-style-type: disc $important;
 
@@ -26,18 +27,21 @@
             list-style: inherit $important;
         }
 
-    } @else if $type == "none" {
+    }
+    @else if $type == "none" {
 
         list-style: none $important;
         margin-#{$default-float}: $list-side-margin-no-bullet $important;
 
-        ul, ol {
+        ul,
+        ol {
 
             list-style: none $important;
             margin-bottom: 0 $important;
         }
 
-    } @else if $type == "square" {
+    }
+    @else if $type == "square" {
 
         list-style-type: square $important;
 

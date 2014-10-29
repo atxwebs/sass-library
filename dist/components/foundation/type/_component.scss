@@ -1,16 +1,22 @@
 // =============================================================================
-// TEXT (Settings)
+// TYPE
 // =============================================================================
 
 
-// Bigcommerce Variables
-// -----------------------------------------------------------------------------
-//
-// These scoped variables are created by Bigcommerce.
-// All variables that are not from Foundation should be placed here.
-//
-// 1. Choose whether to include the Bigcommerce class names
-//
+// Foundation @import
 // -----------------------------------------------------------------------------
 
-$exportCSS--textUtilities:             $exportCSS; // 1
+@import "../../../vendor/foundation/foundation/components/type";
+
+
+// Ragnarok @imports
+// -----------------------------------------------------------------------------
+
+// Settings
+@import "settings";
+
+// Tools
+@import "tools";
+
+// Component
+@import "type";

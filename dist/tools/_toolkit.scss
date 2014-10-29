@@ -18,6 +18,7 @@
 // -----------------------------------------------------------------------------
 
 @mixin breakpoint($size) {
+
     @if $size == xxxlarge {
         @media (min-width: 1921px) { @content; }
     }
@@ -42,13 +43,14 @@
     @else if $size == xxsmall {
         @media (min-width: 320px) { @content; }
     }
+
 }
 
 
 // Rem Calculations
 // -----------------------------------------------------------------------------
 
-@function convertToRem($value, $base-value: $fontSizeBase)  {
+@function convertToRem($value, $base-value: $fontSizeBase) {
 
     $value: strip-unit($value) / strip-unit($base-value) * 1rem;
     @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0

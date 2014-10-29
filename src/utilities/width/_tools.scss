@@ -18,7 +18,8 @@
         padding-right: 0 $important;
         width: 100% $important;
 
-    } @else if $width == "fixed" {
+    }
+    @else if $width == "fixed" {
 
         margin: auto $important;
         max-width: layout(fixed) $important;

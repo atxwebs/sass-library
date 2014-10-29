@@ -23,7 +23,7 @@
     $borderColorHover: null,
     $colorActive: null,
     $backgroundColorActive: null,
-    $borderColorActive: null ){
+    $borderColorActive: null) {
 
     background-color: $backgroundColor;
     border-color: $borderColor;
@@ -57,7 +57,7 @@
     // Arguments
     $paddingVertical,
     $paddingHorizontal,
-    $fontSize ){
+    $fontSize) {
 
     font-size: $fontSize;
     padding: ($paddingVertical - remCalc(1px)) $paddingHorizontal;

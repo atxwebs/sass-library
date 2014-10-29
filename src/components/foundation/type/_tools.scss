@@ -1,0 +1,26 @@
+// =============================================================================
+// TYPE (Tools)
+// =============================================================================
+
+
+// Heading Style
+// -----------------------------------------------------------------------------
+
+@mixin headingStyle() {
+    color: $header-font-color;
+    font-family: $header-font-family;
+    font-style: $header-font-style;
+    font-weight: $header-font-weight;
+    letter-spacing: $header-letter-spacing;
+    line-height: $header-line-height;
+    margin-bottom: $header-bottom-margin;
+    text-rendering: $header-text-rendering;
+}
+
+@mixin subHeadingStyle() {
+    color: $subheader-font-color;
+    font-weight: $subheader-font-weight;
+    line-height: $subheader-line-height;
+    margin-bottom: $subheader-bottom-margin;
+}
+

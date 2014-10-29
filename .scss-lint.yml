@@ -1,6 +1,14 @@
 # BC configuration
 linters:
 
+  #Cos we use maps with keywords, this produces noise
+  ColorKeyword:
+    enabled: false
+
+  ElsePlacement:
+    enabled: true
+    style: new_line # or 'same_line'
+
   EmptyLineBetweenBlocks:
     enabled: true
     ignore_single_line_blocks: false
