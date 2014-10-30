@@ -13,16 +13,9 @@
 
 @if $exportCSS--layoutUtilities { // 1
 
-    .u-floatLeft {
-        float: left !important;
-    }
+    .u-floatLeft                { float: left !important; }
+    .u-floatRight               { float: right !important; }
 
-    .u-floatRight {
-        float: right !important;
-    }
-
-    .u-clearFloats {
-        @include u-clearFloats;
-    }
+    .u-clearFloats              { @include u-clearFloats; }
 }
 

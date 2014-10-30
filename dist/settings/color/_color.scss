@@ -36,8 +36,8 @@ $colorMap: (
 
     primary: (
         base:                   #00abc9,
-        darker:                 #008ba3,
-        dark:                   #009cb7
+        darker:                 #008BA3,
+        dark:                   #009CB7
     ),
 
     secondary: (
@@ -47,8 +47,8 @@ $colorMap: (
     ),
 
     highlight: (
-        base:                   #f60,
-        darker:                 #ee4e00,
+        base:                   #ff6600,
+        darker:                 #EE4E00,
         dark:                   #f25900
     ),
 
@@ -101,7 +101,7 @@ $colorMap: (
         partiallyShipped:       #3e62a1,
         pending:                #acb4be,
         shipped:                #95db89,
-        refunded:               #f80,
+        refunded:               #ff8800,
         verificationRequired:   #e89fae
     )
 );
@@ -110,7 +110,7 @@ $colorMap: (
 // Color Map Function
 // -----------------------------------------------------------------------------
 
-@function color($color, $tone: "base") {
+@function color($color, $tone: 'base') {
     @return map-get(map-get($colorMap, $color), $tone);
 }
 

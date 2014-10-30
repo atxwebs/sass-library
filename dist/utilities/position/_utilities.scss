@@ -13,12 +13,9 @@
 
 @if $exportCSS--layoutUtilities { // 1
 
-    .u-posAbsoluteCenter {
-        @include u-position("absoluteCenter", !important);
-    }
+    .u-posAbsoluteCenter        { @include u-position("absoluteCenter", !important); }
 
-    .u-posFixed {
-        @include u-position("fixed", !important);
-    }
+    .u-posFixed                 { @include u-position("fixed", !important); }
 
 }
+

@@ -194,21 +194,20 @@
     // Expand Modifiers
     // -------------------------------------------------------------------------
 
-    %button--expand {
+    .button--expand {
+
         width: 100%;
     }
 
-    .button--expand {
-        @extend %button--expand;
-    }
-
     .button--expandAlignLeft {
-        @extend %button--expand;
+
+        @extend .button--expand;
         text-align: left;
     }
 
     .button--expandAlignRight {
-        @extend %button--expand;
+
+        @extend .button--expand;
         text-align: right;
     }
 

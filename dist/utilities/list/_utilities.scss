@@ -13,21 +13,13 @@
 
 @if $exportCSS--listUtilities { // 1
 
-    .u-listCircleBullet {
-        @include u-listBullets("circle", !important);
-    }
+    .u-listCircleBullet         { @include u-listBullets("circle", !important); }
 
-    .u-listDiscBullet {
-        @include u-listBullets("disc", !important);
-    }
+    .u-listDiscBullet           { @include u-listBullets("disc", !important); }
 
-    .u-listNoBullet {
-        @include u-listBullets("none", !important);
-    }
+    .u-listNoBullet             { @include u-listBullets("none", !important); }
 
-    .u-listSquareBullet {
-        @include u-listBullets("square", !important);
-    }
+    .u-listSquareBullet         { @include u-listBullets("square", !important); }
 
 }
 
