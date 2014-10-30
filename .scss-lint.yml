@@ -1,6 +1,14 @@
 # BC configuration
 linters:
 
+  #Cos we use maps with keywords, this produces noise
+  ColorKeyword:
+    enabled: false
+
+  ElsePlacement:
+    enabled: true
+    style: new_line # or 'same_line'
+
   EmptyLineBetweenBlocks:
     enabled: true
     ignore_single_line_blocks: false
@@ -22,10 +30,12 @@ linters:
     enabled: true
     max_depth: 2
 
+# For example
+# http://www.regexr.com/39qql
   SelectorFormat:
     enabled: true
     # convention: camel_case # or 'snake_case', or 'hyphenated_lowercase', or a regex pattern
-    convention: ^[a-z][a-z]*([A-Z][a-z]*)*((\.is-|-+)[a-z][a-z]*([A-Z][a-z]*)*)*$
+    convention: ^[a-z][a-z0-9]*([A-Z0-9][a-z0-9]*)*((\.is-|-+)[a-z0-9][a-z0-9]*([A-Z0-9][a-z0-9]*)*)*$
 
   StringQuotes:
     enabled: true

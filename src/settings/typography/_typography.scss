@@ -16,7 +16,7 @@
 //
 // -----------------------------------------------------------------------------
 
-$fontSizeRoot:                  14px; // 1
+$fontSizeRoot:                  16px; // 1
 $fontSizeBase:                  1rem; // 2
 
 $lineHeightBase:                1.5; // 3
@@ -28,9 +28,8 @@ $lineHeightBase:                1.5; // 3
 // -----------------------------------------------------------------------------
 
 $fontFamilyMap: (
-
-    sans:                       ("Open Sans", "Helvetica Neue", Arial, sans-serif),
-    serif:                      ("Helvetica Neue", Georgia, "Times New Roman", serif),
+    sans:                       ("Helvetica Neue", Helvetica, Arial, sans-serif),
+    serif:                      (Georgia, "Times New Roman", serif),
     mono:                       (Menlo, Monaco, Consolas, monospace)
 );
 
@@ -39,7 +38,6 @@ $fontFamilyMap: (
 // -----------------------------------------------------------------------------
 
 $fontSizeMap: (
-
     base:                       $fontSizeBase,
     hero:                       $fontSizeBase * 3,
     largest:                    $fontSizeBase * 2.5,
@@ -56,7 +54,6 @@ $fontSizeMap: (
 // -----------------------------------------------------------------------------
 
 $fontWeightMap: (
-
     thin:                       300,
     normal:                     400,
     semibold:                   600,
@@ -69,13 +66,13 @@ $fontWeightMap: (
 // -----------------------------------------------------------------------------
 
 $letterSpacingMap: (
-
-    largest:                    remCalc(6px),
-    larger:                     remCalc(5px),
-    large:                      remCalc(4px),
-    small:                      remCalc(3px),
-    smaller:                    remCalc(2px),
-    smallest:                   remCalc(1px)
+    largest:                    remCalc(3px),
+    larger:                     remCalc(2px),
+    large:                      remCalc(1px),
+    base:                       0,
+    small:                      remCalc(-1px),
+    smaller:                    remCalc(-2px),
+    smallest:                   remCalc(-3px)
 );
 
 
@@ -83,7 +80,6 @@ $letterSpacingMap: (
 // -----------------------------------------------------------------------------
 
 $lineHeightMap: (
-
     base:                       1.5,
     hero:                       2.5,
     largest:                    2.25,

@@ -9,11 +9,13 @@
 
         display: none $important;
 
-    } @else if $variant == "block" {
+    }
+    @else if $variant == "block" {
 
         display: block $important;
 
-    } @else if $variant == "inlineBlock" {
+    }
+    @else if $variant == "inlineBlock" {
 
         // ---------------------------------------------------------------------
         //
@@ -34,7 +36,8 @@
 
         display: none $important;
 
-    } @else if $variant == "visually" {
+    }
+    @else if $variant == "visually" {
 
         border: 0 $important;
         clip: rect(1px, 1px, 1px, 1px) $important;
