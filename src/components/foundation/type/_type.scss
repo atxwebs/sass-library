@@ -197,11 +197,7 @@
     ul,
     ol,
     dl {
-        font-family: $list-font-family;
-        font-size: $list-font-size;
-        line-height: $list-line-height;
-        list-style-position: $list-style-position;
-        margin-bottom: $list-margin-bottom;
+        @include listStyle;
     }
 
     ul,
@@ -215,11 +211,11 @@
     }
 
     ul {
-        margin-#{$default-float}: $list-side-margin;
+        @include bulletedList;
     }
 
     ol {
-        margin-#{$default-float}: $list-ordered-side-margin;
+        @include numberedList;
     }
 
     dl {

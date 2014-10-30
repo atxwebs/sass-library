@@ -24,3 +24,23 @@
     margin-bottom: $subheader-bottom-margin;
 }
 
+//
+// List styles
+// -----------------------------------------------------------------------------
+
+@mixin listStyle() {
+    font-family: $list-font-family;
+    font-size: $list-font-size;
+    line-height: $list-line-height;
+    list-style-position: $list-style-position;
+    margin-bottom: $list-margin-bottom;
+}
+
+@mixin bulletedList() {
+    margin-#{$default-float}: $list-side-margin;
+}
+
+@mixin numberedList() {
+    margin-#{$default-float}: $list-ordered-side-margin;
+}
+
