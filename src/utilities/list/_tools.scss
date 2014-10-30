@@ -53,3 +53,31 @@
     }
 }
 
+//
+// Horizontal Lists
+// -----------------------------------------------------------------------------
+
+@mixin u-listHorizontal() {
+    @include u-listBullets("none");
+
+    li {
+        display: inline-block;
+    }
+}
+
+//
+// List Rest
+//
+// Purpose: A general helper to reset a list style of all styling
+// -----------------------------------------------------------------------------
+
+@mixin u-listReset() {
+    @include u-listBullets("none");
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0;
+        padding: 0;
+    }
+}

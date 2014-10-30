@@ -29,5 +29,13 @@
         @include u-listBullets("square", !important);
     }
 
+    .u-listHorizontal {
+        @include u-listHorizontal;
+    }
+
+    .u-listReset {
+        @include u-listReset;
+    }
+
 }
 
