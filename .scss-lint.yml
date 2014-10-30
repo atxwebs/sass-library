@@ -31,11 +31,11 @@ linters:
     max_depth: 2
 
 # For example
-# http://www.regexr.com/39ql1
+# http://www.regexr.com/39qql
   SelectorFormat:
     enabled: true
     # convention: camel_case # or 'snake_case', or 'hyphenated_lowercase', or a regex pattern
-    convention: ^[a-z0-9][a-z0-9]*([A-Z0-9][a-z0-9]*)*((\.is-|-+)[a-z0-9][a-z0-9]*([A-Z0-9][a-z0-9]*)*)*$
+    convention: ^[a-z][a-z0-9]*([A-Z0-9][a-z0-9]*)*((\.is-|-+)[a-z0-9][a-z0-9]*([A-Z0-9][a-z0-9]*)*)*$
 
   StringQuotes:
     enabled: true
