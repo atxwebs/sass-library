@@ -3,7 +3,7 @@ module.exports = {
         files: ['bower.json', 'package.json'],
         commit: false,
         commitMessage: 'Releasing: %VERSION%',
-        commitFiles: ['bower.json', 'package.json'],
+        commitFiles: ['dist/', 'bower.json', 'package.json'],
         addUntrackedFiles: true,
         createTag: false,
         tagName: '%VERSION%',
