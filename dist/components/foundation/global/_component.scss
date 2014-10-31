@@ -1,10 +1,16 @@
 // =============================================================================
-// EXPORT CSS
+// GLOBAL
 // =============================================================================
 
 
-// Include classes when building
+// Bigcommerce @imports
 // -----------------------------------------------------------------------------
 
-$exportCSS: true !default;
+// Settings
+@import "settings";
 
+// Tools
+@import "tools";
+
+// Component
+@import "global";
