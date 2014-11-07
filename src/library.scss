@@ -2,13 +2,11 @@
 // Bigcommerce SCSS Library
 // =============================================================================
 
-
 // =============================================================================
 // TOOLS
 // =============================================================================
 
-// BC Toolkit
-@import "tools/toolkit";
+@import "vendor/foundation/foundation";
 
 
 // =============================================================================
@@ -16,8 +14,14 @@
 // =============================================================================
 
 // Global Settings
-@import "settings/settings";
+@import "settings/global/global";
 
+@import "settings/foundation/foundation";
+
+@import "settings/bigcommerce/bigcommerce";
+
+// BC Toolkit
+@import "tools/toolkit";
 
 // =============================================================================
 // RESET
@@ -31,7 +35,7 @@
 // COMPONENTS
 // =============================================================================
 
-// Foundation Components
+// Bigcommerce Foundation-ify Components
 @import "components/foundation/foundation";
 
 // Bigcommerce Components

@@ -16,10 +16,11 @@
 
 @if $exportCSS--type { // 1
 
+    @import url(http://fonts.googleapis.com/css?family=Open+Sans:700,300,400);
 
     // Reset Spacing
     // -------------------------------------------------------------------------
-
+    div,
     dl,
     dt,
     dd,
@@ -33,8 +34,11 @@
     h5,
     h6,
     pre,
+    form,
     p,
-    blockquote {
+    blockquote,
+    th,
+    td {
         margin: 0;
         padding: 0;
     }
@@ -109,21 +113,28 @@
         @include headingStyle;
     }
 
-    h1.subheader,
-    h2.subheader,
-    h3.subheader,
-    h4.subheader,
-    h5.subheader,
-    h6.subheader {
+    .subheader {
         @include subHeadingStyle;
     }
 
+    h1,
+    h2 {
+        font-family: fontFamily("headingSans");
+    }
+
     h1 {
-        font-size: $h1-font-size;
+        font-size: fontSize("largest");
+        font-weight: fontWeight("thin");
     }
 
     h2 {
         font-size: $h2-font-size;
+        font-weight: fontWeight("normal");
+    }
+
+    h3,
+    h4 {
+        font-weight: fontWeight("thin");
     }
 
     h3 {
@@ -140,8 +151,8 @@
 
     h6 {
         font-size: $h6-font-size;
+        font-weight: fontWeight("normal");
     }
-
 
     // Horizontal rule <hr>
     // -------------------------------------------------------------------------
