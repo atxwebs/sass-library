@@ -28,7 +28,8 @@ $lineHeightBase:                1.5; // 3
 // -----------------------------------------------------------------------------
 
 $fontFamilyMap: (
-    sans:                       ("Helvetica Neue", Helvetica, Arial, sans-serif),
+    headingSans:                ("Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif),
+    sans:                       ("Helvetica Neue", Helvetica, Roboto, Arial, sans-serif),
     serif:                      (Georgia, "Times New Roman", serif),
     mono:                       (Menlo, Monaco, Consolas, monospace)
 );
@@ -80,7 +81,7 @@ $letterSpacingMap: (
 // -----------------------------------------------------------------------------
 
 $lineHeightMap: (
-    base:                       1.5,
+    base:                       $lineHeightBase,
     hero:                       2.5,
     largest:                    2.25,
     larger:                     2,

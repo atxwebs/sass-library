@@ -51,6 +51,6 @@ $crumb-font-transform:              inherit;
 $crumb-link-decor:                  none;
 
 // We use these to control the slash between breadcrumbs
-$crumb-slash-color:                 $base;
+$crumb-slash-color:                 color(grey, "light");
 $crumb-slash:                       "/";
 
