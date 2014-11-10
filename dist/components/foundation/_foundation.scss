@@ -3,16 +3,6 @@
 // =============================================================================
 
 
-// Foundation @import
-// -----------------------------------------------------------------------------
-//
-// @import Foundation's variables and mixins for use
-//
-// -----------------------------------------------------------------------------
-
-@import "../../vendor/foundation/foundation";
-
-
 // Bigcommerce (Foundation-ified) Components
 // -----------------------------------------------------------------------------
 //
@@ -25,15 +15,16 @@
 //
 // -----------------------------------------------------------------------------
 
+// Global
+@import "global/component";
+
+// Typography
+@import "type/component";
+
 // Breadcrumbs
 @import "breadcrumbs/component";
 
 // Buttons
 @import "buttons/component";
 
-// Global
-@import "global/component";
-
-// Typography
-@import "type/component";
 

@@ -15,6 +15,12 @@
     line-height: $header-line-height;
     margin-bottom: $header-bottom-margin;
     text-rendering: $header-text-rendering;
+
+    small {
+        color: $small-font-color;
+        font-size: $small-font-size;
+        line-height: 0;
+    }
 }
 
 @mixin subHeadingStyle() {

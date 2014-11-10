@@ -2,13 +2,6 @@
 // LIBRARY MIXINS & FUNCTIONS
 // =============================================================================
 
-
-// Foundation Functions
-// -----------------------------------------------------------------------------
-
-@import "../vendor/foundation/foundation/functions";
-
-
 // Responsive Breakpoints
 // -----------------------------------------------------------------------------
 //
@@ -50,9 +43,13 @@
 // Rem Calculations
 // -----------------------------------------------------------------------------
 
+@function stripUnit($num) {
+    @return $num / ($num * 0 + 1);
+}
+
 @function convertToRem($value, $base-value: $fontSizeBase) {
 
-    $value: strip-unit($value) / strip-unit($base-value) * 1rem;
+    $value: stripUnit($value) / stripUnit($base-value) * 1rem;
     @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
     @return $value;
 }
