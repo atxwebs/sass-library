@@ -27,19 +27,19 @@ $buttonVariant-backgroundColorHover:    color("secondary", "dark");
 $buttonVariant-backgroundColorActive:   color("secondary", "darker");
 $buttonVariant-borderColor:             color("secondary", "darker");
 $buttonVariant-borderColorHover:        null;
-$buttonVariant-borderColorActive:       color(grey, "medium");
+$buttonVariant-borderColorActive:       color(greys, "medium");
 
-$buttonDisabled-color:                  color(grey, "medium");
+$buttonDisabled-color:                  color(greys, "medium");
 $buttonDisabled-colorHover:             null;
 $buttonDisabled-colorActive:            null;
-$buttonDisabled-backgroundColor:        color(grey, "lightest");
+$buttonDisabled-backgroundColor:        color(greys, "lightest");
 $buttonDisabled-backgroundColorHover:   null;
 $buttonDisabled-backgroundColorActive:  null;
-$buttonDisabled-borderColor:            color(grey, "light");
+$buttonDisabled-borderColor:            color(greys, "light");
 $buttonDisabled-borderColorHover:       null;
 $buttonDisabled-borderColorActive:      null;
 
-$buttonPrimary-color:                   color(white);
+$buttonPrimary-color:                   color(whites);
 $buttonPrimary-colorHover:              null;
 $buttonPrimary-colorActive:             null;
 $buttonPrimary-backgroundColor:         color("primary");
@@ -49,7 +49,7 @@ $buttonPrimary-borderColor:             color("primary");
 $buttonPrimary-borderColorHover:        color("primary", "dark");
 $buttonPrimary-borderColorActive:       color("primary", "darker");
 
-$buttonAction-color:                    color(white);
+$buttonAction-color:                    color(whites);
 $buttonAction-colorHover:               null;
 $buttonAction-colorActive:              null;
 $buttonAction-backgroundColor:          color("highlight");
@@ -59,7 +59,7 @@ $buttonAction-borderColor:              color("highlight");
 $buttonAction-borderColorHover:         color("highlight", "dark");
 $buttonAction-borderColorActive:        color("highlight", "darker");
 
-$buttonSuccess-color:                   color(white);
+$buttonSuccess-color:                   color(whites);
 $buttonSuccess-colorHover:              null;
 $buttonSuccess-colorActive:             null;
 $buttonSuccess-backgroundColor:         color("success");
@@ -69,7 +69,7 @@ $buttonSuccess-borderColor:             color("success");
 $buttonSuccess-borderColorHover:        color("success", "dark");
 $buttonSuccess-borderColorActive:       color("success", "darker");
 
-$buttonAlert-color:                     color(white);
+$buttonAlert-color:                     color(whites);
 $buttonAlert-colorHover:                null;
 $buttonAlert-colorActive:               null;
 $buttonAlert-backgroundColor:           color("alert");
@@ -79,7 +79,7 @@ $buttonAlert-borderColor:               color("alert");
 $buttonAlert-borderColorHover:          color("alert", "dark");
 $buttonAlert-borderColorActive:         color("alert", "darker");
 
-$buttonWarning-color:                   color(white);
+$buttonWarning-color:                   color(whites);
 $buttonWarning-colorHover:              null;
 $buttonWarning-colorActive:             null;
 $buttonWarning-backgroundColor:         color("warning");
@@ -89,7 +89,7 @@ $buttonWarning-borderColor:             color("warning");
 $buttonWarning-borderColorHover:        color("warning", "dark");
 $buttonWarning-borderColorActive:       color("warning", "darker");
 
-$buttonInfo-color:                      color(white);
+$buttonInfo-color:                      color(whites);
 $buttonInfo-colorHover:                 null;
 $buttonInfo-colorActive:                null;
 $buttonInfo-backgroundColor:            color("info");
@@ -155,8 +155,8 @@ $button-margin-bottom:                  spacing("base");
 
 // We use these to control button text styles.
 $button-font-family:                    $body-font-family;
-$button-font-color:                     color(white);
-$button-font-color-alt:                 color(black);
+$button-font-color:                     color(whites);
+$button-font-color-alt:                 color(blacks);
 
 // NOTE: Unused Foundation Variables
 // -----------------------------------------------------------------------------
