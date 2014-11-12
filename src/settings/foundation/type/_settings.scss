@@ -31,8 +31,8 @@ $font-weight-normal: fontWeight("normal");
 $font-weight-bold: fontWeight("semibold");
 
 // We use these to control various global styles
-$body-bg: color(white);
-$body-font-color: color(grey, "darker");
+$body-bg: color(whites);
+$body-font-color: color(greys, "darker");
 $body-font-family: fontFamily("sans");
 
 // We use these to control header font styles
@@ -54,7 +54,7 @@ $h6-font-size: fontSize("smallest");
 
 // These control how subheaders are styled.
 $subheader-line-height: lineHeight(small);
-$subheader-font-color: color(grey);
+$subheader-font-color: color(greys);
 $subheader-font-weight: fontWeight("normal");
 $subheader-bottom-margin: spacing("half");
 
@@ -92,7 +92,7 @@ $paragraph-margin-bottom: spacing("base");
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
 // $hr-border-style: solid;
-// $hr-border-color: color(grey, light);
+// $hr-border-color: color(greys, light);
 // $hr-margin: spacing("base");
 
 // We use these to style lists
