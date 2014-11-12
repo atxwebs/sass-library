@@ -11,15 +11,15 @@ $colorMap: (
     // Basics
     // -------------------------------------------------------------------------
 
-    black: (
+    blacks: (
         base:                   #000
     ),
 
-    white: (
+    whites: (
         base:                   #fcfcfd
     ),
 
-    grey: (
+    greys: (
         base:                   #798289,
         darkest:                #313b47,
         darker:                 #3c4043,
@@ -41,13 +41,13 @@ $colorMap: (
     ),
 
     secondary: (
-        base:                   #fff,
+        base:                   #fcfcfd,
         darker:                 #e1e6eb,
         dark:                   #f8f9fb
     ),
 
     highlight: (
-        base:                   #f60,
+        base:                   #ff6603,
         darker:                 #ee4e00,
         dark:                   #f25900
     ),
@@ -111,6 +111,13 @@ $colorMap: (
 // -----------------------------------------------------------------------------
 
 @function color($color, $tone: "base") {
-    @return map-get(map-get($colorMap, $color), $tone);
+
+    @if map-has-key($colorMap, $color) {
+        @return map-get(map-get($colorMap, $color), $tone);
+    }
+
+    @warn "Unknown `#{$color}` in $colorMap.";
+    @return null
+
 }
 
