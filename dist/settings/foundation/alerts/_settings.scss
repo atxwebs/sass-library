@@ -1,0 +1,42 @@
+// =============================================================================
+// ALERTS (Settings)
+// =============================================================================
+
+
+// Bigcommerce Variables
+// -----------------------------------------------------------------------------
+//
+// These scoped variables are created by Bigcommerce.
+// All variables that are not from Foundation should be placed here.
+//
+// 1. Choose whether to include the Bigcommerce class names
+//
+// -----------------------------------------------------------------------------
+
+$exportCSS--alerts:            $exportCSS; // 1
+
+
+// Color/State Modifiers
+// -----------------------------------------------------------------------------
+
+$alert-generic-color:           color("greys", "lightest");
+$alert-info-color:              color("info", "light");
+$alert-success-color:           color("success", "light");
+$alert-warning-color:           color("warning", "light");
+$alert-critical-color:          color("alert", "light");
+
+// Foundation Variables
+// -----------------------------------------------------------------------------
+//
+// These variables come directly from:
+// /vendor/foundation/foundation/components/*
+// Declaring the variables here, you can adjust them all to your design,
+// leaving the vendor framework untouched.
+//
+// -----------------------------------------------------------------------------
+
+$alert-border-style: none;
+
+$alert-padding-top: spacing("quarter");
+
+

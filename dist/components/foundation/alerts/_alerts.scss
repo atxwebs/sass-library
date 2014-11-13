@@ -1,0 +1,67 @@
+// =============================================================================
+// ALERTS (CSS)
+// =============================================================================
+
+
+// Bigcommerce Component
+// -----------------------------------------------------------------------------
+//
+// The Bigcommerce Coding Standards, coupled with Foundation.
+// If any library overrides or extra CSS is needed, declare it here.
+//
+// 1. If set to false, there is no outputted CSS for this component.
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--alerts { // 1
+
+
+    // Component
+    // -------------------------------------------------------------------------
+
+    .alertBox {
+
+        @include alert;
+    }
+
+    .alertBox--generic {
+
+        @include alert-style($alert-generic-color);
+
+    }
+
+    .alertBox--promotion {
+
+        @include alert-style($alert-info-color);
+
+    }
+
+    .alertBox--low {
+
+        @include alert-style($alert-success-color);
+
+    }
+
+    .alertBox--moderate {
+
+        @include alert-style($alert-warning-color);
+
+    }
+
+    .alertBox--critical {
+
+        @include alert-style($alert-critical-color);
+
+    }
+
+    .alertBox-message {
+
+        margin: 0;
+    }
+
+    .alertBox-close {
+        @include alert-close;
+        cursor: $cursor-pointer-value;
+    }
+}
+
