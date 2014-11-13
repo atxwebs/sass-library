@@ -22,6 +22,7 @@
     .breadcrumbs {
 
         @include crumb-container;
+
     }
 
     .breadcrumb {
@@ -46,40 +47,51 @@
         %breadcrumb--activeState { // 1
 
             color: $crumb-font-color-current;
+
         }
 
         %breadcrumb--unavailableState { // 2
 
             color: $crumb-font-color-unavailable;
+
         }
 
         %breadcrumb--defaultState { // 3
 
             cursor: default;
             text-decoration: $crumb-link-decor;
+
         }
 
         &.is-active {
-
-            @extend %breadcrumb--activeState;
 
             > .breadcrumb-label {
 
                 @extend %breadcrumb--defaultState;
                 @extend %breadcrumb--activeState;
+
             }
         }
 
         &.is-unavailable {
 
-            @extend %breadcrumb--unavailableState;
-
             > .breadcrumb-label {
 
                 @extend %breadcrumb--defaultState;
                 @extend %breadcrumb--unavailableState;
+
             }
         }
+    }
+
+    .breadcrumb-label {
+
+        &:hover {
+
+            color: $crumb-hover-color;
+
+        }
+
     }
 
 }
