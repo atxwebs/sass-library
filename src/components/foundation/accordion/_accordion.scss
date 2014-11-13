@@ -15,16 +15,16 @@
 
 @if $exportCSS--accordion { // 1
 
-
     // Component
     // -------------------------------------------------------------------------
     .accordion-navigation {
-        @include accordion-navigation($active_class: 'is-open');
+        @include accordion-navigation($active_class: "is-open");
         cursor: $cursor-pointer-value;
     }
-    
+
     .accordion-content {
-        @include accordion-content($active_class: 'is-open');
+        @include accordion-content($active_class: "is-open");
     }
+
 }
 
