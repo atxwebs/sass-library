@@ -17,9 +17,20 @@
 
     // Component
     // -------------------------------------------------------------------------
+
+    .accordion {
+        @include accordion-container;
+        margin-bottom: spacing("single");
+    }
+
     .accordion-navigation {
         @include accordion-navigation($active_class: "is-open");
+        border: container("border");
         cursor: $cursor-pointer-value;
+    }
+
+    .accordion-title {
+        font-weight: $font-weight-bold;
     }
 
     .accordion-content {
