@@ -29,7 +29,7 @@ $exportCSS--breadcrumbs:            $exportCSS; // 1
 $include-html-nav-classes:          $include-html-classes;
 
 // We use this to set the background color for the breadcrumb container.
-$crumb-bg:                          color("greys", "lighter");
+$crumb-bg:                          container("fill");
 
 // We use these to set the padding around the breadcrumbs.
 $crumb-padding:                     spacing("half") spacing("single");
@@ -37,9 +37,9 @@ $crumb-side-padding:                spacing("half");
 
 // We use these to control border styles.
 $crumb-function-factor:             -10%;
-$crumb-border-size:                 0;
+$crumb-border-size:                 1px;
 $crumb-border-style:                solid;
-$crumb-border-color:                color("greys", "light");
+$crumb-border-color:                container("borderColor");
 $crumb-radius:                      $global-radius;
 
 // We use these to set various text styles for breadcrumbs.
