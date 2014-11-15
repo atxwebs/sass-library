@@ -9,9 +9,6 @@
 $border-global-base: solid 1px color("greys", "lighter");
 $border-global-dark: solid 1px color("greys", "light");
 
-$container-fill-base: color("greys", "lightest");
-$container-fill-light: color("whites");
-
 // Containers Map
 $containersMap: (
 
@@ -26,8 +23,8 @@ $containersMap: (
     ),
 
     fill: (
-        base: $container-fill-base,
-        light: $container-fill-light
+        base: color("greys", "lightest"),
+        light: color("whites")
     )
 
 );
