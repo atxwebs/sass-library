@@ -15,19 +15,20 @@
 @mixin buttonVariant( // 1
 
     // Arguments
-    $color,
     $backgroundColor,
+    $backgroundColorHover,
+    $backgroundColorActive,
     $borderColor,
-    $colorHover: null,
-    $backgroundColorHover: null,
-    $borderColorHover: null,
-    $colorActive: null,
-    $backgroundColorActive: null,
-    $borderColorActive: null) {
+    $borderColorHover,
+    $borderColorActive,
+    $color,
+    $colorHover,
+    $colorActive) {
 
-    background-color: $backgroundColor;
-    border-color: $borderColor;
-    color: $color;
+        background-color: $backgroundColor;
+        border-color: $borderColor;
+        border-radius: $global-radius;
+        color: $color;
 
     @if $colorHover or $backgroundColorHover or $borderColorHover != null {
 
@@ -36,7 +37,7 @@
         &.is-active {
 
             background-color: $backgroundColorHover;
-            border-color: $borderColorHover;
+            border:$button-border-width $button-border-style $borderColorHover;
             color: $colorHover;
         }
     }
@@ -46,7 +47,7 @@
         &:active {
 
             background-color: $backgroundColorActive;
-            border-color: $borderColorActive;
+            border:$button-border-width $button-border-style $borderColorActive;
             color: $colorActive;
         }
     }
@@ -60,6 +61,6 @@
     $fontSize) {
 
     font-size: $fontSize;
-    padding: ($paddingVertical - remCalc(1px)) $paddingHorizontal;
+    padding: $paddingVertical $paddingHorizontal;
 }
 
