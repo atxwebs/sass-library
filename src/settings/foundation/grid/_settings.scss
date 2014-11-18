@@ -1,5 +1,5 @@
 // =============================================================================
-// ACCORDION (Settings)
+// GRID (Settings)
 // =============================================================================
 
 
@@ -13,7 +13,7 @@
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--accordion:            $exportCSS; // 1
+$exportCSS--grid:            $exportCSS; // 1
 
 
 // Foundation Variables
@@ -25,16 +25,11 @@ $exportCSS--accordion:            $exportCSS; // 1
 // leaving the vendor framework untouched.
 //
 // -----------------------------------------------------------------------------
+//
+$include-html-grid-classes: $include-html-classes;
+// $include-xl-html-grid-classes: false;
 
-$include-html-accordion-classes: $include-html-classes;
+// $row-width: remCalc(1000px);
+// $total-columns: 12;
 
-$accordion-navigation-padding: spacing("half");
-$accordion-navigation-bg-color: container("fill");
-// $accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%) !default;
-// $accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%) !default;
-$accordion-navigation-font-color: color("greys", "darker");
-$accordion-navigation-font-size: fontSize("smaller");
-$accordion-navigation-font-family: fontFamily("sans");
-
-$accordion-content-padding: spacing("single");
-$accordion-content-active-bg-color: container("fill", "light");
+// $last-child-float: $opposite-direction;

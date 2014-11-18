@@ -15,16 +15,27 @@
 
 @if $exportCSS--accordion { // 1
 
-
     // Component
     // -------------------------------------------------------------------------
+
+    .accordion {
+        @include accordion-container;
+        margin-bottom: spacing("single");
+    }
+
     .accordion-navigation {
-        @include accordion-navigation($active_class: 'is-open');
+        @include accordion-navigation($active_class: "is-open");
+        border: container("border");
         cursor: $cursor-pointer-value;
     }
-    
-    .accordion-content {
-        @include accordion-content($active_class: 'is-open');
+
+    .accordion-title {
+        font-weight: $font-weight-bold;
     }
+
+    .accordion-content {
+        @include accordion-content($active_class: "is-open");
+    }
+
 }
 

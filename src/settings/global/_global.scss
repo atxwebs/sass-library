@@ -7,8 +7,6 @@
 // -----------------------------------------------------------------------------
 //
 // 1. Layout is dependant on Typography, so @import typography first.
-// 2. @import Foundation global variables last as it will use variables from
-//    the majority, if not all of the other @imports.
 //
 // -----------------------------------------------------------------------------
 
@@ -23,3 +21,6 @@
 
 // Layout
 @import "layout/layout"; // 1
+
+// Containers
+@import "container/container";
