@@ -20,42 +20,26 @@
     // -------------------------------------------------------------------------
 
     .alertBox {
-
-        @include alert;
-    }
-
-    .alertBox--generic {
-
-        @include alert-style($alert-generic-color);
-
+        @include alert($bg:$alert-generic-color);
     }
 
     .alertBox--promotion {
-
         @include alert-style($alert-info-color);
-
     }
 
     .alertBox--low {
-
         @include alert-style($alert-success-color);
-
     }
 
     .alertBox--moderate {
-
         @include alert-style($alert-warning-color);
-
     }
 
     .alertBox--critical {
-
         @include alert-style($alert-critical-color);
-
     }
 
     .alertBox-message {
-
         margin: 0;
     }
 

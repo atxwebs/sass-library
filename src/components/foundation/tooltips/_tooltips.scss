@@ -1,5 +1,5 @@
 // =============================================================================
-// ACCORDION (CSS)
+// TOOLTIPS (CSS)
 // =============================================================================
 
 
@@ -7,35 +7,17 @@
 // -----------------------------------------------------------------------------
 //
 // The Bigcommerce Coding Standards, coupled with Foundation.
-// If any library overrides or extra CSS is needed, declare it here.
+// If any overrides / extra CSS is needed, declare it here.
 //
 // 1. If set to false, there is no outputted CSS for this component.
 //
 // -----------------------------------------------------------------------------
 
-@if $exportCSS--accordion { // 1
+@if $exportCSS--tooltips {
 
     // Component
     // -------------------------------------------------------------------------
-
-    .accordion {
-        @include accordion-container;
-        margin-bottom: spacing("single");
+    .tooltip {
+        border-radius: $tooltip-radius;
     }
-
-    .accordion-navigation {
-        @include accordion-navigation($active_class: "is-open");
-        border: container("border");
-        cursor: $cursor-pointer-value;
-    }
-
-    .accordion-title {
-        font-weight: $font-weight-bold;
-    }
-
-    .accordion-content {
-        @include accordion-content($active_class: "is-open");
-    }
-
 }
-

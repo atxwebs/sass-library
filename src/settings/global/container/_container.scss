@@ -1,0 +1,45 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// Containers
+//
+// Purpose: Centralised place to control container settings like borders and fill
+//
+////////////////////////////////////////////////////////////////////////////////
+
+$border-global-base: solid 1px color("greys", "lighter");
+$border-global-dark: solid 1px color("greys", "light");
+
+// Containers Map
+$containersMap: (
+
+    border: (
+        base: $border-global-base,
+        dark: $border-global-dark
+    ),
+
+    borderColor: (
+        base: color("greys", "lighter"),
+        dark: color("greys", "light")
+    ),
+
+    fill: (
+        base: color("greys", "lightest"),
+        light: color("whites")
+    )
+
+);
+
+
+// Color Map Function
+// -----------------------------------------------------------------------------
+
+@function container($property, $variant: "base") {
+
+    @if map-has-key($containersMap, $property) {
+        @return map-get(map-get($containersMap, $property), $variant);
+    }
+
+    @warn "Unknown `#{$property}` in $containersMap.";
+    @return null
+
+}

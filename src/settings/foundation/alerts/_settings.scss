@@ -19,7 +19,7 @@ $exportCSS--alerts:            $exportCSS; // 1
 // Color/State Modifiers
 // -----------------------------------------------------------------------------
 
-$alert-generic-color:           color("greys", "lightest");
+$alert-generic-color:           container("fill");
 $alert-info-color:              color("info", "light");
 $alert-success-color:           color("success", "light");
 $alert-warning-color:           color("warning", "light");
@@ -35,8 +35,42 @@ $alert-critical-color:          color("alert", "light");
 //
 // -----------------------------------------------------------------------------
 
-$alert-border-style: none;
+$include-html-alert-classes: $include-html-classes;
 
-$alert-padding-top: spacing("quarter");
+// We use this to control alert padding.
+$alert-padding-top: spacing("half");
+$alert-padding-default-float: spacing("single");
+$alert-padding-opposite-direction: spacing("single") + remCalc(14);
+// $alert-padding-bottom: $alert-padding-top !default;
+
+// We use these to control text style.
+// $alert-font-weight: $font-weight-normal !default;
+$alert-font-size: fontSize("base");
+$alert-font-color: $body-font-color;
+$alert-font-color-alt: $body-font-color;
+
+// We use this for close hover effect.
+$alert-function-factor: 0%;
+
+// We use these to control border styles.
+$alert-border-style: none;
+// $alert-border-width: 1px !default;
+// $alert-border-color: scale-color($primary-color, $lightness: $alert-function-factor) !default;
+$alert-bottom-margin: spacing("single");
+
+// We use these to style the close buttons
+$alert-close-color: color("greys", "medium");
+$alert-close-top: 50%;
+$alert-close-position: spacing("half");
+$alert-close-font-size: fontSize("large");
+$alert-close-opacity: 1;
+$alert-close-opacity-hover: 1;
+$alert-close-padding: ($alert-close-font-size / 3) spacing("quarter") spacing("quarter");
+
+// We use this to control border radius
+// $alert-radius: $global-radius !default;
+
+// $alert-transition-speed: 300ms !default;
+// $alert-transition-ease: ease-out !default;
 
 

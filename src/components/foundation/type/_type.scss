@@ -141,6 +141,12 @@
         font-size: $h3-font-size;
     }
 
+    h4,
+    h5,
+    h6 {
+        margin-bottom: spacing("half");
+    }
+
     h4 {
         font-size: $h4-font-size;
     }
