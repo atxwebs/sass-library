@@ -18,62 +18,79 @@ $exportCSS--buttons:                    $exportCSS; // 1
 
 // Color/State Modifiers
 // -----------------------------------------------------------------------------
+$buttonStyleMap: (
+    default: (
+        color:                          color("primary"),
+        colorHover:                     color("primary"),
+        colorActive:                    color("primary"),
+        backgroundColor:                color("secondary"),
+        backgroundColorHover:           color("secondary", "dark"),
+        backgroundColorActive:          color("primary", "light"),
+        borderColor:                    color("greys", "light"),
+        borderColorHover:               color("greys", "light"),
+        borderColorActive:              color("greys", "medium")
+    ),
 
-$button-color:                          color("primary");
-$button-colorHover:                     color("primary");
-$button-colorActive:                    color("primary");
-$button-backgroundColor:                color("secondary");
-$button-backgroundColorHover:           color("secondary", "dark");
-$button-backgroundColorActive:          color("primary", "light");
-$button-borderColor:                    color("greys", "light");
-$button-borderColorHover:               color("greys", "light");
-$button-borderColorActive:              color("greys", "medium");
+    primary: (
+        color:                          color("secondary"),
+        colorHover:                     color("secondary"),
+        colorActive:                    color("secondary"),
+        backgroundColor:                color("primary"),
+        backgroundColorHover:           color("primary", "dark"),
+        backgroundColorActive:          color("primary", "darker"),
+        borderColor:                    color("primary"),
+        borderColorHover:               color("primary", "dark"),
+        borderColorActive:              color("primary", "darker")
+    ),
 
-$buttonPrimary-color:                   color("secondary");
-$buttonPrimary-colorHover:              color("secondary");
-$buttonPrimary-colorActive:             color("secondary");
-$buttonPrimary-backgroundColor:         color("primary");
-$buttonPrimary-backgroundColorHover:    color("primary", "dark");
-$buttonPrimary-backgroundColorActive:   color("primary", "darker");
-$buttonPrimary-borderColor:             color("primary");
-$buttonPrimary-borderColorHover:        color("primary", "dark");
-$buttonPrimary-borderColorActive:       color("primary", "darker");
+    action: (
+        color:                          color("secondary"),
+        colorHover:                     color("secondary"),
+        colorActive:                    color("secondary"),
+        backgroundColor:                color("highlight"),
+        backgroundColorHover:           color("highlight", "dark"),
+        backgroundColorActive:          color("highlight", "darker"),
+        borderColor:                    color("highlight"),
+        borderColorHover:               color("highlight", "dark"),
+        borderColorActive:              color("highlight", "darker")
+    ),
 
-$buttonAction-color:                    color("secondary");
-$buttonAction-colorHover:               color("secondary");
-$buttonAction-colorActive:              color("secondary");
-$buttonAction-backgroundColor:          color("highlight");
-$buttonAction-backgroundColorHover:     color("highlight", "dark");
-$buttonAction-backgroundColorActive:    color("highlight", "darker");
-$buttonAction-borderColor:              color("highlight");
-$buttonAction-borderColorHover:         color("highlight", "dark");
-$buttonAction-borderColorActive:        color("highlight", "darker");
-
-$buttonDisabled-color:                  color("greys", "medium");
-$buttonDisabled-colorHover:             color("greys", "medium");
-$buttonDisabled-colorActive:            color("greys", "medium");
-$buttonDisabled-backgroundColor:        color("greys", "lightest");
-$buttonDisabled-backgroundColorHover:   color("greys", "lightest");
-$buttonDisabled-backgroundColorActive:  color("greys", "lightest");
-$buttonDisabled-borderColor:            color("greys", "light");
-$buttonDisabled-borderColorHover:       color("greys", "light");
-$buttonDisabled-borderColorActive:      color("greys", "light");
+    disabled: (
+        color:                          color("greys", "medium"),
+        colorHover:                     color("greys", "medium"),
+        colorActive:                    color("greys", "medium"),
+        backgroundColor:                color("greys", "lightest"),
+        backgroundColorHover:           color("greys", "lightest"),
+        backgroundColorActive:          color("greys", "lightest"),
+        borderColor:                    color("greys", "light"),
+        borderColorHover:               color("greys", "light"),
+        borderColorActive:              color("greys", "light")
+    )
+);
 
 
 // Size Modifiers
 // -----------------------------------------------------------------------------
 
-$buttonLarge-verticalPadding:           spacing("base");
-$buttonLarge-horizontalPadding:         spacing("single") + spacing("base");
-$buttonLarge-fontSize:                  fontSize("small");
+$buttonSizeMap: (
+    default: (
+        fontSize:                       fontSize("base"),
+        horizontalPadding:              spacing("single"),
+        verticalPadding:                spacing("half")
+    ),
 
-$buttonDefault-verticalPadding:         spacing("half");
-$buttonDefault-horizontalPadding:       spacing("single");
-$buttonDefault-fontSize:                fontSize("base");
+    large: (
+        fontSize:                       fontSize("small"),
+        horizontalPadding:              spacing("single") + spacing("base"),
+        verticalPadding:                spacing("base")
+    ),
 
-$buttonSmall-verticalPadding:           spacing("third");
-$buttonSmall-horizontalPadding:         spacing("base");
-$buttonSmall-fontSize:                  fontSize("smallest");
+    small: (
+        fontSize:                       fontSize("smallest"),
+        horizontalPadding:              spacing("base"),
+        verticalPadding:                spacing("third")
+    )
+);
 
 
 // Foundation Variables
@@ -87,22 +104,5 @@ $buttonSmall-fontSize:                  fontSize("smallest");
 // -----------------------------------------------------------------------------
 
 $include-html-button-classes:           $include-html-classes;
-
-// We use this to control the display property.
-$button-display:                        inline-block;
 $button-margin-bottom:                  spacing("base");
-
-// We use these to control button text styles.
-$button-font-family:                    $body-font-family;
-$button-font-color:                     color(whites);
-$button-font-color-alt:                 color(blacks);
-
-$button-font-weight:                    fontWeight("normal");
-$button-font-align:                     center;
-
-// We use these to control various hover effects.
-$button-function-factor:                20%;
-
-// We use these to control button border styles.
 $button-border-width:                   1px;
-$button-border-style:                   solid;

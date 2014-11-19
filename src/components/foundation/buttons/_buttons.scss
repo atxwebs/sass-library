@@ -22,23 +22,8 @@
     .button {
 
         @include button-base;
-        @include buttonVariant(
-            $button-backgroundColor,
-            $button-backgroundColorHover,
-            $button-backgroundColorActive,
-            $button-borderColor,
-            $button-borderColorHover,
-            $button-borderColorActive,
-            $button-color,
-            $button-colorHover,
-            $button-colorActive
-        );
-
-        @include buttonSize(
-            $buttonDefault-verticalPadding,
-            $buttonDefault-horizontalPadding,
-            $buttonDefault-fontSize
-        );
+        @include buttonVariant("default");
+        @include buttonSize("default");
     }
 
 
@@ -47,47 +32,17 @@
 
     .button--primary {
 
-        @include buttonVariant(
-            $buttonPrimary-backgroundColor,
-            $buttonPrimary-backgroundColorHover,
-            $buttonPrimary-backgroundColorActive,
-            $buttonPrimary-borderColor,
-            $buttonPrimary-borderColorHover,
-            $buttonPrimary-borderColorActive,
-            $buttonPrimary-color,
-            $buttonPrimary-colorHover,
-            $buttonPrimary-colorActive
-        );
+        @include buttonVariant("primary");
     }
 
     .button--action {
 
-        @include buttonVariant(
-            $buttonAction-backgroundColor,
-            $buttonAction-backgroundColorHover,
-            $buttonAction-backgroundColorActive,
-            $buttonAction-borderColor,
-            $buttonAction-borderColorHover,
-            $buttonAction-borderColorActive,
-            $buttonAction-color,
-            $buttonAction-colorHover,
-            $buttonAction-colorActive
-        );
+        @include buttonVariant("action");
     }
 
     .button--disabled {
 
-        @include buttonVariant(
-            $buttonDisabled-backgroundColor,
-            $buttonDisabled-backgroundColorHover,
-            $buttonDisabled-backgroundColorActive,
-            $buttonDisabled-borderColor,
-            $buttonDisabled-borderColorHover,
-            $buttonDisabled-borderColorActive,
-            $buttonDisabled-color,
-            $buttonDisabled-colorHover,
-            $buttonDisabled-colorActive
-        );
+        @include buttonVariant("disabled");
         cursor: $cursor-default-value;
     }
 
@@ -97,20 +52,12 @@
 
     .button--large {
 
-        @include buttonSize(
-            $buttonLarge-verticalPadding,
-            $buttonLarge-horizontalPadding,
-            $buttonLarge-fontSize
-        );
+        @include buttonSize("large");
     }
 
     .button--small {
 
-        @include buttonSize(
-            $buttonSmall-verticalPadding,
-            $buttonSmall-horizontalPadding,
-            $buttonSmall-fontSize
-        );
+        @include buttonSize("small");
     }
 
 }
