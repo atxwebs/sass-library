@@ -30,15 +30,15 @@ $has-tip-border-bottom-hover: dotted 1px scale-color(color("primary", "base"), $
 $has-tip-font-color-hover: color("primary", "base");
 $has-tip-cursor-type: help;
 
-$tooltip-padding: spacing("half");
-$tooltip-bg: color("greys", "darkets");
-$tooltip-font-size: fontSize("base");
+$tooltip-padding: spacing("quarter") spacing("third") (spacing("quarter") - remCalc(1px));
+$tooltip-bg: color("greys", "darkest");
+$tooltip-font-size: fontSize("smallest");
 //$tooltip-font-weight: $font-weight-normal;
-$tooltip-font-color: color("whites", "base");
-//$tooltip-line-height: 1.3;
+$tooltip-font-color: color("whites");
+$tooltip-line-height: lineHeight("small");
 $tooltip-close-font-size: fontSize("smallest");
 //$tooltip-close-font-weight: $font-weight-normal;
-$tooltip-close-font-color: color("greys", "base");
+$tooltip-close-font-color: color("greys", "lighter");
 $tooltip-font-size-sml: fontSize("base");
 $tooltip-radius: 2px;
 $tooltip-rounded: 1000px;
