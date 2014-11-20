@@ -1,0 +1,38 @@
+// =============================================================================
+// LOADING (CSS)
+// =============================================================================
+
+
+// Bigcommerce Component
+// -----------------------------------------------------------------------------
+//
+// The Bigcommerce Coding Standards, coupled with Foundation.
+// If any library overrides or extra CSS is needed, declare it here.
+//
+// 1. If set to false, there is no outputted CSS for this component.
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--loading {
+
+    // Component
+    // -------------------------------------------------------------------------
+
+    .loader {
+        left: 0;
+        position: fixed;
+        right: 0;
+        text-align: center;
+        top: 0;
+        z-index: zIndex("highest");
+    }
+
+    .loader-label {
+        background: color("blacks");
+        border-radius: 0 0 $global-radius $global-radius;
+        color: color("whites");
+        display: inline-block;
+        font-weight: fontWeight("bold");
+        padding: spacing("quarter") spacing("half");
+    }
+}

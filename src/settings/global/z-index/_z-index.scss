@@ -1,0 +1,36 @@
+// =============================================================================
+// Z-INDEX
+// =============================================================================
+
+
+// Global Type Vars
+// -----------------------------------------------------------------------------
+//
+// IMPORTANT: These variables are NOT to be consumed in components/apps.
+//            Instead use the maps and functions outlined below.
+//
+// -----------------------------------------------------------------------------
+
+
+$zIndexMap: (
+        lowest:                     5,
+        lower:                      10,
+        low:                        20,
+        high:                       50,
+        higher:                     100,
+        highest:                    500
+);
+
+
+// z-index Functions
+// -----------------------------------------------------------------------------
+
+@function zIndex($key) {
+
+    @if map-has-key($zIndexMap, $key) {
+        @return map-get($zIndexMap, $key);
+    }
+
+    @warn "Unknown `#{$key}` in $zIndexMap.";
+    @return null;
+}
