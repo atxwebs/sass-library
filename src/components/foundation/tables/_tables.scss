@@ -1,0 +1,27 @@
+// =============================================================================
+// TABLES (CSS)
+// =============================================================================
+
+
+// Bigcommerce Component
+// -----------------------------------------------------------------------------
+//
+// The Bigcommerce Coding Standards, coupled with Foundation.
+// If any overrides / extra CSS is needed, declare it here.
+//
+// 1. If set to false, there is no outputted CSS for this component.
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--buttons { // 1
+
+
+    // Component
+    // -------------------------------------------------------------------------
+
+    .table {
+
+        @include table;
+    }
+
+}
