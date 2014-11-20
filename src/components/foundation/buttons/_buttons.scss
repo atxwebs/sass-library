@@ -22,141 +22,28 @@
     .button {
 
         @include button-base;
-        @include buttonVariant(
-            $buttonVariant-color,
-            $buttonVariant-backgroundColor,
-            $buttonVariant-borderColor,
-            $buttonVariant-colorHover,
-            $buttonVariant-backgroundColorHover,
-            $buttonVariant-borderColorHover,
-            $buttonVariant-colorActive,
-            $buttonVariant-backgroundColorActive,
-            $buttonVariant-borderColorActive
-        );
+        @include buttonVariant("default");
+        @include buttonSize("default");
     }
 
 
     // Color/State Modifiers
     // -------------------------------------------------------------------------
 
-    .button--disabled {
-
-        @include buttonVariant(
-            $buttonDisabled-color,
-            $buttonDisabled-backgroundColor,
-            $buttonDisabled-borderColor,
-            $buttonDisabled-colorHover,
-            $buttonDisabled-backgroundColorHover,
-            $buttonDisabled-borderColorHover,
-            $buttonDisabled-colorActive,
-            $buttonDisabled-backgroundColorActive,
-            $buttonDisabled-borderColorActive
-        );
-    }
-
     .button--primary {
 
-        @include buttonVariant(
-            $buttonPrimary-color,
-            $buttonPrimary-backgroundColor,
-            $buttonPrimary-borderColor,
-            $buttonPrimary-colorHover,
-            $buttonPrimary-backgroundColorHover,
-            $buttonPrimary-borderColorHover,
-            $buttonPrimary-colorActive,
-            $buttonPrimary-backgroundColorActive,
-            $buttonPrimary-borderColorActive
-        );
+        @include buttonVariant("primary");
     }
 
     .button--action {
 
-        @include buttonVariant(
-            $buttonAction-color,
-            $buttonAction-backgroundColor,
-            $buttonAction-borderColor,
-            $buttonAction-colorHover,
-            $buttonAction-backgroundColorHover,
-            $buttonAction-borderColorHover,
-            $buttonAction-colorActive,
-            $buttonAction-backgroundColorActive,
-            $buttonAction-borderColorActive
-        );
+        @include buttonVariant("action");
     }
 
-    .button--success {
+    .button--disabled {
 
-        @include buttonVariant(
-            $buttonSuccess-color,
-            $buttonSuccess-backgroundColor,
-            $buttonSuccess-borderColor,
-            $buttonSuccess-colorHover,
-            $buttonSuccess-backgroundColorHover,
-            $buttonSuccess-borderColorHover,
-            $buttonSuccess-colorActive,
-            $buttonSuccess-backgroundColorActive,
-            $buttonSuccess-borderColorActive
-        );
-    }
-
-    .button--alert {
-
-        @include buttonVariant(
-            $buttonAlert-color,
-            $buttonAlert-backgroundColor,
-            $buttonAlert-borderColor,
-            $buttonAlert-colorHover,
-            $buttonAlert-backgroundColorHover,
-            $buttonAlert-borderColorHover,
-            $buttonAlert-colorActive,
-            $buttonAlert-backgroundColorActive,
-            $buttonAlert-borderColorActive
-        );
-    }
-
-    .button--warning {
-
-        @include buttonVariant(
-            $buttonWarning-color,
-            $buttonWarning-backgroundColor,
-            $buttonWarning-borderColor,
-            $buttonWarning-colorHover,
-            $buttonWarning-backgroundColorHover,
-            $buttonWarning-borderColorHover,
-            $buttonWarning-colorActive,
-            $buttonWarning-backgroundColorActive,
-            $buttonWarning-borderColorActive
-        );
-    }
-
-    .button--info {
-
-        @include buttonVariant(
-            $buttonInfo-color,
-            $buttonInfo-backgroundColor,
-            $buttonInfo-borderColor,
-            $buttonInfo-colorHover,
-            $buttonInfo-backgroundColorHover,
-            $buttonInfo-borderColorHover,
-            $buttonInfo-colorActive,
-            $buttonInfo-backgroundColorActive,
-            $buttonInfo-borderColorActive
-        );
-    }
-
-    .button--link {
-
-        @include buttonVariant(
-            $buttonLink-color,
-            $buttonLink-backgroundColor,
-            $buttonLink-borderColor,
-            $buttonLink-colorHover,
-            $buttonLink-backgroundColorHover,
-            $buttonLink-borderColorHover,
-            $buttonLink-colorActive,
-            $buttonLink-backgroundColorActive,
-            $buttonLink-borderColorActive
-        );
+        @include buttonVariant("disabled");
+        cursor: $cursor-default-value;
     }
 
 
@@ -165,51 +52,12 @@
 
     .button--large {
 
-        @include buttonSize(
-            $buttonLarge-verticalPadding,
-            $buttonLarge-horizontalPadding,
-            $buttonLarge-fontSize
-        );
+        @include buttonSize("large");
     }
 
     .button--small {
 
-        @include buttonSize(
-            $buttonSmall-verticalPadding,
-            $buttonSmall-horizontalPadding,
-            $buttonSmall-fontSize
-        );
-    }
-
-    .button--tiny {
-
-        @include buttonSize(
-            $buttonTiny-verticalPadding,
-            $buttonTiny-horizontalPadding,
-            $buttonTiny-fontSize
-        );
-    }
-
-
-    // Expand Modifiers
-    // -------------------------------------------------------------------------
-
-    %button--expand {
-        width: 100%;
-    }
-
-    .button--expand {
-        @extend %button--expand;
-    }
-
-    .button--expandAlignLeft {
-        @extend %button--expand;
-        text-align: left;
-    }
-
-    .button--expandAlignRight {
-        @extend %button--expand;
-        text-align: right;
+        @include buttonSize("small");
     }
 
 }

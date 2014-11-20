@@ -12,54 +12,58 @@
 // -----------------------------------------------------------------------------
 
 
-@mixin buttonVariant( // 1
+@mixin buttonVariant($type) {
 
-    // Arguments
-    $color,
-    $backgroundColor,
-    $borderColor,
-    $colorHover: null,
-    $backgroundColorHover: null,
-    $borderColorHover: null,
-    $colorActive: null,
-    $backgroundColorActive: null,
-    $borderColorActive: null) {
+    background-color: buttonStyle($type, "backgroundColor");
+    border-color: buttonStyle($type, "borderColor");
+    border-radius: $global-radius;
+    color: buttonStyle($type, "color");
 
-    background-color: $backgroundColor;
-    border-color: $borderColor;
-    color: $color;
-
-    @if $colorHover or $backgroundColorHover or $borderColorHover != null {
+    @if buttonStyle($type, "backgroundColorHover") or buttonStyle($type, "borderColorHover") or buttonStyle($type, "colorHover")!= null {
 
         &:hover,
         &:focus,
         &.is-active {
 
-            background-color: $backgroundColorHover;
-            border-color: $borderColorHover;
-            color: $colorHover;
+            background-color: buttonStyle($type, "backgroundColorHover");
+            border: $button-border-width $button-border-style buttonStyle($type, "borderColorHover");
+            color: buttonStyle($type, "colorHover");
         }
     }
 
-    @if $colorActive or $backgroundColorActive or $borderColorActive != null {
+    @if buttonStyle($type, "backgroundColorActive") or buttonStyle($type, "borderColorActive") or buttonStyle($type, "colorActive") != null {
 
         &:active {
 
-            background-color: $backgroundColorActive;
-            border-color: $borderColorActive;
-            color: $colorActive;
+            background-color: buttonStyle($type, "backgroundColorActive");
+            border: $button-border-width $button-border-style buttonStyle($type, "borderColorActive");
+            color: buttonStyle($type, "colorActive");
         }
     }
 }
 
-@mixin buttonSize( // 2
+@mixin buttonSize($type) {
 
-    // Arguments
-    $paddingVertical,
-    $paddingHorizontal,
-    $fontSize) {
-
-    font-size: $fontSize;
-    padding: ($paddingVertical - remCalc(1px)) $paddingHorizontal;
+    font-size: buttonSize($type, "fontSize");
+    padding: buttonSize($type, "verticalPadding") buttonSize($type, "horizontalPadding");
 }
 
+@function buttonStyle($type, $rule) {
+
+    @if map-has-key($buttonStyleMap, $type) {
+        @return map-get(map-get($buttonStyleMap, $type), $rule);
+    }
+
+    @warn "Unknown `#{$type}` in $buttonStyleMap.";
+    @return null
+}
+
+@function buttonSize($type, $rule) {
+
+    @if map-has-key($buttonSizeMap, $type) {
+        @return map-get(map-get($buttonSizeMap, $type), $rule);
+    }
+
+    @warn "Unknown `#{$type}` in $buttonSizeMap.";
+    @return null
+}
