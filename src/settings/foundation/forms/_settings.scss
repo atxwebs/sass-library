@@ -1,0 +1,106 @@
+// =============================================================================
+// FORMS (Settings)
+// =============================================================================
+
+// Foundation Variables
+// -----------------------------------------------------------------------------
+//
+// These variables come directly from:
+// /vendor/foundation/foundation/components/*
+// Declaring the variables here, you can adjust them all to your design,
+// leaving the vendor framework untouched.
+//
+// -----------------------------------------------------------------------------
+
+// $include-html-form-classes: $include-html-classes;
+
+// We use this to set the base for lots of form spacing and positioning styles
+$form-spacing: spacing("single");
+
+// We use these to style the labels in different ways
+$form-label-pointer: pointer;
+$form-label-font-size: fontSize("base");
+$form-label-font-weight: fontWeight("medium");
+$form-label-line-height: lineHeight("base");
+$form-label-font-color: $body-font-color;
+$form-label-small-transform: none;
+$form-label-bottom-margin: 1rem;
+
+// $input-font-family: inherit;
+$input-font-color: $body-font-color;
+$input-font-size: fontSize("base");
+$input-bg-color: color("whites", "bright");
+$input-focus-bg-color: color("whites", "bright");
+$input-border-color: container("borderColor", "dark");
+$input-focus-border-color: color("primary");
+// $input-border-style: solid;
+// $input-border-width: 1px;
+$input-border-radius: 2px;
+$input-disabled-bg: color("greys", "lighter");
+// $input-disabled-cursor: $cursor-default-value;
+$input-box-shadow: none;
+$input-include-glowing-effect: false;
+
+// We use these to style the fieldset border and spacing.
+// $fieldset-border-style: solid;
+$fieldset-border-width: 0;
+// $fieldset-border-color: $gainsboro;
+$fieldset-padding: 0;
+$fieldset-margin: 0;
+
+// We use these to style the legends when you use them
+// $legend-bg: $white;
+// $legend-font-weight: $font-weight-bold;
+// $legend-padding: rem-calc(0 3);
+
+// We use these to style the prefix and postfix input elements
+// $input-prefix-bg: scale-color($white, $lightness: -5%);
+// $input-prefix-border-color: scale-color($white, $lightness: -20%);
+// $input-prefix-border-size: 1px;
+// $input-prefix-border-type: solid;
+// $input-prefix-overflow: hidden;
+// $input-prefix-font-color: $oil;
+// $input-prefix-font-color-alt: $white;
+
+// We use this setting to turn on/off HTML5 number spinners (the up/down arrows)
+// $input-number-spinners: true;
+
+// We use these to style the error states for inputs and labels
+// $input-error-message-padding: rem-calc(6 9 9);
+// $input-error-message-top: -1px;
+// $input-error-message-font-size: rem-calc(12);
+// $input-error-message-font-weight: $font-weight-normal;
+// $input-error-message-font-style: italic;
+// $input-error-message-font-color: $white;
+// $input-error-message-font-color-alt: $oil;
+
+// We use this to style the glowing effect of inputs when focused
+// $glowing-effect-fade-time: 0.45s;
+// $glowing-effect-color: $input-focus-border-color;
+
+// Select variables
+$select-bg-color: color("whites", "bright");
+$select-hover-bg-color: color("whites", "bright");
+
+
+// Bigcommerce Variables
+// -----------------------------------------------------------------------------
+//
+// These scoped variables are created by Bigcommerce.
+// All variables that are not from Foundation should be placed here.
+//
+// 1. Choose whether to include the Bigcommerce class names
+//
+// -----------------------------------------------------------------------------
+
+$exportCSS--forms:                    $exportCSS; // 1
+
+$form-label-small-color: color("greys", "medium");
+$form-label-small-fontSize: fontSize("base");
+$form-label-small-fontWeight: fontWeight("normal");
+
+$input-placeholder-color: color("greys", "medium");
+$input-disabled-color: color("greys", "medium");
+$input-focus-box-shadow: 0 0 2px rgba(color("primary"), 0.4);
+$input-height: $form-spacing * 2 - remCalc(1);
+$input-transition: all 100ms ease-out;
