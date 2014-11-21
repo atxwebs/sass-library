@@ -39,7 +39,7 @@ $body-font-family: fontFamily("sans");
 $header-font-family: fontFamily("sans");
 $header-font-weight: $font-weight-bold;
 $header-font-color: $body-font-color;
-$header-letter-spacing: letterSpacing("small");
+$header-letter-spacing: 0;
 $header-line-height: lineHeight("base");
 $header-bottom-margin: spacing("single");
 
