@@ -17,7 +17,6 @@
 
     .panel {
         @include panel;
-        @include radius;
         border-color: $panel-border-color;
         position: relative;
     }
@@ -34,8 +33,6 @@
     // Panel header
     .panel-header {
         background-color: $panel-header-bg;
-        border-bottom: $panel-border-style $panel-border-size $panel-border-color;
-        border-radius: $panel-header-radius;
         display: block;
         padding: $panel-header-padding;
 

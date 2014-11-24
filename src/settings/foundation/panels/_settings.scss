@@ -16,7 +16,7 @@
 $include-html-panel-classes: $include-html-classes;
 
 // We use these to control the background and border styles
-$panel-bg: color("whites");
+$panel-bg: color("whites", "light");
 $panel-border-style: solid;
 $panel-border-size: 1px;
 
@@ -50,11 +50,10 @@ $exportCSS--panels:            $exportCSS; // 1
 
 // Panel header settings
 $panel-header-bg: container("fill");
-$panel-header-radius: $global-radius $global-radius 0 0;
 $panel-header-padding: spacing("half") $panel-padding;
 
 // Panel title settings
-$panel-title-fontSize: fontSize("smallest");
+$panel-title-fontSize: fontSize("base");
 $panel-title-fontWeight: fontWeight("semibold");
 $panel-title-lineHeight: lineHeight("small");
 
