@@ -1,6 +1,7 @@
 // =============================================================================
-// GLOBAL (Settings)
+// BC-PAGINATION (Settings)
 // =============================================================================
+
 
 // Bigcommerce Variables
 // -----------------------------------------------------------------------------
@@ -12,12 +13,6 @@
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--global:             $exportCSS; // 1
+$exportCSS--bcPagination:            $exportCSS;
 
-// We use this as cursors values for enabling the option of having custom cursors in the whole site's stylesheet
-$cursor-auto-value: auto !default;
-$cursor-crosshair-value: crosshair !default;
-$cursor-default-value: default !default;
-$cursor-pointer-value: pointer !default;
-$cursor-help-value: help !default;
-$cursor-text-value: text !default;
+
