@@ -1,0 +1,60 @@
+// =============================================================================
+// SPLIT BUTTONS (CSS)
+// =============================================================================
+
+
+// Bigcommerce Component
+// -----------------------------------------------------------------------------
+//
+// The Bigcommerce Coding Standards, coupled with Foundation.
+// If any library overrides or extra CSS is needed, declare it here.
+//
+// 1. If set to false, there is no outputted CSS for this component.
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--split-buttons { // 1
+
+
+    // Component
+    // -------------------------------------------------------------------------
+    .splitButton {
+        @include button-base;
+        @include buttonSize("default");
+        @include buttonVariant("default");
+        @include split-button($span-border: container("borderColor", "dark"));
+    }
+
+    .splitButton--tiny {
+        @include buttonSize("tiny");
+        @include split-button("tiny", $span-border: container("borderColor", "dark"), $base-style: false);
+    }
+
+    .splitButton--small {
+        @include buttonSize("small");
+        @include split-button("small", $span-border: container("borderColor", "dark"), $base-style: false);
+    }
+
+    .splitButton--large {
+        @include buttonSize("large");
+        @include split-button("large", $span-border: container("borderColor", "dark"), $base-style: false);
+    }
+
+    .splitButton--action {
+        @include buttonVariant("action")
+    }
+
+    .splitButton--primary {
+        @include buttonVariant("primary");
+    }
+
+    // Allows these variants to be combined with the size variants above
+    .splitButton--action span,
+    .splitButton--primary span {
+        border-color: color("whites");
+
+        &:after {
+            border-top-color: color("whites");
+        }
+    }
+}
