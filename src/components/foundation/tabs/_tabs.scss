@@ -18,15 +18,18 @@
     // Component
     // -------------------------------------------------------------------------
     .tabs {
-        dd, .tab-title {
-            border-bottom: 2px solid $tab-title-border-color-default;
+        dd,
+        .tab-title {
+            border-bottom: $tab-title-border-bottom-height solid $tab-title-border-color;
 
+            > a:hover,
             &:hover {
-                border-bottom-color: $tab-title-border-color-hover;
+                color: $tabs-navigation-active-font-color;
             }
 
             &.active {
-                border-bottom-color: $tab-title-border-color-active;
+                font-weight: $tab-title-active-font-weight;
+                border-bottom-color: $tab-title-active-border-color;
             }
 
         }
