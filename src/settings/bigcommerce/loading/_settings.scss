@@ -1,29 +1,18 @@
 // =============================================================================
-// SETTINGS
+// LOADING (Settings)
 // =============================================================================
 
 
 // Bigcommerce Variables
 // -----------------------------------------------------------------------------
 //
-// 1. Layout is dependant on Typography, so @import typography first.
+// These scoped variables are created by Bigcommerce.
+// All variables that are not from Foundation should be placed here.
+//
+// 1. Choose whether to include the Bigcommerce class names
 //
 // -----------------------------------------------------------------------------
 
-// Export
-@import "export/export";
+$exportCSS--loading:            $exportCSS;
 
-// Color
-@import "color/color";
 
-// Typography
-@import "typography/typography"; // 1
-
-// Layout
-@import "layout/layout"; // 1
-
-// Containers
-@import "container/container";
-
-// Z-index
-@import "z-index/z-index";
