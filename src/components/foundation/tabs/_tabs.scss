@@ -1,0 +1,35 @@
+// =============================================================================
+// TABS (CSS)
+// =============================================================================
+
+
+// Bigcommerce Component
+// -----------------------------------------------------------------------------
+//
+// The Bigcommerce Coding Standards, coupled with Foundation.
+// If any library overrides or extra CSS is needed, declare it here.
+//
+// 1. If set to false, there is no outputted CSS for this component.
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--tabs { // 1
+
+    // Component
+    // -------------------------------------------------------------------------
+    .tabs {
+        dd, .tab-title {
+            border-bottom: 2px solid $tab-title-border-color-default;
+
+            &:hover {
+                border-bottom-color: $tab-title-border-color-hover;
+            }
+
+            &.active {
+                border-bottom-color: $tab-title-border-color-active;
+            }
+
+        }
+    }
+}
+
