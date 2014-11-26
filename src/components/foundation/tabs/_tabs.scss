@@ -61,6 +61,7 @@
         padding: $tabs-navigation-padding $tabs-navigation-padding * 2;
         font-family: $tabs-navigation-font-family;
         font-size: $tabs-navigation-font-size;
+
         &:hover {
             color: $tabs-navigation-active-font-color;
             background: {
@@ -76,7 +77,10 @@
 
         &.vertical {
             display: block;
-            > .content { padding: 0 $tabs-content-padding; }
+
+            > .tab-content {
+                padding: 0 $tabs-content-padding;
+            }
         }
     }
 
@@ -85,8 +89,15 @@
         float: $default-float;
         padding: $tabs-content-padding 0;
         width: 100%;
-        &.active { display: block; float: none; }
-        &.contained { padding: $tabs-content-padding; }
+
+        &.active {
+            display: block;
+            float: none;
+        }
+
+        &.contained {
+            padding: $tabs-content-padding;
+        }
     }
 
     @media #{$medium-up} {
@@ -98,6 +109,7 @@
                 margin: 0 0 $tabs-vertical-navigation-margin-bottom;
             }
         }
+
         .tabs-content {
             &.vertical {
                 width: 80%;
@@ -108,6 +120,7 @@
             }
         }
     }
+    
     .no-js {
         .tabs-content > .tab-content {
             display: block;
