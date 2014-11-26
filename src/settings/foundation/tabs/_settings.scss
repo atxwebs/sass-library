@@ -25,7 +25,7 @@ $tab-title-active-font-weight:              fontWeight("bold");
 
 // Foundation Variables
 // -----------------------------------------------------------------------------
-$include-html-tabs-classes:                 true;
+$include-html-tabs-classes:                 $include-html-classes;
 
 $tabs-navigation-padding:                   spacing("half");
 $tabs-navigation-bg-color:                  $tab-bg-color;
