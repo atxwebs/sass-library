@@ -14,3 +14,49 @@
 // -----------------------------------------------------------------------------
 
 $exportCSS--tables:                    $exportCSS; // 1
+
+//
+// @variables
+
+
+// $include-html-table-classes: $include-html-classes;
+
+// These control the background color for the table and even rows
+$table-bg: color("whites","light");
+$table-even-row-bg: color("greys","lightest");
+
+// These control the table border style
+$table-border-style: solid;
+$table-border-size: 1px;
+$table-border-color: color("greys","light");
+
+// These control the table head styles
+$table-head-bg:  color("greys","lighter");
+$table-head-font-size: remCalc(14);
+$table-head-font-color: color("greys","darker");;
+$table-head-font-weight: $font-weight-bold;
+$table-head-padding: remCalc(8 10 10);
+
+// These control the table foot styles
+$table-foot-bg: $table-head-bg;
+$table-foot-font-size: $table-head-font-size;
+$table-foot-font-color: $table-head-font-color;
+$table-foot-font-weight: $table-head-font-weight;
+$table-foot-padding: $table-head-padding;
+
+// These control the caption
+$table-caption-bg: transparent;
+$table-caption-font-color: $table-head-font-color;
+$table-caption-font-size: remCalc(16);
+$table-caption-font-weight: bold;
+
+// These control the row padding and font styles
+$table-row-padding: remCalc(9 10);
+$table-row-font-size: remCalc(14);
+$table-row-font-color: color("greys","darker");
+$table-line-height: remCalc(18);
+
+// These are for controlling the layout, display and margin of tables
+$table-layout: auto;
+$table-display: table-cell;
+$table-margin-bottom: remCalc(20);
