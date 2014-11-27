@@ -5,7 +5,6 @@ module.exports = {
         ],
         "tasks": [
             "scsslint",
-            "clean:release",
             "copy:release"
         ]
     }
