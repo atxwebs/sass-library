@@ -20,8 +20,10 @@
     // -------------------------------------------------------------------------
 
     .table {
-
         @include table;
+        
+        [class*="--numericData"] {
+            text-align: right;  //TODO: Extend u-textAlignRight
+        }
     }
-
 }
