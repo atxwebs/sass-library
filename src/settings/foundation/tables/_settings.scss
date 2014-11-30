@@ -22,18 +22,18 @@ $exportCSS--tables:                    $exportCSS; // 1
 // $include-html-table-classes: $include-html-classes;
 
 // These control the background color for the table and even rows
-$table-bg: color("whites","light");
-$table-even-row-bg: color("greys","lightest");
+$table-bg: color("whites", "light");
+$table-even-row-bg: color("greys", "lightest");
 
 // These control the table border style
 $table-border-style: solid;
 $table-border-size: 1px;
-$table-border-color: color("greys","light");
+$table-border-color: color("greys", "light");
 
 // These control the table head styles
-$table-head-bg:  color("greys","lighter");
+$table-head-bg:  color("greys", "lighter");
 $table-head-font-size: remCalc(14);
-$table-head-font-color: color("greys","darker");;
+$table-head-font-color: color("greys", "darker");
 $table-head-font-weight: $font-weight-bold;
 $table-head-padding: remCalc(8 10 10);
 
@@ -53,7 +53,7 @@ $table-caption-font-weight: bold;
 // These control the row padding and font styles
 $table-row-padding: remCalc(9 10);
 $table-row-font-size: remCalc(14);
-$table-row-font-color: color("greys","darker");
+$table-row-font-color: color("greys", "darker");
 $table-line-height: remCalc(18);
 
 // These are for controlling the layout, display and margin of tables
