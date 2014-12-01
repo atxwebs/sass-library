@@ -1,0 +1,47 @@
+// =============================================================================
+// TABLES (CSS)
+// =============================================================================
+
+
+// Bigcommerce Tables
+// -----------------------------------------------------------------------------
+//
+// The Bigcommerce Coding Standards, coupled with Foundation.
+// If any overrides / extra CSS is needed, declare it here.
+//
+// 1. If set to false, there is no outputted CSS for this component.
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--tables { // 1
+
+
+    // Component
+    // -------------------------------------------------------------------------
+
+    .table {
+
+        @include table;
+
+        thead {
+            border: $table-head-border;
+        }
+        
+        tfoot {
+            border: $table-foot-border;
+        }
+
+        tbody tr {
+            border-bottom: $table-row-border;
+
+            &:last-child{
+                border-bottom: 0;
+            }
+        }
+
+        [class*="--numericData"] {
+            text-align: right;  //TODO: Extend u-textAlignRight
+        }
+
+    }
+}

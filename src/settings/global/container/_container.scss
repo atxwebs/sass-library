@@ -6,8 +6,10 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-$border-global-base: solid 1px color("greys", "lighter");
-$border-global-dark: solid 1px color("greys", "light");
+$border-global-size: 1px;
+$border-global-style: solid;
+$border-global-base: $border-global-style $border-global-size color("greys", "lighter");
+$border-global-dark: $border-global-style $border-global-size color("greys", "light");
 
 // Containers Map
 $containersMap: (
@@ -20,6 +22,14 @@ $containersMap: (
     borderColor: (
         base: color("greys", "lighter"),
         dark: color("greys", "light")
+    ),
+
+    borderSize: (
+        base: $border-global-size
+    ),
+
+    borderStyle: (
+        base: $border-global-style
     ),
 
     fill: (
