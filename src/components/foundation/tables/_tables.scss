@@ -23,13 +23,16 @@
 
         @include table;
 
-        thead,
+        thead {
+            border: $table-head-border;
+        }
+        
         tfoot {
-            border: container("border","dark");
+            border: $table-foot-border;
         }
 
         tbody tr {
-            border-bottom: container("border");
+            border-bottom: $table-row-border;
 
             &:last-child{
                 border-bottom: 0;

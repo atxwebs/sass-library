@@ -15,9 +15,13 @@
 
 $exportCSS--tables:                    $exportCSS; // 1
 
+//These control the table header and footer border styles
+$table-head-border: container("border", "dark");
+$table-foot-border: $table-head-border;
+$table-row-border: container("border");
+
 //
 // @variables
-
 
 // $include-html-table-classes: $include-html-classes;
 
