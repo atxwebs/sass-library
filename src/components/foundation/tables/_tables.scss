@@ -20,10 +20,25 @@
     // -------------------------------------------------------------------------
 
     .table {
+
         @include table;
-        
+
+        thead,
+        tfoot {
+            border: container("border","dark");
+        }
+
+        tbody tr {
+            border-bottom: container("border");
+
+            &:last-child{
+                border-bottom: 0;
+            }
+        }
+
         [class*="--numericData"] {
             text-align: right;  //TODO: Extend u-textAlignRight
         }
+
     }
 }
