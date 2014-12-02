@@ -18,6 +18,7 @@ $exportCSS--tabs:                           $exportCSS; // 1
 $tab-bg-color:                              color("whites");
 
 $tab-title-border-color:                    $tab-bg-color;
+$tab-title-border-bottom-style:             solid;
 $tab-title-border-bottom-height:            2px;
 
 $tab-title-active-border-color:             color("primary", "base");
