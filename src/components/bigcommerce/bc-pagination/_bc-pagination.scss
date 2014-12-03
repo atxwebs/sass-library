@@ -1,0 +1,47 @@
+// =============================================================================
+// BC-PAGINATION (CSS)
+// =============================================================================
+
+
+// Bigcommerce Component
+// -----------------------------------------------------------------------------
+//
+// The Bigcommerce Coding Standards, coupled with Foundation.
+// If any library overrides or extra CSS is needed, declare it here.
+//
+// 1. If set to false, there is no outputted CSS for this component.
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--bcPagination {
+
+    // Component
+    // -------------------------------------------------------------------------
+
+    .pagination-limits {
+        border-left: 1px dotted color("greys");
+        display: inline-block;
+        margin-left: spacing("half");
+        padding-left: spacing("half");
+    }
+
+    .pagination {
+        @include pagination($use-default-classes: false);
+        display: inline-block;
+    }
+
+    .pagination-item {
+        line-height: lineHeight("small");
+        cursor: $cursor-pointer-value;
+    }
+
+    // Specificity needed to overwrite foundation's style
+    li.pagination-item--current {
+        @include pagination-current-item;
+
+        // Foundation's pagination doesn't have a class on this element
+        a {
+            border-radius: 0;
+        }
+    }
+}
