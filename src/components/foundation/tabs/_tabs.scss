@@ -17,8 +17,7 @@
 
     // Component
     // -------------------------------------------------------------------------
-    .tabs,
-    .tabs--vertical {
+    .tabs {
         @include clearfix;
         margin-bottom: 0;
         margin-left: 0;
@@ -72,8 +71,7 @@
         }
     }
 
-    .tabs-container,
-    .tabs-container--vertical {
+    .tabs-container {
         @include clearfix;
         margin-bottom: $tabs-content-margin-bottom;
         width: 100%;
@@ -105,15 +103,10 @@
             display: block;
             float: none;
         }
-
-        &.contained {
-            padding: $tabs-content-padding;
-        }
     }
 
     .no-js {
-        .tabs-container,
-        .tabs-container--vertical {
+        .tabs-container {
             > .tab-content {
                 display: block;
                 float: none;
