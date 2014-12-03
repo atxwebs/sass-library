@@ -23,6 +23,12 @@
         display: inline-block;
         margin-left: spacing("half");
         padding-left: spacing("half");
+        position: relative;
+        vertical-align: top;
+    }
+
+    .pagination-limits-list {
+        text-align: center;
     }
 
     .pagination {
