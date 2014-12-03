@@ -84,6 +84,12 @@ $include-html-global-classes: $include-html-classes;
 
 @import "breadcrumbs/settings";
 
+@import "dropdown/settings";
+
+@import "dropdown-buttons/settings";
+
+@import "split-buttons/settings";
+
 @import "tables/settings";
 
 @import "tooltips/settings";

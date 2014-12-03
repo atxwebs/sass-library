@@ -89,6 +89,12 @@ $buttonSizeMap: (
         fontSize:                       fontSize("smallest"),
         horizontalPadding:              spacing("base"),
         verticalPadding:                spacing("third")
+    ),
+
+    tiny: (
+        fontSize:                       fontSize("smallest"),
+        horizontalPadding:              spacing("half"),
+        verticalPadding:                spacing("quarter")
     )
 );
 

@@ -60,5 +60,9 @@
         @include buttonSize("small");
     }
 
+    .button--tiny {
+
+        @include buttonSize("tiny");
+    }
 }
 
