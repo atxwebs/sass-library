@@ -21,9 +21,12 @@
         @include clearfix;
         margin-bottom: 0;
         margin-left: 0;
+        border-bottom: $tabs-bottom-border;
     }
 
     .tabs--vertical {
+        border-bottom: none;
+
         @media #{$medium-up} {
             float: $default-float;
             margin: 0 0 $tabs-vertical-navigation-margin-bottom;
