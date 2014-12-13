@@ -1,0 +1,29 @@
+// =============================================================================
+// ACCOUNT (CSS)
+// =============================================================================
+
+
+// Bigcommerce Component
+// -----------------------------------------------------------------------------
+//
+// The Bigcommerce Coding Standards, coupled with Foundation.
+// If any library overrides or extra CSS is needed, declare it here.
+//
+// 1. If set to false, there is no outputted CSS for this component.
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--account {
+
+    // Component
+    // -------------------------------------------------------------------------
+
+    .account {
+        list-style-type: none;
+    }
+
+    .account-name {
+        font-weight: fontWeight("bold");
+    }
+}
+
