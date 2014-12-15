@@ -19,13 +19,13 @@
     // -------------------------------------------------------------------------
     .tabs {
         @include clearfix;
+        border-bottom: $tabs-bottom-border;
         margin-bottom: 0;
         margin-left: 0;
-        border-bottom: $tabs-bottom-border;
     }
 
     .tabs--vertical {
-        border-bottom: none;
+        border-bottom: 0;
 
         @media #{$medium-up} {
             float: $default-float;
@@ -109,11 +109,9 @@
     }
 
     .no-js {
-        .tabs-container {
-            > .tab-content {
-                display: block;
-                float: none;
-            }
+        .tab-content {
+            display: block;
+            float: none;
         }
     }
 }
