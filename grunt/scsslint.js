@@ -8,6 +8,6 @@ module.exports = {
     ],
     "options": {
        "config": ".scss-lint.yml",
-       "force": true
+       "force": false
     }
 };

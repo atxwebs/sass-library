@@ -31,8 +31,8 @@
     }
 
     .pagination-item {
-        line-height: lineHeight("small");
         cursor: $cursor-pointer-value;
+        line-height: lineHeight("small");
     }
 
     // Specificity needed to overwrite foundation's style

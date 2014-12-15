@@ -47,8 +47,8 @@
     @return $num / ($num * 0 + 1);
 }
 
+// scss-lint:disable ZeroUnit
 @function convertToRem($value, $base-value: $fontSizeBase) {
-
     $value: stripUnit($value) / stripUnit($base-value) * 1rem;
     @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
     @return $value;
