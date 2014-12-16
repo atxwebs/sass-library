@@ -43,3 +43,7 @@ linters:
 
   TrailingZero:
     enabled: true
+
+# This is a new linting rule as of 0.30 and the per-file disablement syntax seems to failing, so turn it off
+  QualifyingElement:
+    enabled: false

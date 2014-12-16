@@ -274,6 +274,9 @@
         margin: 0 0 $paragraph-margin-bottom;
         padding: $blockquote-padding;
 
+        // This rule should only apply to cite elements within a blockquote. For example inline quotes should not
+        // receive the same treatment.
+        // scss-lint:disable SelectorDepth
         cite {
             color: $blockquote-cite-font-color;
             display: block;

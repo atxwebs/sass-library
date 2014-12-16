@@ -31,10 +31,11 @@
             border: $table-foot-border;
         }
 
+        // scss-lint:disable SelectorDepth
         tbody tr {
             border-bottom: $table-row-border;
 
-            &:last-child{
+            &:last-child {
                 border-bottom: 0;
             }
         }

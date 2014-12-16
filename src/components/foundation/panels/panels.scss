@@ -14,7 +14,6 @@
 // -----------------------------------------------------------------------------
 
 @if $exportCSS--panels { // 1
-
     .panel {
         @include panel;
         border-color: $panel-border-color;
@@ -53,7 +52,7 @@
     // Panel header when it is known as a <legend/> in a form context
     //
     // Purpose: Legends are hard to style. Absolute positioning them
-    // and the magic number of the panel-body give an almost
+    // and the magic number of the panel-body gives an almost
     // identical look to a normal panel
     // -----------------------------------------------------------------------------
     legend.panel-header {
