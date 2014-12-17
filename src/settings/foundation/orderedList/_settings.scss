@@ -1,0 +1,39 @@
+// =============================================================================
+// ORDERED-LIST (Settings)
+// =============================================================================
+
+
+// Bigcommerce Variables
+// -----------------------------------------------------------------------------
+//
+// These scoped variables are created by Bigcommerce.
+// All variables that are not from Foundation should be placed here.
+//
+// 1. Choose whether to include the Bigcommerce class names
+//
+// -----------------------------------------------------------------------------
+
+$exportCSS--ordered-list: $exportCSS;
+
+
+// Ordered-List Variables
+// -----------------------------------------------------------------------------
+
+// ordered list
+$list-style-type: "decimal";
+
+// list item
+$ol-item-border-bot: container("border", "dark");
+$ol-item-font-size: fontSize("smaller");
+$ol-item-padding: spacing("half") 0;
+
+// list item counter
+$ol-item-counter-color: color("greys", "medium");
+$ol-item-counter-font-family: fontFamily("headingSans");
+$ol-item-counter-font-weight: fontWeight("normal");
+$ol-item-counter-font-size: fontSize("base");
+$ol-item-counter-margin: 0 spacing("half") 0 0;
+
+
+// Foundation Variables
+// -----------------------------------------------------------------------------
