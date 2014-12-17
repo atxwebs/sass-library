@@ -1,0 +1,68 @@
+// =============================================================================
+// MODAL (Settings)
+// =============================================================================
+
+
+// Bigcommerce Variables
+// -----------------------------------------------------------------------------
+//
+// These scoped variables are created by Bigcommerce.
+// All variables that are not from Foundation should be placed here.
+//
+// 1. Choose whether to include the Bigcommerce class names
+//
+// -----------------------------------------------------------------------------
+
+$exportCSS--modal:        $exportCSS; // 1
+
+// Positioning Variables
+$modal-footer-align:      right;
+$modal-max-height:        80%;
+$modal-spacing:           spacing("single");
+$modal-spacing--small:    spacing("base");
+$modal-transformY:        -50%;
+
+// Color Variables
+$modal-backdrop-color:    color("greys", "base");
+
+// Size Variables
+$modal-width--small:       300px;
+$modal-width--large:       900px;
+
+// Border Variables
+$modal-border:            container("border");
+
+
+// Foundation Variables
+// -----------------------------------------------------------------------------
+//
+// These variables come directly from:
+// /vendor/foundation/foundation/components/*
+// Declaring the variables here, you can adjust them all to your design,
+// leaving the vendor framework untouched.
+//
+// -----------------------------------------------------------------------------
+$include-html-reveal-classes: $include-html-classes;
+
+// Border Variables
+$reveal-border-color:         container("borderColor");
+$reveal-border-style:         solid;
+
+// Positioning Variables
+$reveal-close-side:           spacing("single");
+$reveal-close-top:            spacing("single");
+$reveal-modal-padding:        0;
+$reveal-position-top:         50%;
+
+// Font Variable
+$reveal-close-font-size:      fontSize("larger");
+
+// Size Variables
+$reveal-default-width:        $modal-width--small;
+$reveal-max-width:            80%;
+
+// Background Color
+$reveal-overlay-bg:           rgba($modal-backdrop-color, 0.6);
+
+// Classname
+$close-reveal-modal-class:    "modal-close";
