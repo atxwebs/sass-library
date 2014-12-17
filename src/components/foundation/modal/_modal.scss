@@ -1,0 +1,99 @@
+// =============================================================================
+// MODAL (CSS)
+// =============================================================================
+
+
+// Bigcommerce Component
+// -----------------------------------------------------------------------------
+//
+// The Bigcommerce Coding Standards, coupled with Foundation.
+// If any library overrides or extra CSS is needed, declare it here.
+//
+// 1. If set to false, there is no outputted CSS for this component.
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--modal { // 1
+
+    // Body Element When Modal Is Open
+    // -------------------------------------------------------------------------
+
+    body.has-activeModal {
+        overflow: hidden;
+    }
+
+
+    // modal Background
+    // -------------------------------------------------------------------------
+
+    .modal-background {
+        @include reveal-bg; // Foundation mixin
+    }
+
+
+    // modal element
+    // -------------------------------------------------------------------------
+
+    .#{$reveal-modal-class} {
+
+        // foundation mixins
+        @include reveal-modal-base;
+
+        @include reveal-modal-style(
+            $bg: $reveal-modal-bg,
+            $padding: $reveal-modal-padding,
+            $border: true,
+            $box-shadow: true,
+            $top-offset: $reveal-position-top
+        );
+
+        // additional styles
+        max-height: $modal-max-height;
+        overflow: auto;
+        position: fixed;
+        transform: translateY($modal-transformY);
+    }
+
+    .modal--large {
+        width: $modal-width--large;
+    }
+
+
+    // Modal Content: Header, Title, Body, Footer, close anchor, and link
+    // -------------------------------------------------------------------------
+    .modal-header {
+        @include modal-header($modal-border, $modal-spacing);
+    }
+
+    .modal-header-title {
+        margin: 0;
+    }
+
+    .modal-body {
+        @include modal-body($modal-spacing);
+    }
+
+    .modal-footer {
+        @include modal-footer($modal-border, $modal-spacing--small, $modal-footer-align);
+    }
+
+    .modal-footer-link {
+        margin: $modal-spacing--small;
+    }
+
+    .#{$close-reveal-modal-class} {
+        @include reveal-close; // Foundation mixin
+    }
+
+
+    // Print
+    //
+    // Reveal Print Styles: It should be invisible, adds no value being printed.
+    // -------------------------------------------------------------------------
+    @media print {
+        .#{$reveal-modal-class} { 
+            background: $white !important; // !important from foundation
+            display: none;
+        }
+    }
+}

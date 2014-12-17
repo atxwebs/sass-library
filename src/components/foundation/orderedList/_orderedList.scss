@@ -26,12 +26,12 @@
     // Ordered List Item
     // -------------------------------------------------------------------------
 
-    .orderedList-item{
+    .orderedList-item {
         @include orderedListItem($ol-item-border-bot, $ol-item-font-size, $ol-item-padding);
 
         &:last-child {
 
-            border-bottom: none;
+            border-bottom: 0;
         }
 
         &::before {
