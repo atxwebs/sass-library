@@ -30,6 +30,10 @@ linters:
     enabled: true
     max_depth: 2
 
+  NestingDepth:
+    enabled: true
+    max_depth: 2
+
 # For example
 # http://www.regexr.com/39qql
   SelectorFormat:
