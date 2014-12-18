@@ -20,29 +20,27 @@
     // -------------------------------------------------------------------------
 
     .table {
-
         @include table;
+    }
 
-        thead {
-            border: $table-head-border;
+    .table-thead {
+        border: $table-head-border;
+    }
+
+    .table-tfoot {
+        border: $table-foot-border;
+    }
+
+    .table-tbody tr {
+        border-bottom: $table-row-border;
+
+        &:last-child {
+            border-bottom: 0;
         }
-        
-        tfoot {
-            border: $table-foot-border;
-        }
+    }
 
-        // scss-lint:disable SelectorDepth
-        tbody tr {
-            border-bottom: $table-row-border;
-
-            &:last-child {
-                border-bottom: 0;
-            }
-        }
-
-        [class*="--numericData"] {
-            text-align: right;  //TODO: Extend u-textAlignRight
-        }
-
+    .table-head--numericData,
+    .table-cell--numericData, {
+        text-align: right;
     }
 }

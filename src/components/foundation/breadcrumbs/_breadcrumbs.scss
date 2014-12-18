@@ -63,24 +63,25 @@
 
         }
 
-        &.is-active {
+    }
 
-            > .breadcrumb-label {
+    .breadcrumb.is-active {
 
-                @extend %breadcrumb--defaultState;
-                @extend %breadcrumb--activeState;
+        > .breadcrumb-label {
 
-            }
+            @extend %breadcrumb--defaultState;
+            @extend %breadcrumb--activeState;
+
         }
+    }
 
-        &.is-unavailable {
+    .breadcrumb.is-unavailable {
 
-            > .breadcrumb-label {
+        > .breadcrumb-label {
 
-                @extend %breadcrumb--defaultState;
-                @extend %breadcrumb--unavailableState;
+            @extend %breadcrumb--defaultState;
+            @extend %breadcrumb--unavailableState;
 
-            }
         }
     }
 
