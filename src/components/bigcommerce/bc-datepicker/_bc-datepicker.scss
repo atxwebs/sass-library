@@ -19,35 +19,34 @@
     // -------------------------------------------------------------------------
 
     .datepicker {
-        background-color: color("whites");
-        box-shadow: 0 0 4px color("greys", "medium");
+        background-color: $datepicker-background-color;
+        box-shadow: $datepicker-box-shadow;
         display: inline-block;
-        padding: spacing("half");
+        padding: $datepicker-padding;
         position: absolute;
         text-align: center;
     }
 
     .datepicker-month {
-        font-size: fontSize("small");
-        font-weight: fontWeight("normal");
-        margin: spacing("half") 0;
+        font-size: $datepicker-month-font-size;
+        font-weight: $datepicker-month-font-weight;
+        margin: $datepicker-month-margin;
     }
 
     .datepicker-back,
     .datepicker-next {
-        color: color("greys", "medium");
-        cursor: $cursor-default-value;
-        font-size: fontSize("small");
-        font-weight: fontWeight("bold");
-        padding: 0;
+        color: $datepicker-back-next-color;
+        cursor: $datepicker-back-next-cursor;
+        font-size: $datepicker-back-next-font-size;
+        font-weight: $datepicker-back-next-font-weight;
+        padding: $datepicker-back-next-padding;
     }
 
     .datepicker-back {
         float: left;
 
         &::before {
-            // TODO Change to icon when available
-            content: '<';
+            content: $datepicker-back-content;
             display: block;
         }
     }
@@ -56,34 +55,38 @@
         float: right;
 
         &::before {
-            // TODO Change to icon when available
-            content: '>';
+            content: $datepicker-next-content;
             display: block;
         }
     }
 
     .datepicker-days {
+        margin: $datepicker-days-margin;
         border-collapse: separate;
-        border-spacing: 16px 7px;
-        color: color("greys", "darker");
-        font-size: fontSize("base");
+        color: $datepicker-days-color;
+        font-size: $datepicker-days-font-size;
+        table-layout: fixed;
     }
 
     .datepicker-days-head {
-        line-height: lineHeight("tiny");
+        line-height: $datepicker-days-head-line-height;
     }
 
     .datepicker-day-name {
-        color: color("greys", "medium");
-        font-size: fontSize("tiny");
-        font-weight: fontWeight("normal");
-        text-transform: uppercase;
+        color: $datepicker-day-name-color;
+        font-size: $datepicker-day-name-font-size;
+        font-weight: $datepicker-day-name-font-weight;
+        text-transform: $datepicker-day-name-text-transform;
     }
 
     .datepicker-day {
         cursor: $cursor-pointer-value;
+        height: $datepicker-day-height;
+        line-height: $datepicker-day-line-height;
+        padding: $datepicker-day-padding;
         position: relative;
         text-align: center;
+        width: $datepicker-day-width;
         z-index: zIndex("lowest");
 
         &::before {
@@ -91,38 +94,38 @@
         }
 
         &:hover::before {
-            background-color: color("greys", "light");
+            background-color: $datepicker-day-hover-background;
         }
     }
 
     .datepicker-day.is-selected {
-        color: color("whites");
+        color: $datepicker-day-selected-color;
         cursor: $cursor-pointer-value;
 
         &::before {
             @extend %datepicker-day-background;
-            background-color: color("primary");
+            background-color: $datepicker-day-selected-background;
         }
 
         &:hover::before {
-            background-color: color("primary");
+            background-color: $datepicker-day-selected-background;
         }
     }
 
     %datepicker-day-background {
-        border-radius: 50%;
-        content: '';
-        height: 100%;
-        margin-left: -4px;
-        margin-top: -2px;
-        padding: 12px;
+        border-radius: $datepicker-day-background-border-radius;
+        bottom: $datepicker-day-background-bottom;
+        content: "";
+        left: $datepicker-day-background-left;
         position: absolute;
-        width: 100%;
-        z-index: zIndex("negative");
+        right: $datepicker-day-background-right;
+        top: $datepicker-day-background-top;
+        z-index: -1;
     }
 
     .datepicker-day.is-disabled {
-        color: color("greys", "medium");
+        color: $datepicker-day-disabled-color;
         cursor: $cursor-default-value;
     }
 }
+

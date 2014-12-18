@@ -15,4 +15,50 @@
 
 $exportCSS--bcDatepicker:            $exportCSS;
 
+// Container
+$datepicker-background-color: color("whites");
+$datepicker-box-shadow: 0 0 spacing("sixth") color("greys", "medium");
+$datepicker-padding: spacing("half");
 
+
+// Back/next   ToDo: Change To Icons when available
+$datepicker-back-content: '<';
+$datepicker-back-next-color: color("greys", "medium");
+$datepicker-back-next-cursor: $cursor-default-value;
+$datepicker-back-next-font-size: fontSize("small");
+$datepicker-back-next-font-weight: fontWeight("bold");
+$datepicker-back-next-padding: 0;
+$datepicker-next-content: '>';
+
+
+// Month
+$datepicker-month-font-size: fontSize("small");
+$datepicker-month-font-weight: fontWeight("normal");
+$datepicker-month-margin: spacing("half") 0;
+
+
+// Days
+$datepicker-days-color: color("greys", "darker");
+$datepicker-days-font-size: fontSize("base");
+$datepicker-days-head-line-height: lineHeight("tiny");
+$datepicker-days-margin: spacing("single") spacing("base") 0;
+
+
+// Day
+$datepicker-day-background-border-radius: 50%;
+$datepicker-day-background-bottom: spacing("eighth");
+$datepicker-day-background-left: spacing("eighth");
+$datepicker-day-background-right: spacing("eighth");
+$datepicker-day-background-top: spacing("eighth");
+$datepicker-day-disabled-color: color("greys", "medium");
+$datepicker-day-height: spacing("single") * 1.5;
+$datepicker-day-hover-background: color("greys", "light");
+$datepicker-day-line-height: 100%;
+$datepicker-day-name-color: color("greys", "medium");
+$datepicker-day-name-font-size: fontSize("tiny");
+$datepicker-day-name-font-weight: fontWeight("normal");
+$datepicker-day-name-text-transform: uppercase;
+$datepicker-day-padding: spacing("third");
+$datepicker-day-selected-background: color("primary");
+$datepicker-day-selected-color: color("whites");
+$datepicker-day-width: spacing("single") * 1.5;
