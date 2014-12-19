@@ -13,14 +13,14 @@
 //
 // -----------------------------------------------------------------------------
 
-@if $exportCSS--bcDatepicker {
+@if $exportCSS--datepicker {
 
     // Component
     // -------------------------------------------------------------------------
 
     .datepicker {
-        background-color: $datepicker-background-color;
-        box-shadow: $datepicker-box-shadow;
+        background-color: $datepicker-backgroundColor;
+        box-shadow: $datepicker-boxShadow;
         display: inline-block;
         padding: $datepicker-padding;
         position: absolute;
@@ -28,8 +28,8 @@
     }
 
     .datepicker-month {
-        font-size: $datepicker-month-font-size;
-        font-weight: $datepicker-month-font-weight;
+        font-size: $datepicker-month-fontSize;
+        font-weight: $datepicker-month-fontWeight;
         margin: $datepicker-month-margin;
     }
 
@@ -37,8 +37,8 @@
     .datepicker-next {
         color: $datepicker-back-next-color;
         cursor: $datepicker-back-next-cursor;
-        font-size: $datepicker-back-next-font-size;
-        font-weight: $datepicker-back-next-font-weight;
+        font-size: $datepicker-back-next-fontSize;
+        font-weight: $datepicker-back-next-fontWeight;
         padding: $datepicker-back-next-padding;
     }
 
@@ -64,25 +64,25 @@
         margin: $datepicker-days-margin;
         border-collapse: separate;
         color: $datepicker-days-color;
-        font-size: $datepicker-days-font-size;
+        font-size: $datepicker-days-fontSize;
         table-layout: fixed;
     }
 
     .datepicker-days-head {
-        line-height: $datepicker-days-head-line-height;
+        line-height: $datepicker-days-head-lineHeight;
     }
 
     .datepicker-day-name {
         color: $datepicker-day-name-color;
-        font-size: $datepicker-day-name-font-size;
-        font-weight: $datepicker-day-name-font-weight;
-        text-transform: $datepicker-day-name-text-transform;
+        font-size: $datepicker-day-name-fontSize;
+        font-weight: $datepicker-day-name-fontWeight;
+        text-transform: $datepicker-day-name-textTransform;
     }
 
     .datepicker-day {
         cursor: $cursor-pointer-value;
         height: $datepicker-day-height;
-        line-height: $datepicker-day-line-height;
+        line-height: $datepicker-day-lineHeight;
         padding: $datepicker-day-padding;
         position: relative;
         text-align: center;
@@ -94,7 +94,7 @@
         }
 
         &:hover::before {
-            background-color: $datepicker-day-hover-background;
+            background-color: $datepicker-day-hover-backgroundColor;
         }
     }
 
@@ -104,16 +104,16 @@
 
         &::before {
             @extend %datepicker-day-background;
-            background-color: $datepicker-day-selected-background;
+            background-color: $datepicker-day-selected-backgroundColor;
         }
 
         &:hover::before {
-            background-color: $datepicker-day-selected-background;
+            background-color: $datepicker-day-selected-backgroundColor;
         }
     }
 
     %datepicker-day-background {
-        border-radius: $datepicker-day-background-border-radius;
+        border-radius: $datepicker-day-background-borderRadius;
         bottom: $datepicker-day-background-bottom;
         content: "";
         left: $datepicker-day-background-left;
