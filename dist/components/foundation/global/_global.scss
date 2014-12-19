@@ -39,6 +39,10 @@
         -webkit-font-smoothing: antialiased;
     }
 
+    a:hover {
+        cursor: $cursor-pointer-value;
+    }
+
     figure {
         margin: 0 0 spacing("base");
     }
@@ -60,6 +64,7 @@
         // Appearance
         background: none;
         border: 0;
+        -webkit-font-smoothing: antialiased;
         outline: none;
     }
 

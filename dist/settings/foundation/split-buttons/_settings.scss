@@ -1,0 +1,63 @@
+// =============================================================================
+// DROPDOWN BUTTONS (Settings)
+// =============================================================================
+
+
+// Bigcommerce Variables
+// -----------------------------------------------------------------------------
+//
+// These scoped variables are created by Bigcommerce.
+// All variables that are not from Foundation should be placed here.
+//
+// 1. Choose whether to include the Bigcommerce class names
+//
+// -----------------------------------------------------------------------------
+
+$exportCSS--split-buttons:           $exportCSS; // 1
+
+
+// Foundation Variables
+// -----------------------------------------------------------------------------
+//
+// These variables come directly from:
+// /vendor/foundation/foundation/components/*
+// Declaring the variables here, you can adjust them all to your design,
+// leaving the vendor framework untouched.
+//
+// -----------------------------------------------------------------------------
+
+$include-html-split-buttons-classes: $include-html-classes;
+
+// We use these to control different shared styles for Split Buttons
+//$split-button-function-factor: 10% !default;
+$split-button-pip-color: color("greys");
+$split-button-pip-color-alt: color("whites");
+$split-button-active-bg-tint: false;
+
+// We use these to control tiny split buttons
+$split-button-padding-tny: $button-pip-tny * 11;
+$split-button-span-width-tny: $button-pip-tny * 7;
+$split-button-pip-size-tny: $button-pip-tny;
+//$split-button-pip-top-tny: $button-pip-tny * 2 !default;
+$split-button-pip-default-float-tny: -$button-pip-tny;
+
+// We use these to control small split buttons
+$split-button-padding-sml: $button-pip-sml * 11;
+$split-button-span-width-sml: $button-pip-sml * 7;
+$split-button-pip-size-sml: $button-pip-sml;
+//$split-button-pip-top-sml: $button-pip-sml * 1.5 !default;
+$split-button-pip-default-float-sml: -$button-pip-sml;
+
+// We use these to control medium split buttons
+$split-button-padding-med: $button-pip-med * 10;
+$split-button-span-width-med: $button-pip-med * 6;
+$split-button-pip-size-med: $button-pip-med;
+//$split-button-pip-top-med: $button-pip-med * 1.5 !default;
+$split-button-pip-default-float-med: -$button-pip-med;
+
+// We use these to control large split buttons
+$split-button-padding-lrg: $button-pip-lrg * 11;
+$split-button-span-width-lrg: $button-pip-lrg * 7;
+$split-button-pip-size-lrg: $button-pip-lrg;
+//$split-button-pip-top-lrg: $button-pip-lrg + rem-calc(5) !default;
+$split-button-pip-default-float-lrg: -$button-pip-lrg;

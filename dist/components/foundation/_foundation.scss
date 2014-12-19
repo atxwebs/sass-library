@@ -21,6 +21,12 @@
 // Typography
 @import "type/component";
 
+// Inline list
+@import "inlineList/component";
+
+// Panels
+@import "panels/component";
+
 // Accordion
 @import "accordion/component";
 
@@ -33,4 +39,26 @@
 // Buttons
 @import "buttons/component";
 
+// Dropdown
+@import "dropdown/component";
 
+// Dropdown Buttons
+@import "dropdown-buttons/component";
+
+// Dropdown Split buttons
+@import "split-buttons/component";
+
+// Tables
+@import "tables/component";
+
+// Tooltips
+@import "tooltips/component";
+
+// Tabs
+@import "tabs/component";
+
+// Ordered List
+@import "orderedList/component";
+
+// Lightbox
+@import "modal/component";

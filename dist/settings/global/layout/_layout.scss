@@ -60,7 +60,10 @@ $spacingMap: (
     single:                     $spacingRhythm,
     double:                     $spacingRhythm * 2,
     half:                       $spacingRhythm / 2,
+    third:                      $spacingRhythm / 3,
     quarter:                    $spacingRhythm / 4,
+    fifth:                      $spacingRhythm / 5,
+    sixth:                      $spacingRhythm / 6,
     eighth:                     $spacingRhythm / 8
 );
 

@@ -31,15 +31,15 @@ $font-weight-normal: fontWeight("normal");
 $font-weight-bold: fontWeight("semibold");
 
 // We use these to control various global styles
-$body-bg: color(whites);
-$body-font-color: color(greys, "darker");
+$body-bg: color("whites");
+$body-font-color: color("greys", "darker");
 $body-font-family: fontFamily("sans");
 
 // We use these to control header font styles
 $header-font-family: fontFamily("sans");
 $header-font-weight: $font-weight-bold;
 $header-font-color: $body-font-color;
-$header-letter-spacing: letterSpacing("small");
+$header-letter-spacing: 0;
 $header-line-height: lineHeight("base");
 $header-bottom-margin: spacing("single");
 
@@ -54,7 +54,7 @@ $h6-font-size: fontSize("smallest");
 
 // These control how subheaders are styled.
 $subheader-line-height: lineHeight(small);
-$subheader-font-color: color(greys);
+$subheader-font-color: color("greys");
 $subheader-font-weight: fontWeight("normal");
 $subheader-bottom-margin: spacing("half");
 
@@ -75,7 +75,7 @@ $paragraph-margin-bottom: spacing("base");
 
 // We use these to style <code> tags
 // $code-color: $oil;
-// $code-font-family: Consolas, 'Liberation Mono', Courier, monospace;
+$code-font-family: Consolas, Monaco, 'Andale Mono', monospace;
 // $code-font-weight: $font-weight-normal;
 // $code-background-color: scale-color($secondary-color, $lightness: 70%);
 // $code-border-size: 1px;

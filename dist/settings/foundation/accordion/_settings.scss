@@ -26,3 +26,15 @@ $exportCSS--accordion:            $exportCSS; // 1
 //
 // -----------------------------------------------------------------------------
 
+$include-html-accordion-classes: $include-html-classes;
+
+$accordion-navigation-padding: spacing("half");
+$accordion-navigation-bg-color: container("fill");
+// $accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%) !default;
+// $accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%) !default;
+$accordion-navigation-font-color: color("greys", "darker");
+$accordion-navigation-font-size: fontSize("smaller");
+$accordion-navigation-font-family: fontFamily("sans");
+
+$accordion-content-padding: spacing("single");
+$accordion-content-active-bg-color: container("fill", "light");

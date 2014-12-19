@@ -1,0 +1,97 @@
+// =============================================================================
+// PANELS (CSS)
+// =============================================================================
+
+
+// Bigcommerce Component
+// -----------------------------------------------------------------------------
+//
+// The Bigcommerce Coding Standards, coupled with Foundation.
+// If any library overrides or extra CSS is needed, declare it here.
+//
+// 1. If set to false, there is no outputted CSS for this component.
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--panels { // 1
+    .panel {
+        @include panel;
+        border-color: $panel-border-color;
+        position: relative;
+    }
+
+    // Panel Callout (variant)
+    .panel--callout {
+        @include panel($callout-panel-bg);
+
+        a:not(.button) {
+            color: $callout-panel-link-color;
+        }
+    }
+
+    // Panel header
+    .panel-header {
+        background-color: $panel-header-bg;
+        display: block;
+        padding: $panel-header-padding;
+
+        // This is extra specificity is purely due to compensate for Foundations fairly dumb
+        // .panel > :first-child rule
+        .panel & {
+            margin: (- $panel-padding) (- $panel-padding) $panel-padding;
+        }
+
+        .panel--callout & {
+            background: $callout-panel-headerBg;
+            color: $callout-panel-headerColor;
+        }
+
+    }
+
+    //
+    // Panel header when it is known as a <legend/> in a form context
+    //
+    // Purpose: Legends are hard to style. Absolute positioning them
+    // and the magic number of the panel-body gives an almost
+    // identical look to a normal panel
+    // -----------------------------------------------------------------------------
+    legend.panel-header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+        // Again, Stupid
+        // .panel > :first-child rule
+        .panel & {
+            margin-top: 0;
+        }
+
+        + .panel-body {
+            // abit magic numberish this one
+            margin-top: $panel-padding * 1.8;
+        }
+    }
+
+    // Panel Title
+    .panel-title {
+        font-size: $panel-title-fontSize;
+        font-weight: $panel-title-fontWeight;
+        line-height: $panel-title-lineHeight;
+        margin: 0;
+
+        .panel--callout & {
+            color: $callout-panel-titleColor;
+        }
+    }
+
+    // Panel body
+    .panel-body {
+
+        > :last-child {
+            margin-bottom: 0;
+        }
+
+    }
+
+}
+

@@ -1,0 +1,52 @@
+// =============================================================================
+// PAGINATION (Settings)
+// =============================================================================
+
+
+// Bigcommerce Variables
+// -----------------------------------------------------------------------------
+//
+// These scoped variables are created by Bigcommerce.
+// All variables that are not from Foundation should be placed here.
+//
+// 1. Choose whether to include the Bigcommerce class names
+//
+// -----------------------------------------------------------------------------
+
+$exportCSS--pagination: $exportCSS;
+
+$include-pagination-classes: $include-html-classes;
+
+// Pagination Variables
+// -----------------------------------------------------------------------------
+
+// Foundation Variables
+// -----------------------------------------------------------------------------
+
+// We use these to control the pagination container
+$pagination-height: spacing("base");
+$pagination-margin: spacing("base");
+
+// We use these to set the list-item properties
+//$pagination-li-float: $default-float !default;
+$pagination-li-font-color: color("primary");
+$pagination-li-font-size: fontSize("base");
+$pagination-li-margin: spacing("eighth");
+
+// We use these for the pagination anchor links
+$pagination-link-pad: spacing("eighth");
+$pagination-link-font-color: color("primary");
+$pagination-link-active-bg: color("whites");
+
+// We use these for disabled anchor links
+$pagination-link-unavailable-cursor: $cursor-default-value;
+$pagination-link-unavailable-font-color: color("greys");
+//$pagination-link-unavailable-bg-active: transparent !default;
+
+// We use these for currently selected anchor links
+$pagination-link-current-background: color("greys", "medium");
+$pagination-link-current-font-color: color("whites");
+$pagination-link-current-font-weight: fontWeight("normal");
+$pagination-link-current-cursor: $cursor-default-value;
+$pagination-link-current-active-bg: color("greys", "medium");
+

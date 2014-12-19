@@ -120,6 +120,7 @@
     h1,
     h2 {
         font-family: fontFamily("headingSans");
+        letter-spacing: letterSpacing("smaller");
     }
 
     h1 {
@@ -139,6 +140,12 @@
 
     h3 {
         font-size: $h3-font-size;
+    }
+
+    h4,
+    h5,
+    h6 {
+        margin-bottom: spacing("half");
     }
 
     h4 {
@@ -262,31 +269,35 @@
     // Blockquote <blockquote>
     // -------------------------------------------------------------------------
 
-    blockquote {
+    .blockquote {
         border-#{$default-float}: $blockquote-border;
         margin: 0 0 $paragraph-margin-bottom;
         padding: $blockquote-padding;
-
-        cite {
-            color: $blockquote-cite-font-color;
-            display: block;
-            font-size: $blockquote-cite-font-size;
-
-            &:before {
-                content: "\2014 \0020";
-            }
-
-            a,
-            a:visited {
-                color: $blockquote-cite-link-color;
-            }
-        }
     }
 
-    blockquote,
-    blockquote p {
+    .blockquote,
+    .blockquote p {
         color: $blockquote-font-color;
         line-height: $paragraph-line-height;
     }
+
+    // This rule should only apply to cite elements within a blockquote. For example inline quotes should not
+    // receive the same treatment.
+    .blockquote-cite {
+        color: $blockquote-cite-font-color;
+        display: block;
+        font-size: $blockquote-cite-font-size;
+
+        &:before {
+            content: "\2014 \0020";
+        }
+
+        a,
+        a:visited {
+            color: $blockquote-cite-link-color;
+        }
+    }
+
+
 
 }

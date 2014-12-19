@@ -1,0 +1,64 @@
+// =============================================================================
+// Panels (Settings)
+// =============================================================================
+//
+
+// Foundation Variables
+// -----------------------------------------------------------------------------
+//
+// These variables come directly from:
+// /vendor/foundation/foundation/components/*
+// Declaring the variables here, you can adjust them all to your design,
+// leaving the vendor framework untouched.
+//
+// -----------------------------------------------------------------------------
+
+$include-html-panel-classes: $include-html-classes;
+
+// We use these to control the background and border styles
+$panel-bg: color("whites", "bright");
+$panel-border-style: solid;
+$panel-border-size: 1px;
+
+// We use this % to control how much we darken things on hover
+$panel-function-factor: 0%;
+$panel-border-color: container("borderColor", "dark");
+
+// We use these to set default inner padding and bottom margin
+$panel-margin-bottom: spacing("single");
+$panel-padding: spacing("single");
+
+// We use these to set default font colors
+$panel-font-color: $body-font-color;
+$panel-font-color-alt: color("whites");
+
+$panel-header-adjust: false;
+// $callout-panel-link-color: $primary-color;
+
+
+// Bigcommerce Variables
+// -----------------------------------------------------------------------------
+//
+// These scoped variables are created by Bigcommerce.
+// All variables that are not from Foundation should be placed here.
+//
+// 1. Choose whether to include the Bigcommerce class names
+//
+// -----------------------------------------------------------------------------
+
+$exportCSS--panels:            $exportCSS; // 1
+
+// Panel header settings
+$panel-header-bg: container("fill");
+$panel-header-padding: spacing("half") $panel-padding;
+
+// Panel title settings
+$panel-title-fontSize: fontSize("base");
+$panel-title-fontWeight: fontWeight("semibold");
+$panel-title-lineHeight: lineHeight("small");
+
+// Callout panel settings
+$callout-panel-bg: color("greys", "lighter");
+$callout-panel-titleColor: color("whites");
+$callout-panel-headerBg: color("greys", "darkest");
+$callout-panel-headerColor: color("whites");

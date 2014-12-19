@@ -16,7 +16,8 @@ $colorMap: (
     ),
 
     whites: (
-        base:                   #fcfcfd
+        base:                   #fcfcfd,
+        bright:                 #fff
     ),
 
     greys: (
@@ -37,7 +38,8 @@ $colorMap: (
     primary: (
         base:                   #00abc9,
         darker:                 #008ba3,
-        dark:                   #009cb7
+        dark:                   #009cb7,
+        light:                  #c7e8ee
     ),
 
     secondary: (
