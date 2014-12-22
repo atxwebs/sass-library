@@ -18,6 +18,8 @@
     border-color: buttonStyle($type, "borderColor");
     border-radius: $global-radius;
     color: buttonStyle($type, "color");
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 
     @if buttonStyle($type, "backgroundColorHover") or buttonStyle($type, "borderColorHover") or buttonStyle($type, "colorHover")!= null {
 
