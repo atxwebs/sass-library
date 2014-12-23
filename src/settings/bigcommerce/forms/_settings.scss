@@ -1,0 +1,118 @@
+// =============================================================================
+// BC FORMS (Settings)
+// =============================================================================
+
+
+// Bigcommerce Variables
+// -----------------------------------------------------------------------------
+//
+// These scoped variables are created by Bigcommerce.
+// All variables that are not from Foundation should be placed here.
+// BC variables can take the value of Foundation variables if related to a wider
+// component.
+//
+// 1. Choose whether to include the Bigcommerce class names
+//
+// -----------------------------------------------------------------------------
+
+$exportCSS--bcForms:                    $exportCSS; // 1
+
+
+// =============================================================================
+// CHECKS AND RADIOS
+// =============================================================================
+
+$checkRadio-borderStyle: solid;
+$checkRadio-borderWidth: 1px;
+$checkRadio-borderColor: $input-border-color;
+// sizing
+$checkRadio-baseDimension: 16px;
+$checkRadio-pipScale: $checkRadio-borderWidth * 2;
+$checkRadio-outerSize: remCalc($checkRadio-baseDimension);
+$checkRadio-pipSize: remCalc($checkRadio-baseDimension - $checkRadio-pipScale);
+// label
+$checkRadio-label-fontSize: fontSize("smaller");
+$checkRadio-label-fontWeight: fontWeight("normal");
+$checkRadio-label-lineHeight: lineHeight("small");
+// visual
+$checkRadio-bg: color("whites", "bright");
+$checkRadio-focus-borderColor: color("primary");
+$checkRadio-focus-boxShadow: $input-focus-box-shadow;
+$checkRadio-disabled-bg: $input-disabled-bg;
+$checkRadio-disabled-opacity: 0.4;
+
+$check-radius: $global-radius;
+$check-pipColor: color("primary");
+$check-pipContent: "\2714";
+$check-pipSize: $checkRadio-pipSize;
+
+$radio-radius: $checkRadio-outerSize;
+$radio-pipColor: color("primary");
+$radio-pipInset: 3px;
+$radio-pipInset-color: $checkRadio-bg;
+$radio-pipSize: $checkRadio-pipSize;
+
+
+// =============================================================================
+// PREFIXPOSTFIX
+// =============================================================================
+
+$prefixPostfix-inputClassName: "form-input";
+$prefixPostfix-buttonClassName: "button";
+$prefixPostfix-borderRadius: $input-border-radius;
+
+$prefixPostfix-label-backgroundColor: $input-bg-color;
+$prefixPostfix-label-fontWeight: fontWeight("thin");
+
+
+// =============================================================================
+// SWITCHES
+// =============================================================================
+
+$switch-baseSize: 28px; // magic design number
+$switch-baseWidth: 60px;
+$switch-height: remCalc($switch-baseSize);
+$switch-lineHeight: ($switch-baseSize - 1) / $fontSizeRoot;
+$switch-borderRadius: $switch-height;
+$switch-marginBottom: $form-spacing;
+$switch-width: remCalc($switch-baseWidth); // magic design number
+$switch-transition: $input-transition;
+
+$switch-backgroundColor: color("greys", "medium");
+
+$switch-borderColor: $switch-backgroundColor;
+$switch-borderSize: 1px;
+$switch-borderStyle: solid;
+
+$switch-checked-backgroundColor: color("success");
+$switch-checked-borderColor: color("success");
+$switch-focus-borderColor: color("primary");
+$switch-focus-BoxShadow: 0 0 4px rgba(color("primary"), 0.4);
+$switch-important-checked-backgroundColor: color("warning");
+$switch-important-checked-borderColor: $switch-important-checked-backgroundColor;
+
+// SWITCH LABELS
+$switch-labels-unselected-color: color("greys", "medium");
+$switch-labels-selected-color: color("greys", "darkest");
+
+// SWITCH INDICATOR
+$switch-indicator-scale: 0.7143; // bit magic-y (20px / 28px)
+$switch-indicator-baseSize: $switch-baseSize * $switch-indicator-scale;
+$switch-indicator-height: remCalc($switch-indicator-baseSize);
+$switch-indicator-width: $switch-indicator-height;
+$switch-indicator-borderRadius: $switch-indicator-height;
+$switch-indicator-offSet: (($switch-baseSize - ($switch-borderSize * 2)) - $switch-indicator-baseSize) / 2;
+$switch-indicator-on-offSet: (($switch-baseWidth - ($switch-borderSize * 2)) - $switch-indicator-baseSize) - $switch-indicator-offSet;
+$switch-indicator-color: color("whites", "bright");
+$switch-indicator-boxShadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+
+// SWITCH WITH INNER TEXT SETTINGS
+$switch-indicator-text-offContent: "OFF";
+$switch-indicator-text-onContent: "ON";
+$switch-indicator-text-color: color("whites", "bright");
+$switch-indicator-text-rightPosition: remCalc(6px);
+$switch-indicator-text-on-rightPosition: remCalc(30px);
+$switch-indicator-text-onFontWeight: fontWeight("semibold");
+
+// SWITCH WITH ICON SETTINGS
+
