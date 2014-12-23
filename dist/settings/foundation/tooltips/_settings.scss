@@ -15,7 +15,6 @@
 
 $exportCSS--tooltips: $exportCSS;
 
-$include-html-tooltip-classes: true;
 
 // Tooltip Variables
 // -----------------------------------------------------------------------------
@@ -23,6 +22,9 @@ $include-html-tooltip-classes: true;
 
 // Foundation Variables
 // -----------------------------------------------------------------------------
+
+$include-html-tooltip-classes: $include-html-classes;
+
 $has-tip-border-bottom: dotted 1px color("greys", "medium");
 $has-tip-font-weight: $font-weight-bold;
 $has-tip-font-color: color("greys", "darkest");

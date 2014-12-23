@@ -1,0 +1,328 @@
+// =============================================================================
+// BC FORMS (CSS)
+// =============================================================================
+
+
+// Bigcommerce Component
+// -----------------------------------------------------------------------------
+//
+// The Bigcommerce Coding Standards, coupled with Foundation Variables.
+//
+// 1. If set to false, there is no outputted CSS for this component.
+// 2. This matches the variable of Foundation forms, as they come together
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--forms { // 1, 2
+
+    //
+    // Checkboxes and Radios
+    //
+    // Purpose: We do these better than Foundation
+    // -----------------------------------------------------------------------------
+
+    .form-checkbox,
+    .form-radio {
+
+        @include u-hidden("visually");
+
+        + .form-label {
+            @include checkRadioBase();
+        }
+
+    }
+
+    .form-checkbox:checked,
+    .form-radio:checked {
+
+        + .form-label {
+            @include checkRadioBase--checked();
+        }
+
+    }
+
+    //
+    // Don't forget you focus styles if you're creating custom Inputs
+    // -----------------------------------------------------------------------------
+    .form-checkbox:focus,
+    .form-radio:focus {
+
+        + .form-label {
+            @include checkRadioBase--focus();
+        }
+
+    }
+
+    .form-checkbox[disabled],
+    .form-radio[disabled] {
+
+        + .form-label {
+            @include checkRadioBase--disabled();
+        }
+
+    }
+
+    // =============================================================================
+    // CHECKBOX
+    // =============================================================================
+
+    .form-checkbox {
+
+        + .form-label {
+            @include checkBox-base();
+        }
+
+    }
+
+    // =============================================================================
+    // RADIO BUTTONS
+    // =============================================================================
+
+    .form-radio {
+
+        + .form-label {
+            @include radioButton-base();
+        }
+
+    }
+
+
+    //
+    // PrefixPostfix
+    //
+    // Purpose: Pre/Postfixed label and actions to form elements
+    // -----------------------------------------------------------------------------
+
+    .form-prefixPostfix {
+        @include prefixPostfix-container($prefixPostfix-inputClassName, $prefixPostfix-buttonClassName);
+    }
+
+    // PrefixPostfix inputs (but only if touching)
+    .form-prefixPostfix-input {
+        @include prefixPostfix-input();
+    }
+
+    // PrefixPostfix Labels
+    .form-prefixPostfix-label {
+        @include prefixPostfix-label();
+    }
+
+    .form-prefixPostfix-label--prefix {
+        @include prefixPostfix-label--prefix($prefixPostfix-inputClassName);
+    }
+
+    .form-prefixPostfix-label--postfix {
+        @include prefixPostfix-label--postfix();
+    }
+
+    // PrefixPostfix buttons
+    .form-prefixPostfix-button--prefix {
+        margin: 0 ($form-spacing / 2) 0 0;
+    }
+
+    .form-prefixPostfix-button--postfix {
+        margin: 0 0 0 ($form-spacing / 2);
+    }
+
+
+    //
+    // SWITCHES
+    //
+    // Purpose: CHECKBOX OVERRIDES THAT LOOK LIKE NICE SWITCHES
+    // TODO: I think this will be greatly simplified if it was a JS component. Relying
+    // on the :checked state makes selector too deep and flakey. Neat, but unrealistic.
+    // -----------------------------------------------------------------------------
+
+    .form-switch {
+        margin-bottom: $switch-marginBottom;
+    }
+
+    //
+    // Switch checkbox
+    //
+    // Purpose: The switch is just a custom, css checkbox.
+    // -----------------------------------------------------------------------------
+
+    .form-switch-checkbox {
+        // scss-lint:disable SelectorDepth, NestingDepth
+
+        @include u-hidden("visually");
+
+        // Checked state of the checkbox
+        &:checked + .form-switch-label {
+
+            .form-switch-toggle {
+
+                background-color: $switch-checked-backgroundColor;
+                border-color: $switch-checked-borderColor;
+
+                &::before {
+                    right: $switch-indicator-text-on-rightPosition;
+                }
+
+                &::after {
+                    left: remCalc($switch-indicator-on-offSet);
+                }
+
+            }
+
+            .form-switch-offText {
+                color: $switch-labels-unselected-color;
+            }
+
+            .form-switch-onText {
+                color: $switch-labels-selected-color;
+            }
+
+        }
+
+        // Focus state of the checkbox
+        &:focus + .form-switch-label {
+
+            .form-switch-toggle {
+                border-color: $switch-focus-borderColor;
+                box-shadow: $switch-focus-BoxShadow;
+            }
+
+        }
+
+    }
+
+    //
+    // Switch Label
+    //
+    // Purpose: Every input has a label associated with it. We use this as the clickable
+    // part of our fancy checkbox replacement
+    // -----------------------------------------------------------------------------
+
+    .form-switch-label {
+        cursor: $form-label-pointer;
+    }
+
+    //
+    // Switch Toggle
+    //
+    // Purpose: The actual, graphical toggle you seen in the UI
+    // -----------------------------------------------------------------------------
+
+    .form-switch-toggle {
+
+        background-color: $switch-backgroundColor;
+        border: $switch-borderSize $switch-borderStyle $switch-borderColor;
+        border-radius: $switch-height;
+        display: inline-block;
+        height: $switch-height;
+        position: relative;
+        transition: $switch-transition;
+        vertical-align: middle;
+        width: $switch-width;
+
+        .form-switch--important & {
+            background-color: $switch-important-checked-backgroundColor;
+            border-color: $switch-important-checked-borderColor;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+        }
+
+    }
+
+    //
+    // Toggle element before pseudo element
+    //
+    // Purpose: Effectively used as the background og the UI switch
+    // Can have ON/OFF text or tick/cross icons in the content
+    // -----------------------------------------------------------------------------
+
+    .form-switch-toggle::before {
+
+        color: $switch-indicator-text-color;
+        height: $switch-height;
+        line-height: $switch-lineHeight;
+        right: $switch-indicator-text-rightPosition;
+        transition: $switch-transition;
+
+        .form-switch--text & {
+            content: $switch-indicator-text-offContent;
+        }
+
+        .form-switch--icon & {
+            // TODO: awaiting icons before these get converted
+            content: "\00D7";
+            font-size: fontSize("larger");
+            font-weight: fontWeight("semibold");
+            line-height: (20 / 28); // Magic number until we get solid icons set
+            right: remCalc(10px);
+        }
+
+    }
+
+    //
+    // Toggle element after pseudo element
+    //
+    // Purpose: Effectively used as the indicator of the switch, positioned left or right
+    // -----------------------------------------------------------------------------
+
+    .form-switch-toggle::after {
+        background: $switch-indicator-color;
+        border-radius: $switch-indicator-borderRadius;
+        box-shadow: $switch-indicator-boxShadow;
+        height: $switch-indicator-height;
+        left: remCalc($switch-indicator-offSet);
+        top: remCalc($switch-indicator-offSet);
+        transition: $switch-transition;
+        width: $switch-indicator-width;
+    }
+
+    //
+    // Switch explanatory text labels
+    //
+    // Purpose: Text labels can be placed either side of the switch to give more
+    // meaning to the position of the switch indicator.  "On this side, it means off",
+    // "On that side it means on"
+    // -----------------------------------------------------------------------------
+
+    .form-switch-offText {
+        color: $switch-labels-selected-color;
+        margin-right: 5px;
+    }
+
+    .form-switch-onText {
+        color: $switch-labels-unselected-color;
+        margin-left: 5px;
+    }
+
+    // The things I do for a CSS only solution. This looks far worse than it is
+    // When the switch is the text variant, and it is checked, display the word,
+    // ON inside the switch.
+    .form-switch--text {
+        // scss-lint:disable SelectorDepth, NestingDepth
+        .form-switch-checkbox:checked + .form-switch-label {
+            .form-switch-toggle {
+                &::before {
+                    content: $switch-indicator-text-onContent;
+                    font-weight: $switch-indicator-text-onFontWeight;
+                }
+            }
+        }
+    }
+
+    // See above, but with a tick.
+    // TODO: awaiting icons before these get converted
+    .form-switch--icon {
+        // scss-lint:disable SelectorDepth, NestingDepth
+        .form-switch-checkbox:checked + .form-switch-label {
+            .form-switch-toggle {
+                &::before {
+                    content: "\2714"; // TODO: awaiting icons
+                    font-size: fontSize("small");
+                    line-height: (27/18); // Magic number until we get solid icons set
+                }
+            }
+        }
+    }
+
+}

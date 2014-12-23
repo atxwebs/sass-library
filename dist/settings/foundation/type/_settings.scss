@@ -15,6 +15,8 @@
 
 $exportCSS--type:               $exportCSS; // 1
 
+$code-font-size:              fontSize("smallest");
+
 
 // Foundation Variables
 // -----------------------------------------------------------------------------
@@ -74,13 +76,13 @@ $paragraph-margin-bottom: spacing("base");
 // $paragraph-text-rendering: optimizeLegibility;
 
 // We use these to style <code> tags
-// $code-color: $oil;
+$code-color: color("highlight", "dark");
 $code-font-family: Consolas, Monaco, 'Andale Mono', monospace;
 // $code-font-weight: $font-weight-normal;
-// $code-background-color: scale-color($secondary-color, $lightness: 70%);
+$code-background-color: color("whites", "bright");
 // $code-border-size: 1px;
 // $code-border-style: solid;
-// $code-border-color: scale-color($code-background-color, $lightness: -10%);
+$code-border-color: container("borderColor");
 // $code-padding: rem-calc(2) rem-calc(5) rem-calc(1);
 
 // We use these to style anchors

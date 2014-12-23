@@ -20,7 +20,6 @@
     // -------------------------------------------------------------------------
 
     .button {
-
         @include button-base;
         @include buttonVariant("default");
         @include buttonSize("default");
@@ -31,17 +30,18 @@
     // -------------------------------------------------------------------------
 
     .button--primary {
-
         @include buttonVariant("primary");
     }
 
-    .button--action {
+    .button--tertiary {
+        @include buttonVariant("tertiary");
+    }
 
+    .button--action {
         @include buttonVariant("action");
     }
 
-    .button--disabled {
-
+    .button[disabled] {
         @include buttonVariant("disabled");
         cursor: $cursor-default-value;
     }
@@ -51,17 +51,14 @@
     // -------------------------------------------------------------------------
 
     .button--large {
-
         @include buttonSize("large");
     }
 
     .button--small {
-
         @include buttonSize("small");
     }
 
     .button--tiny {
-
         @include buttonSize("tiny");
     }
 }
