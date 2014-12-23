@@ -32,9 +32,9 @@ $buttonStyleMap: (
     ),
 
     primary: (
-        color:                          color("secondary"),
-        colorHover:                     color("secondary"),
-        colorActive:                    color("secondary"),
+        color:                          color("whites", "bright"),
+        colorHover:                     color("whites", "bright"),
+        colorActive:                    color("whites", "bright"),
         backgroundColor:                color("primary"),
         backgroundColorHover:           color("primary", "dark"),
         backgroundColorActive:          color("primary", "darker"),
@@ -43,10 +43,22 @@ $buttonStyleMap: (
         borderColorActive:              color("primary", "darker")
     ),
 
+    tertiary: (
+        color:                          color("greys", "dark"),
+        colorHover:                     color("greys", "darker"),
+        colorActive:                    color("greys", "darker"),
+        backgroundColor:                color("greys", "light"),
+        backgroundColorHover:           color("greys", "medium"),
+        backgroundColorActive:          color("greys", "medium"),
+        borderColor:                    color("greys", "light"),
+        borderColorHover:               color("greys", "medium"),
+        borderColorActive:              color("greys", "medium")
+    ),
+
     action: (
-        color:                          color("secondary"),
-        colorHover:                     color("secondary"),
-        colorActive:                    color("secondary"),
+        color:                          color("whites", "bright"),
+        colorHover:                     color("whites", "bright"),
+        colorActive:                    color("whites", "bright"),
         backgroundColor:                color("highlight"),
         backgroundColorHover:           color("highlight", "dark"),
         backgroundColorActive:          color("highlight", "darker"),
