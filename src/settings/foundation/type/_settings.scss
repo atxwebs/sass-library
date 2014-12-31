@@ -29,9 +29,9 @@ $code-font-size:              fontSize("smallest");
 // -----------------------------------------------------------------------------
 
 // We use these to define default font stacks
-$font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
-$font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif !default;
-$font-family-monospace: Consolas, "Liberation Mono", Courier, monospace !default;
+$font-family-sans-serif: fontFamily("sans");
+$font-family-serif: fontFamily("serif");
+$font-family-monospace: fontFamily("mono");
 
 // We use these to define default font weights
 $font-weight-normal: fontWeight("normal");
@@ -40,7 +40,7 @@ $font-weight-bold: fontWeight("semibold");
 // We use these to control various global styles
 $body-bg: color("whites");
 $body-font-color: color("greys", "darker");
-$body-font-family: fontFamily("sans");
+$body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -52,7 +52,7 @@ $header-font-family: fontFamily("sans");
 $header-font-weight: $font-weight-bold;
 $header-font-color: $body-font-color;
 $header-letter-spacing: 0;
-$header-line-height: lineHeight("base");
+$header-line-height: lineHeight("small");
 $header-bottom-margin: spacing("single");
 
 // We use these to control header font sizes
