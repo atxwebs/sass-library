@@ -54,9 +54,9 @@
     // -------------------------------------------------------------------------
 
     html {
-        font-size: $fontSizeRoot - 2; // 1
+        font-size: $fontSizeRoot + 2; // 1
 
-        @include breakpoint(medium) {
+        @include breakpoint("small") {
             font-size: $fontSizeRoot; // 2
         }
 
@@ -120,7 +120,7 @@
     h1,
     h2 {
         font-family: fontFamily("headingSans");
-        letter-spacing: letterSpacing("smaller");
+        letter-spacing: letterSpacing("small");
     }
 
     h1 {
