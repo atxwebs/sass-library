@@ -21,6 +21,13 @@
 
     .table {
         @include table;
+        width: 100%;
+
+        // Fighting with Foundations use of descendent class names
+        th.table-header--numericData,
+        td.table-cell--numericData, {
+            text-align: right;
+        }
     }
 
     .table-thead {
@@ -39,8 +46,5 @@
         }
     }
 
-    .table-head--numericData,
-    .table-cell--numericData, {
-        text-align: right;
-    }
+
 }
