@@ -22,13 +22,13 @@ $datepicker-padding: spacing("half");
 
 
 // Back/next   ToDo: Change To Icons when available
-$datepicker-back-content: '<';
+$datepicker-back-content: "<";
 $datepicker-back-next-color: color("greys", "medium");
 $datepicker-back-next-cursor: $cursor-default-value;
 $datepicker-back-next-fontSize: fontSize("small");
 $datepicker-back-next-fontWeight: fontWeight("bold");
 $datepicker-back-next-padding: 0;
-$datepicker-next-content: '>';
+$datepicker-next-content: ">";
 
 
 // Month

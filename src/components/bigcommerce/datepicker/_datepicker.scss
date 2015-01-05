@@ -61,10 +61,10 @@
     }
 
     .datepicker-days {
-        margin: $datepicker-days-margin;
         border-collapse: separate;
         color: $datepicker-days-color;
         font-size: $datepicker-days-fontSize;
+        margin: $datepicker-days-margin;
         table-layout: fixed;
     }
 
