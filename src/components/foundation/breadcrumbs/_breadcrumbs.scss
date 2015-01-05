@@ -28,41 +28,50 @@
     .breadcrumb {
 
         @include crumbs;
+        font-size: fontSize("smallest");
+        line-height: 1.6;
 
-
-        // State Modifiers
-        // -------------------------------------------------------------------
-        //
-        // 1. Active state placeholder class.
-        //    Extend your modifiers to this class for shared styling.
-        //
-        // 2. Unavailable state placeholder class.
-        //    Extend your modifiers to this class for shared styling.
-        //
-        // 3. Default state placeholder class.
-        //    Extend your modifiers to this class for shared styling.
-        //
-        // -------------------------------------------------------------------
-
-        %breadcrumb--activeState { // 1
-
-            color: $crumb-font-color-current;
-
+        @include breakpoint(xsmall) {
+            font-size: fontSize("base");
+            line-height: 1;
         }
 
-        %breadcrumb--unavailableState { // 2
+        &::before {
+            margin: 0 0 0 spacing("quarter");
 
-            color: $crumb-font-color-unavailable;
-
+            @include breakpoint(xsmall) {
+                margin: 0 spacing("half");
+            }
         }
 
-        %breadcrumb--defaultState { // 3
+    }
 
-            cursor: default;
-            text-decoration: $crumb-link-decor;
 
-        }
+    // State Modifiers
+    // -------------------------------------------------------------------
+    //
+    // 1. Active state placeholder class.
+    //    Extend your modifiers to this class for shared styling.
+    //
+    // 2. Unavailable state placeholder class.
+    //    Extend your modifiers to this class for shared styling.
+    //
+    // 3. Default state placeholder class.
+    //    Extend your modifiers to this class for shared styling.
+    //
+    // -------------------------------------------------------------------
 
+    %breadcrumb--activeState { // 1
+        color: $crumb-font-color-current;
+    }
+
+    %breadcrumb--unavailableState { // 2
+        color: $crumb-font-color-unavailable;
+    }
+
+    %breadcrumb--defaultState { // 3
+        cursor: default;
+        text-decoration: $crumb-link-decor;
     }
 
     .breadcrumb.is-active {
