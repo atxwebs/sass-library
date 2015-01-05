@@ -1,0 +1,64 @@
+// =============================================================================
+// BC-DATEPICKER (Settings)
+// =============================================================================
+
+
+// Bigcommerce Variables
+// -----------------------------------------------------------------------------
+//
+// These scoped variables are created by Bigcommerce.
+// All variables that are not from Foundation should be placed here.
+//
+// 1. Choose whether to include the Bigcommerce class names
+//
+// -----------------------------------------------------------------------------
+
+$exportCSS--datepicker:            $exportCSS;
+
+// Container
+$datepicker-backgroundColor: color("whites");
+$datepicker-boxShadow: 0 0 spacing("sixth") color("greys", "medium");
+$datepicker-padding: spacing("half");
+
+
+// Back/next   ToDo: Change To Icons when available
+$datepicker-back-content: '<';
+$datepicker-back-next-color: color("greys", "medium");
+$datepicker-back-next-cursor: $cursor-default-value;
+$datepicker-back-next-fontSize: fontSize("small");
+$datepicker-back-next-fontWeight: fontWeight("bold");
+$datepicker-back-next-padding: 0;
+$datepicker-next-content: '>';
+
+
+// Month
+$datepicker-month-fontSize: fontSize("small");
+$datepicker-month-fontWeight: fontWeight("normal");
+$datepicker-month-margin: spacing("half") 0;
+
+
+// Days
+$datepicker-days-color: color("greys", "darker");
+$datepicker-days-fontSize: fontSize("base");
+$datepicker-days-head-lineHeight: lineHeight("tiny");
+$datepicker-days-margin: spacing("single") spacing("base") 0;
+
+
+// Day
+$datepicker-day-background-borderRadius: 50%;
+$datepicker-day-background-bottom: spacing("eighth");
+$datepicker-day-background-left: spacing("eighth");
+$datepicker-day-background-right: spacing("eighth");
+$datepicker-day-background-top: spacing("eighth");
+$datepicker-day-disabled-color: color("greys", "medium");
+$datepicker-day-height: spacing("single") * 1.5;
+$datepicker-day-hover-backgroundColor: color("greys", "light");
+$datepicker-day-lineHeight: 100%;
+$datepicker-day-name-color: color("greys", "medium");
+$datepicker-day-name-fontSize: fontSize("tiny");
+$datepicker-day-name-fontWeight: fontWeight("normal");
+$datepicker-day-name-textTransform: uppercase;
+$datepicker-day-padding: spacing("third");
+$datepicker-day-selected-backgroundColor: color("primary");
+$datepicker-day-selected-color: color("whites");
+$datepicker-day-width: spacing("single") * 1.5;
