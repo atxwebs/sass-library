@@ -1,0 +1,42 @@
+// =============================================================================
+// BC INTERNAL NAV (CSS)
+// =============================================================================
+
+
+// Bigcommerce Component
+// -----------------------------------------------------------------------------
+//
+// 1. If set to false, there is no outputted CSS for this component.
+// 2. Internal Nav currently takes the same styling as tabs, but if that changes
+// we are equipped to make an easy change here.
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--internalNav { // 1
+
+    // 2
+    .internalNav {
+        @extend %tabs;
+    }
+
+    .internalNav-list {
+        @include u-listBullets("none");
+    }
+
+    .internalNav-item {
+        @extend %tab;
+    }
+
+    .internalNav-item.is-active {
+        @extend %tab--active;
+
+        .internalNav-title {
+            @extend %tab-title--active;
+        }
+    }
+
+    .internalNav-title {
+        @extend %tab-title;
+    }
+
+}
