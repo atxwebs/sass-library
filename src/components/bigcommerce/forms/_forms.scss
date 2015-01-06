@@ -148,33 +148,6 @@
 
         @include u-hidden("visually");
 
-        // Checked state of the checkbox
-        &:checked + .form-switch-label {
-
-            .form-switch-toggle {
-
-                background-color: $switch-checked-backgroundColor;
-                border-color: $switch-checked-borderColor;
-
-                &::before {
-                    right: $switch-indicator-text-on-rightPosition;
-                }
-
-                &::after {
-                    left: remCalc($switch-indicator-on-offSet);
-                }
-
-            }
-
-            .form-switch-offText {
-                color: $switch-labels-unselected-color;
-            }
-
-            .form-switch-onText {
-                color: $switch-labels-selected-color;
-            }
-
-        }
 
         // Focus state of the checkbox
         &:focus + .form-switch-label {
@@ -220,6 +193,22 @@
         .form-switch--important & {
             background-color: $switch-important-checked-backgroundColor;
             border-color: $switch-important-checked-borderColor;
+        }
+
+        // scss-lint:disable NestingDepth
+        .form-switch--checked & {
+
+            background-color: $switch-checked-backgroundColor;
+            border-color: $switch-checked-borderColor;
+
+            &::before {
+                right: $switch-indicator-text-on-rightPosition;
+            }
+
+            &::after {
+                left: remCalc($switch-indicator-on-offSet);
+            }
+
         }
 
         &::before,
@@ -288,11 +277,19 @@
     .form-switch-offText {
         color: $switch-labels-selected-color;
         margin-right: 5px;
+
+        .form-switch--checked & {
+            color: $switch-labels-unselected-color;
+        }
     }
 
     .form-switch-onText {
         color: $switch-labels-unselected-color;
         margin-left: 5px;
+
+        .form-switch--checked & {
+            color: $switch-labels-selected-color;
+        }
     }
 
     // The things I do for a CSS only solution. This looks far worse than it is
