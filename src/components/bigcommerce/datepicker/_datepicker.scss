@@ -21,13 +21,17 @@
     .datepicker {
         background-color: $datepicker-backgroundColor;
         box-shadow: $datepicker-boxShadow;
-        display: inline-block;
         padding: $datepicker-padding;
-        position: absolute;
         text-align: center;
+        z-index: $datepicker-zIndex;
+    }
+
+    .datepicker-attachment {
+        position: absolute;
     }
 
     .datepicker-month {
+        color: $datepicker-month-color;
         font-size: $datepicker-month-fontSize;
         font-weight: $datepicker-month-fontWeight;
         margin: $datepicker-month-margin;
