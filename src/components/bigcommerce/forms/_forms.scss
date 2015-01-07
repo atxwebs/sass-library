@@ -133,7 +133,7 @@
     // on the :checked state makes selector too deep and flakey. Neat, but unrealistic.
     // -----------------------------------------------------------------------------
 
-    .form-switch {
+    .switch {
         margin-bottom: $switch-marginBottom;
     }
 
@@ -143,33 +143,16 @@
     // Purpose: The switch is just a custom, css checkbox.
     // -----------------------------------------------------------------------------
 
-    .form-switch-checkbox {
-        // scss-lint:disable SelectorDepth, NestingDepth
+    .switch-checkbox {
 
         @include u-hidden("visually");
 
-
         // Focus state of the checkbox
-        &:focus + .form-switch-label {
-
-            .form-switch-toggle {
-                border-color: $switch-focus-borderColor;
-                box-shadow: $switch-focus-BoxShadow;
-            }
-
+        &:focus + .switch-toggle {
+            border-color: $switch-focus-borderColor;
+            box-shadow: $switch-focus-BoxShadow;
         }
 
-    }
-
-    //
-    // Switch Label
-    //
-    // Purpose: Every input has a label associated with it. We use this as the clickable
-    // part of our fancy checkbox replacement
-    // -----------------------------------------------------------------------------
-
-    .form-switch-label {
-        cursor: $form-label-pointer;
     }
 
     //
@@ -178,11 +161,12 @@
     // Purpose: The actual, graphical toggle you seen in the UI
     // -----------------------------------------------------------------------------
 
-    .form-switch-toggle {
+    .switch-toggle {
 
         background-color: $switch-backgroundColor;
         border: $switch-borderSize $switch-borderStyle $switch-borderColor;
-        border-radius: $switch-height;
+        border-radius: $switch-borderRadius;
+        cursor: $form-label-pointer;
         display: inline-block;
         height: $switch-height;
         position: relative;
@@ -190,31 +174,14 @@
         vertical-align: middle;
         width: $switch-width;
 
-        .form-switch--important & {
+        .switch--important & {
             background-color: $switch-important-checked-backgroundColor;
             border-color: $switch-important-checked-borderColor;
         }
 
-        // scss-lint:disable NestingDepth
-        .form-switch--checked & {
-
+        .switch--checked & {
             background-color: $switch-checked-backgroundColor;
             border-color: $switch-checked-borderColor;
-
-            &::before {
-                right: $switch-indicator-text-on-rightPosition;
-            }
-
-            &::after {
-                left: remCalc($switch-indicator-on-offSet);
-            }
-
-        }
-
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
         }
 
     }
@@ -222,48 +189,60 @@
     //
     // Toggle element before pseudo element
     //
-    // Purpose: Effectively used as the background og the UI switch
+    // Purpose: Effectively used as the indicator of the switch, positioned left or right
+    // -----------------------------------------------------------------------------
+
+    .switch-toggle::before {
+        background: $switch-indicator-color;
+        border-radius: $switch-indicator-borderRadius;
+        box-shadow: $switch-indicator-boxShadow;
+        content: "";
+        height: $switch-indicator-height;
+        left: remCalc($switch-indicator-offSet);
+        position: absolute;
+        top: remCalc($switch-indicator-offSet);
+        transition: $switch-transition;
+        width: $switch-indicator-width;
+
+        .switch--checked & {
+            left: remCalc($switch-indicator-on-offSet);
+        }
+    }
+
+    //
+    // Toggle element supportive text
+    //
+    // Purpose: Effectively used as the background of the UI switch
     // Can have ON/OFF text or tick/cross icons in the content
     // -----------------------------------------------------------------------------
 
-    .form-switch-toggle::before {
+    .switch-label {
 
-        color: $switch-indicator-text-color;
-        height: $switch-height;
+        color: $switch-label-text-color;
+        height: $switch-label-height;
         line-height: $switch-lineHeight;
-        right: $switch-indicator-text-rightPosition;
+        position: absolute;
+        right: $switch-label-text-rightPosition;
+        text-transform: uppercase;
         transition: $switch-transition;
 
-        .form-switch--text & {
-            content: $switch-indicator-text-offContent;
-        }
-
-        .form-switch--icon & {
-            // TODO: awaiting icons before these get converted
-            content: "\00D7";
-            font-size: fontSize("larger");
-            font-weight: fontWeight("semibold");
-            line-height: (20 / 28); // Magic number until we get solid icons set
-            right: remCalc(10px);
+        .switch--checked & {
+            font-weight: $switch-label-text-onFontWeight;
+            left: $switch-label-text-rightPosition;
+            right: auto;
         }
 
     }
 
-    //
-    // Toggle element after pseudo element
-    //
-    // Purpose: Effectively used as the indicator of the switch, positioned left or right
-    // -----------------------------------------------------------------------------
+    .switch-label--icon.icon { // fighting specificity
 
-    .form-switch-toggle::after {
-        background: $switch-indicator-color;
-        border-radius: $switch-indicator-borderRadius;
-        box-shadow: $switch-indicator-boxShadow;
-        height: $switch-indicator-height;
-        left: remCalc($switch-indicator-offSet);
-        top: remCalc($switch-indicator-offSet);
-        transition: $switch-transition;
-        width: $switch-indicator-width;
+        @include square($switch-label-height);
+
+        svg {
+            @include square($switch-label-height);
+            fill: $switch-label-text-color;
+        }
+
     }
 
     //
@@ -274,51 +253,21 @@
     // "On that side it means on"
     // -----------------------------------------------------------------------------
 
-    .form-switch-offText {
-        color: $switch-labels-selected-color;
+    .switch-description--left {
+        color: $switch-description-selected-color;
         margin-right: 5px;
 
-        .form-switch--checked & {
-            color: $switch-labels-unselected-color;
+        .switch--checked & {
+            color: $switch-description-unselected-color;
         }
     }
 
-    .form-switch-onText {
-        color: $switch-labels-unselected-color;
+    .switch-description--right {
+        color: $switch-description-unselected-color;
         margin-left: 5px;
 
-        .form-switch--checked & {
-            color: $switch-labels-selected-color;
-        }
-    }
-
-    // The things I do for a CSS only solution. This looks far worse than it is
-    // When the switch is the text variant, and it is checked, display the word,
-    // ON inside the switch.
-    .form-switch--text {
-        // scss-lint:disable SelectorDepth, NestingDepth
-        .form-switch-checkbox:checked + .form-switch-label {
-            .form-switch-toggle {
-                &::before {
-                    content: $switch-indicator-text-onContent;
-                    font-weight: $switch-indicator-text-onFontWeight;
-                }
-            }
-        }
-    }
-
-    // See above, but with a tick.
-    // TODO: awaiting icons before these get converted
-    .form-switch--icon {
-        // scss-lint:disable SelectorDepth, NestingDepth
-        .form-switch-checkbox:checked + .form-switch-label {
-            .form-switch-toggle {
-                &::before {
-                    content: "\2714"; // TODO: awaiting icons
-                    font-size: fontSize("small");
-                    line-height: (27/18); // Magic number until we get solid icons set
-                }
-            }
+        .switch--checked & {
+            color: $switch-description-selected-color;
         }
     }
 
