@@ -1,5 +1,5 @@
 // =============================================================================
-// BC-PAGINATION (CSS)
+// PAGINATION (CSS)
 // =============================================================================
 
 
@@ -13,26 +13,38 @@
 //
 // -----------------------------------------------------------------------------
 
-@if $exportCSS--paginationLimits {
+@if $exportCSS--pagination {
 
     // Component
     // -------------------------------------------------------------------------
-    .pagination {
-        @include clearfix();
-        float: right;
-    }
 
-    .pagination-limits {
-        border-left: 1px solid container("borderColor", "dark");
+    .pagination-list {
+        @include pagination($use-default-classes: false);
         display: inline-block;
-        margin-left: spacing("half");
-        padding: spacing("third") spacing("single");
-        position: relative;
-        vertical-align: top;
     }
 
-    .pagination-limits-list {
-        text-align: center;
+    li.pagination-item {
+        cursor: $cursor-pointer-value;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        a:hover {
+            color: $pagination-link-current-font-color;
+        }
+    }
+
+    // Specificity needed to overwrite foundation's style
+    li.pagination-item--current {
+        @include pagination-current-item();
+    }
+
+    .pagination-item {
+
+        .pagination-item--current & {
+            border-radius: 0;
+        }
     }
 
 }
