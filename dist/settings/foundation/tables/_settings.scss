@@ -19,6 +19,7 @@ $exportCSS--tables:                    $exportCSS; // 1
 $table-head-border: container("border", "dark");
 $table-foot-border: $table-head-border;
 $table-row-border: container("border");
+$table-row-hover: container("fill");
 
 //
 // @variables
