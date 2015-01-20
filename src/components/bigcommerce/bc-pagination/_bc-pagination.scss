@@ -19,14 +19,15 @@
     // -------------------------------------------------------------------------
     .pagination {
         @include clearfix();
-        float: right;
+        float: $pagination-side;
     }
 
     .pagination-limits {
-        border-left: 1px solid container("borderColor", "dark");
+        border: $pagination-limits-borderStyle $pagination-limits-borderColor;
+        border-width: $pagination-limits-borderWidth;
         display: inline-block;
-        margin-left: spacing("half");
-        padding: spacing("third") spacing("single");
+        margin-left: $pagination-limits-marginLeft;
+        padding: $pagination-limits-paddingTop 0 $pagination-limits-paddingTop $pagination-limits-paddingSide;
         position: relative;
         vertical-align: top;
     }

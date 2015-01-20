@@ -23,6 +23,7 @@
         display: inline-block;
     }
 
+    // Specificity needed to overwrite foundation's style
     li.pagination-item {
         cursor: $cursor-pointer-value;
 
@@ -35,7 +36,6 @@
         }
     }
 
-    // Specificity needed to overwrite foundation's style
     li.pagination-item--current {
         @include pagination-current-item();
     }
