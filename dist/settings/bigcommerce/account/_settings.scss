@@ -1,5 +1,5 @@
 // =============================================================================
-// BC-PAGINATION (Settings)
+// ACCOUNT (Settings)
 // =============================================================================
 
 
@@ -13,14 +13,15 @@
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--paginationLimits:            $exportCSS;
+$exportCSS--account:            $exportCSS;
 
-$pagination-side: right;
 
-$pagination-limits-borderStyle: $border-global-style;
-$pagination-limits-borderColor: container("borderColor", "dark");
-$pagination-limits-borderWidth: 0 0 0 $border-global-size;
-
-$pagination-limits-marginLeft: spacing("half");
-$pagination-limits-paddingTop: spacing("third");
-$pagination-limits-paddingSide: spacing("single");
+// Foundation Variables
+// -----------------------------------------------------------------------------
+//
+// These variables come directly from:
+// /vendor/foundation/foundation/components/*
+// Declaring the variables here, you can adjust them all to your design,
+// leaving the vendor framework untouched.
+//
+// -----------------------------------------------------------------------------

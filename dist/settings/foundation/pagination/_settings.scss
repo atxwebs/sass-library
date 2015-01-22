@@ -25,16 +25,16 @@ $include-pagination-classes: $include-html-classes;
 
 // We use these to control the pagination container
 $pagination-height: spacing("base");
-$pagination-margin: spacing("base");
+$pagination-margin: 0;
 
 // We use these to set the list-item properties
 //$pagination-li-float: $default-float !default;
 $pagination-li-font-color: color("primary");
 $pagination-li-font-size: fontSize("base");
-$pagination-li-margin: spacing("eighth");
+$pagination-li-margin: spacing("half");
 
 // We use these for the pagination anchor links
-$pagination-link-pad: spacing("eighth");
+$pagination-link-pad: spacing("third") spacing("eighth");
 $pagination-link-font-color: color("primary");
 $pagination-link-active-bg: color("whites");
 
@@ -44,9 +44,9 @@ $pagination-link-unavailable-font-color: color("greys");
 //$pagination-link-unavailable-bg-active: transparent !default;
 
 // We use these for currently selected anchor links
-$pagination-link-current-background: color("greys", "medium");
-$pagination-link-current-font-color: color("whites");
+$pagination-link-current-background: none;
+$pagination-link-current-font-color: color("greys", "dark");
 $pagination-link-current-font-weight: fontWeight("normal");
 $pagination-link-current-cursor: $cursor-default-value;
-$pagination-link-current-active-bg: color("greys", "medium");
+$pagination-link-current-active-bg: none;
 
