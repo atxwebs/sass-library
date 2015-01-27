@@ -107,6 +107,12 @@ $buttonSizeMap: (
         fontSize:                       fontSize("smallest"),
         horizontalPadding:              spacing("half"),
         verticalPadding:                spacing("quarter")
+    ),
+
+    square: (
+        fontSize:                       fontSize("base"),
+        horizontalPadding:              spacing("half"),
+        verticalPadding:                spacing("half")
     )
 );
 
