@@ -130,3 +130,4 @@ $buttonSizeMap: (
 $include-html-button-classes:           $include-html-classes;
 $button-margin-bottom:                  spacing("base");
 $button-border-width:                   1px;
+$button-focus-boxShadow:                0 0 2px rgba(color("primary"), 0.6);
