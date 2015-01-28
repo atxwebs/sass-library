@@ -95,12 +95,17 @@
 
     .form-input.has-action {
 
-        display: inline-block;
-        width: auto;
+        float: left;
+        padding-right: $inputAction-input-paddingRight;
 
         + .button--inputAction {
             background: $input-bg-color;
             border: 0;
+            border-radius: 0 $input-border-radius $input-border-radius 0;
+            float: left;
+            height: $inputAction-button-width;
+            margin: remCalc($input-border-width) 0 0 $inputAction-button-marginLeft;
+            width: $inputAction-button-width;
         }
 
     }

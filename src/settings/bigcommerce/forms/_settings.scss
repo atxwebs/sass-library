@@ -54,6 +54,19 @@ $radio-pipSize: $checkRadio-pipSize;
 
 
 // =============================================================================
+// INPUT ACTIONS
+// =============================================================================
+
+// form spacing minus top and bottom border width
+$inputAction-button-width: ($form-spacing * 2) - remCalc($input-border-width * 2);
+// padding the same as the button with
+$inputAction-input-paddingRight: $inputAction-button-width;
+// Negative margin can't use the button width as we only need to deal with 1 border on the right
+$inputAction-button-marginLeft: - ($form-spacing * 2) + remCalc($input-border-width);
+
+
+
+// =============================================================================
 // PREFIXPOSTFIX
 // =============================================================================
 
