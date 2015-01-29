@@ -88,6 +88,30 @@
 
 
     //
+    // Inputs with internal actions
+    //
+    // Purpose: Define inputs that have internal action button, like a search box
+    // -----------------------------------------------------------------------------
+
+    .form-input.has-action {
+
+        float: left;
+        padding-right: $inputAction-input-paddingRight;
+
+        + .button--inputAction {
+            background: $input-bg-color;
+            border: 0;
+            border-radius: 0 $input-border-radius $input-border-radius 0;
+            float: left;
+            height: $inputAction-button-width;
+            margin: remCalc($input-border-width) 0 0 $inputAction-button-marginLeft;
+            width: $inputAction-button-width;
+        }
+
+    }
+
+
+    //
     // PrefixPostfix
     //
     // Purpose: Pre/Postfixed label and actions to form elements

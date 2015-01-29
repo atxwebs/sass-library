@@ -1,0 +1,23 @@
+// =============================================================================
+// BUTTON GROUPS (CSS)
+// =============================================================================
+
+
+// Bigcommerce Component
+// -----------------------------------------------------------------------------
+//
+// 1. If set to false, there is no outputted CSS for this component.
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--buttonGroup { // 1
+
+    .buttonGroup {
+        @include buttonGroup-container;
+
+        > .button {
+            @include buttonGroup-buttons;
+        }
+    }
+
+}

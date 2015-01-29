@@ -29,34 +29,34 @@ $exportCSS--breadcrumbs:            $exportCSS; // 1
 $include-html-nav-classes:          $include-html-classes;
 
 // We use this to set the background color for the breadcrumb container.
-$crumb-bg:                          container("fill");
+$crumb-bg:                          none;
 
 // We use these to set the padding around the breadcrumbs.
-$crumb-padding:                     spacing("half") spacing("single");
-$crumb-side-padding:                spacing("half");
+$crumb-padding:                     spacing("half") 0;
+$crumb-side-padding:                0;
 
 // We use these to control border styles.
 $crumb-function-factor:             -10%;
-$crumb-border-size:                 1px;
-$crumb-border-style:                solid;
+$crumb-border-size:                 0;
+$crumb-border-style:                none;
 $crumb-border-color:                container("borderColor");
-$crumb-radius:                      $global-radius;
+$crumb-radius:                      0;
 
 // We use these to set various text styles for breadcrumbs.
-$crumb-font-size:                   fontSize("base");
-$crumb-font-color:                  color("greys", "dark");
-$crumb-font-color-current:          color("primary");
-$crumb-font-color-unavailable:      color("greys", "medium");
+$crumb-font-size:                   fontSize("smallest");
+$crumb-font-color:                  color("greys", "darker");
+$crumb-font-color-current:          color("greys");
+$crumb-font-color-unavailable:      color("greys", "light");
 $crumb-font-transform:              inherit;
 $crumb-link-decor:                  none;
 
 // We use these to control the slash between breadcrumbs
-$crumb-slash-color:                 color("greys", "medium");
+$crumb-slash-color:                 color("greys");
 $crumb-slash:                       "/";
 
 // =============================================================================
 // Bigcommerce Additions
 // =============================================================================
 
-$crumb-hover-color:                 color("greys", "darkest");
+$crumb-hover-color:                 color("primary");
 

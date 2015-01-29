@@ -61,5 +61,11 @@
     .button--tiny {
         @include buttonSize("tiny");
     }
+
+
+    .button--icon {
+        @include buttonSize("square");
+    }
+
 }
 
