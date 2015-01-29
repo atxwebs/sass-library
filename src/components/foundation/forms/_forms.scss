@@ -65,6 +65,10 @@
             height: auto;
         }
 
+        &[type="search"] {
+            box-sizing: border-box;
+        }
+
         // Placeholder text styling
         &::-webkit-input-placeholder {
             color: $input-placeholder-color;
