@@ -20,32 +20,96 @@
     // -------------------------------------------------------------------------
 
     .alertBox {
-        @include alert($bg:$alert-generic-color);
+        @include alert($bg:$alert-generic-bgColor);
+
+        .icon {
+            @include square(20);
+        }
+
+        .button {
+            margin: 0 0 0 spacing("half");
+        }
     }
 
     .alertBox--promotion {
-        @include alert-style($alert-info-color);
+        @include alert-style($alert-info-bgColor);
+
+        .alertBox-icon { 
+        // scss-lint:disable NestingDepth,SelectorDepth
+            svg {
+                fill: $alert-info-iconColor;
+            }
+        // scss-lint:enable NestingDepth,SelectorDepth
+        }
     }
 
     .alertBox--low {
-        @include alert-style($alert-success-color);
+        @include alert-style($alert-success-bgColor);
+
+        .alertBox-icon { 
+        // scss-lint:disable NestingDepth,SelectorDepth
+            svg {
+                fill: $alert-success-iconColor;
+            }
+        // scss-lint:enable NestingDepth,SelectorDepth
+        }
     }
 
     .alertBox--moderate {
-        @include alert-style($alert-warning-color);
+        @include alert-style($alert-warning-bgColor);
+
+        .alertBox-icon { 
+        // scss-lint:disable NestingDepth,SelectorDepth
+            svg {
+                fill: $alert-warning-iconColor;
+            }
+        // scss-lint:enable NestingDepth,SelectorDepth
+        }
     }
 
     .alertBox--critical {
-        @include alert-style($alert-critical-color);
+        @include alert-style($alert-critical-bgColor);
+
+        .alertBox-icon { 
+        // scss-lint:disable NestingDepth,SelectorDepth
+            svg {
+                fill: $alert-critical-iconColor;
+            }
+        // scss-lint:enable NestingDepth,SelectorDepth
+        }
+    }
+
+    .alertBox-column {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .alertBox-icon {
+        padding-right: $alert-padding-default-float;
     }
 
     .alertBox-message {
         margin: 0;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .alertBox-heading {
+        margin: 0;
     }
 
     .alertBox-close {
-        @include alert-close;
         cursor: $cursor-pointer-value;
+        padding-left: $alert-padding-default-float;
+    
+        .icon {
+            @include square(20);
+        }
+
+        svg {
+            fill: $alert-close-color !important;    //Remove important when icons are back in sass library
+        }
     }
 }
 
