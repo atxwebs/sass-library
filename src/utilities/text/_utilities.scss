@@ -49,5 +49,8 @@
         @include u-textTruncate(!important);
     }
 
+    .u-fontSmoothing {
+        @include u-fontSmoothing(!important);
+    }
 }
 

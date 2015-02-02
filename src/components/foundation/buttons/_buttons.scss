@@ -23,6 +23,15 @@
         @include button-base;
         @include buttonVariant("default");
         @include buttonSize("default");
+        border-radius: $global-radius;
+        vertical-align: middle;
+
+        &:hover,
+        &:focus,
+        &.is-active,
+        &.active { // 3
+            box-shadow: $button-focus-boxShadow;
+        }
     }
 
 
