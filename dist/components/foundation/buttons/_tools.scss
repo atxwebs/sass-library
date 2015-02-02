@@ -17,10 +17,7 @@
 
     background-color: buttonStyle($type, "backgroundColor");
     border-color: buttonStyle($type, "borderColor");
-    border-radius: $global-radius;
     color: buttonStyle($type, "color");
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
 
     @if buttonStyle($type, "backgroundColorHover") or buttonStyle($type, "borderColorHover") or buttonStyle($type, "colorHover")!= null {
 
@@ -30,8 +27,7 @@
         &.active { // 3
 
             background-color: buttonStyle($type, "backgroundColorHover");
-            border: $button-border-width $button-border-style buttonStyle($type, "borderColorHover");
-            box-shadow: $button-focus-boxShadow;
+            border-color: buttonStyle($type, "borderColorHover");
             color: buttonStyle($type, "colorHover");
         }
     }
