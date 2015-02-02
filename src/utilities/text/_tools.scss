@@ -54,3 +54,12 @@
     word-wrap: normal $important; // 2
 }
 
+
+// Font Smoothing
+// -----------------------------------------------------------------------------
+
+@mixin u-fontSmoothing($important: null) {
+    -moz-osx-font-smoothing: grayscale $important;
+    -webkit-font-smoothing: antialiased $important;
+}
+
