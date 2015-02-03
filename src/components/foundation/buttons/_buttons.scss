@@ -24,6 +24,7 @@
         @include buttonVariant("default");
         @include buttonSize("default");
         border-radius: $global-radius;
+        outline: none;
         vertical-align: middle;
 
         &:hover,
