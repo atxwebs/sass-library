@@ -33,7 +33,7 @@ $accordion-navigation-bg-color: container("fill");
 // $accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%) !default;
 // $accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%) !default;
 $accordion-navigation-font-color: color("greys", "darker");
-$accordion-navigation-font-size: fontSize("smaller");
+$accordion-navigation-font-size: fontSize("base");
 $accordion-navigation-font-family: fontFamily("sans");
 
 $accordion-content-padding: spacing("single");

@@ -31,7 +31,7 @@ $checkRadio-pipScale: $checkRadio-borderWidth * 2;
 $checkRadio-outerSize: remCalc($checkRadio-baseDimension);
 $checkRadio-pipSize: remCalc($checkRadio-baseDimension - $checkRadio-pipScale);
 // label
-$checkRadio-label-fontSize: fontSize("smaller");
+$checkRadio-label-fontSize: fontSize("base");
 $checkRadio-label-fontWeight: fontWeight("normal");
 $checkRadio-label-lineHeight: lineHeight("small");
 // visual
