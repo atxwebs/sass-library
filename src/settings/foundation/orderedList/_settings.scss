@@ -24,7 +24,7 @@ $list-style-type: "decimal";
 
 // list item
 $ol-item-border-bot: container("border", "dark");
-$ol-item-font-size: fontSize("smaller");
+$ol-item-font-size: fontSize("base");
 $ol-item-padding: spacing("half") 0;
 
 // list item counter
