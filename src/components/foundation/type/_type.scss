@@ -117,43 +117,33 @@
         @include subHeadingStyle;
     }
 
-    h1,
-    h2 {
-        font-family: fontFamily("headingSans");
-        letter-spacing: letterSpacing("small");
-    }
-
     h1 {
-        font-size: fontSize("largest");
-        font-weight: fontWeight("thin");
-    }
-
-    h2 {
-        font-size: $h2-font-size;
+        font-size: $h1-font-size;
         font-weight: fontWeight("normal");
     }
 
-    h3,
-    h4 {
-        font-weight: fontWeight("thin");
+    h2 {
+        font-family: fontFamily("headingSans");
+        font-size: $h2-font-size;
+        font-weight: fontWeight("bold");
     }
 
     h3 {
         font-size: $h3-font-size;
-    }
-
-    h4,
-    h5,
-    h6 {
-        margin-bottom: spacing("half");
+        font-weight: fontWeight("normal");
     }
 
     h4 {
         font-size: $h4-font-size;
+        font-weight: fontWeight("bold");
     }
 
     h5 {
+        color: color("greys", "medium");
         font-size: $h5-font-size;
+        font-weight: fontWeight("bold");
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
     }
 
     h6 {
