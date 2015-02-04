@@ -6,7 +6,7 @@
 // Heading Style
 // -----------------------------------------------------------------------------
 
-@mixin headingStyle() {
+@mixin headingBase() {
     color: $header-font-color;
     font-family: $header-font-family;
     font-style: $header-font-style;
@@ -15,7 +15,9 @@
     line-height: $header-line-height;
     margin-bottom: $header-bottom-margin;
     text-rendering: $header-text-rendering;
+}
 
+@mixin heading-smallBase() {
     small {
         color: $small-font-color;
         font-size: $small-font-size;
@@ -23,7 +25,7 @@
     }
 }
 
-@mixin subHeadingStyle() {
+@mixin subHeadingBase() {
     color: $subheader-font-color;
     font-weight: $subheader-font-weight;
     line-height: $subheader-line-height;
