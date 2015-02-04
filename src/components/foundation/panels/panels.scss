@@ -14,6 +14,7 @@
 // -----------------------------------------------------------------------------
 
 @if $exportCSS--panels { // 1
+
     .panel {
         @include panel;
         border-color: $panel-border-color;
@@ -46,30 +47,6 @@
             color: $callout-panel-headerColor;
         }
 
-    }
-
-    //
-    // Panel header when it is known as a <legend/> in a form context
-    //
-    // Purpose: Legends are hard to style. Absolute positioning them
-    // and the magic number of the panel-body gives an almost
-    // identical look to a normal panel
-    // -----------------------------------------------------------------------------
-    legend.panel-header {
-        position: absolute;
-        top: 0;
-        width: 100%;
-
-        // Again, Stupid
-        // .panel > :first-child rule
-        .panel & {
-            margin-top: 0;
-        }
-
-        + .panel-body {
-            // abit magic numberish this one
-            margin-top: $panel-padding * 1.8;
-        }
     }
 
     // Panel Title

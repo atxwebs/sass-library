@@ -16,7 +16,7 @@
 $include-html-panel-classes: $include-html-classes;
 
 // We use these to control the background and border styles
-$panel-bg: color("whites", "bright");
+$panel-bg: container("fill");
 $panel-border-style: solid;
 $panel-border-size: 1px;
 
@@ -25,8 +25,8 @@ $panel-function-factor: 0%;
 $panel-border-color: container("borderColor", "dark");
 
 // We use these to set default inner padding and bottom margin
-$panel-margin-bottom: spacing("single");
-$panel-padding: spacing("single");
+$panel-margin-bottom: container("margin");
+$panel-padding: container("padding");
 
 // We use these to set default font colors
 $panel-font-color: $body-font-color;
@@ -49,7 +49,7 @@ $panel-header-adjust: false;
 $exportCSS--panels:            $exportCSS; // 1
 
 // Panel header settings
-$panel-header-bg: container("fill");
+$panel-header-bg: container("fill", "dark");
 $panel-header-padding: spacing("half") $panel-padding;
 
 // Panel title settings

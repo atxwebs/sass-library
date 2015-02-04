@@ -25,7 +25,19 @@
     }
 
     .form-fieldset {
-        @include fieldset;
+        border: $fieldset-border-width $fieldset-border-style $fieldset-border-color;
+        margin: $fieldset-margin;
+        padding: $fieldset-padding;
+    }
+
+    .form-legend {
+        background: $legend-bg;
+        margin-bottom: $legend-marginBottom;
+        padding: $legend-padding;
+    }
+
+    .form-field {
+        max-width: $formField-maxWidth;
     }
 
     .form-label {
@@ -37,6 +49,14 @@
             font-weight: $form-label-small-fontWeight;
             text-transform: $form-label-small-transform;
         }
+    }
+
+    .form-body {
+        background-color: $formBody-backgroundColor;
+        border: $formBody-border;
+        margin-bottom: $formBody-marginBottom;
+        max-width: $formBody-maxWidth;
+        padding: $formBody-padding;
     }
 
 
@@ -101,6 +121,8 @@
         cursor: $cursor-pointer-value;
         height: $input-height;
         margin: 0 0 $form-spacing;
+        max-width: $select-maxWidth;
+        padding-right: $form-spacing;
 
         &:focus {
             border-color: $input-focus-border-color;

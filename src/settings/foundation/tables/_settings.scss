@@ -19,7 +19,7 @@ $exportCSS--tables:                    $exportCSS; // 1
 $table-head-border: container("border", "dark");
 $table-foot-border: $table-head-border;
 $table-row-border: container("border");
-$table-row-hover: container("fill");
+$table-row-hover: container("fill", "dark");
 
 //
 // @variables
@@ -36,7 +36,7 @@ $table-border-size: container("borderSize");
 $table-border-color: container("borderColor");
 
 // These control the table head styles
-$table-head-bg:  container("fill");
+$table-head-bg:  container("fill", "dark");
 $table-head-font-size: fontSize("base");
 $table-head-font-color: $body-font-color;
 $table-head-font-weight: $font-weight-bold;
