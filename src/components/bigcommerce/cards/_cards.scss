@@ -18,8 +18,8 @@
 @if $exportCSS--cards { // 1
 
     .card {
-        border: container("border", "dark");
-        margin-bottom: spacing("double");
+        border: $card-border;
+        margin-bottom: $card-marginBottom;
     }
 
     .card-figure {
@@ -28,9 +28,9 @@
     }
 
     .card-figcaption {
-        background-color: overlay("fill");
+        background-color: $card-figcaption-background;
         bottom: 0;
-        color: color("whites", "bright");
+        color: $card-figcaption-color;
         height: 100%;
         left: 0;
         opacity: 0;
@@ -51,8 +51,8 @@
     }
 
     .card-figcaption-body {
-        padding-left: spacing("single");
-        padding-right: spacing("single");
+        padding-left: $card-figcaption-body-paddingHorizontal;
+        padding-right: $card-figcaption-body-paddingHorizontal;
         position: relative;
         top: 50%;
         transform: translateY(-50%);
@@ -67,25 +67,25 @@
         }
 
         .card-text {
-            color: color("whites", "bright");
+            color: $card-text-color;
         }
     }
 
     .card-figcaption-title {
-        color: color("whites", "bright"); // 3
-        margin-bottom: spacing("eighth");
+        color: $card-figcaption-title-color; // 3
+        margin-bottom: $card-figcaption-title-marginBottom;
     }
 
     .card-overlayAction {
-        background-color: transparent;
-        border-color: color("whites", "bright");
-        color: color("whites", "bright");
+        background-color: $card-overlayAction-background;
+        border-color: $card-overlayAction-borderColor;
+        color: $card-overlayAction-color;
     }
 
     .card-body {
-        background-color: container("fill", "light");
-        border-top: container("border", "dark");
-        padding: spacing("single");
+        background-color: $card-body-background;
+        border-top: $card-body-borderTop;
+        padding: $card-body-spacing;
 
         > :first-child {
             margin-top: 0;
@@ -96,15 +96,15 @@
         }
 
         .card-text {
-            color: color("greys");
+            color: $card-body-textColor;
         }
     }
 
     .card-title {
-        margin-bottom: spacing("eighth");
+        margin-bottom: $card-title-marginBottom;
     }
 
     .card-text {
-        font-size: fontSize("smallest");
+        font-size: $card-text-fontSize;
     }
 }

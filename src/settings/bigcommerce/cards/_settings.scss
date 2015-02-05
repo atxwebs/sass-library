@@ -13,4 +13,27 @@
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--cards:              $exportCSS;
+$exportCSS--cards:                          $exportCSS;
+
+$card-border:                               container("border", "dark");
+$card-marginBottom:                         spacing("double");
+
+$card-figcaption-background:                overlay("fill");
+$card-figcaption-color:                     color("whites", "bright");
+$card-figcaption-body-paddingHorizontal:    spacing("single");
+$card-figcaption-title-color:               color("whites", "bright");
+$card-figcaption-title-marginBottom:        spacing("eighth");
+
+$card-text-color:                           color("whites", "bright");
+
+$card-overlayAction-background:             transparent;
+$card-overlayAction-borderColor:            color("whites", "bright");
+$card-overlayAction-color:                  color("whites", "bright");
+
+$card-body-background:                      container("fill", "light");
+$card-body-borderTop:                       container("border", "dark");
+$card-body-spacing:                         spacing("single")
+$card-body-textColor:                       color("greys");
+
+$card-title-marginBottom:                   spacing("eighth");
+$card-text-fontSize:                        fontSize("smallest");
