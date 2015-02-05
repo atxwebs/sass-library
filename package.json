@@ -26,5 +26,11 @@
     "load-grunt-config": "0.13.2",
     "semver": "4.0.3",
     "time-grunt": "1.0.0"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "grunt scsslint"
   }
 }
