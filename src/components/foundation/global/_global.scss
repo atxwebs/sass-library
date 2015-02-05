@@ -58,11 +58,15 @@
         -ms-interpolation-mode: bicubic;
     }
 
-    button,
-    button:active,
-    button:focus {
-        // Appearance
-        outline: none;
+    button {
+        background: none;
+        border: 0;
+
+        &:active,
+        &:focus {
+            box-shadow: none;
+            outline: none;
+        }
     }
 
     // Make sure textarea takes on height automatically
