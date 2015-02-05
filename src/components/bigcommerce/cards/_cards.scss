@@ -11,6 +11,7 @@
 //
 // 1. If set to false, there is no outputted CSS for this component.
 // 2. This is here to allow absolute positioning of its children.
+// 3. Resets any default heading color to an appropriate card text color.
 //
 // -----------------------------------------------------------------------------
 
@@ -50,7 +51,6 @@
     }
 
     .card-figcaption-body {
-        color: color("whites", "bright");
         padding-left: spacing("single");
         padding-right: spacing("single");
         position: relative;
@@ -66,14 +66,14 @@
             margin-bottom: 0;
         }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+        .card-text {
             color: color("whites", "bright");
         }
+    }
+
+    .card-figcaption-title {
+        color: color("whites", "bright"); // 3
+        margin-bottom: spacing("eighth");
     }
 
     .card-overlayAction {
@@ -85,7 +85,7 @@
     .card-body {
         background-color: container("fill", "light");
         border-top: container("border", "dark");
-        padding: (spacing("base") + spacing("eighth")) spacing("single");
+        padding: spacing("single");
 
         > :first-child {
             margin-top: 0;
@@ -94,6 +94,10 @@
         > :last-child {
             margin-bottom: 0;
         }
+
+        .card-text {
+            color: color("greys");
+        }
     }
 
     .card-title {
@@ -101,7 +105,6 @@
     }
 
     .card-text {
-        color: color("greys");
         font-size: fontSize("smallest");
     }
 }
