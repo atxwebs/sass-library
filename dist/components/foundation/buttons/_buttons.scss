@@ -24,6 +24,7 @@
         @include buttonVariant("default");
         @include buttonSize("default");
         border-radius: $global-radius;
+        outline: none;
         vertical-align: middle;
 
         &:hover,
@@ -31,6 +32,7 @@
         &.is-active,
         &.active { // 3
             box-shadow: $button-focus-boxShadow;
+            outline: none;
         }
     }
 

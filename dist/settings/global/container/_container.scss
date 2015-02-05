@@ -33,8 +33,17 @@ $containersMap: (
     ),
 
     fill: (
-        base: color("greys", "lightest"),
-        light: color("whites")
+        base: color("whites", "bright"),
+        dark: color("greys", "lightest")
+    ),
+
+    padding: (
+        base: spacing("single"),
+        large: spacing("double"),
+    ),
+
+    margin: (
+        base: spacing("single")
     )
 
 );

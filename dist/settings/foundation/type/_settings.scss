@@ -50,10 +50,13 @@ $body-font-family: $font-family-sans-serif;
 // We use these to control header font styles
 $header-font-family: fontFamily("sans");
 $header-font-weight: $font-weight-bold;
+$header-font-style: normal;
 $header-font-color: $body-font-color;
-$header-letter-spacing: 0;
 $header-line-height: lineHeight("small");
+$header-top-margin: 0;
 $header-bottom-margin: spacing("single");
+$header-text-rendering: optimizeLegibility;
+$header-letter-spacing: 0;
 
 // We use these to control header font sizes
 $h1-font-size: fontSize("largest");
