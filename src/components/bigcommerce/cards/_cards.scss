@@ -1,0 +1,107 @@
+// =============================================================================
+// CARDS (CSS)
+// =============================================================================
+
+
+// Bigcommerce Component
+// -----------------------------------------------------------------------------
+//
+// The Bigcommerce Coding Standards, coupled with Foundation.
+// If any library overrides or extra CSS is needed, declare it here.
+//
+// 1. If set to false, there is no outputted CSS for this component.
+// 2. This is here to allow absolute positioning of its children.
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--cards { // 1
+
+    .card {
+        border: container("border", "dark");
+        margin-bottom: spacing("double");
+    }
+
+    .card-figure {
+        margin-bottom: 0;
+        position: relative; // 2
+    }
+
+    .card-figcaption {
+        background-color: overlay("fill");
+        bottom: 0;
+        color: color("whites", "bright");
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        vertical-align: middle;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .card-figcaptionAction {
+        display: block;
+        height: 100%;
+    }
+
+    .card-figcaption-body {
+        color: color("whites", "bright");
+        padding-left: spacing("single");
+        padding-right: spacing("single");
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        transform-style: preserve-3d;
+
+        > :first-child {
+            margin-top: 0;
+        }
+
+        > :last-child {
+            margin-bottom: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: color("whites", "bright");
+        }
+    }
+
+    .card-overlayAction {
+        background-color: transparent;
+        border-color: color("whites", "bright");
+        color: color("whites", "bright");
+    }
+
+    .card-body {
+        background-color: container("fill", "light");
+        border-top: container("border", "dark");
+        padding: (spacing("base") + spacing("eighth")) spacing("single");
+
+        > :first-child {
+            margin-top: 0;
+        }
+
+        > :last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .card-title {
+        margin-bottom: spacing("eighth");
+    }
+
+    .card-text {
+        color: color("greys");
+        font-size: fontSize("smallest");
+    }
+}
