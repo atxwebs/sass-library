@@ -310,7 +310,7 @@
     .form-actions {
         padding: $form-actions-padding;
     }
-    
+
     .form-actions .button {
         margin: 0;
     }
@@ -325,6 +325,128 @@
         right: 0;
         text-align: $form-actions--fixed-textAlign;
         z-index: $form-actions--fixed-zIndex;
+    }
+
+
+    // Form errors
+    // -----------------------------------------------------------------------------
+    //
+    // Purpose: Used to display contextual errors in forms
+    //
+    // 1. Magic numbers, yet to think of a better way to align the icon in the input.
+    //
+    // -----------------------------------------------------------------------------
+
+    .form-input-indicator {
+
+        @include square($form-inputIndicator-size);
+        float: left;
+        margin-left: - remCalc(30px); // 1
+        position: relative;
+        top: remCalc(10px); // 1
+
+        .form-prefixPostfix & {
+            top: 0; //specific override due to flexbox middle alignment.
+        }
+
+        svg {
+            fill: $form-success-color;
+        }
+
+    }
+
+    .form-inlineMessage {
+        display: inline-block;
+        font-weight: $form-inlineMessage-fontWeight;
+        margin: $form-inlineMessage-margin;
+        width: 100%;
+    }
+
+
+    //
+    // FORM FIELD VALIDATION MODIFIERS
+    // -----------------------------------------------------------------------------
+
+    .form-field--success,
+    .form-field--error,
+    .form-field--warning {
+
+        .form-input {
+            float: left;
+        }
+
+    }
+
+    // =============================================================================
+    // VALID STYLES
+    // =============================================================================
+
+    .form-field--success {
+
+        .form-input,
+        .form-select,
+        .form-checkbox + .form-label::before,
+        .form-radio + .form-label::before,
+        .form-prefixPostfix-label {
+            border-color: $form-success-color;
+        }
+
+        .form-inlineMessage {
+            color: $form-success-color;
+        }
+
+        svg {
+            fill: $form-success-color;
+        }
+
+    }
+
+    // =============================================================================
+    // INVALID STYLES
+    // =============================================================================
+
+    .form-field--error {
+
+        .form-input,
+        .form-select,
+        .form-checkbox + .form-label::before,
+        .form-radio + .form-label::before,
+        .form-prefixPostfix-label {
+            border-color: $form-error-color;
+        }
+
+        .form-inlineMessage {
+            color: $form-error-color;
+        }
+
+        svg {
+            fill: $form-error-color;
+        }
+
+    }
+
+    // =============================================================================
+    // WARNING STYLES
+    // =============================================================================
+
+    .form-field--warning {
+
+        .form-input,
+        .form-select,
+        .form-checkbox + .form-label::before,
+        .form-radio + .form-label::before,
+        .form-prefixPostfix-label {
+            border-color: $form-warning-color;
+        }
+
+        .form-inlineMessage {
+            color: $form-warning-color;
+        }
+
+        svg {
+            fill: $form-warning-color;
+        }
+
     }
 
 }
