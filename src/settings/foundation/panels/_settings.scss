@@ -30,7 +30,7 @@ $panel-padding: container("padding");
 
 // We use these to set default font colors
 $panel-font-color: $body-font-color;
-$panel-font-color-alt: color("whites");
+$panel-font-color-alt: color("whites", "bright");
 
 $panel-header-adjust: false;
 // $callout-panel-link-color: $primary-color;
@@ -59,6 +59,6 @@ $panel-title-lineHeight: lineHeight("small");
 
 // Callout panel settings
 $callout-panel-bg: color("greys", "lighter");
-$callout-panel-titleColor: color("whites");
+$callout-panel-titleColor: color("whites", "bright");
 $callout-panel-headerBg: color("greys", "darkest");
-$callout-panel-headerColor: color("whites");
+$callout-panel-headerColor: color("whites", "bright");

@@ -38,7 +38,7 @@ $tooltip-padding: spacing("quarter") spacing("third") (spacing("quarter") - remC
 $tooltip-bg: color("greys", "darkest");
 $tooltip-font-size: fontSize("smallest");
 //$tooltip-font-weight: $font-weight-normal;
-$tooltip-font-color: color("whites");
+$tooltip-font-color: color("whites", "bright");
 $tooltip-line-height: lineHeight("small");
 $tooltip-close-font-size: fontSize("smallest");
 //$tooltip-close-font-weight: $font-weight-normal;

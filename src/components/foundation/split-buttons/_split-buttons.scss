@@ -51,10 +51,10 @@
     // Allows these variants to be combined with the size variants above
     .splitButton--action span,
     .splitButton--primary span {
-        border-color: color("whites");
+        border-color: color("whites", "bright");
 
         &:after {
-            border-top-color: color("whites");
+            border-top-color: color("whites", "bright");
         }
     }
 }
