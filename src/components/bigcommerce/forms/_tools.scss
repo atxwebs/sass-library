@@ -30,6 +30,7 @@
     &::before {
         background-color: $checkRadio-bg;
         border: $checkRadio-borderWidth $checkRadio-borderStyle $checkRadio-borderColor;
+        box-shadow: $input-dropShadow;
         height: $checkRadio-outerSize;
         left: 0;
         top: 0;

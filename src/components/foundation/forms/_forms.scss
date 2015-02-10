@@ -118,6 +118,7 @@
 
     .form-select {
         @include form-select;
+        box-shadow: $input-dropShadow;
         cursor: $cursor-pointer-value;
         height: $input-height;
         margin: 0 0 $form-spacing;
