@@ -27,6 +27,7 @@
         display: block;
         list-style: none;
         margin: 0;
+        padding: $tab-navigation-container-padding;
         position: relative;
 
         @include breakpoint(small) {

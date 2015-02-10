@@ -16,7 +16,7 @@
 $exportCSS--datepicker:            $exportCSS;
 
 // Container
-$datepicker-backgroundColor: color("whites");
+$datepicker-backgroundColor: color("whites", "bright");
 $datepicker-boxShadow: 0 0 spacing("sixth") color("greys", "medium");
 $datepicker-padding: spacing("half");
 $datepicker-zIndex: zIndex("high");
@@ -62,5 +62,5 @@ $datepicker-day-name-fontWeight: fontWeight("normal");
 $datepicker-day-name-textTransform: uppercase;
 $datepicker-day-padding: spacing("third");
 $datepicker-day-selected-backgroundColor: color("primary");
-$datepicker-day-selected-color: color("whites");
+$datepicker-day-selected-color: color("whites", "bright");
 $datepicker-day-width: spacing("single") * 1.5;

@@ -69,12 +69,12 @@ $opposite-direction: right;
 
 
 // We use these to make sure border radius matches unless we want it different.
-$global-radius: 3px;
+$global-radius: 2px;
 
 
 // We use these to control inset shadow shiny edges and depressions.
 $shiny-edge-size: 0 1px 0;
-$shiny-edge-color: rgba(color("whites"), 0.5);
+$shiny-edge-color: rgba(color("whites", "bright"), 0.5);
 $shiny-edge-active-color: rgba(color("blacks"), 0.2);
 
 
