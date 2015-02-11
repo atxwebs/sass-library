@@ -32,6 +32,10 @@ $containersMap: (
         base: $border-global-style
     ),
 
+    dropShadow: (
+        base: 0 2px 0 rgba(color("greys", "light"), 0.7)
+    ),
+
     fill: (
         base: color("whites", "bright"),
         dark: color("greys", "lightest")

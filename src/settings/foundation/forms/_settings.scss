@@ -100,6 +100,7 @@ $formField-maxWidth: none;
 
 $formBody-backgroundColor: container("fill");
 $formBody-border: container("border", "dark");
+$formBody-boxShadow: container("dropShadow");
 $formBody-marginBottom: container("margin");
 $formBody-maxWidth: none;
 $formBody-padding: container("padding");
