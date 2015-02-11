@@ -15,16 +15,18 @@
 
 $exportCSS--tabs:                           $exportCSS; // 1
 
-$tab-bg-color:                              color("whites");
+$tab-bg-color:                              transparent;
 
 $tab-title-border-color:                    $tab-bg-color;
 $tab-title-border-bottom-style:             solid;
-$tab-title-border-bottom-height:            2px;
+$tab-title-border-bottom-height:            4px;
 
 $tab-title-active-border-color:             color("primary", "base");
 $tab-title-active-font-weight:              fontWeight("bold");
 
 $tabs-bottom-border:                        container("border", "dark");
+
+$tab-navigation-container-padding:          spacing("third") 0;
 
 
 // Foundation Variables
@@ -36,7 +38,7 @@ $tabs-navigation-padding:                   spacing("half");
 $tabs-navigation-bg-color:                  $tab-bg-color;
 $tabs-navigation-active-bg-color:           $tab-bg-color;
 $tabs-navigation-hover-bg-color:            $tab-bg-color;
-$tabs-navigation-font-color:                color("greys", "medium");
+$tabs-navigation-font-color:                color("greys");
 $tabs-navigation-active-font-color:         color("greys", "darker");
 $tabs-navigation-font-size:                 fontSize("base");
 $tabs-navigation-font-family:               fontFamily("sans");

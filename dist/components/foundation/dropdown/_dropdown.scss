@@ -36,7 +36,7 @@
     // Allow for non-anchor elements to be styled the same as anchors
     .dropdown-menu-item {
         @include dropdown-style;
-        padding: $f-dropdown-list-padding;
+        padding: $f-dropdown-list-padding ($f-dropdown-list-padding * 2);
 
         a {
             margin: -$f-dropdown-list-padding;

@@ -36,7 +36,7 @@ $pagination-li-margin: spacing("half");
 // We use these for the pagination anchor links
 $pagination-link-pad: spacing("third") spacing("eighth");
 $pagination-link-font-color: color("primary");
-$pagination-link-active-bg: color("whites");
+$pagination-link-active-bg: transparent;
 
 // We use these for disabled anchor links
 $pagination-link-unavailable-cursor: $cursor-default-value;

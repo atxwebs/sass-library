@@ -38,7 +38,7 @@ $font-weight-normal: fontWeight("normal");
 $font-weight-bold: fontWeight("semibold");
 
 // We use these to control various global styles
-$body-bg: color("whites");
+$body-bg: color("greys", "lighter");
 $body-font-color: color("greys", "darker");
 $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
@@ -89,7 +89,7 @@ $paragraph-margin-bottom: spacing("base");
 // $paragraph-text-rendering: optimizeLegibility;
 
 // We use these to style <code> tags
-$code-color: color("highlight", "dark");
+$code-color: color("alert");
 $code-font-family: Consolas, Monaco, 'Andale Mono', monospace;
 // $code-font-weight: $font-weight-normal;
 $code-background-color: color("whites", "bright");

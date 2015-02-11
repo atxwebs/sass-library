@@ -30,7 +30,7 @@
     .loader-label {
         background: color("blacks");
         border-radius: 0 0 $global-radius $global-radius;
-        color: color("whites");
+        color: color("whites", "bright");
         display: inline-block;
         font-weight: fontWeight("bold");
         padding: spacing("quarter") spacing("half");

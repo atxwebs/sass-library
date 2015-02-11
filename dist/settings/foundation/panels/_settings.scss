@@ -26,11 +26,11 @@ $panel-border-color: container("borderColor", "dark");
 
 // We use these to set default inner padding and bottom margin
 $panel-margin-bottom: container("margin");
-$panel-padding: container("padding");
+$panel-padding: container("padding", "large");
 
 // We use these to set default font colors
 $panel-font-color: $body-font-color;
-$panel-font-color-alt: color("whites");
+$panel-font-color-alt: color("whites", "bright");
 
 $panel-header-adjust: false;
 // $callout-panel-link-color: $primary-color;
@@ -48,17 +48,20 @@ $panel-header-adjust: false;
 
 $exportCSS--panels:            $exportCSS; // 1
 
+$panel-boxShadow: container("dropShadow");
+
 // Panel header settings
-$panel-header-bg: container("fill", "dark");
-$panel-header-padding: spacing("half") $panel-padding;
+$panel-header-bg: transparent;
+$panel-header-margin: 0 0 spacing("half");
+$panel-header-padding: 0;
 
 // Panel title settings
-$panel-title-fontSize: fontSize("base");
+$panel-title-fontSize: fontSize("larger");
 $panel-title-fontWeight: fontWeight("semibold");
-$panel-title-lineHeight: lineHeight("small");
+$panel-title-lineHeight: lineHeight("base");
 
 // Callout panel settings
 $callout-panel-bg: color("greys", "lighter");
-$callout-panel-titleColor: color("whites");
+$callout-panel-titleColor: color("whites", "bright");
 $callout-panel-headerBg: color("greys", "darkest");
-$callout-panel-headerColor: color("whites");
+$callout-panel-headerColor: color("whites", "bright");

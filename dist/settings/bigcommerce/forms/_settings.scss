@@ -41,7 +41,7 @@ $checkRadio-focus-boxShadow: $input-focus-box-shadow;
 $checkRadio-disabled-bg: $input-disabled-bg;
 $checkRadio-disabled-opacity: 0.4;
 
-$check-radius: $global-radius;
+$check-radius: 0;
 $check-pipColor: color("primary");
 $check-pipContent: "\2714";
 $check-pipSize: $checkRadio-pipSize;
