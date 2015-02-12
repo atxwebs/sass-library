@@ -31,10 +31,10 @@
         }
     }
 
-    .alertBox--promotion {
+    .alertBox--info {
         @include alert-style($alert-info-bgColor);
 
-        .alertBox-icon { 
+        .alertBox-icon {
         // scss-lint:disable NestingDepth,SelectorDepth
             svg {
                 fill: $alert-info-iconColor;
@@ -43,10 +43,10 @@
         }
     }
 
-    .alertBox--low {
+    .alertBox--success {
         @include alert-style($alert-success-bgColor);
 
-        .alertBox-icon { 
+        .alertBox-icon {
         // scss-lint:disable NestingDepth,SelectorDepth
             svg {
                 fill: $alert-success-iconColor;
@@ -55,10 +55,10 @@
         }
     }
 
-    .alertBox--moderate {
+    .alertBox--warning {
         @include alert-style($alert-warning-bgColor);
 
-        .alertBox-icon { 
+        .alertBox-icon {
         // scss-lint:disable NestingDepth,SelectorDepth
             svg {
                 fill: $alert-warning-iconColor;
@@ -67,13 +67,13 @@
         }
     }
 
-    .alertBox--critical {
-        @include alert-style($alert-critical-bgColor);
+    .alertBox--error {
+        @include alert-style($alert-error-bgColor);
 
-        .alertBox-icon { 
+        .alertBox-icon {
         // scss-lint:disable NestingDepth,SelectorDepth
             svg {
-                fill: $alert-critical-iconColor;
+                fill: $alert-error-iconColor;
             }
         // scss-lint:enable NestingDepth,SelectorDepth
         }
@@ -94,7 +94,7 @@
         text-align: left;
         width: 100%;
     }
-    
+
     .alertBox-heading {
         margin: 0;
     }
@@ -102,7 +102,7 @@
     .alertBox-close {
         cursor: $cursor-pointer-value;
         padding-left: $alert-padding-default-float;
-    
+
         .icon {
             @include square(20);
         }
