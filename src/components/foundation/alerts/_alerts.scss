@@ -55,7 +55,7 @@
         }
     }
 
-    .alertBox--moderate {
+    .alertBox--warning {
         @include alert-style($alert-warning-bgColor);
 
         .alertBox-icon {
