@@ -1,0 +1,38 @@
+// =============================================================================
+// CARDS (Settings)
+// =============================================================================
+
+
+// Bigcommerce Variables
+// -----------------------------------------------------------------------------
+//
+// These scoped variables are created by Bigcommerce.
+// All variables that are not from Foundation should be placed here.
+//
+// 1. Choose whether to include the Bigcommerce class names
+//
+// -----------------------------------------------------------------------------
+
+$exportCSS--cards:                          $exportCSS;
+
+$card-border:                               container("border", "dark");
+$card-marginBottom:                         spacing("double");
+
+$card-figcaption-background:                overlay("fill");
+$card-figcaption-color:                     color("whites", "bright");
+$card-figcaption-body-paddingHorizontal:    spacing("single");
+$card-figcaption-title-color:               color("whites", "bright");
+$card-figcaption-title-marginBottom:        spacing("eighth");
+$card-figcaption-button-background:         transparent;
+$card-figcaption-button-borderColor:        color("whites", "bright");
+$card-figcaption-button-color:              color("whites", "bright");
+
+$card-text-color:                           color("whites", "bright");
+
+$card-body-background:                      container("fill");
+$card-body-borderTop:                       container("border", "dark");
+$card-body-padding:                         (spacing("base") + spacing("eighth")) spacing("single");
+$card-body-textColor:                       color("greys");
+
+$card-title-marginBottom:                   spacing("eighth");
+$card-text-fontSize:                        fontSize("smallest");
