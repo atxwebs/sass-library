@@ -38,14 +38,13 @@
         right: 0;
         text-align: center;
         top: 0;
-        vertical-align: middle;
 
         &:hover {
             opacity: 1;
         }
     }
 
-    .card-figcaptionAction {
+    .card-figcaption-action {
         display: block;
         height: 100%;
     }
@@ -76,7 +75,7 @@
         margin-bottom: $card-figcaption-title-marginBottom;
     }
 
-    .card-overlayAction {
+    .card-figcaption-button {
         background-color: $card-overlayAction-background;
         border-color: $card-overlayAction-borderColor;
         color: $card-overlayAction-color;
