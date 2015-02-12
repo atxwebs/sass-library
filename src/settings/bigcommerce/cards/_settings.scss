@@ -23,14 +23,13 @@ $card-figcaption-color:                     color("whites", "bright");
 $card-figcaption-body-paddingHorizontal:    spacing("single");
 $card-figcaption-title-color:               color("whites", "bright");
 $card-figcaption-title-marginBottom:        spacing("eighth");
+$card-figcaption-button-background:         transparent;
+$card-figcaption-button-borderColor:        color("whites", "bright");
+$card-figcaption-button-color:              color("whites", "bright");
 
 $card-text-color:                           color("whites", "bright");
 
-$card-overlayAction-background:             transparent;
-$card-overlayAction-borderColor:            color("whites", "bright");
-$card-overlayAction-color:                  color("whites", "bright");
-
-$card-body-background:                      container("fill", "light");
+$card-body-background:                      container("fill");
 $card-body-borderTop:                       container("border", "dark");
 $card-body-padding:                         (spacing("base") + spacing("eighth")) spacing("single");
 $card-body-textColor:                       color("greys");
