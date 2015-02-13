@@ -34,6 +34,7 @@ $checkRadio-pipSize: remCalc($checkRadio-baseDimension - $checkRadio-pipScale);
 $checkRadio-label-fontSize: fontSize("base");
 $checkRadio-label-fontWeight: fontWeight("normal");
 $checkRadio-label-lineHeight: lineHeight("small");
+$checkRadio-label-marginBottom: spacing("half");
 // visual
 $checkRadio-bg: color("whites", "bright");
 $checkRadio-focus-borderColor: color("primary");
