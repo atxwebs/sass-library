@@ -299,4 +299,32 @@
         @include u-hidden("visually");
     }
 
+
+    //
+    // FORM ACTIONS
+    //
+    // Purpose: Container for the form's primary actions, like Submit, Reset, etc.
+    // This can also manifest as a fixed bar, which runs along the bottom of the page.
+    // -----------------------------------------------------------------------------
+
+    .form-actions {
+        padding: $form-actions-padding;
+    }
+    
+    .form-actions .button {
+        margin: 0;
+    }
+
+    .form-actions--fixed {
+        background: $form-actions--fixed-background;
+        border-top: $form-actions--fixed-border;
+        bottom: 0;
+        left: 0;
+        padding: $form-actions--fixed-padding;
+        position: fixed;
+        right: 0;
+        text-align: $form-actions--fixed-textAlign;
+        z-index: $form-actions--fixed-zIndex;
+    }
+
 }
