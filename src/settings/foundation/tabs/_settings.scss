@@ -17,9 +17,10 @@ $exportCSS--tabs:                           $exportCSS; // 1
 
 $tab-bg-color:                              transparent;
 
-$tab-title-border-color:                    $tab-bg-color;
+$tab-title-border-color:                    transparent;
 $tab-title-border-bottom-style:             solid;
 $tab-title-border-bottom-height:            4px;
+$tab-title-border-bottom-offset:            -1px;
 
 $tab-title-active-border-color:             color("primary", "base");
 $tab-title-active-font-weight:              fontWeight("bold");
