@@ -1,0 +1,38 @@
+// =============================================================================
+// NAV (CSS)
+// =============================================================================
+
+
+// Bigcommerce Component
+// -----------------------------------------------------------------------------
+//
+// The Bigcommerce Coding Standards, coupled with Foundation.
+// If any library overrides or extra CSS is needed, declare it here.
+//
+// 1. If set to false, there is no outputted CSS for this component.
+// 2. Include the basic nav component that builds all naming conventions
+//    and base classe names.
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--nav { // 1
+
+
+    // navBar
+    // -------------------------------------------------------------------------
+
+    .navBar {
+        @include nav("navBar", "nav"); // 2
+        @include nav-action($navBar-action-color, $navBar-action-fontFamily, $navBar-action-fontSize, $navBar-action-padding);
+    }
+
+
+    // navList
+    // -------------------------------------------------------------------------
+
+    .navList {
+        @include nav("navList", "nav"); // 3
+        @include nav-action($navList-action-color, $navList-action-fontFamily, $navList-action-fontSize, $navList-action-padding);
+    }
+
+}
