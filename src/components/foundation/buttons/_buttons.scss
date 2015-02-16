@@ -75,6 +75,10 @@
 
     .button--icon {
         @include buttonSize("square");
+
+        svg {
+            fill: color("primary");
+        }
     }
 
 }
