@@ -23,21 +23,15 @@
         @include buttonSize("default");
         @include buttonVariant("default");
         @include split-button($span-border: container("borderColor", "dark"));
-    }
 
-    .splitButton--tiny {
-        @include buttonSize("tiny");
-        @include split-button("tiny", $span-border: container("borderColor", "dark"), $base-style: false);
+        span {
+            border-#{$default-float}-color: $split-button-span-Bordercolor;
+        }
     }
 
     .splitButton--small {
         @include buttonSize("small");
         @include split-button("small", $span-border: container("borderColor", "dark"), $base-style: false);
-    }
-
-    .splitButton--large {
-        @include buttonSize("large");
-        @include split-button("large", $span-border: container("borderColor", "dark"), $base-style: false);
     }
 
     .splitButton--action {
