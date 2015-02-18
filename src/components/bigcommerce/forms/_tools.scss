@@ -13,11 +13,11 @@
     font-size: $checkRadio-label-fontSize;
     font-weight: $checkRadio-label-fontWeight;
     line-height: $checkRadio-label-lineHeight;
-    margin-#{$opposite-direction}: $form-spacing;
-    margin-bottom: $form-spacing;
+    margin-bottom: $checkRadio-label-marginBottom;
     padding-#{$default-float}: $form-spacing;
     position: relative;
     vertical-align: baseline;
+    width: 100%;
 
     &::before,
     &::after {
@@ -120,7 +120,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin: 0 0 $form-spacing;
 
     .#{$inputClassname} {
         flex: 1 1 auto;

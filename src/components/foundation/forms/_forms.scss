@@ -37,6 +37,8 @@
     }
 
     .form-field {
+        @include clearfix();
+        margin: 0 0 $form-spacing;
         max-width: $formField-maxWidth;
     }
 
@@ -73,6 +75,7 @@
         -webkit-font-smoothing: antialiased;
         font-smoothing: antialiased;
         height: $input-height;
+        margin: 0;
         padding: ($form-spacing / 2) ($form-spacing / 1.5);
         transition: $input-transition;
 
@@ -122,7 +125,7 @@
         box-shadow: $input-dropShadow;
         cursor: $cursor-pointer-value;
         height: $input-height;
-        margin: 0 0 $form-spacing;
+        margin: 0;
         max-width: $select-maxWidth;
         padding-right: $form-spacing;
 

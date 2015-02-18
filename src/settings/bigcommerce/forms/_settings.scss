@@ -34,6 +34,7 @@ $checkRadio-pipSize: remCalc($checkRadio-baseDimension - $checkRadio-pipScale);
 $checkRadio-label-fontSize: fontSize("base");
 $checkRadio-label-fontWeight: fontWeight("normal");
 $checkRadio-label-lineHeight: lineHeight("small");
+$checkRadio-label-marginBottom: spacing("half");
 // visual
 $checkRadio-bg: color("whites", "bright");
 $checkRadio-focus-borderColor: color("primary");
@@ -140,3 +141,16 @@ $form-actions--fixed-padding: container("padding") container("padding", "large")
 $form-actions--fixed-zIndex: zIndex("low");
 $form-actions--fixed-textAlign: right;
 
+
+// =============================================================================
+// ERROR STATES
+// =============================================================================
+
+$form-success-color: color("success");
+$form-error-color: color("error");
+$form-warning-color: color("warning");
+
+$form-inputIndicator-size: 22px;
+
+$form-inlineMessage-fontWeight: fontWeight("semibold");
+$form-inlineMessage-margin: spacing("quarter") 0 0;
