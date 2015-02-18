@@ -34,6 +34,7 @@ $checkRadio-pipSize: remCalc($checkRadio-baseDimension - $checkRadio-pipScale);
 $checkRadio-label-fontSize: fontSize("base");
 $checkRadio-label-fontWeight: fontWeight("normal");
 $checkRadio-label-lineHeight: lineHeight("small");
+$checkRadio-label-marginBottom: spacing("half");
 // visual
 $checkRadio-bg: color("whites", "bright");
 $checkRadio-focus-borderColor: color("primary");
@@ -63,7 +64,6 @@ $inputAction-button-width: ($form-spacing * 2) - remCalc($input-border-width * 2
 $inputAction-input-paddingRight: $inputAction-button-width;
 // Negative margin can't use the button width as we only need to deal with 1 border on the right
 $inputAction-button-marginLeft: - ($form-spacing * 2) + remCalc($input-border-width);
-
 
 
 // =============================================================================
@@ -124,3 +124,33 @@ $switch-label-text-color: color("whites", "bright");
 $switch-label-height: $switch-baseSize - ($switch-borderSize * 2); // minus the top/bottom border
 $switch-label-text-rightPosition: remCalc(6px);
 $switch-label-text-onFontWeight: fontWeight("semibold");
+
+
+// =============================================================================
+// FORM ACTIONS
+// =============================================================================
+
+$form-actions-background: none;
+$form-actions-border: 0;
+$form-actions-padding: spacing("base");
+$form-actions-textAlign: left;
+
+$form-actions--fixed-background: container("fill");
+$form-actions--fixed-border: container("border", "dark");
+$form-actions--fixed-padding: container("padding") container("padding", "large");
+$form-actions--fixed-zIndex: zIndex("low");
+$form-actions--fixed-textAlign: right;
+
+
+// =============================================================================
+// ERROR STATES
+// =============================================================================
+
+$form-success-color: color("success");
+$form-error-color: color("error");
+$form-warning-color: color("warning");
+
+$form-inputIndicator-size: 22px;
+
+$form-inlineMessage-fontWeight: fontWeight("semibold");
+$form-inlineMessage-margin: spacing("quarter") 0 0;

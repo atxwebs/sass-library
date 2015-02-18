@@ -34,48 +34,32 @@
     .alertBox--info {
         @include alert-style($alert-info-bgColor);
 
-        .alertBox-icon {
-        // scss-lint:disable NestingDepth,SelectorDepth
-            svg {
-                fill: $alert-info-iconColor;
-            }
-        // scss-lint:enable NestingDepth,SelectorDepth
+        svg {
+            fill: $alert-info-iconColor;
         }
     }
 
     .alertBox--success {
         @include alert-style($alert-success-bgColor);
 
-        .alertBox-icon {
-        // scss-lint:disable NestingDepth,SelectorDepth
-            svg {
-                fill: $alert-success-iconColor;
-            }
-        // scss-lint:enable NestingDepth,SelectorDepth
+        svg {
+            fill: $alert-success-iconColor;
         }
     }
 
     .alertBox--warning {
         @include alert-style($alert-warning-bgColor);
 
-        .alertBox-icon {
-        // scss-lint:disable NestingDepth,SelectorDepth
-            svg {
-                fill: $alert-warning-iconColor;
-            }
-        // scss-lint:enable NestingDepth,SelectorDepth
+        svg {
+            fill: $alert-warning-iconColor;
         }
     }
 
     .alertBox--error {
         @include alert-style($alert-error-bgColor);
 
-        .alertBox-icon {
-        // scss-lint:disable NestingDepth,SelectorDepth
-            svg {
-                fill: $alert-error-iconColor;
-            }
-        // scss-lint:enable NestingDepth,SelectorDepth
+        svg {
+            fill: $alert-error-iconColor;
         }
     }
 
@@ -108,7 +92,7 @@
         }
 
         svg {
-            fill: $alert-close-color !important;    //Remove important when icons are back in sass library
+            fill: $alert-close-color;
         }
     }
 }
