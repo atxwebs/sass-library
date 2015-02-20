@@ -28,6 +28,10 @@
 
     .modal-background {
         @include reveal-bg; // Foundation mixin
+
+        .has-activeModal & {
+            display: block;
+        }
     }
 
 
@@ -62,7 +66,7 @@
     // Modal Content: Header, Title, Body, Footer, close anchor, and link
     // -------------------------------------------------------------------------
     .modal-header {
-        @include modal-header($modal-border, $modal-spacing);
+        @include modal-header($modal-border, $modal-header-padding);
     }
 
     .modal-header-title {
@@ -71,10 +75,18 @@
 
     .modal-body {
         @include modal-body($modal-spacing);
+
+        > :last-child {
+            margin-bottom: 0;
+        }
     }
 
     .modal-footer {
         @include modal-footer($modal-border, $modal-spacing--small, $modal-footer-align);
+    }
+
+    .modal-footer-button {
+        margin-bottom: 0;
     }
 
     .modal-footer-link {
@@ -91,7 +103,7 @@
     // Reveal Print Styles: It should be invisible, adds no value being printed.
     // -------------------------------------------------------------------------
     @media print {
-        .#{$reveal-modal-class} { 
+        .#{$reveal-modal-class} {
             background: $white !important; // !important from foundation
             display: none;
         }
