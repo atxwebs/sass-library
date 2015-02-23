@@ -35,8 +35,9 @@
     }
 
 
-    // modal element
-    // -------------------------------------------------------------------------
+    // =============================================================================
+    // MODAL BASE
+    // =============================================================================
 
     .#{$reveal-modal-class} {
 
@@ -62,39 +63,74 @@
         width: $modal-width--large;
     }
 
+    .modal--small {
+        width: $modal-width--small;
+    }
 
-    // Modal Content: Header, Title, Body, Footer, close anchor, and link
-    // -------------------------------------------------------------------------
+
+    // =============================================================================
+    // MODAL HEADER
+    // =============================================================================
+
     .modal-header {
-        @include modal-header($modal-border, $modal-header-padding);
+        @include modal-header(
+            $modal-border,
+            $modal-header-horizontalSpacing,
+            $modal-header-verticalSpacing
+        );
     }
 
     .modal-header-title {
         margin: 0;
     }
 
+
+    // =============================================================================
+    // MODAL BODY
+    // =============================================================================
+
     .modal-body {
-        @include modal-body($modal-spacing);
+        @include modal-body(
+            $modal-body-horizontalSpacing,
+            $modal-body-verticalSpacing
+        );
 
         > :last-child {
             margin-bottom: 0;
         }
     }
 
-    .modal-footer {
-        @include modal-footer($modal-border, $modal-spacing--small, $modal-footer-align);
-    }
 
-    .modal-footer-button {
-        margin-bottom: 0;
+    // =============================================================================
+    // MODAL FOOTER
+    // =============================================================================
+
+    .modal-footer {
+        @include modal-footer(
+            $modal-border,
+            $modal-footer-horizontalSpacing,
+            $modal-footer-verticalSpacing,
+            $modal-footer-align
+        );
+
+        .button {
+            margin-bottom: 0;
+        }
     }
 
     .modal-footer-link {
-        margin: $modal-spacing--small;
+        font-size: fontSize("smaller");
+        margin: spacing("single");
     }
 
     .#{$close-reveal-modal-class} {
         @include reveal-close; // Foundation mixin
+
+        transform: translateY($modal-close-transformY);
+
+        .icon {
+            @include square($modal-close-size);
+        }
     }
 
 
