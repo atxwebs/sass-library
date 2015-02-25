@@ -15,43 +15,22 @@
 
 $exportCSS--modal:        $exportCSS; // 1
 
-// Color Variables
-$modal-backdrop-color:      color("greys", "darkest");
+// Positioning Variables
+$modal-footer-align:      right;
+$modal-max-height:        80%;
+$modal-spacing:           spacing("single");
+$modal-spacing--small:    spacing("base");
+$modal-transformY:        -50%;
 
-// Border Variables
-$modal-border:              container("border", "dark");
+// Color Variables
+$modal-backdrop-color:    color("greys", "base");
 
 // Size Variables
-$modal-width--small:        300px;
-$modal-width--large:        900px;
+$modal-width--small:       300px;
+$modal-width--large:       900px;
 
-
-// Positioning Variables
-$modal-footer-align:        right;
-$modal-max-height:          80%;
-$modal-transformY:          -50%;
-
-
-// Spacing
-$modal-horizontalSpacing:               spacing("single") * 1.5;
-$modal-verticalSpacing:                 spacing("single");
-
-
-// Modal header variables
-$modal-header-horizontalSpacing:        $modal-horizontalSpacing;
-$modal-header-verticalSpacing:          $modal-verticalSpacing;
-
-$modal-close-size:                      20px;
-$modal-close-transformY:                $modal-transformY;
-
-// Modal body variables
-$modal-body-horizontalSpacing:          $modal-horizontalSpacing;
-$modal-body-verticalSpacing:            $modal-horizontalSpacing;
-
-
-// Modal footer variables
-$modal-footer-horizontalSpacing:        $modal-horizontalSpacing;
-$modal-footer-verticalSpacing:          spacing("half");
+// Border Variables
+$modal-border:            container("border");
 
 
 // Foundation Variables
@@ -63,36 +42,27 @@ $modal-footer-verticalSpacing:          spacing("half");
 // leaving the vendor framework untouched.
 //
 // -----------------------------------------------------------------------------
-
 $include-html-reveal-classes: $include-html-classes;
 
-// We use these to control the style of the reveal overlay.
-$reveal-overlay-bg: rgba($modal-backdrop-color, 0.6);
-$reveal-overlay-bg-old: $modal-backdrop-color;
+// Border Variables
+$reveal-border-color:         container("borderColor");
+$reveal-border-style:         solid;
 
-// We use these to control the style of the modal itself.
-$reveal-modal-bg: color("whites", "bright");
-$reveal-position-top: 50%;
-$reveal-default-width: $modal-width--large;
-$reveal-max-width: 80%;
-$reveal-modal-padding: 0;
-$reveal-box-shadow: 0 0 5px rgba(color("greys", "darkest"), 0.4);
+// Positioning Variables
+$reveal-close-side:           spacing("single");
+$reveal-close-top:            spacing("single");
+$reveal-modal-padding:        0;
+$reveal-position-top:         50%;
 
-// We use these to style the reveal close button
-$reveal-close-font-size: fontSize("larger");
-$reveal-close-top: 50%;
-$reveal-close-side: $modal-header-horizontalSpacing / 2;
-$reveal-close-color: color("greys", "dark");
-$reveal-close-weight: normal;
+// Font Variable
+$reveal-close-font-size:      fontSize("larger");
 
-// We use this to set the default radius used throughout the core.
-$reveal-radius: $global-radius;
-$reveal-round: $global-radius;
+// Size Variables
+$reveal-default-width:        $modal-width--small;
+$reveal-max-width:            80%;
 
-// We use these to control the modal border
-$reveal-border-style: solid;
-$reveal-border-width: 1px;
-$reveal-border-color: container("borderColor", "dark");
+// Background Color
+$reveal-overlay-bg:           rgba($modal-backdrop-color, 0.6);
 
-$reveal-modal-class: "modal";
-$close-reveal-modal-class: "modal-close";
+// Classname
+$close-reveal-modal-class:    "modal-close";

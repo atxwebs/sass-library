@@ -28,16 +28,11 @@
 
     .modal-background {
         @include reveal-bg; // Foundation mixin
-
-        .has-activeModal & {
-            display: block;
-        }
     }
 
 
-    // =============================================================================
-    // MODAL BASE
-    // =============================================================================
+    // modal element
+    // -------------------------------------------------------------------------
 
     .#{$reveal-modal-class} {
 
@@ -63,74 +58,31 @@
         width: $modal-width--large;
     }
 
-    .modal--small {
-        width: $modal-width--small;
-    }
 
-
-    // =============================================================================
-    // MODAL HEADER
-    // =============================================================================
-
+    // Modal Content: Header, Title, Body, Footer, close anchor, and link
+    // -------------------------------------------------------------------------
     .modal-header {
-        @include modal-header(
-            $modal-border,
-            $modal-header-horizontalSpacing,
-            $modal-header-verticalSpacing
-        );
+        @include modal-header($modal-border, $modal-spacing);
     }
 
     .modal-header-title {
         margin: 0;
     }
 
-
-    // =============================================================================
-    // MODAL BODY
-    // =============================================================================
-
     .modal-body {
-        @include modal-body(
-            $modal-body-horizontalSpacing,
-            $modal-body-verticalSpacing
-        );
-
-        > :last-child {
-            margin-bottom: 0;
-        }
+        @include modal-body($modal-spacing);
     }
 
-
-    // =============================================================================
-    // MODAL FOOTER
-    // =============================================================================
-
     .modal-footer {
-        @include modal-footer(
-            $modal-border,
-            $modal-footer-horizontalSpacing,
-            $modal-footer-verticalSpacing,
-            $modal-footer-align
-        );
-
-        .button {
-            margin-bottom: 0;
-        }
+        @include modal-footer($modal-border, $modal-spacing--small, $modal-footer-align);
     }
 
     .modal-footer-link {
-        font-size: fontSize("smaller");
-        margin: spacing("single");
+        margin: $modal-spacing--small;
     }
 
     .#{$close-reveal-modal-class} {
         @include reveal-close; // Foundation mixin
-
-        transform: translateY($modal-close-transformY);
-
-        .icon {
-            @include square($modal-close-size);
-        }
     }
 
 
@@ -139,7 +91,7 @@
     // Reveal Print Styles: It should be invisible, adds no value being printed.
     // -------------------------------------------------------------------------
     @media print {
-        .#{$reveal-modal-class} {
+        .#{$reveal-modal-class} { 
             background: $white !important; // !important from foundation
             display: none;
         }
