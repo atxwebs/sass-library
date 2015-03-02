@@ -132,7 +132,7 @@ $switch-label-text-onFontWeight: fontWeight("semibold");
 
 $form-actions-background: none;
 $form-actions-border: 0;
-$form-actions-padding: spacing("base");
+$form-actions-padding: spacing("base") 0;
 $form-actions-textAlign: left;
 
 $form-actions--fixed-background: container("fill");

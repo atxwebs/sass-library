@@ -305,11 +305,15 @@
     // -----------------------------------------------------------------------------
 
     .form-actions {
+        display: table-cell;
         padding: $form-actions-padding;
+        vertical-align: middle;
     }
 
-    .form-actions .button {
-        margin: 0;
+    .form-actions > * {
+        display: inline-block;
+        margin: 0 0 0 spacing("half");
+        vertical-align: baseline;
     }
 
     .form-actions--fixed {

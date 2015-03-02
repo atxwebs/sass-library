@@ -6,18 +6,18 @@
 // Bigcommerce Mixins
 // -----------------------------------------------------------------------------
 
-@mixin modal-header($border-bottom, $padding) {
+@mixin modal-header($border-bottom, $hPadding, $vPadding) {
     border-bottom: $border-bottom;
-    padding: $padding;
+    padding: $vPadding $hPadding;
     position: relative;
 }
 
-@mixin modal-body($padding) {
-    padding: $padding;
+@mixin modal-body($hPadding, $vPadding) {
+    padding: $vPadding $hPadding;
 }
 
-@mixin modal-footer($border-bottom, $padding, $text-align) {
+@mixin modal-footer($border-bottom, $hPadding, $vPadding, $text-align) {
     border-top: $border-bottom;
-    padding: $padding;
+    padding: $vPadding $hPadding;
     text-align: $text-align;
 }
