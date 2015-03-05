@@ -21,7 +21,7 @@
     // =============================================================================
 
     .form {
-        margin: 0 0 $form-spacing;
+        margin: 0;
     }
 
     .form-fieldset {
@@ -38,7 +38,7 @@
 
     .form-field {
         @include clearfix();
-        margin: 0 0 2rem;
+        margin: 0 0 $form-verticalSpacing;
         max-width: $formField-maxWidth;
     }
 

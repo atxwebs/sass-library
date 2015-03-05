@@ -29,6 +29,9 @@ $formBody-marginBottom: container("margin");
 $formBody-maxWidth: none;
 $formBody-padding: container("padding");
 
+$formRow-modernBrowsers: true;
+$formRow-flex-gutter: $column-gutter;
+
 
 // =============================================================================
 // CHECKS AND RADIOS

@@ -36,6 +36,22 @@
     }
 
 
+    // =============================================================================
+    // FORM ROW
+    // =============================================================================
+
+    .form-row {
+
+        @if $formRow-modernBrowsers {
+            @include formRow--flex();
+        }
+        @else {
+            @include formRow--grid();
+        }
+
+    }
+
+
     //
     // Checkboxes and Radios
     //

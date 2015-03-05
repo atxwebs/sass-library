@@ -96,6 +96,8 @@ $select-hover-bg-color: color("whites", "bright");
 
 $exportCSS--forms:                    $exportCSS; // 1
 
+$form-verticalSpacing: spacing("single") * 1.5;
+
 $formField-maxWidth: none;
 $select-maxWidth: none;
 
