@@ -97,14 +97,6 @@ $select-hover-bg-color: color("whites", "bright");
 $exportCSS--forms:                    $exportCSS; // 1
 
 $formField-maxWidth: none;
-
-$formBody-backgroundColor: container("fill");
-$formBody-border: container("border", "dark");
-$formBody-boxShadow: container("dropShadow");
-$formBody-marginBottom: container("margin");
-$formBody-maxWidth: none;
-$formBody-padding: container("padding");
-
 $select-maxWidth: none;
 
 $legend-fontFamily: fontFamily("headingSans");

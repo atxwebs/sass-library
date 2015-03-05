@@ -15,6 +15,27 @@
 
 @if $exportCSS--forms { // 1, 2
 
+
+    //
+    // FORM LAYOUTS
+    //
+    // Purpose: Provide a couple of component styles to layout forms
+    // -----------------------------------------------------------------------------
+
+    // =============================================================================
+    // FORM BODY
+    // =============================================================================
+
+    .form-body {
+        background-color: $formBody-backgroundColor;
+        border: $formBody-border;
+        box-shadow: $formBody-boxShadow;
+        margin-bottom: $formBody-marginBottom;
+        max-width: $formBody-maxWidth;
+        padding: $formBody-padding;
+    }
+
+
     //
     // Checkboxes and Radios
     //
