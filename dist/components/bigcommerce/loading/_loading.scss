@@ -13,26 +13,67 @@
 //
 // -----------------------------------------------------------------------------
 
+
 @if $exportCSS--loading {
 
-    // Component
-    // -------------------------------------------------------------------------
+    // =============================================================================
+    // LOADING NOTIFICATION
+    // =============================================================================
 
-    .loader {
-        left: 0;
-        position: fixed;
-        right: 0;
-        text-align: center;
-        top: 0;
-        z-index: zIndex("highest");
+    .loadingNotification {
+        @include loadingNotification-base();
+
+        &.ng-hide-remove,
+        &.ng-hide-add-active {
+            @include loadingNotification-startState();
+        }
+
+        &.ng-hide-remove-active {
+            @include loadingNotification-activeState();
+        }
     }
 
-    .loader-label {
-        background: color("blacks");
-        border-radius: 0 0 $global-radius $global-radius;
-        color: color("whites", "bright");
-        display: inline-block;
-        font-weight: fontWeight("bold");
-        padding: spacing("quarter") spacing("half");
+    .loadingNotification-label {
+        @include loadingNotification-label();
     }
+
+
+    // =============================================================================
+    // Loading overlay
+    // =============================================================================
+
+    .loadingOverlay-container {
+        @include loadingOverlay-container();
+    }
+
+    .loadingOverlay {
+        @include loadingOverlay-base();
+
+        &::before {
+            @include loadingOverlay-spinner();
+            animation: spin $loadingOverlay-spinner-duration infinite $loadingOverlay-spinner-easing;
+        }
+
+        &.ng-enter,
+        &.ng-leave.ng-leave-active {
+            @include loadingOverlay-startState();
+        }
+
+        &.ng-leave,
+        &.ng-enter.ng-enter-active {
+            @include loadingOverlay-activeState();
+        }
+
+    }
+
+    @keyframes spin {
+        0% {
+            transform: translateY(-50%) rotate(0deg);
+        }
+
+        100% {
+            transform: translateY(-50%) rotate(360deg);
+        }
+    }
+
 }
