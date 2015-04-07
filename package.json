@@ -1,6 +1,6 @@
 {
   "name": "sass-library",
-  "version": "0.12.4",
+  "version": "0.13.0",
   "description": "A SASS Library based on Foundation with opinionated naming conventions",
   "repository": {
     "type": "git",
