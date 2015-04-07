@@ -90,6 +90,11 @@
         color: $check-pipColor;
         content: $check-pipContent;
         font-size: $check-pipSize;
+        background-image: $check-pip-backgroundImage;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        color: $check-pip-color;
         line-height: 1;
         text-align: center;
     }
