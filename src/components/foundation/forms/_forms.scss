@@ -21,7 +21,7 @@
     // =============================================================================
 
     .form {
-        margin: 0 0 $form-spacing;
+        margin: 0;
     }
 
     .form-fieldset {
@@ -38,7 +38,7 @@
 
     .form-field {
         @include clearfix();
-        margin: 0 0 $form-spacing;
+        margin: 0 0 $form-verticalSpacing;
         max-width: $formField-maxWidth;
     }
 
@@ -50,16 +50,8 @@
             font-size: $form-label-small-fontSize;
             font-weight: $form-label-small-fontWeight;
             text-transform: $form-label-small-transform;
+            vertical-align: bottom;
         }
-    }
-
-    .form-body {
-        background-color: $formBody-backgroundColor;
-        border: $formBody-border;
-        box-shadow: $formBody-boxShadow;
-        margin-bottom: $formBody-marginBottom;
-        max-width: $formBody-maxWidth;
-        padding: $formBody-padding;
     }
 
 

@@ -19,6 +19,21 @@ $exportCSS--bcForms:                    $exportCSS; // 1
 
 
 // =============================================================================
+// FORM LAYOUT
+// =============================================================================
+
+$formBody-backgroundColor: container("fill");
+$formBody-border: container("border", "dark");
+$formBody-boxShadow: container("dropShadow");
+$formBody-marginBottom: container("margin");
+$formBody-maxWidth: none;
+$formBody-padding: container("padding");
+
+$formRow-modernBrowsers: true;
+$formRow-flex-gutter: $column-gutter;
+
+
+// =============================================================================
 // CHECKS AND RADIOS
 // =============================================================================
 
