@@ -24,6 +24,7 @@ $card-figcaption-body-paddingHorizontal:    spacing("single");
 $card-figcaption-title-color:               color("whites", "bright");
 $card-figcaption-title-marginBottom:        spacing("eighth");
 $card-figcaption-button-background:         transparent;
+$card-figcaption-button-backgroundHover:    rgba(color("whites", "bright"), 0.2);
 $card-figcaption-button-borderColor:        color("whites", "bright");
 $card-figcaption-button-color:              color("whites", "bright");
 
@@ -34,5 +35,5 @@ $card-body-borderTop:                       container("border", "dark");
 $card-body-padding:                         (spacing("base") + spacing("eighth")) spacing("single");
 $card-body-textColor:                       color("greys");
 
-$card-title-marginBottom:                   spacing("eighth");
-$card-text-fontSize:                        fontSize("smallest");
+$card-title-marginBottom:                   spacing("third");
+$card-text-fontSize:                        fontSize("base");

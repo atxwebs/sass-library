@@ -17,6 +17,7 @@
 
         > .button {
             @include buttonGroup-buttons;
+            margin: 0;
         }
     }
 

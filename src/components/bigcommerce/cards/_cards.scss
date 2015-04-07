@@ -79,6 +79,12 @@
         background-color: $card-figcaption-button-background;
         border-color: $card-figcaption-button-borderColor;
         color: $card-figcaption-button-color;
+
+        &:hover {
+            background-color: $card-figcaption-button-backgroundHover;
+            border-color: $card-figcaption-button-borderColor;
+            color: $card-figcaption-button-color;
+        }
     }
 
     .card-body {
@@ -103,7 +109,30 @@
         margin-bottom: $card-title-marginBottom;
     }
 
+    .card-subTitle {
+        margin-bottom: $card-title-marginBottom;
+
+        .card-title + & {
+            margin-top: - spacing("eighth");
+        }
+    }
+
     .card-text {
         font-size: $card-text-fontSize;
+    }
+
+    .card-footer {
+        @include clearfix();
+        border: solid 1px color("whites", "bright");
+        padding: $card-body-padding;
+    }
+
+    .card-button {
+        margin-bottom: 0;
+
+        &:not(.button--small) {
+            width: 100%;
+        }
+
     }
 }

@@ -33,6 +33,10 @@
             box-shadow: $button-focus-boxShadow;
             outline: none;
         }
+
+        + .button {
+            margin-left: spacing("half");
+        }
     }
 
 
