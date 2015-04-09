@@ -10,6 +10,7 @@
 // If any library overrides or extra CSS is needed, declare it here.
 //
 // 1. If set to false, there is no outputted CSS for this component.
+// 2. Specific overrides for CP primary button colours
 //
 // -----------------------------------------------------------------------------
 
@@ -18,37 +19,32 @@
 
     // Component
     // -------------------------------------------------------------------------
-    .splitButton {
-        @include button-base;
-        @include buttonSize("default");
-        @include buttonVariant("default");
-        @include split-button($span-border: container("borderColor", "dark"));
+    .button--split {
+
+        @include split-button($span-border: buttonStyle("default", "borderColor"));
 
         span {
-            border-#{$default-float}-color: $split-button-span-Bordercolor;
+            border-#{$default-float}-color: buttonStyle("default", "borderColor") !important; // Foundation forces you to have 0.5 alpha
         }
-    }
 
-    .splitButton--small {
-        @include buttonSize("small");
-        @include split-button("small", $span-border: container("borderColor", "dark"), $base-style: false);
-    }
-
-    .splitButton--action {
-        @include buttonVariant("action")
-    }
-
-    .splitButton--primary {
-        @include buttonVariant("primary");
-    }
-
-    // Allows these variants to be combined with the size variants above
-    .splitButton--action span,
-    .splitButton--primary span {
-        border-color: color("whites", "bright");
-
-        &:after {
-            border-top-color: color("whites", "bright");
+        &.button--small {
+            @include split-button("small", $span-border: buttonStyle("default", "borderColor"), $base-style: false);
         }
+
+        &.button--large {
+            @include split-button("large", $span-border: buttonStyle("default", "borderColor"), $base-style: false);
+        }
+
+        // scss-lint:disable NestingDepth
+        &.button--primary span { // 2
+            border-color: buttonStyle("primary", "color");
+
+            &:after {
+                border-top-color: buttonStyle("primary", "color");
+            }
+        }
+        // scss-lint:enable NestingDepth
+
     }
+
 }
