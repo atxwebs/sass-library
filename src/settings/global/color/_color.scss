@@ -94,16 +94,17 @@ $colorMap: (
 
     orderStatus: (
         awaitingFulfilment:     #6eccfc,
-        awaitingPayment:        #ffb800,
+        awaitingPayment:        #f80,
         awaitingPickup:         #b186cb,
-        awaitingShipment:       #db6e63,
+        awaitingShipment:       #ca2f3a,
         cancelled:              #3c4043,
         completed:              #95db89,
-        declined:               #ca2f3a,
+        declined:               #955831,
+        disputed:               #9960ff,
         partiallyShipped:       #3e62a1,
         pending:                #acb4be,
         shipped:                #95db89,
-        refunded:               #f80,
+        refunded:               #ffb800,
         verificationRequired:   #e89fae
     )
 );
