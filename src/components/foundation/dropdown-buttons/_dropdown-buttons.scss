@@ -21,6 +21,18 @@
     .dropdown-button {
         @include dropdown-button("medium", $dropdown-button-pip-color);
         cursor: pointer;
+
+        &.button--small {
+            @include dropdown-button("small", $dropdown-button-pip-color, $base-style: false);
+        }
+
+        &.button--large {
+            @include dropdown-button("large", $dropdown-button-pip-color, $base-style: false);
+        }
+
+        &.button--primary:after {
+            border-color: $dropdown-button-pip-color-alt transparent transparent;
+        }
     }
 
     .dropdown-button:after {
@@ -29,42 +41,5 @@
         // border: none;
     }
 
-    .dropdown-button--tiny {
-        @include dropdown-button("tiny", $dropdown-button-pip-color, $base-style: false);
-    }
-
-    .dropdown-button--small {
-        @include dropdown-button("small", $dropdown-button-pip-color, $base-style: false);
-    }
-
-    .dropdown-button--large {
-        @include dropdown-button("large", $dropdown-button-pip-color, $base-style: false);
-    }
-
-    .dropdown-button--action:after,
-    .dropdown-button--primary:after {
-        border-color: $dropdown-button-pip-color-alt transparent transparent;
-    }
-
-
-    // Dropdown Button Buttons
-    // Dropdown button content is left-aligned rather than centered like regular buttons
-    // -------------------------------------------------------------------------
-
-    .dropdown-button.button {
-        padding-left: spacing("half");
-    }
-
-    .dropdown-button--tiny.button {
-        padding-left: spacing("quarter");
-    }
-
-    .dropdown-button--small.button {
-        padding-left: spacing("third");
-    }
-
-    .dropdown-button--large.button {
-        padding-left: spacing("base");
-    }
 }
 

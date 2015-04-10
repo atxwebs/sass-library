@@ -35,7 +35,7 @@ $dropdown-button-pip-color-alt: color("whites", "bright");
 $button-pip-tny: spacing("sixth");
 $button-pip-sml: spacing("fifth");
 $button-pip-med: spacing("quarter");
-$button-pip-lrg: spacing("third");
+$button-pip-lrg: spacing("quarter");
 
 // We use these to style tiny dropdown buttons
 $dropdown-button-padding-tny: $button-pip-tny * 4;
@@ -50,13 +50,13 @@ $dropdown-button-pip-opposite-sml: $button-pip-sml * 2;
 $dropdown-button-pip-top-sml: -$button-pip-sml / 2.5;
 
 // We use these to style medium dropdown buttons
-$dropdown-button-padding-med: $button-pip-med * 6;
+$dropdown-button-padding-med: $button-pip-med * 6.5;
 $dropdown-button-pip-size-med: $button-pip-med;
-$dropdown-button-pip-opposite-med: $button-pip-med * 2;
+$dropdown-button-pip-opposite-med: $button-pip-med * 2.5;
 $dropdown-button-pip-top-med: -$button-pip-med / 3;
 
 // We use these to style large dropdown buttons
-$dropdown-button-padding-lrg: $button-pip-lrg * 8;
+$dropdown-button-padding-lrg: $button-pip-lrg * 7;
 $dropdown-button-pip-size-lrg: $button-pip-lrg;
-$dropdown-button-pip-opposite-lrg: $button-pip-lrg * 2;
+$dropdown-button-pip-opposite-lrg: $button-pip-lrg * 3;
 $dropdown-button-pip-top-lrg: -$button-pip-lrg / 3;
