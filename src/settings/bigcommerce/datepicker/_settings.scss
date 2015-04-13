@@ -18,7 +18,7 @@ $exportCSS--datepicker:            $exportCSS;
 // Container
 $datepicker-backgroundColor: color("whites", "bright");
 $datepicker-boxShadow: 0 0 spacing("sixth") color("greys", "medium");
-$datepicker-padding: spacing("half");
+$datepicker-padding: spacing("base") 0;
 $datepicker-zIndex: zIndex("high");
 
 
@@ -29,21 +29,22 @@ $datepicker-back-next-cursor: $cursor-default-value;
 $datepicker-back-next-fontSize: fontSize("small");
 $datepicker-back-next-fontWeight: fontWeight("bold");
 $datepicker-back-next-padding: 0;
+$datepicker-back-next-margin: spacing("single");
 $datepicker-next-content: ">";
 
 
 // Month
 $datepicker-month-color: color("greys", "darker");
-$datepicker-month-fontSize: fontSize("small");
+$datepicker-month-fontSize: fontSize("large");
 $datepicker-month-fontWeight: fontWeight("normal");
-$datepicker-month-margin: spacing("half") 0;
+$datepicker-month-margin: 0;
 
 
 // Days
 $datepicker-days-color: color("greys", "darker");
-$datepicker-days-fontSize: fontSize("base");
+$datepicker-days-fontSize: fontSize("small");
 $datepicker-days-head-lineHeight: lineHeight("tiny");
-$datepicker-days-margin: spacing("single") spacing("base") 0;
+$datepicker-days-margin: spacing("base") spacing("base") 0;
 
 
 // Day
