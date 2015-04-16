@@ -1,0 +1,37 @@
+// =============================================================================
+// MEDIA Object (CSS)
+// =============================================================================
+
+
+// Bigcommerce Component
+// -----------------------------------------------------------------------------
+//
+// The Bigcommerce Coding Standards, coupled with Foundation.
+// If any library overrides or extra CSS is needed, declare it here.
+//
+// 1. If set to false, there is no outputted CSS for this component.
+// 2. Include the basic media object styles for any .media component.
+// 3. Include the modified .mediaTable element, which adds table styling and the
+// .mediaTable-column to the component.
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--media { // 1
+
+
+    // media
+    // -------------------------------------------------------------------------
+
+    .media {
+        @include media; // 2
+    }
+
+
+    // mediaTable
+    // -------------------------------------------------------------------------
+
+    .mediaTable {
+        @include media("table"); // 3
+    }
+
+}

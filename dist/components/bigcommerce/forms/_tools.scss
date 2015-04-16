@@ -93,12 +93,12 @@
     }
 
     &::after {
-        height: $checkRadio-pipSize;
-        left: $checkRadio-pipScale / 2;
+        height: $checkRadio-pip-size;
+        left: $checkRadio-pip-scale / 2;
         opacity: 0;
-        top: $checkRadio-pipScale / 2;
+        top: $checkRadio-pip-scale / 2;
         transform: scale(0);
-        width: $checkRadio-pipSize;
+        width: $checkRadio-pip-size;
     }
 
 }
@@ -133,6 +133,7 @@
         box-shadow: $checkRadio-focus-boxShadow;
     }
 
+
 }
 
 @mixin checkBox-base() {
@@ -142,9 +143,13 @@
     }
 
     &::after {
-        color: $check-pipColor;
-        content: $check-pipContent;
-        font-size: $check-pipSize;
+        background-image: $check-pip-backgroundImage;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        color: $check-pip-color;
+        content: $check-pip-content;
+        font-size: $check-pip-size;
         line-height: 1;
         text-align: center;
     }
@@ -158,9 +163,9 @@
     }
 
     &::after {
-        background: $radio-pipColor;
+        background: $radio-pip-color;
         border: $radio-pipInset solid $radio-pipInset-color;
-        border-radius: $radio-pipSize;
+        border-radius: $radio-pip-size;
     }
 
 }

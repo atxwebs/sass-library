@@ -15,8 +15,6 @@
 
 $exportCSS--split-buttons:           $exportCSS; // 1
 
-$split-button-span-Bordercolor: container("borderColor", "dark");
-
 
 // Foundation Variables
 // -----------------------------------------------------------------------------
@@ -28,12 +26,18 @@ $split-button-span-Bordercolor: container("borderColor", "dark");
 //
 // -----------------------------------------------------------------------------
 
+// =============================================================================
+// N.B. There are so many bugs in this Foundation component. Half of these variables
+// Aren't even referenced in the Foundation mixins.
+// =============================================================================
+
+
 $include-html-split-buttons-classes: $include-html-classes;
 
 // We use these to control different shared styles for Split Buttons
-//$split-button-function-factor: 10% !default;
+$split-button-function-factor: 0%;
 $split-button-pip-color: color("greys");
-$split-button-pip-color-alt: color("whites", "bright");
+$split-button-pip-color-alt: buttonStyle("primary", "color");
 $split-button-active-bg-tint: false;
 
 // We use these to control tiny split buttons
@@ -47,19 +51,19 @@ $split-button-pip-default-float-tny: -$button-pip-tny;
 $split-button-padding-sml: $button-pip-sml * 11;
 $split-button-span-width-sml: $button-pip-sml * 7;
 $split-button-pip-size-sml: $button-pip-sml;
-//$split-button-pip-top-sml: $button-pip-sml * 1.5 !default;
+$split-button-pip-top-sml: $button-pip-sml * 8;
 $split-button-pip-default-float-sml: -$button-pip-sml;
 
 // We use these to control medium split buttons
-$split-button-padding-med: $button-pip-med * 10;
-$split-button-span-width-med: $button-pip-med * 6;
+$split-button-padding-med: $button-pip-med * 12.5;
+$split-button-span-width-med: $button-pip-med * 8;
 $split-button-pip-size-med: $button-pip-med;
 //$split-button-pip-top-med: $button-pip-med * 1.5 !default;
 $split-button-pip-default-float-med: -$button-pip-med;
 
 // We use these to control large split buttons
-$split-button-padding-lrg: $button-pip-lrg * 11;
-$split-button-span-width-lrg: $button-pip-lrg * 7;
+$split-button-padding-lrg: $button-pip-lrg * 16;
+$split-button-span-width-lrg: $button-pip-lrg * 10;
 $split-button-pip-size-lrg: $button-pip-lrg;
 //$split-button-pip-top-lrg: $button-pip-lrg + rem-calc(5) !default;
 $split-button-pip-default-float-lrg: -$button-pip-lrg;

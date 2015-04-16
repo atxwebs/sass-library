@@ -48,6 +48,7 @@
 
     .datepicker-back {
         float: left;
+        margin-left: $datepicker-back-next-margin;
 
         &::before {
             content: $datepicker-back-content;
@@ -57,7 +58,8 @@
 
     .datepicker-next {
         float: right;
-
+        margin-right: $datepicker-back-next-margin;
+        
         &::before {
             content: $datepicker-next-content;
             display: block;
