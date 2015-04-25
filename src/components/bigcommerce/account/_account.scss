@@ -19,11 +19,11 @@
     // -------------------------------------------------------------------------
 
     .account {
-        list-style-type: none;
+        @include u-listBullets("none");
     }
 
     .account-name {
-        font-weight: fontWeight("bold");
+        font-weight: $account-name-fontWeight;
     }
 }
 
