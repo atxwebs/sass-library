@@ -36,7 +36,7 @@
         opacity: 0;
         position: absolute;
         right: 0;
-        text-align: center;
+        text-align: $card-figcaption-textAlign;
         top: 0;
 
         &:hover {
@@ -110,10 +110,10 @@
     }
 
     .card-subTitle {
-        margin-bottom: $card-title-marginBottom;
+        margin-bottom: $card-subTitle-marginBottom;
 
         .card-title + & {
-            margin-top: - spacing("eighth");
+            margin-top: $card-subTitle-adjacentCardTitleMarginTop;
         }
     }
 
@@ -123,15 +123,16 @@
 
     .card-footer {
         @include clearfix();
-        border: solid 1px color("whites", "bright");
-        padding: $card-body-padding;
+        border: $card-footer-border;
+        border-width: $card-footer-borderWidth;
+        padding: $card-footer-padding;
     }
 
     .card-button {
         margin-bottom: 0;
 
         &:not(.button--small) {
-            width: 100%;
+            width: $card-button-width;
         }
 
     }

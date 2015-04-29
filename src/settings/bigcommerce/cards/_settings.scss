@@ -20,6 +20,7 @@ $card-marginBottom:                         spacing("double");
 
 $card-figcaption-background:                overlay("fill");
 $card-figcaption-color:                     color("whites", "bright");
+$card-figcaption-textAlign:                 center;
 $card-figcaption-body-paddingHorizontal:    spacing("single");
 $card-figcaption-title-color:               color("whites", "bright");
 $card-figcaption-title-marginBottom:        spacing("eighth");
@@ -32,8 +33,22 @@ $card-text-color:                           color("whites", "bright");
 
 $card-body-background:                      container("fill");
 $card-body-borderTop:                       container("border", "dark");
-$card-body-padding:                         (spacing("base") + spacing("eighth")) spacing("single");
+$card-body-paddingVertical:                 (spacing("base") + spacing("eighth"));
+$card-body-paddingHorizontal:               spacing("single");
+$card-body-padding:                         $card-body-paddingVertical $card-body-paddingVertical;
 $card-body-textColor:                       color("greys");
 
 $card-title-marginBottom:                   spacing("third");
+
+$card-subTitle-marginBottom:                $card-title-marginBottom;
+$card-subTitle-adjacentCardTitleMarginTop:  (- spacing("eighth"));
+
 $card-text-fontSize:                        fontSize("base");
+
+$card-footer-borderStyle:                   solid;
+$card-footer-borderColor:                   color("whites", "bright");
+$card-footer-borderWidth:                   1px;
+$card-footer-border:                        $card-footer-borderStyle $card-footer-borderColor;
+$card-footer-padding:                       $card-body-padding;
+
+$card-button-width:                         100%;
