@@ -34,7 +34,7 @@ $input-bg-color: color("greys", "lightest");
 $input-focus-bg-color: color("whites", "bright");
 $input-border-color: container("borderColor", "dark");
 $input-focus-border-color: color("primary");
-// $input-border-style: solid;
+$input-border-style: solid;
 $input-border-width: 1px;
 $input-border-radius: 0;
 $input-disabled-bg: color("whites");

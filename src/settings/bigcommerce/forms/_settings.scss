@@ -45,13 +45,17 @@ $checkRadio-baseDimension: 16px;
 $checkRadio-pip-scale: $checkRadio-borderWidth * 2;
 $checkRadio-outerSize: remCalc($checkRadio-baseDimension);
 $checkRadio-pip-size: remCalc($checkRadio-baseDimension - $checkRadio-pip-scale);
+$checkRadio-pip-zoomStart: scale(0);
+$checkRadio-pip-zoomEnd: scale(1);
 // label
 $checkRadio-label-fontSize: fontSize("base");
 $checkRadio-label-fontWeight: fontWeight("normal");
 $checkRadio-label-lineHeight: lineHeight("small");
+$checkRadio-label-spacing: $form-spacing;
 $checkRadio-label-marginBottom: spacing("half");
 // visual
 $checkRadio-bg: color("whites", "bright");
+$checkRadio-boxShadow: $input-dropShadow;
 $checkRadio-focus-borderColor: color("primary");
 $checkRadio-focus-boxShadow: $input-focus-box-shadow;
 $checkRadio-disabled-bg: $input-disabled-bg;
@@ -74,12 +78,19 @@ $radio-pip-size: $checkRadio-pip-size;
 // INPUT ACTIONS
 // =============================================================================
 
+// float direction
+$inputAction-floatDirection: $default-float;
+$inputAction-backgroundColor: transparent;
+$inputAction-borderRadius: 0 $input-border-radius $input-border-radius 0;
+$inputAction-borderWidth: $input-border-width;
 // form spacing minus top and bottom border width
 $inputAction-button-width: ($form-spacing * 2) - remCalc($input-border-width * 2);
 // padding the same as the button with
 $inputAction-input-paddingRight: $inputAction-button-width;
 // Negative margin can't use the button width as we only need to deal with 1 border on the right
 $inputAction-button-marginLeft: - ($form-spacing * 2) + remCalc($input-border-width);
+$inputAction-margin: remCalc($inputAction-borderWidth) 0 0 $inputAction-button-marginLeft;
+
 
 
 // =============================================================================
@@ -90,8 +101,25 @@ $prefixPostfix-inputClassName: "form-input";
 $prefixPostfix-buttonClassName: "button";
 $prefixPostfix-borderRadius: $input-border-radius;
 
+$prefixPostfix-input-height: $input-height;
+$prefixPostfix-input-borderRadius: $input-border-radius 0 0 $input-border-radius;
+
 $prefixPostfix-label-backgroundColor: color("whites", "bright");
+$prefixPostfix-label-borderStyle: $input-border-style;
+$prefixPostfix-label-borderColor: $input-border-color;
+$prefixPostfix-label-borderWidth: $input-border-width;
 $prefixPostfix-label-fontWeight: fontWeight("thin");
+$prefixPostfix-label-height: $prefixPostfix-input-height;
+$prefixPostfix-label-padding: ($form-spacing / 2) $form-spacing;
+
+// Prefixed labels to input
+$prefix-label-borderRadius: $prefixPostfix-borderRadius 0 0 $prefixPostfix-borderRadius;
+$prefix-label-borderWidth: $input-border-width 0 $input-border-width $input-border-width;
+$prefix-input-borderRadius: 0 $prefixPostfix-borderRadius $prefixPostfix-borderRadius 0;
+
+// Postfixed labels to input
+$postfix-label-borderRadius: 0 $prefixPostfix-borderRadius $prefixPostfix-borderRadius 0;
+$postfix-label-borderWidth: $input-border-width $input-border-width $input-border-width 0;
 
 
 // =============================================================================
@@ -123,6 +151,7 @@ $switch-important-checked-borderColor: $switch-important-checked-backgroundColor
 // SWITCH DESCRIPTIONS
 $switch-description-unselected-color: color("greys", "medium");
 $switch-description-selected-color: color("greys", "darkest");
+$switch-description-spacing: 5px;
 
 // SWITCH INDICATOR
 $switch-indicator-scale: 0.7143; // bit magic-y (20px / 28px)
@@ -148,6 +177,7 @@ $switch-label-text-onFontWeight: fontWeight("semibold");
 
 $form-actions-background: none;
 $form-actions-border: 0;
+$form-actions-margin: 0 0 0 spacing("half");
 $form-actions-padding: spacing("base") 0;
 $form-actions-textAlign: left;
 
@@ -166,7 +196,9 @@ $form-success-color: color("success");
 $form-error-color: color("error");
 $form-warning-color: color("warning");
 
+$form-inputIndicator-margin: 0 0 0 (- remCalc(30px));
 $form-inputIndicator-size: 22px;
+$form-inputIndicator-top: remCalc(10px);
 
 $form-inlineMessage-fontWeight: fontWeight("semibold");
 $form-inlineMessage-margin: spacing("quarter") 0 0;
