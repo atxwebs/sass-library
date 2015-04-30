@@ -23,11 +23,11 @@
         @include alert($bg:$alert-generic-bgColor);
 
         .icon {
-            @include square(20);
+            @include square($alert-iconSize);
         }
 
         .button {
-            margin: 0 0 0 spacing("half");
+            margin: $alert-button-margin;
         }
     }
 
@@ -65,7 +65,7 @@
 
     .alertBox-column {
         display: table-cell;
-        text-align: center;
+        text-align: $alert-column-textAlign;
         vertical-align: middle;
     }
 
@@ -74,21 +74,21 @@
     }
 
     .alertBox-message {
-        margin: 0;
-        text-align: left;
+        margin: $alert-message-margin;
+        text-align: $alert-message-textAlign;
         width: 100%;
     }
 
     .alertBox-heading {
-        margin: 0;
+        margin: $alert-heading-margin;
     }
 
     .alertBox-close {
-        cursor: $cursor-pointer-value;
+        cursor: $alert-close-cursor;
         padding-left: $alert-padding-default-float;
 
         .icon {
-            @include square(20);
+            @include square($alert-close-iconSize);
         }
 
         svg {
