@@ -13,7 +13,10 @@
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--dropdown:            $exportCSS; // 1
+$exportCSS--dropdown:               $exportCSS; // 1
+
+$f-dropdown-boxShadow:              0 2px 3px 0 color("greys", "lighter");
+$f-dropdown-marginTop:              -1px;
 
 
 // Foundation Variables

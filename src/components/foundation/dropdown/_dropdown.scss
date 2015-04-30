@@ -29,8 +29,8 @@
 
     .dropdown-menu,
     .dropdown-menu--content {
-        box-shadow: 0 2px 3px 0 color("greys", "lighter");
-        margin-top: -1px;
+        box-shadow: $f-dropdown-boxShadow;
+        margin-top: $f-dropdown-marginTop;
     }
 
     // Allow for non-anchor elements to be styled the same as anchors
