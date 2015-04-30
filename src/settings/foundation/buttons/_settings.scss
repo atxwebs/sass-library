@@ -116,6 +116,11 @@ $buttonSizeMap: (
     )
 );
 
+$button-vAlign:                         middle;
+$button-focus-boxShadow:                0 0 2px rgba(color("primary"), 0.6);
+
+$button-adjacentButton-marginLeft:      spacing("half");
+
 
 // Foundation Variables
 // -----------------------------------------------------------------------------
@@ -128,6 +133,15 @@ $buttonSizeMap: (
 // -----------------------------------------------------------------------------
 
 $include-html-button-classes:           $include-html-classes;
+
+$button-display:                        inline-block;
 $button-margin-bottom:                  spacing("base");
+
+// $button-font-family:                    $body-font-family;
+// $button-font-weight:                    $font-weight-normal;
+// $button-font-align:                     center;
+
 $button-border-width:                   1px;
-$button-focus-boxShadow:                0 0 2px rgba(color("primary"), 0.6);
+// $button-border-style:                   solid;
+
+$button-radius:                         $global-radius;
