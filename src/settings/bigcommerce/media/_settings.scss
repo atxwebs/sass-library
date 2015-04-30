@@ -23,11 +23,13 @@ $media-gutter:                            spacing("half");
 $mediaTable-gutter:                       spacing("single");
 $mediaTable-verticalAlignment:            middle;
 
+$mediaTable-image-textAlignment:          center;
 $mediaTable-image-verticalAlignment:      $mediaTable-verticalAlignment;
 $mediaTable-image-width:                  15%;
 
 $mediaTable-body-verticalAlignment:       $mediaTable-verticalAlignment;
 
+$mediaTable-actions-textAlign:            right;
 $mediaTable-actions-verticalAlignment:    $mediaTable-verticalAlignment;
 $mediaTable-actions-width:                30%;
 

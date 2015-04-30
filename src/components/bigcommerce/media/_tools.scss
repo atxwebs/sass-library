@@ -7,8 +7,8 @@
 // -----------------------------------------------------------------------------
 //
 // The media object, as per OOCSS methodology. Taken straight from the OOCSS repo.
-// (https://github.com/stubbornella/oocss/blob/master/oocss/src/components/media/_media.scss) 
-// This also allows the "media table" variation, which allows you to specify 
+// (https://github.com/stubbornella/oocss/blob/master/oocss/src/components/media/_media.scss)
+// This also allows the "media table" variation, which allows you to specify
 // columns in the media object, and align the contents accordingly.
 // This is similar to Harry Roberts's "Flag object". (http://csswizardry.com/2013/05/the-flag-object/)
 //
@@ -17,7 +17,7 @@
 // class name prefix to the elements, the '&' selector has been used heavily.
 //
 // 1. $style arguments: "default" or "table"
-// 2. To avoid generating the default media object styles for descendants if we 
+// 2. To avoid generating the default media object styles for descendants if we
 //    don't have to, we check for the default operator first.
 // 3. The "table" style just sets the parent to display as table, and its children
 //    to table-cells, if they have the "-column" descendant class.
@@ -37,13 +37,13 @@
                 display: block;
             }
         }
-        
+
         &-figure--opposite {
             float: $opposite-direction;
             margin-#{$default-float}: $media-gutter;
             margin-#{$opposite-direction}: 0;
         }
-        
+
         &-body {
             @include clearfix;
         }
@@ -64,7 +64,7 @@
         }
 
         &-figure {
-            text-align: center;
+            text-align: $mediaTable-image-textAlignment;
             vertical-align: $mediaTable-image-verticalAlignment;
             width: $mediaTable-image-width;
         }
@@ -74,7 +74,7 @@
         }
 
         &-actions {
-            text-align: right;
+            text-align: $mediaTable-actions-textAlign;
             vertical-align: $mediaTable-actions-verticalAlignment;
             width: $mediaTable-actions-width;
         }
