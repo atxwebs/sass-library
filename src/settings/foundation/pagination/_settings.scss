@@ -15,7 +15,9 @@
 
 $exportCSS--pagination: $exportCSS;
 
-$include-pagination-classes: $include-html-classes;
+$pagination-display: inline-block;
+
+$pagination-link-borderRadius--current: 0;
 
 // Pagination Variables
 // -----------------------------------------------------------------------------
@@ -23,12 +25,15 @@ $include-pagination-classes: $include-html-classes;
 // Foundation Variables
 // -----------------------------------------------------------------------------
 
+$include-pagination-classes: $include-html-classes;
+
 // We use these to control the pagination container
 $pagination-height: spacing("base");
 $pagination-margin: 0;
 
 // We use these to set the list-item properties
 //$pagination-li-float: $default-float !default;
+$pagination-li-height: remCalc(24) !default;
 $pagination-li-font-color: color("primary");
 $pagination-li-font-size: fontSize("base");
 $pagination-li-margin: spacing("half");
