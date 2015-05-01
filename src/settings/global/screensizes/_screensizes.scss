@@ -2,19 +2,33 @@
 // SCREEN SIZES
 // =============================================================================
 
-//
+
+// Screen sizes
+// -----------------------------------------------------------------------------
+
+$screen-xxxlarge:               1920px;
+$screen-xxlarge:                1681px;
+$screen-xlarge:                 1441px;
+$screen-large:                  1281px;
+$screen-medium:                 1025px;
+$screen-small:                  769px;
+$screen-xsmall:                 481px;
+$screen-xxsmall:                320px;
+
+
+
 // Screen sizes map
 // -----------------------------------------------------------------------------
 
 $screenSizeMap: (
-    xxxlarge:   1920px,
-    xxlarge:    1681px,
-    xlarge:     1441px,
-    large:      1281px,
-    medium:     1025px,
-    small:      769px,
-    xsmall:     481px,
-    xxsmall:    320px
+    xxxlarge:                   $screen-xxxlarge,
+    xxlarge:                    $screen-xxlarge,
+    xlarge:                     $screen-xlarge,
+    large:                      $screen-large,
+    medium:                     $screen-medium,
+    small:                      $screen-small,
+    xsmall:                     $screen-xsmall,
+    xxsmall:                    $screen-xxsmall
 );
 
 
