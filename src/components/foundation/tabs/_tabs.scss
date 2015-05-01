@@ -18,15 +18,15 @@
     %tabs {
         @include clearfix;
         border-bottom: $tabs-bottom-border;
-        margin: 0;
+        margin: $tabs-margin;
     }
 
     %tab {
 
         border-bottom: $tab-title-border-bottom-height $tab-title-border-bottom-style $tab-title-border-color;
-        display: block;
+        display: $tab-display;
         list-style: none;
-        margin: 0;
+        margin: $tab-margin;
         padding: $tab-navigation-container-padding;
         position: relative;
 
@@ -44,7 +44,7 @@
 
         background-color: $tabs-navigation-bg-color;
         color: $tabs-navigation-font-color;
-        display: block;
+        display: $tab-navigation-display;
         font-family: $tabs-navigation-font-family;
         font-size: $tabs-navigation-font-size;
         padding: $tabs-navigation-padding $tabs-navigation-padding * 2;
@@ -91,15 +91,15 @@
     .tabs--vertical {
 
         @include breakpoint(small) {
-            border-bottom: 0;
-            float: $default-float;
+            border-bottom: $tabs--vertical-borderBottom;
+            float: $tabs--vertical-float;
             margin: 0 0 $tabs-vertical-navigation-margin-bottom;
-            max-width: 20%;
-            width: 20%;
+            max-width: $tabs--vertical-maxWidth;
+            width: $tabs--vertical-width;
         }
 
         .tab {
-            float: none;
+            float: $tabs--vertical-tab-float;
         }
 
     }
@@ -118,13 +118,13 @@
 
         @include breakpoint(small) {
 
-            float: $default-float;
-            max-width: 80%;
-            padding-#{$default-float}: spacing("single");
-            width: 80%;
+            float: $tabs-contents--vertical-floatDirection;
+            max-width: $tabs-contents--vertical-maxWidth;
+            padding-#{$tabs-contents--vertical-floatDirection}: $tabs-contents--vertical-floatDirection-padding;
+            width: $tabs-contents--vertical-width;
 
             > .tab-content {
-                padding: 0 $tabs-content-padding;
+                padding: $tabs-contents--vertical-padding;
             }
 
         }
@@ -133,7 +133,7 @@
 
     .tab-content {
         display: none;
-        padding: $tabs-content-padding 0;
+        padding: $tabs-content-padding;
 
         &.is-active {
             display: block;
