@@ -21,7 +21,7 @@
     // =============================================================================
 
     .form {
-        margin: 0;
+        margin: $form-margin;
     }
 
     .form-fieldset {
@@ -38,7 +38,7 @@
 
     .form-field {
         @include clearfix();
-        margin: 0 0 $form-verticalSpacing;
+        margin: $formField-margin;
         max-width: $formField-maxWidth;
     }
 
@@ -63,12 +63,16 @@
         @include form-element();
         -webkit-appearance: none;
         border-radius: $input-border-radius;
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-        font-smoothing: antialiased;
+
+        @if $input-fontSmoothing {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            font-smoothing: antialiased;
+        }
+
         height: $input-height;
-        margin: 0;
-        padding: ($form-spacing / 2) ($form-spacing / 1.5);
+        margin: $input-margin;
+        padding: $input-padding;
         transition: $input-transition;
 
         // Missing disbled styles
@@ -102,7 +106,7 @@
         // scss-lint:enable VendorPrefixes
 
         &:focus {
-            box-shadow: $input-focus-box-shadow;
+            box-shadow: $input-focus-boxShadow;
         }
 
     }
@@ -114,17 +118,17 @@
 
     .form-select {
         @include form-select;
-        box-shadow: $input-dropShadow;
+        box-shadow: $select-boxShadow;
         cursor: $cursor-pointer-value;
-        height: $input-height;
-        margin: 0;
+        height: $select-height;
+        margin: $select-margin;
         max-width: $select-maxWidth;
-        padding-right: $form-spacing;
+        outline: $select-outline;
+        padding-right: $select-paddingRight;
 
         &:focus {
-            border-color: $input-focus-border-color;
-            box-shadow: $input-focus-box-shadow;
-            outline: 0;
+            border-color: $select-focus-borderColor;
+            box-shadow: $select-focus-boxShadow;
         }
     }
 

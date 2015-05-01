@@ -55,9 +55,9 @@ $checkRadio-label-spacing: $form-spacing;
 $checkRadio-label-marginBottom: spacing("half");
 // visual
 $checkRadio-bg: color("whites", "bright");
-$checkRadio-boxShadow: $input-dropShadow;
+$checkRadio-boxShadow: $input-boxShadow;
 $checkRadio-focus-borderColor: color("primary");
-$checkRadio-focus-boxShadow: $input-focus-box-shadow;
+$checkRadio-focus-boxShadow: $input-focus-boxShadow;
 $checkRadio-disabled-bg: $input-disabled-bg;
 $checkRadio-disabled-opacity: 0.4;
 

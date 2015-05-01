@@ -98,13 +98,15 @@ $exportCSS--forms:                    $exportCSS; // 1
 
 $form-verticalSpacing: spacing("single") * 1.5;
 
-$formField-maxWidth: none;
-$select-maxWidth: none;
+$form-margin: 0;
 
 $legend-fontFamily: fontFamily("headingSans");
 $legend-fontSize: $h2-font-size;
 $legend-lineHeight: $header-line-height;
 $legend-marginBottom: spacing("half");
+
+$formField-maxWidth: none;
+$formField-margin: 0 0 $form-verticalSpacing;
 
 $form-label-small-color: color("greys", "medium");
 $form-label-small-fontSize: fontSize("base");
@@ -112,7 +114,21 @@ $form-label-small-fontWeight: fontWeight("normal");
 
 $input-placeholder-color: color("greys");
 $input-disabled-color: color("greys", "light");
-$input-dropShadow: 1px 1px 0 rgba($input-border-color, 0.4);
-$input-focus-box-shadow: 0 0 2px rgba(color("primary"), 0.4);
+$input-boxShadow: 1px 1px 0 rgba($input-border-color, 0.4);
+$input-focus-boxShadow: 0 0 2px rgba(color("primary"), 0.4);
+$input-fontSmoothing: true;
 $input-height: $form-spacing * 2;
+$input-margin: 0;
+$input-horizontalPadding: ($form-spacing / 1.5);
+$input-verticalPadding: ($form-spacing / 2);
+$input-padding: $input-verticalPadding $input-horizontalPadding;
 $input-transition: all 100ms ease-out;
+
+$select-boxShadow: $input-boxShadow;
+$select-height: $input-height;
+$select-margin: 0;
+$select-maxWidth: none;
+$select-outline: 0;
+$select-paddingRight: $form-spacing;
+$select-focus-borderColor: $input-focus-border-color;
+$select-focus-boxShadow: $input-focus-boxShadow;
