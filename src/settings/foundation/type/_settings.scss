@@ -15,6 +15,11 @@
 
 $exportCSS--type:               $exportCSS; // 1
 
+$html-fontSize:                 $fontSizeRoot + 2;
+$html-fontSize--smallUp:        $fontSizeRoot;
+$html-fontSize--mediumUp:       $fontSizeRoot;
+$html-fontSize--largeUp:        $fontSizeRoot;
+
 $code-font-size:              fontSize("smallest");
 
 
