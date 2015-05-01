@@ -11,18 +11,18 @@
 // -----------------------------------------------------------------------------
 
 // Max Width
-$widthMax:                      remCalc(1200px);
+$layout-widthMax:               remCalc(1200px);
 
 // Fixed Width
-$widthFixed:                    90%;
+$layout-widthFixed:             90%;
 
 
 // Layout Map
 // -----------------------------------------------------------------------------
 
 $layoutMap: (
-    max:                        $widthMax,
-    fixed:                      $widthFixed
+    max:                        $layout-widthMax,
+    fixed:                      $layout-widthFixed
 );
 
 
@@ -51,20 +51,30 @@ $layoutMap: (
 // Base Spacing
 $spacingRhythm:                 $fontSizeBase * $lineHeightBase;
 
+$spacing-base:                  1rem;
+$spacing-single:                $spacingRhythm;
+$spacing-double:                $spacingRhythm * 2;
+$spacing-half:                  $spacingRhythm / 2;
+$spacing-third:                 $spacingRhythm / 3;
+$spacing-quarter:               $spacingRhythm / 4;
+$spacing-fifth:                 $spacingRhythm / 5;
+$spacing-sixth:                 $spacingRhythm / 6;
+$spacing-eighth:                $spacingRhythm / 8;
+
 
 // Spacing Map
 // -----------------------------------------------------------------------------
 
 $spacingMap: (
-    base:                       1rem,
-    single:                     $spacingRhythm,
-    double:                     $spacingRhythm * 2,
-    half:                       $spacingRhythm / 2,
-    third:                      $spacingRhythm / 3,
-    quarter:                    $spacingRhythm / 4,
-    fifth:                      $spacingRhythm / 5,
-    sixth:                      $spacingRhythm / 6,
-    eighth:                     $spacingRhythm / 8
+    base:                       $spacing-base,
+    single:                     $spacing-single,
+    double:                     $spacing-double,
+    half:                       $spacing-half,
+    third:                      $spacing-third,
+    quarter:                    $spacing-quarter,
+    fifth:                      $spacing-fifth,
+    sixth:                      $spacing-sixth,
+    eighth:                     $spacing-eighth
 );
 
 
