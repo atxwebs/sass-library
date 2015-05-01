@@ -3,6 +3,85 @@
 // =============================================================================
 
 
+// Basics
+// -----------------------------------------------------------------------------
+
+$black:                         #000;
+$white:                         #fff;
+
+$whitesBase:                    #fcfcfd;
+
+$grey:                          #798289;
+$greyDarkest:                   #232831;
+$greyDarker:                    #282c30;
+$greyDark:                      #556273;
+$greyMedium:                    #acb3be;
+$greyLight:                     #e1e6eb;
+$greyLighter:                   #f2f4f6;
+$greyLightest:                  #f7f8f9;
+
+
+// Branding
+// -----------------------------------------------------------------------------
+
+$primary:                       #00abc9;
+$primaryDarker:                 #008ba3;
+$primaryDark:                   #009cb7;
+$primaryLight:                  #c7e8ee;
+
+$secondary:                     #fff;
+$secondaryDarker:               #e1e6eb;
+$secondaryDark:                 #f8f9fb;
+
+$highlight:                     #00abc9;
+$highlightDarker:               #008ba3;
+$highlightDark:                 #009cb7;
+
+
+// States
+// -----------------------------------------------------------------------------
+
+$error:                         #db636b;
+$errorLight:                    #f8e0e1;
+
+$info:                          #00abc9;
+$infoLight:                     #d8f0f4;
+
+$success:                       #95db89;
+$successLight:                  #dfefdc;
+
+$warning:                       #ffb800;
+$warningLight:                  #fff9d9;
+
+
+// Text
+// -----------------------------------------------------------------------------
+
+$textBase:                      #313b47;
+$textBase-hover:                #556273;
+$textBase-active:               #3c4043;
+
+
+// Order status
+// -----------------------------------------------------------------------------
+
+$orderAwaitingFulfilment:       #6eccfc;
+$orderAwaitingPayment:          #f80;
+$orderAwaitingPickup:           #b186cb;
+$orderAwaitingShipment:         #ca2f3a;
+$orderCancelled:                #3c4043;
+$orderCompleted:                #95db89;
+$orderDeclined:                 #955831;
+$orderDisputed:                 #9960ff;
+$orderPartiallyShipped:         #3e62a1;
+$orderPending:                  #acb4be;
+$orderShipped:                  #95db89;
+$orderRefunded:                 #ffb800;
+$orderVerificationRequired:     #e89fae;
+
+
+
+
 // Color Map
 // -----------------------------------------------------------------------------
 
@@ -12,23 +91,23 @@ $colorMap: (
     // -------------------------------------------------------------------------
 
     blacks: (
-        base:                   #000
+        base:                   $black
     ),
 
     whites: (
-        base:                   #fcfcfd,
-        bright:                 #fff
+        base:                   $whitesBase,
+        bright:                 $white
     ),
 
     greys: (
-        base:                   #798289,
-        darkest:                #232831,
-        darker:                 #282c30,
-        dark:                   #556273,
-        medium:                 #acb3be,
-        light:                  #e1e6eb,
-        lighter:                #f2f4f6,
-        lightest:               #f7f8f9
+        base:                   $grey,
+        darkest:                $greyDarkest,
+        darker:                 $greyDarker,
+        dark:                   $greyDark,
+        medium:                 $greyMedium,
+        light:                  $greyLight,
+        lighter:                $greyLighter,
+        lightest:               $greyLightest
     ),
 
 
@@ -36,22 +115,22 @@ $colorMap: (
     // -------------------------------------------------------------------------
 
     primary: (
-        base:                   #00abc9,
-        darker:                 #008ba3,
-        dark:                   #009cb7,
-        light:                  #c7e8ee
+        base:                   $primary,
+        darker:                 $primaryDarker,
+        dark:                   $primaryDark,
+        light:                  $primaryLight
     ),
 
     secondary: (
-        base:                   #fff,
-        darker:                 #e1e6eb,
-        dark:                   #f8f9fb
+        base:                   $secondary,
+        darker:                 $secondaryDarker,
+        dark:                   $secondaryDark
     ),
 
     highlight: (
-        base:                   #00abc9,
-        darker:                 #008ba3,
-        dark:                   #009cb7
+        base:                   $highlight,
+        darker:                 $highlightDarker,
+        dark:                   $highlightDark
     ),
 
 
@@ -59,23 +138,23 @@ $colorMap: (
     // -------------------------------------------------------------------------
 
     error: (
-        base:                   #db636b,
-        light:                  #f8e0e1
+        base:                   $error,
+        light:                  $errorLight
     ),
 
     info: (
-        base:                   #00abc9,
-        light:                  #d8f0f4
+        base:                   $info,
+        light:                  $infoLight
     ),
 
     success: (
-        base:                   #95db89,
-        light:                  #dfefdc
+        base:                   $success,
+        light:                  $successLight
     ),
 
     warning: (
-        base:                   #ffb800,
-        light:                  #fff9d9
+        base:                   $warning,
+        light:                  $warningLight
     ),
 
 
@@ -83,9 +162,9 @@ $colorMap: (
     // -------------------------------------------------------------------------
 
     link: (
-        base:                   #313b47,
-        hover:                  #556273,
-        active:                 #3c4043
+        base:                   $textBase,
+        hover:                  $textBase-hover,
+        active:                 $textBase-active
     ),
 
 
@@ -93,19 +172,19 @@ $colorMap: (
     // -------------------------------------------------------------------------
 
     orderStatus: (
-        awaitingFulfilment:     #6eccfc,
-        awaitingPayment:        #f80,
-        awaitingPickup:         #b186cb,
-        awaitingShipment:       #ca2f3a,
-        cancelled:              #3c4043,
-        completed:              #95db89,
-        declined:               #955831,
-        disputed:               #9960ff,
-        partiallyShipped:       #3e62a1,
-        pending:                #acb4be,
-        shipped:                #95db89,
-        refunded:               #ffb800,
-        verificationRequired:   #e89fae
+        awaitingFulfilment:     $orderAwaitingFulfilment,
+        awaitingPayment:        $orderAwaitingPayment,
+        awaitingPickup:         $orderAwaitingPickup,
+        awaitingShipment:       $orderAwaitingShipment,
+        cancelled:              $orderCancelled,
+        completed:              $orderCompleted,
+        declined:               $orderDeclined,
+        disputed:               $orderDisrupted,
+        partiallyShipped:       $orderPartiallyShipped,
+        pending:                $orderPending,
+        shipped:                $orderShipped,
+        refunded:               $orderRefunded,
+        verificationRequired:   $orderVerificationRequired
     )
 );
 
