@@ -29,8 +29,8 @@ $exportCSS--grid:            $exportCSS; // 1
 $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-// $row-width: remCalc(1000px);
-// $total-columns: 12;
-// $column-gutter: rem-calc(30);
+$row-width: remCalc(1000px);
+$total-columns: 12;
+$column-gutter: remCalc(30);
 
 // $last-child-float: $opposite-direction;
