@@ -22,7 +22,6 @@
     // Panel header
     .panel-header {
         background-color: $panel-header-bg;
-        display: block;
         margin: $panel-header-margin;
         padding: $panel-header-padding;
     }
@@ -32,7 +31,7 @@
         font-size: $panel-title-fontSize;
         font-weight: $panel-title-fontWeight;
         line-height: $panel-title-lineHeight;
-        margin: 0;
+        margin: $panel-title-margin;
     }
 
     // Panel body
