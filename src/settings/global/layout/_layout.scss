@@ -49,7 +49,7 @@ $layoutMap: (
 // -----------------------------------------------------------------------------
 
 // Base Spacing
-$spacingRhythm:                 $fontSizeBase * $lineHeightBase;
+$spacingRhythm:                 $fontSize-base * $lineHeight-base;
 
 $spacing-base:                  1rem;
 $spacing-single:                $spacingRhythm;

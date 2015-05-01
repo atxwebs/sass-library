@@ -15,8 +15,8 @@ $container-border-global-size:          1px;
 $container-border-global-style:         solid;
 $container-border-global-color-base:    color("greys", "lighter");
 $container-border-global-color-dark:    color("greys", "light");
-$container-border-global-base:          $border-global-style $border-global-size color("greys", "lighter");
-$container-border-global-dark:          $border-global-style $border-global-size color("greys", "light");
+$container-border-global-base:          $container-border-global-style $container-border-global-size color("greys", "lighter");
+$container-border-global-dark:          $container-border-global-style $container-border-global-size color("greys", "light");
 
 
 // Drop shadows

@@ -129,7 +129,7 @@ $postfix-label-borderWidth: $input-border-width $input-border-width $input-borde
 $switch-baseSize: 28px; // magic design number
 $switch-baseWidth: 60px; // magic design number
 $switch-height: remCalc($switch-baseSize);
-$switch-lineHeight: ($switch-baseSize - 1) / $fontSizeRoot;
+$switch-lineHeight: ($switch-baseSize - 1) / $fontSize-root;
 $switch-borderRadius: $switch-height;
 $switch-marginBottom: $form-spacing;
 $switch-width: remCalc($switch-baseWidth);
