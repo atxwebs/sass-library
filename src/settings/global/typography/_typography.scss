@@ -45,6 +45,39 @@ $fontSize-tiny:                 $fontSize-base * 0.75;
 // -----------------------------------------------------------------------------
 
 $lineHeight-base:               1.5; // 3
+$lineHeight-hero:               2.5,
+$lineHeight-largest:            2.25,
+$lineHeight-larger:             2,
+$lineHeight-large:              1.75,
+$lineHeight-small:              1.25,
+$lineHeight-smaller:            1.1,
+$lineHeight-smallest:           1,
+$lineHeight-tiny:               0.9
+
+
+// Font weights
+// -----------------------------------------------------------------------------
+
+$fontWeight-thin:               300;
+$fontWeight-normal:             400;
+$fontWeight-medium:             500;
+$fontWeight-semibold:           600;
+$fontWeight-bold:               700;
+$fontWeight-black:              900;
+
+
+// Letter spacing
+// -----------------------------------------------------------------------------
+
+$letterSpacing-base:            0;
+$letterSpacing-largest:         remCalc(3px);
+$letterSpacing-larger:          remCalc(2px);
+$letterSpacing-large:           remCalc(1px);
+$letterSpacing-small:           remCalc(-1px);
+$letterSpacing-smaller:         remCalc(-2px);
+$letterSpacing-smallest:        remCalc(-3px);
+
+
 
 
 // Font families
@@ -74,16 +107,32 @@ $fontSizeMap: (
 );
 
 
+// Line heights
+// -----------------------------------------------------------------------------
+
+$lineHeightMap: (
+    base:                       $lineHeight-base,
+    hero:                       $lineHeight-hero,
+    largest:                    $lineHeight-largest,
+    larger:                     $lineHeight-larger,
+    large:                      $lineHeight-large,
+    small:                      $lineHeight-small,
+    smaller:                    $lineHeight-smaller,
+    smallest:                   $lineHeight-smallest,
+    tiny:                       $lineHeight-tiny
+);
+
+
 // Font Weights
 // -----------------------------------------------------------------------------
 
 $fontWeightMap: (
-    thin:                       300,
-    normal:                     400,
-    medium:                     500,
-    semibold:                   600,
-    bold:                       700,
-    black:                      900
+    thin:                       $fontWeight-thin,
+    normal:                     $fontWeight-normal,
+    medium:                     $fontWeight-medium,
+    semibold:                   $fontWeight-semibold,
+    bold:                       $fontWeight-bold,
+    black:                      $fontWeight-black
 );
 
 
@@ -91,29 +140,13 @@ $fontWeightMap: (
 // -----------------------------------------------------------------------------
 
 $letterSpacingMap: (
-    largest:                    remCalc(3px),
-    larger:                     remCalc(2px),
-    large:                      remCalc(1px),
-    base:                       0,
-    small:                      remCalc(-1px),
-    smaller:                    remCalc(-2px),
-    smallest:                   remCalc(-3px)
-);
-
-
-// Line heights
-// -----------------------------------------------------------------------------
-
-$lineHeightMap: (
-    base:                       $lineHeight-base,
-    hero:                       2.5,
-    largest:                    2.25,
-    larger:                     2,
-    large:                      1.75,
-    small:                      1.25,
-    smaller:                    1.1,
-    smallest:                   1,
-    tiny:                       0.9
+    base:                       $letterSpacing-base,
+    largest:                    $letterSpacing-largest,
+    larger:                     $letterSpacing-larger,
+    large:                      $letterSpacing-large,
+    small:                      $letterSpacing-small,
+    smaller:                    $letterSpacing-smaller,
+    smallest:                   $letterSpacing-smallest
 );
 
 

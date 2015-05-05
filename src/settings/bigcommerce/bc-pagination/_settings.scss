@@ -17,9 +17,9 @@ $exportCSS--paginationLimits:            $exportCSS;
 
 $pagination-side: right;
 
-$pagination-limits-borderStyle: $border-global-style;
+$pagination-limits-borderStyle: container("borderStyle");
 $pagination-limits-borderColor: container("borderColor", "dark");
-$pagination-limits-borderWidth: 0 0 0 $border-global-size;
+$pagination-limits-borderWidth: 0 0 0 container("borderSize");
 
 $pagination-limits-marginLeft: spacing("half");
 $pagination-limits-paddingTop: spacing("third");
