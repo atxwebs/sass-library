@@ -41,6 +41,8 @@ $modal-verticalSpacing:                 spacing("single");
 $modal-header-horizontalSpacing:        $modal-horizontalSpacing;
 $modal-header-verticalSpacing:          $modal-verticalSpacing;
 
+$modal-header-title-margin:             0;
+
 $modal-close-size:                      20px;
 $modal-close-transformY:                $modal-transformY;
 
@@ -52,6 +54,11 @@ $modal-body-verticalSpacing:            $modal-horizontalSpacing;
 // Modal footer variables
 $modal-footer-horizontalSpacing:        $modal-horizontalSpacing;
 $modal-footer-verticalSpacing:          spacing("half");
+
+$modal-footer-button-marginBottom:      0;
+
+$modal-footer-link-fontSize:            fontSize("smaller");
+$modal-footer-link-margin:              spacing("single");
 
 
 // Foundation Variables

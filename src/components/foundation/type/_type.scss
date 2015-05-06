@@ -47,17 +47,26 @@
     // <html> & <body>
     // -------------------------------------------------------------------------
     //
-    // 1. Small screen font-size, with pixel calculation.
-    // 2. Medium screen font-size, with pixel calculation.
-    // 3. Large screen font-size (default).
+    // 1. Base font size.
+    // 2. Small breakpoint base font size.
+    // 3. Medium breakpoint base font size.
+    // 4. Large breakpoint base font size.
     //
     // -------------------------------------------------------------------------
 
     html {
-        font-size: $fontSizeRoot + 2; // 1
+        font-size: $html-fontSize; // 1
 
         @include breakpoint("small") {
-            font-size: $fontSizeRoot; // 2
+            font-size: $html-fontSize--smallUp; // 2
+        }
+
+        @include breakpoint("medium") {
+            font-size: $html-fontSize--mediumUp; // 3
+        }
+
+        @include breakpoint("large") {
+            font-size: $html-fontSize--largeUp; // 4
         }
 
     }

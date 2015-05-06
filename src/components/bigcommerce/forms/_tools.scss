@@ -69,7 +69,7 @@
     font-weight: $checkRadio-label-fontWeight;
     line-height: $checkRadio-label-lineHeight;
     margin-bottom: $checkRadio-label-marginBottom;
-    padding-#{$default-float}: $form-spacing;
+    padding-#{$default-float}: $checkRadio-label-spacing;
     position: relative;
     vertical-align: baseline;
     width: 100%;
@@ -84,8 +84,9 @@
 
     &::before {
         background-color: $checkRadio-bg;
-        border: $checkRadio-borderWidth $checkRadio-borderStyle $checkRadio-borderColor;
-        box-shadow: $input-dropShadow;
+        border: $checkRadio-borderStyle $checkRadio-borderColor;
+        border-width: $checkRadio-borderWidth;
+        box-shadow: $checkRadio-boxShadow;
         height: $checkRadio-outerSize;
         left: 0;
         top: 0;
@@ -97,7 +98,7 @@
         left: $checkRadio-pip-scale / 2;
         opacity: 0;
         top: $checkRadio-pip-scale / 2;
-        transform: scale(0);
+        transform: $checkRadio-pip-zoomStart;
         width: $checkRadio-pip-size;
     }
 
@@ -121,7 +122,7 @@
 
     &::after {
         opacity: 1;
-        transform: scale(1);
+        transform: $checkRadio-pip-zoomEnd;
     }
 
 }
@@ -188,37 +189,38 @@
     }
 
     .#{$buttonClassname} {
-        height: $input-height;
+        height: $prefixPostfix-input-height;
     }
 
 }
 
 @mixin prefixPostfix-input {
-    border-radius: $prefixPostfix-borderRadius 0 0 $prefixPostfix-borderRadius;
+    border-radius: $prefixPostfix-input-borderRadius;
 }
 
 @mixin prefixPostfix-label {
     background-color: $prefixPostfix-label-backgroundColor;
-    border: $input-border-style $input-border-color;
+    border: $prefixPostfix-label-borderStyle $prefixPostfix-label-borderColor;
+    border-width: $prefixPostfix-label-borderWidth;
     flex: 0 1 auto;
     font-weight: $prefixPostfix-label-fontWeight;
-    height: $input-height;
+    height: $prefixPostfix-label-height;
     line-height: normal;
-    padding: ($form-spacing / 2) $form-spacing;
+    padding: $prefixPostfix-label-padding;
 }
 
 @mixin prefixPostfix-label--prefix($inputClassName) {
-    border-radius: $prefixPostfix-borderRadius 0 0 $prefixPostfix-borderRadius;
-    border-width: $input-border-width 0 $input-border-width $input-border-width;
+    border-radius: $prefix-label-borderRadius;
+    border-width: $prefix-label-borderWidth;
 
     + .#{$inputClassName} {
-        border-radius: 0 $prefixPostfix-borderRadius $prefixPostfix-borderRadius 0;
+        border-radius: $prefix-input-borderRadius;
     }
 }
 
 @mixin prefixPostfix-label--postfix {
-    border-radius: 0 $prefixPostfix-borderRadius $prefixPostfix-borderRadius 0;
-    border-width: $input-border-width $input-border-width $input-border-width 0;
+    border-radius: $postfix-label-borderRadius;
+    border-width: $postfix-label-borderWidth;
 }
 
 

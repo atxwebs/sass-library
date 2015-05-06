@@ -17,6 +17,7 @@ $exportCSS--nav:                        $exportCSS; // 1
 
 $navBar-section-margin:                 spacing("single");
 $navBar-item-floatDirection:            $default-float;
+$navBar-item-floatOppositeDirection:    $opposite-direction;
 $navBar-action-background:              null;
 $navBar-action-background--hover:       null;
 $navBar-action-background--active:      null;

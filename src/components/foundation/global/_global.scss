@@ -44,7 +44,7 @@
     }
 
     figure {
-        margin: 0 0 spacing("base");
+        margin: $figure-margin;
     }
 
     img {

@@ -15,6 +15,12 @@
 
 $exportCSS--breadcrumbs:            $exportCSS; // 1
 
+$crumb-lineHeight:                  1.6;
+$crumb-lineHeight--xSmallUp:        1;
+
+$crumb-slash-margin:                0 spacing("third");
+$crumb-slash-margin--xSmallUp:      0 spacing("half");
+
 
 // Foundation Variables
 // -----------------------------------------------------------------------------

@@ -28,17 +28,17 @@
     .breadcrumb {
 
         @include crumbs;
-        line-height: 1.6;
+        line-height: $crumb-lineHeight;
 
         @include breakpoint(xsmall) {
-            line-height: 1;
+            line-height: $crumb-lineHeight--xSmallUp;
         }
 
         &::before {
-            margin: 0 spacing("third");
+            margin: $crumb-slash-margin;
 
             @include breakpoint(xsmall) {
-                margin: 0 spacing("half");
+                margin: $crumb-slash-margin--xSmallUp;
             }
         }
 

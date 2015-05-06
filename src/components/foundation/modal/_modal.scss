@@ -81,7 +81,7 @@
     }
 
     .modal-header-title {
-        margin: 0;
+        margin: $modal-header-title-margin;
     }
 
 
@@ -114,13 +114,13 @@
         );
 
         .button {
-            margin-bottom: 0;
+            margin-bottom: $modal-footer-button-marginBottom;
         }
     }
 
     .modal-footer-link {
-        font-size: fontSize("smaller");
-        margin: spacing("single");
+        font-size: $modal-footer-link-fontSize;
+        margin: $modal-footer-link-margin;
     }
 
     .#{$close-reveal-modal-class} {

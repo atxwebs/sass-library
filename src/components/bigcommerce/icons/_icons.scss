@@ -17,13 +17,13 @@
 
     .icon {
 
-        @include square(18);
+        @include square($icon-size);
         display: inline-block;
         vertical-align: middle;
 
         svg {
             display: inline-block;
-            fill: color("greys");
+            fill: $icon-color;
             height: 100%;
             vertical-align: top;
             width: 100%;
