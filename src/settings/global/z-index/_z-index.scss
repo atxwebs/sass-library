@@ -12,13 +12,27 @@
 // -----------------------------------------------------------------------------
 
 
+// z-index map
+// -----------------------------------------------------------------------------
+
+$zIndex-lowest:                 5;
+$zIndex-lower:                  10;
+$zIndex-low:                    20;
+$zIndex-high:                   50;
+$zIndex-higher:                 100;
+$zIndex-highest:                500;
+
+
+// z-index map
+// -----------------------------------------------------------------------------
+
 $zIndexMap: (
-        lowest:                     5,
-        lower:                      10,
-        low:                        20,
-        high:                       50,
-        higher:                     100,
-        highest:                    500
+    lowest:                     $zIndex-lowest,
+    lower:                      $zIndex-lower,
+    low:                        $zIndex-low,
+    high:                       $zIndex-high,
+    higher:                     $zIndex-higher,
+    highest:                    $zIndex-highest
 );
 
 
