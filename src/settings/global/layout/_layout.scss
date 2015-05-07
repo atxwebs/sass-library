@@ -49,17 +49,17 @@ $layoutMap: (
 // -----------------------------------------------------------------------------
 
 // Base Spacing
-$spacingRhythm:                 $fontSize-base * $lineHeight-base;
+$spacingRhythm:                 $fontSize-base * $lineHeight-base !default;
 
-$spacing-base:                  1rem;
-$spacing-single:                $spacingRhythm;
-$spacing-double:                $spacingRhythm * 2;
-$spacing-half:                  $spacingRhythm / 2;
-$spacing-third:                 $spacingRhythm / 3;
-$spacing-quarter:               $spacingRhythm / 4;
-$spacing-fifth:                 $spacingRhythm / 5;
-$spacing-sixth:                 $spacingRhythm / 6;
-$spacing-eighth:                $spacingRhythm / 8;
+$spacing-base:                  1rem !default;
+$spacing-single:                $spacingRhythm !default;
+$spacing-double:                $spacingRhythm * 2 !default;
+$spacing-half:                  $spacingRhythm / 2 !default;
+$spacing-third:                 $spacingRhythm / 3 !default;
+$spacing-quarter:               $spacingRhythm / 4 !default;
+$spacing-fifth:                 $spacingRhythm / 5 !default;
+$spacing-sixth:                 $spacingRhythm / 6 !default;
+$spacing-eighth:                $spacingRhythm / 8 !default;
 
 
 // Spacing Map
