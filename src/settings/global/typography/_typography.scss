@@ -20,62 +20,62 @@
 // Font families
 // -----------------------------------------------------------------------------
 
-$fontFamily-sans:               ("Helvetica Neue", Arial, sans-serif);
-$fontFamily-serif:              (Georgia, "Times New Roman", serif);
-$fontFamily-mono:               (Menlo, Monaco, Consolas, monospace);
-$fontFamily-headings:           ("Open Sans", "Helvetica Neue" Arial, sans-serif);
+$fontFamily-sans:               ("Helvetica Neue", Arial, sans-serif) !default;
+$fontFamily-serif:              (Georgia, "Times New Roman", serif) !default;
+$fontFamily-mono:               (Menlo, Monaco, Consolas, monospace) !default;
+$fontFamily-headings:           ("Open Sans", "Helvetica Neue" Arial, sans-serif) !default;
 
 
 // Font sizes
 // -----------------------------------------------------------------------------
 
-$fontSize-root:                 16px; // 1
-$fontSize-base:                 1rem; // 2
-$fontSize-hero:                 $fontSize-base * 3;
-$fontSize-largest:              $fontSize-base * 2.5;
-$fontSize-larger:               $fontSize-base * 2;
-$fontSize-large:                $fontSize-base * 1.5;
-$fontSize-small:                $fontSize-base * 1.25;
-$fontSize-smaller:              $fontSize-base * 1.125;
-$fontSize-smallest:             $fontSize-base * 0.875;
-$fontSize-tiny:                 $fontSize-base * 0.75;
+$fontSize-root:                 16px !default; // 1
+$fontSize-base:                 1rem !default; // 2
+$fontSize-hero:                 $fontSize-base * 3 !default;
+$fontSize-largest:              $fontSize-base * 2.5 !default;
+$fontSize-larger:               $fontSize-base * 2 !default;
+$fontSize-large:                $fontSize-base * 1.5 !default;
+$fontSize-small:                $fontSize-base * 1.25 !default;
+$fontSize-smaller:              $fontSize-base * 1.125 !default;
+$fontSize-smallest:             $fontSize-base * 0.875 !default;
+$fontSize-tiny:                 $fontSize-base * 0.75 !default;
 
 
 // Line heights
 // -----------------------------------------------------------------------------
 
-$lineHeight-base:               1.5; // 3
-$lineHeight-hero:               2.5;
-$lineHeight-largest:            2.25;
-$lineHeight-larger:             2;
-$lineHeight-large:              1.75;
-$lineHeight-small:              1.25;
-$lineHeight-smaller:            1.1;
-$lineHeight-smallest:           1;
-$lineHeight-tiny:               0.9;
+$lineHeight-base:               1.5 !default; // 3
+$lineHeight-hero:               2.5 !default;
+$lineHeight-largest:            2.25 !default;
+$lineHeight-larger:             2 !default;
+$lineHeight-large:              1.75 !default;
+$lineHeight-small:              1.25 !default;
+$lineHeight-smaller:            1.1 !default;
+$lineHeight-smallest:           1 !default;
+$lineHeight-tiny:               0.9 !default;
 
 
 // Font weights
 // -----------------------------------------------------------------------------
 
-$fontWeight-thin:               300;
-$fontWeight-normal:             400;
-$fontWeight-medium:             500;
-$fontWeight-semibold:           600;
-$fontWeight-bold:               700;
-$fontWeight-black:              900;
+$fontWeight-thin:               300 !default;
+$fontWeight-normal:             400 !default;
+$fontWeight-medium:             500 !default;
+$fontWeight-semibold:           600 !default;
+$fontWeight-bold:               700 !default;
+$fontWeight-black:              900 !default;
 
 
 // Letter spacing
 // -----------------------------------------------------------------------------
 
-$letterSpacing-base:            0;
-$letterSpacing-largest:         remCalc(3px);
-$letterSpacing-larger:          remCalc(2px);
-$letterSpacing-large:           remCalc(1px);
-$letterSpacing-small:           remCalc(-1px);
-$letterSpacing-smaller:         remCalc(-2px);
-$letterSpacing-smallest:        remCalc(-3px);
+$letterSpacing-base:            0 !default;
+$letterSpacing-largest:         remCalc(3px) !default;
+$letterSpacing-larger:          remCalc(2px) !default;
+$letterSpacing-large:           remCalc(1px) !default;
+$letterSpacing-small:           remCalc(-1px) !default;
+$letterSpacing-smaller:         remCalc(-2px) !default;
+$letterSpacing-smallest:        remCalc(-3px) !default;
 
 
 

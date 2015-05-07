@@ -11,7 +11,7 @@
 // Overlay fill
 // -----------------------------------------------------------------------------
 
-$overlay-fill:                  rgba(color("greys", "darker"), 0.7);
+$overlay-fill:                  rgba(color("greys", "darker"), 0.7) !default;
 
 
 // Overlay Map

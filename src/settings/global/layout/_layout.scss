@@ -11,10 +11,10 @@
 // -----------------------------------------------------------------------------
 
 // Max Width
-$layout-widthMax:               remCalc(1200px);
+$layout-widthMax:               remCalc(1200px) !default;
 
 // Fixed Width
-$layout-widthFixed:             90%;
+$layout-widthFixed:             90% !default;
 
 
 // Layout Map
