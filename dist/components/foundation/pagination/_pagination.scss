@@ -10,6 +10,7 @@
 // If any library overrides or extra CSS is needed, declare it here.
 //
 // 1. If set to false, there is no outputted CSS for this component.
+// 2. Foundation forces certain extra specificity
 //
 // -----------------------------------------------------------------------------
 
@@ -20,11 +21,10 @@
 
     .pagination-list {
         @include pagination($use-default-classes: false);
-        display: inline-block;
+        display: $pagination-display;
     }
 
-    // Specificity needed to overwrite foundation's style
-    li.pagination-item {
+    li.pagination-item { // 2
         cursor: $cursor-pointer-value;
 
         &:first-child {
@@ -36,15 +36,16 @@
         }
     }
 
-    li.pagination-item--current {
+    li.pagination-item--current { // 2
         @include pagination-current-item();
     }
 
-    .pagination-item {
+    .pagination-link {
 
         .pagination-item--current & {
-            border-radius: 0;
+            border-radius: $pagination-link-borderRadius--current;
         }
+
     }
 
 }

@@ -132,16 +132,16 @@
 
     .form-input.has-action {
 
-        float: left;
+        float: $inputAction-floatDirection;
         padding-right: $inputAction-input-paddingRight;
 
         + .button--inputAction {
-            background: $input-bg-color;
+            background: $inputAction-backgroundColor;
             border: 0;
-            border-radius: 0 $input-border-radius $input-border-radius 0;
+            border-radius: $inputAction-borderRadius;
             float: left;
             height: $inputAction-button-width;
-            margin: remCalc($input-border-width) 0 0 $inputAction-button-marginLeft;
+            margin: $inputAction-margin;
             width: $inputAction-button-width;
         }
 
@@ -313,7 +313,7 @@
 
     .switch-description--left {
         color: $switch-description-selected-color;
-        margin-right: 5px;
+        margin-right: $switch-description-spacing;
 
         .switch--checked & {
             color: $switch-description-unselected-color;
@@ -322,7 +322,7 @@
 
     .switch-description--right {
         color: $switch-description-unselected-color;
-        margin-left: 5px;
+        margin-left: $switch-description-spacing;
 
         .switch--checked & {
             color: $switch-description-selected-color;
@@ -349,7 +349,7 @@
 
     .form-actions > * {
         display: inline-block;
-        margin: 0 0 0 spacing("half");
+        margin: $form-actions-margin;
         vertical-align: baseline;
     }
 
@@ -379,9 +379,9 @@
 
         @include square($form-inputIndicator-size);
         float: left;
-        margin-left: - remCalc(30px); // 1
+        margin: $form-inputIndicator-margin; // 1
         position: relative;
-        top: remCalc(10px); // 1
+        top: $form-inputIndicator-top; // 1
 
         .form-prefixPostfix & {
             top: 0; //specific override due to flexbox middle alignment.
@@ -410,7 +410,7 @@
     .form-field--warning {
 
         .form-input {
-            float: left;
+            float: left; //needed to place icons in the inputs
         }
 
     }

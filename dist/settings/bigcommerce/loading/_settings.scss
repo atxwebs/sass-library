@@ -38,6 +38,9 @@ $loadingNotification-label-horizontalSpacing: spacing("half");
 
 $loadingOverlay-minHeight: 120px;
 $loadingOverlay-background: rgba(color("whites", "bright"), 0.9);
+$loadingOverlay-transitionProperty: all;
+$loadingOverlay-transitionSpeed: 250ms;
+$loadingOverlay-transitionEase: ease-out;
 
 $loadingOverlay-spinner-size: 80px;
 $loadingOverlay-spinner-borderWidth: 1px;

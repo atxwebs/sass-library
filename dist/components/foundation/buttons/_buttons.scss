@@ -10,6 +10,7 @@
 // If any overrides / extra CSS is needed, declare it here.
 //
 // 1. If set to false, there is no outputted CSS for this component.
+// 2. The $button-radius variable isn't actually used in Foundations mixin. Smart.
 //
 // -----------------------------------------------------------------------------
 
@@ -23,9 +24,9 @@
         @include button-base;
         @include buttonVariant("default");
         @include buttonSize("default");
-        border-radius: $global-radius;
+        border-radius: $button-radius; // 2
         outline: none;
-        vertical-align: middle;
+        vertical-align: $button-vAlign;
 
         &:focus,
         &.is-active,
@@ -35,7 +36,7 @@
         }
 
         + .button {
-            margin-left: spacing("half");
+            margin-left: $button-adjacentButton-marginLeft;
         }
     }
 

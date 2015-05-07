@@ -20,24 +20,28 @@
 
     .accordion {
         @include accordion-container;
-        margin-bottom: spacing("single");
+        margin: $accordion-margin;
     }
 
     .accordion-navigation {
         @include accordion-navigation($active_class: "is-open");
-        border: container("border", "dark");
+        border: $accordion-navigation-border;
+        border-width: $accordion-navigation-borderWidth;
         cursor: $cursor-pointer-value;
-        text-transform: uppercase;
+
+        .accordion-title {
+            padding: $accordion-title-padding;
+        }
     }
 
     .accordion-title {
-        font-weight: $font-weight-bold;
+        font-weight: $accordion-title-fontWeight;
     }
 
     .accordion-content {
         @include accordion-content($active_class: "is-open");
-        border: container("border", "dark");
-        border-width: 0 1px;
+        border: $accordion-content-border;
+        border-width: $accordion-content-borderWidth;
     }
 
 }
