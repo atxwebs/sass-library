@@ -1,68 +1,102 @@
-////////////////////////////////////////////////////////////////////////////////
+// =============================================================================
+// CONTAINERS
+// =============================================================================
 //
-// Containers
+// Purpose:
+// The centralised place to control container settings like borders and fill.
 //
-// Purpose: Centralised place to control container settings like borders and fill
-//
-////////////////////////////////////////////////////////////////////////////////
+// -----------------------------------------------------------------------------
 
-$border-global-size: 1px;
-$border-global-style: solid;
-$border-global-base: $border-global-style $border-global-size color("greys", "lighter");
-$border-global-dark: $border-global-style $border-global-size color("greys", "light");
 
-// Containers Map
+// Borders
+// -----------------------------------------------------------------------------
+
+$container-border-global-size:          1px !default;
+$container-border-global-style:         solid !default;
+$container-border-global-color-base:    color("greys", "lighter") !default;
+$container-border-global-color-dark:    color("greys", "light") !default;
+$container-border-global-base:          $container-border-global-style $container-border-global-size color("greys", "lighter") !default;
+$container-border-global-dark:          $container-border-global-style $container-border-global-size color("greys", "light") !default;
+
+
+// Drop shadows
+// -----------------------------------------------------------------------------
+
+$container-drop-shadow-base:             0 2px 0 rgba(color("greys", "light"), 0.7) !default;
+
+
+// Backgrounds
+// -----------------------------------------------------------------------------
+
+$container-fill-base:                   color("whites", "bright") !default;
+$container-fill-dark:                   color("greys", "lightest") !default;
+
+
+// Padding
+// -----------------------------------------------------------------------------
+
+$container-padding-base:                spacing("single") !default;
+$container-padding-large:               spacing("double") !default;
+
+
+// Margin
+// -----------------------------------------------------------------------------
+
+$container-margin-base:                 spacing("single") !default;
+
+
+
+
+// Containers map
+// -----------------------------------------------------------------------------
+
 $containersMap: (
-
     border: (
-        base: $border-global-base,
-        dark: $border-global-dark
+        base: $container-border-global-base,
+        dark: $container-border-global-dark
     ),
 
     borderColor: (
-        base: color("greys", "lighter"),
-        dark: color("greys", "light")
+        base: $container-border-global-color-base,
+        dark: $container-border-global-color-dark
     ),
 
     borderSize: (
-        base: $border-global-size
+        base: $container-border-global-size
     ),
 
     borderStyle: (
-        base: $border-global-style
+        base: $container-border-global-style
     ),
 
     dropShadow: (
-        base: 0 2px 0 rgba(color("greys", "light"), 0.7)
+        base: $container-drop-shadow-base
     ),
 
     fill: (
-        base: color("whites", "bright"),
-        dark: color("greys", "lightest")
-    ),
-
-    padding: (
-        base: spacing("single"),
-        large: spacing("double"),
+        base: $container-fill-base,
+        dark: $container-fill-dark
     ),
 
     margin: (
-        base: spacing("single")
-    )
+        base: $container-margin-base
+    ),
 
+    padding: (
+        base: $container-padding-base,
+        large: $container-padding-large
+    )
 );
 
 
-// Color Map Function
+// Containers map function
 // -----------------------------------------------------------------------------
 
 @function container($property, $variant: "base") {
-
     @if map-has-key($containersMap, $property) {
         @return map-get(map-get($containersMap, $property), $variant);
     }
 
     @warn "Unknown `#{$property}` in $containersMap.";
     @return null
-
 }
