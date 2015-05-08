@@ -23,13 +23,13 @@
 }
 
 // scss-lint:disable ZeroUnit
-@function convertToRem($value, $base-value: $fontSizeBase) {
+@function convertToRem($value, $base-value: $fontSize-base) {
     $value: stripUnit($value) / stripUnit($base-value) * 1rem;
     @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
     @return $value;
 }
 
-@function remCalc($values, $base-value: $fontSizeRoot) {
+@function remCalc($values, $base-value: $fontSize-root) {
 
     $max: length($values);
 
