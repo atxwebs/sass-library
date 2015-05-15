@@ -13,75 +13,75 @@
 //
 // -----------------------------------------------------------------------------
 
-// $include-html-form-classes: $include-html-classes;
+$include-html-form-classes:          $include-html-classes;
 
 // We use this to set the base for lots of form spacing and positioning styles
-$form-spacing: spacing("single");
+$form-spacing:                       spacing("single");
 
 // We use these to style the labels in different ways
-$form-label-pointer: pointer;
-$form-label-font-size: fontSize("base");
-$form-label-font-weight: fontWeight("medium");
-$form-label-line-height: lineHeight("base");
-$form-label-font-color: $body-font-color;
-$form-label-small-transform: none;
-$form-label-bottom-margin: 1rem;
+$form-label-pointer:                 pointer;
+$form-label-font-size:               fontSize("base");
+$form-label-font-weight:             fontWeight("medium");
+$form-label-line-height:             lineHeight("base");
+$form-label-font-color:              $body-font-color;
+$form-label-small-transform:         none;
+$form-label-bottom-margin:           1rem;
 
-// $input-font-family: inherit;
-$input-font-color: $body-font-color;
-$input-font-size: fontSize("base");
-$input-bg-color: color("greys", "lightest");
-$input-focus-bg-color: color("whites", "bright");
-$input-border-color: container("borderColor", "dark");
-$input-focus-border-color: color("primary");
-$input-border-style: solid;
-$input-border-width: 1px;
-$input-border-radius: 0;
-$input-disabled-bg: color("whites");
-// $input-disabled-cursor: $cursor-default-value;
-$input-box-shadow: none;
-$input-include-glowing-effect: false;
+// $input-font-family:               inherit;
+$input-font-color:                   $body-font-color;
+$input-font-size:                    fontSize("base");
+$input-bg-color:                     color("greys", "lightest");
+$input-focus-bg-color:               color("whites", "bright");
+$input-border-color:                 container("borderColor", "dark");
+$input-focus-border-color:           color("primary");
+$input-border-style:                 solid;
+$input-border-width:                 1px;
+$input-border-radius:                0;
+$input-disabled-bg:                  color("whites");
+$input-disabled-cursor:              not-allowed;
+$input-box-shadow:                   none;
+$input-include-glowing-effect:       false;
 
 // We use these to style the fieldset border and spacing.
-// $fieldset-border-style: solid;
-$fieldset-border-width: 0;
-// $fieldset-border-color: $gainsboro;
-$fieldset-padding: 0;
-$fieldset-margin: 0;
+$fieldset-border-style:              solid;
+$fieldset-border-width:              0;
+$fieldset-border-color:              container("borderColor", "dark");
+$fieldset-padding:                   0;
+$fieldset-margin:                    0;
 
 // We use these to style the legends when you use them
-$legend-bg: transparent;
-$legend-font-weight: fontWeight("bold");
-$legend-padding: 0;
+$legend-bg:                          container("fill");
+$legend-font-weight:                 fontWeight("bold");
+$legend-padding:                     container("padding") (container("padding") + spacing("quarter"));
 
 // We use these to style the prefix and postfix input elements
-// $input-prefix-bg: scale-color($white, $lightness: -5%);
-// $input-prefix-border-color: scale-color($white, $lightness: -20%);
-// $input-prefix-border-size: 1px;
-// $input-prefix-border-type: solid;
-// $input-prefix-overflow: hidden;
-// $input-prefix-font-color: $oil;
-// $input-prefix-font-color-alt: $white;
+$input-prefix-bg:                    null;
+$input-prefix-border-color:          null;
+$input-prefix-border-size:           null;
+$input-prefix-border-type:           null;
+$input-prefix-overflow:              null;
+$input-prefix-font-color:            null;
+$input-prefix-font-color-alt:        null;
 
 // We use this setting to turn on/off HTML5 number spinners (the up/down arrows)
-// $input-number-spinners: true;
+$input-number-spinners:              true;
 
 // We use these to style the error states for inputs and labels
-// $input-error-message-padding: rem-calc(6 9 9);
-// $input-error-message-top: -1px;
-// $input-error-message-font-size: rem-calc(12);
-// $input-error-message-font-weight: $font-weight-normal;
-// $input-error-message-font-style: italic;
-// $input-error-message-font-color: $white;
-// $input-error-message-font-color-alt: $oil;
+$input-error-message-padding:        null;
+$input-error-message-top:            null;
+$input-error-message-font-size:      null;
+$input-error-message-font-weight:    null;
+$input-error-message-font-style:     null;
+$input-error-message-font-color:     null;
+$input-error-message-font-color-alt: null;
 
 // We use this to style the glowing effect of inputs when focused
-// $glowing-effect-fade-time: 0.45s;
-// $glowing-effect-color: $input-focus-border-color;
+$glowing-effect-fade-time:           null;
+$glowing-effect-color:               null;
 
 // Select variables
-$select-bg-color: color("whites", "bright");
-$select-hover-bg-color: color("whites", "bright");
+$select-bg-color:                    color("whites", "bright");
+$select-hover-bg-color:              color("whites", "bright");
 
 
 // Bigcommerce Variables
@@ -94,41 +94,46 @@ $select-hover-bg-color: color("whites", "bright");
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--forms:                    $exportCSS; // 1
+$exportCSS--forms:                   $exportCSS; // 1
 
-$form-verticalSpacing: spacing("single") * 1.5;
+$form-verticalSpacing:               spacing("single") * 1.5;
 
-$form-margin: 0;
+$form-margin:                        0;
 
-$legend-fontFamily: fontFamily("headingSans");
-$legend-fontSize: $h2-font-size;
-$legend-lineHeight: $header-line-height;
-$legend-marginBottom: spacing("half");
+$legend-border-style:                solid;
+$legend-border-width:                0 0 1px;
+$legend-border-color:                container("borderColor", "dark");
+$legend-display:                     block;
+$legend-fontFamily:                  fontFamily("headingSans");
+$legend-fontSize:                    $h2-font-size;
+$legend-lineHeight:                  lineHeight("base");
+$legend-marginBottom:                0;
+$legend-width:                       100%;
 
-$formField-maxWidth: none;
-$formField-margin: 0 0 $form-verticalSpacing;
+$formField-maxWidth:                 none;
+$formField-margin:                   0 0 $form-verticalSpacing;
 
-$form-label-small-color: color("greys", "medium");
-$form-label-small-fontSize: fontSize("base");
-$form-label-small-fontWeight: fontWeight("normal");
+$form-label-small-color:             color("greys", "medium");
+$form-label-small-fontSize:          fontSize("base");
+$form-label-small-fontWeight:        fontWeight("normal");
 
-$input-placeholder-color: color("greys");
-$input-disabled-color: color("greys", "light");
-$input-boxShadow: 1px 1px 0 rgba($input-border-color, 0.4);
-$input-focus-boxShadow: 0 0 2px rgba(color("primary"), 0.4);
-$input-fontSmoothing: true;
-$input-height: $form-spacing * 2;
-$input-margin: 0;
-$input-horizontalPadding: ($form-spacing / 1.5);
-$input-verticalPadding: ($form-spacing / 2);
-$input-padding: $input-verticalPadding $input-horizontalPadding;
-$input-transition: all 100ms ease-out;
+$input-placeholder-color:            color("greys");
+$input-disabled-color:               color("greys", "light");
+$input-boxShadow:                    1px 1px 0 rgba($input-border-color, 0.4);
+$input-focus-boxShadow:              0 0 2px rgba(color("primary"), 0.4);
+$input-fontSmoothing:                true;
+$input-height:                       $form-spacing * 2;
+$input-margin:                       0;
+$input-horizontalPadding:            ($form-spacing / 1.5);
+$input-verticalPadding:              ($form-spacing / 2);
+$input-padding:                      $input-verticalPadding $input-horizontalPadding;
+$input-transition:                   all 100ms ease-out;
 
-$select-boxShadow: $input-boxShadow;
-$select-height: $input-height;
-$select-margin: 0;
-$select-maxWidth: none;
-$select-outline: 0;
-$select-paddingRight: $form-spacing;
-$select-focus-borderColor: $input-focus-border-color;
-$select-focus-boxShadow: $input-focus-boxShadow;
+$select-boxShadow:                   $input-boxShadow;
+$select-height:                      $input-height;
+$select-margin:                      0;
+$select-maxWidth:                    none;
+$select-outline:                     0;
+$select-paddingRight:                $form-spacing;
+$select-focus-borderColor:           $input-focus-border-color;
+$select-focus-boxShadow:             $input-focus-boxShadow;

@@ -20,6 +20,9 @@
 
     .accordion {
         @include accordion-container;
+        border: $accordion-border;
+        border-width: $accordion-borderWidth;
+        box-shadow: $accordion-boxShadow;
         margin: $accordion-margin;
     }
 
@@ -32,10 +35,12 @@
         .accordion-title {
             padding: $accordion-title-padding;
         }
+
     }
 
     .accordion-title {
         font-weight: $accordion-title-fontWeight;
+        line-height: $accordion-title-lineHeight;
     }
 
     .accordion-content {

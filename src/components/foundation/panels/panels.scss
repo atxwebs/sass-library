@@ -19,22 +19,19 @@
         position: relative;
     }
 
-    // Panel header
     .panel-header {
         background-color: $panel-header-bg;
+        border: $panel-header-borderColor $panel-header-borderStyle;
+        border-width: $panel-header-borderWidth;
         margin: $panel-header-margin;
         padding: $panel-header-padding;
     }
 
-    // Panel Title
     .panel-title {
-        font-size: $panel-title-fontSize;
-        font-weight: $panel-title-fontWeight;
         line-height: $panel-title-lineHeight;
         margin: $panel-title-margin;
     }
 
-    // Panel body
     .panel-body {
 
         @include panel;

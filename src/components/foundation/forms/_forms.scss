@@ -25,15 +25,21 @@
     }
 
     .form-fieldset {
-        border: $fieldset-border-width $fieldset-border-style $fieldset-border-color;
+        border: $fieldset-border-style $fieldset-border-color;
+        border-width: $fieldset-border-width;
         margin: $fieldset-margin;
         padding: $fieldset-padding;
     }
 
     .form-legend {
         background: $legend-bg;
+        border: $legend-border-style $legend-border-color;
+        border-width: $legend-border-width;
+        display: $legend-display;
+        line-height: $legend-lineHeight;
         margin-bottom: $legend-marginBottom;
         padding: $legend-padding;
+        width: $legend-width;
     }
 
     .form-field {
