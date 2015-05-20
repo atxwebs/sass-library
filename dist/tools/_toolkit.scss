@@ -11,7 +11,12 @@
 // -----------------------------------------------------------------------------
 
 @mixin breakpoint($size) {
-    @media (min-width: screenSize($size)) { @content; }
+    @if type-of($size) == "number" {
+        @media (min-width: $size) { @content; }
+    }
+    @else {
+        @media (min-width: screenSize($size)) { @content; }
+    }
 }
 
 
