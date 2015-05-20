@@ -10,27 +10,35 @@
 // All variables that are not from Foundation should be placed here.
 //
 // 1. Choose whether to include the Bigcommerce class names
+// 2. Foundation uses this variable in a mixin. If you assign short hand padding
+//    values to it, it throws a sass warning. Will only accept a single value.
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--accordion:            $exportCSS; // 1
+$exportCSS--accordion:                   $exportCSS; // 1
 
-$accordion-margin: 0 0 spacing("single");
+$accordion-borderColor:                  container("borderColor", "dark");
+$accordion-borderStyle:                  container("borderStyle");
+$accordion-borderWidth:                  0 1px 1px;
+$accordion-border:                       $accordion-borderColor $accordion-borderStyle;
+$accordion-boxShadow:                    container("dropShadow");
+$accordion-margin:                       0 0 container("margin");
 
-$accordion-navigation-borderColor: container("borderColor", "dark");
-$accordion-navigation-borderStyle: container("borderStyle");
-$accordion-navigation-borderWidth: 0 0 1px;
-$accordion-navigation-border: $accordion-navigation-borderColor $accordion-navigation-borderStyle;
-$accordion-navigation-paddingHorizontal: spacing("single");
-$accordion-navigation-paddingVertical: spacing("single");
+$accordion-navigation-borderColor:       $accordion-borderColor;
+$accordion-navigation-borderStyle:       $accordion-borderStyle;
+$accordion-navigation-borderWidth:       1px 0 0;
+$accordion-navigation-border:            $accordion-border;
+$accordion-navigation-paddingHorizontal: container("padding");
+$accordion-navigation-paddingVertical:   container("padding");
 
-$accordion-title-fontWeight: $font-weight-bold;
-$accordion-title-padding: $accordion-navigation-paddingVertical $accordion-navigation-paddingHorizontal;
+$accordion-title-fontWeight:             $font-weight-bold;
+$accordion-title-lineHeight:             lineHeight("base");
+$accordion-title-padding:                $accordion-navigation-paddingVertical $accordion-navigation-paddingHorizontal;
 
-$accordion-content-borderColor: $accordion-navigation-borderColor;
-$accordion-content-borderStyle: $accordion-navigation-borderStyle;
-$accordion-content-borderWidth: 0 0 1px;
-$accordion-content-border: $accordion-navigation-border;
+$accordion-content-borderColor:          $accordion-borderColor;
+$accordion-content-borderStyle:          $accordion-borderStyle;
+$accordion-content-borderWidth:          1px 0 0;
+$accordion-content-border:               $accordion-border;
 
 // Foundation Variables
 // -----------------------------------------------------------------------------
@@ -42,15 +50,15 @@ $accordion-content-border: $accordion-navigation-border;
 //
 // -----------------------------------------------------------------------------
 
-$include-html-accordion-classes: $include-html-classes;
+$include-html-accordion-classes:         $include-html-classes;
 
-$accordion-navigation-padding: $accordion-navigation-paddingHorizontal;
-$accordion-navigation-bg-color: container("fill");
-$accordion-navigation-hover-bg-color: color("greys", "light");
-$accordion-navigation-active-bg-color: color("greys", "lighter");
-$accordion-navigation-font-color: color("greys", "darker");
-$accordion-navigation-font-size: fontSize("base");
-$accordion-navigation-font-family: fontFamily("sans");
+$accordion-navigation-padding:           $accordion-navigation-paddingHorizontal; // 2
+$accordion-navigation-bg-color:          container("fill");
+$accordion-navigation-hover-bg-color:    color("greys", "light");
+$accordion-navigation-active-bg-color:   container("fill");
+$accordion-navigation-font-color:        color("greys", "darker");
+$accordion-navigation-font-size:         fontSize("base");
+$accordion-navigation-font-family:       fontFamily("sans");
 
-$accordion-content-padding: spacing("double");
-$accordion-content-active-bg-color: container("fill");
+$accordion-content-padding:              container("padding");
+$accordion-content-active-bg-color:      container("fill");
