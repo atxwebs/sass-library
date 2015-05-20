@@ -11,12 +11,7 @@
 // -----------------------------------------------------------------------------
 
 @mixin breakpoint($size) {
-    @if type-of($size) == "number" {
-        @media (min-width: $size) { @content; }
-    }
-    @else {
-        @media (min-width: screenSize($size)) { @content; }
-    }
+    @media (min-width: screenSize($size)) { @content; }
 }
 
 
@@ -50,7 +45,7 @@
 }
 
 
-// =============================================================================
+//
 // Square
 // =============================================================================
 
@@ -59,11 +54,34 @@
     width: remCalc($size);
 }
 
-// =============================================================================
+
+//
 // Circle
 // =============================================================================
 
 @mixin circle($size) {
     @include square($size);
     border-radius: remCalc($size);
+}
+
+
+//
+// Vertical position middle
+// -----------------------------------------------------------------------------
+
+@mixin verticalPositionMiddle($position: "relative") {
+
+    @if $position == "relative" {
+
+        position: relative;
+
+    }
+    @else if $position == "absolute" {
+
+        position: absolute;
+
+    }
+
+    top: 50%;
+    transform: translateY(-50%);
 }

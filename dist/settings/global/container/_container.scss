@@ -13,36 +13,36 @@
 
 $container-border-global-size:          1px !default;
 $container-border-global-style:         solid !default;
-$container-border-global-color-base:    color("greys", "lighter") !default;
-$container-border-global-color-dark:    color("greys", "light") !default;
-$container-border-global-base:          $container-border-global-style $container-border-global-size color("greys", "lighter") !default;
-$container-border-global-dark:          $container-border-global-style $container-border-global-size color("greys", "light") !default;
+$container-border-global-color-base:    $color-greyLight !default;
+$container-border-global-color-dark:    $color-grey !default;
+$container-border-global-base:          $container-border-global-size $container-border-global-style $color-greyLight !default;
+$container-border-global-dark:          $container-border-global-size $container-border-global-style $color-grey !default;
 
 
 // Drop shadows
 // -----------------------------------------------------------------------------
 
-$container-drop-shadow-base:             0 2px 0 rgba(color("greys", "light"), 0.7) !default;
+$container-drop-shadow-base:             0 2px 0 rgba($color-greyLight, 0.6) !default;
 
 
 // Backgrounds
 // -----------------------------------------------------------------------------
 
-$container-fill-base:                   color("whites", "bright") !default;
-$container-fill-dark:                   color("greys", "lightest") !default;
+$container-fill-base:                   $color-white !default;
+$container-fill-dark:                   $color-greyLight !default;
 
 
 // Padding
 // -----------------------------------------------------------------------------
 
-$container-padding-base:                spacing("single") !default;
-$container-padding-large:               spacing("double") !default;
+$container-padding-base:                $spacing-single !default;
+$container-padding-large:               $spacing-double !default;
 
 
 // Margin
 // -----------------------------------------------------------------------------
 
-$container-margin-base:                 spacing("single") !default;
+$container-margin-base:                 $spacing-single !default;
 
 
 

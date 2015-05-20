@@ -40,7 +40,7 @@
             }
         }
 
-        &-section--right {
+        &-section--alt {
             float: $navBar-item-floatOppositeDirection;
             margin-#{$navBar-item-floatDirection}: $navBar-section-margin;
         }
