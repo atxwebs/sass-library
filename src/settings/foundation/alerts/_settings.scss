@@ -13,26 +13,26 @@
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--alerts:            $exportCSS; // 1
+$exportCSS--alerts:                $exportCSS !default; // 1
 
 
 // Color/State Modifiers
 // -----------------------------------------------------------------------------
 
-$alert-generic-bgColor:             color("greys", "light");
-$alert-generic-iconColor:           color("greys");
+$alert-generic-bgColor:            color("greys", "light") !default;
+$alert-generic-iconColor:          color("greys") !default;
 
-$alert-info-bgColor:                color("info", "light");
-$alert-info-iconColor:              color("info");
+$alert-info-bgColor:               color("info", "light") !default;
+$alert-info-iconColor:             color("info") !default;
 
-$alert-success-bgColor:             color("success", "light");
-$alert-success-iconColor:           color("success");
+$alert-success-bgColor:            color("success", "light") !default;
+$alert-success-iconColor:          color("success") !default;
 
-$alert-warning-bgColor:             color("warning", "light");
-$alert-warning-iconColor:           color("warning");
+$alert-warning-bgColor:            color("warning", "light") !default;
+$alert-warning-iconColor:          color("warning") !default;
 
-$alert-error-bgColor:               color("error", "light");
-$alert-error-iconColor:             color("error");
+$alert-error-bgColor:              color("error", "light") !default;
+$alert-error-iconColor:            color("error") !default;
 
 
 //
@@ -40,19 +40,19 @@ $alert-error-iconColor:             color("error");
 // -----------------------------------------------------------------------------
 
 // Icon control
-$alert-iconSize:                    20px;
+$alert-iconSize:                   20px !default;
 // Buttons
-$alert-button-margin:               0 0 0 spacing("half");
+$alert-button-margin:              0 0 0 spacing("half") !default;
 // Alert Column
-$alert-column-textAlign:            center;
+$alert-column-textAlign:           center !default;
 // Alert Message
-$alert-message-textAlign:           left;
-$alert-message-margin:              0;
+$alert-message-textAlign:          left !default;
+$alert-message-margin:             0 !default;
 // Alert Heading
-$alert-heading-margin:              0;
+$alert-heading-margin:             0 !default;
 // ALert Close
-$alert-close-cursor:                $cursor-pointer-value;
-$alert-close-iconSize:              20px;
+$alert-close-cursor:               $cursor-pointer-value !default;
+$alert-close-iconSize:             20px !default;
 
 // Foundation Variables
 // -----------------------------------------------------------------------------
@@ -64,42 +64,43 @@ $alert-close-iconSize:              20px;
 //
 // -----------------------------------------------------------------------------
 
-$include-html-alert-classes:        $include-html-classes;
+$include-html-alert-classes:       $include-html-classes !default;
 
 // We use this to control alert padding.
-$alert-padding-top:                 spacing("base");
-$alert-padding-default-float:       spacing("single");
-$alert-padding-opposite-direction:  $alert-padding-default-float;
-// $alert-padding-bottom:              $alert-padding-top !default;
+$alert-padding-top:                spacing("base") !default;
+$alert-padding-default-float:      spacing("single") !default;
+$alert-padding-opposite-direction: $alert-padding-default-float !default;
+$alert-padding-bottom:             $alert-padding-top !default;
 
 // We use these to control text style.
-// $alert-font-weight:                 $font-weight-normal !default;
-$alert-font-size:                   fontSize("base");
-$alert-font-color:                  $body-font-color;
-$alert-font-color-alt:              $body-font-color;
+$alert-font-weight:                $font-weight-normal !default;
+$alert-font-size:                  fontSize("base") !default;
+$alert-font-color:                 $body-font-color !default;
+$alert-font-color-alt:             $body-font-color !default;
 
 // We use this for close hover effect.
-$alert-function-factor:             0%;
+$alert-function-factor:            0% !default;
 
 // We use these to control border styles.
-$alert-border-style:                none;
-// $alert-border-width:                1px !default;
-// $alert-border-color:                scale-color($primary-color, $lightness: $alert-function-factor) !default;
-$alert-bottom-margin:               spacing("half");
+$alert-border-style:               none !default;
+$alert-border-width:               null !default;
+$alert-border-color:               null !default;
+$alert-bottom-margin:              spacing("half") !default;
 
 // We use these to style the close buttons
-$alert-close-color:                 color("greys");
-$alert-close-top:                   spacing("base");
-$alert-close-position:              spacing("base");
-$alert-close-font-size:             fontSize("large");
-$alert-close-opacity:               1;
-$alert-close-opacity-hover:         1;
-$alert-close-padding:               0;
+$alert-close-color:                color("greys") !default;
+$alert-close-top:                  null !default;
+$alert-close-position:             null !default;
+$alert-close-font-size:            null !default;
+$alert-close-opacity:              null !default;
+$alert-close-opacity-hover:        null !default;
+$alert-close-padding:              null !default;
+$alert-close-background:           null !default;
 
 // We use this to control border radius
-// $alert-radius:                      $global-radius !default;
+$alert-radius:                     $global-radius !default;
 
-// $alert-transition-speed:            300ms !default;
-// $alert-transition-ease:             ease-out !default;
+$alert-transition-speed:           300ms !default;
+$alert-transition-ease:            ease-out !default;
 
 

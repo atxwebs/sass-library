@@ -13,7 +13,7 @@
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--grid:            $exportCSS; // 1
+$exportCSS--grid:              $exportCSS !default; // 1
 
 
 // Foundation Variables
@@ -26,11 +26,11 @@ $exportCSS--grid:            $exportCSS; // 1
 //
 // -----------------------------------------------------------------------------
 //
-$include-html-grid-classes: $include-html-classes;
-// $include-xl-html-grid-classes: false;
+$include-html-grid-classes:    $include-html-classes !default;
+$include-xl-html-grid-classes: false !default;
 
-$row-width: remCalc(1000px);
-$total-columns: 12;
-$column-gutter: remCalc(30);
+$row-width:                    remCalc(1000px) !default;
+$total-columns:                12 !default;
+$column-gutter:                remCalc(30) !default;
 
-// $last-child-float: $opposite-direction;
+$last-child-float:             $opposite-direction !default;
