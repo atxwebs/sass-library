@@ -13,17 +13,17 @@
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--actionBar:                          $exportCSS;
+$exportCSS--actionBar:                          $exportCSS !default;
 
-$actionBar-padding-horizontal:                  spacing("half");
-$actionBar-padding-vertical:                    0;
-$actionBar-padding:                             $actionBar-padding-horizontal $actionBar-padding-vertical;
+$actionBar-padding-horizontal:                  spacing("half") !default;
+$actionBar-padding-vertical:                    0 !default;
+$actionBar-padding:                             $actionBar-padding-horizontal $actionBar-padding-vertical !default;
 
-$actionBar-section-float:                       $default-float;
-$actionBar-section-float--alt:                  $opposite-direction;
-$actionBar-section-gutter:                      spacing("single");
+$actionBar-section-float:                       $default-float !default;
+$actionBar-section-float--alt:                  $opposite-direction !default;
+$actionBar-section-gutter:                      spacing("single") !default;
 
-$actionBar-form-field-margin:                   0;
-$actionBar-button-margin:                       0;
+$actionBar-form-field-margin:                   0 !default;
+$actionBar-button-margin:                       0 !default;
 
-$actionBar-text-padding:                        spacing("half") 0;
+$actionBar-text-padding:                        spacing("half") 0 !default;

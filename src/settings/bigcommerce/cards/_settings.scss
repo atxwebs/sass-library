@@ -13,42 +13,42 @@
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--cards:                          $exportCSS;
+$exportCSS--cards:                          $exportCSS !default;
 
-$card-border:                               container("border", "dark");
-$card-marginBottom:                         spacing("double");
+$card-border:                               container("border", "dark") !default;
+$card-marginBottom:                         spacing("double") !default;
 
-$card-figcaption-background:                overlay("fill");
-$card-figcaption-color:                     color("whites", "bright");
-$card-figcaption-textAlign:                 center;
-$card-figcaption-body-paddingHorizontal:    spacing("single");
-$card-figcaption-title-color:               color("whites", "bright");
-$card-figcaption-title-marginBottom:        spacing("eighth");
-$card-figcaption-button-background:         transparent;
-$card-figcaption-button-backgroundHover:    rgba(color("whites", "bright"), 0.2);
-$card-figcaption-button-borderColor:        color("whites", "bright");
-$card-figcaption-button-color:              color("whites", "bright");
+$card-figcaption-background:                overlay("fill") !default;
+$card-figcaption-color:                     color("whites", "bright") !default;
+$card-figcaption-textAlign:                 center !default;
+$card-figcaption-body-paddingHorizontal:    spacing("single") !default;
+$card-figcaption-title-color:               color("whites", "bright") !default;
+$card-figcaption-title-marginBottom:        spacing("eighth") !default;
+$card-figcaption-button-background:         transparent !default;
+$card-figcaption-button-backgroundHover:    rgba(color("whites", "bright"), 0.2) !default;
+$card-figcaption-button-borderColor:        color("whites", "bright") !default;
+$card-figcaption-button-color:              color("whites", "bright") !default;
 
-$card-text-color:                           color("whites", "bright");
+$card-text-color:                           color("whites", "bright") !default;
 
-$card-body-background:                      container("fill");
-$card-body-borderTop:                       container("border", "dark");
-$card-body-paddingVertical:                 (spacing("base") + spacing("eighth"));
-$card-body-paddingHorizontal:               spacing("single");
-$card-body-padding:                         $card-body-paddingVertical $card-body-paddingVertical;
-$card-body-textColor:                       color("greys");
+$card-body-background:                      container("fill") !default;
+$card-body-borderTop:                       container("border", "dark") !default;
+$card-body-paddingVertical:                 (spacing("base") + spacing("eighth")) !default;
+$card-body-paddingHorizontal:               spacing("single") !default;
+$card-body-padding:                         $card-body-paddingVertical $card-body-paddingVertical !default;
+$card-body-textColor:                       color("greys") !default;
 
-$card-title-marginBottom:                   spacing("third");
+$card-title-marginBottom:                   spacing("third") !default;
 
-$card-subTitle-marginBottom:                $card-title-marginBottom;
-$card-subTitle-adjacentCardTitleMarginTop:  (- spacing("eighth"));
+$card-subTitle-marginBottom:                $card-title-marginBottom !default;
+$card-subTitle-adjacentCardTitleMarginTop:  (- spacing("eighth")) !default;
 
-$card-text-fontSize:                        fontSize("base");
+$card-text-fontSize:                        fontSize("base") !default;
 
-$card-footer-borderStyle:                   solid;
-$card-footer-borderColor:                   color("whites", "bright");
-$card-footer-borderWidth:                   1px;
-$card-footer-border:                        $card-footer-borderStyle $card-footer-borderColor;
-$card-footer-padding:                       $card-body-padding;
+$card-footer-borderStyle:                   solid !default;
+$card-footer-borderColor:                   color("whites", "bright") !default;
+$card-footer-borderWidth:                   1px !default;
+$card-footer-border:                        $card-footer-borderStyle $card-footer-borderColor !default;
+$card-footer-padding:                       $card-body-padding !default;
 
-$card-button-width:                         100%;
+$card-button-width:                         100% !default;
