@@ -13,9 +13,9 @@
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--account:            $exportCSS;
+$exportCSS--account:      $exportCSS !default;
 
-$account-name-fontWeight: fontWeight("bold");
+$account-name-fontWeight: fontWeight("bold") !default;
 
 
 // Foundation Variables

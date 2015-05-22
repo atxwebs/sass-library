@@ -13,7 +13,7 @@
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--buttons:                    $exportCSS; // 1
+$exportCSS--buttons:                    $exportCSS !default; // 1
 
 
 // Color/State Modifiers
@@ -116,10 +116,10 @@ $buttonSizeMap: (
     )
 );
 
-$button-vAlign:                         middle;
-$button-focus-boxShadow:                0 0 2px rgba(color("primary"), 0.6);
+$button-vAlign:                         middle !default;
+$button-focus-boxShadow:                0 0 2px rgba(color("primary"), 0.6) !default;
 
-$button-adjacentButton-marginLeft:      spacing("half");
+$button-adjacentButton-marginLeft:      spacing("half") !default;
 
 
 // Foundation Variables
@@ -132,16 +132,16 @@ $button-adjacentButton-marginLeft:      spacing("half");
 //
 // -----------------------------------------------------------------------------
 
-$include-html-button-classes:           $include-html-classes;
+$include-html-button-classes:           $include-html-classes !default;
 
-$button-display:                        inline-block;
-$button-margin-bottom:                  spacing("base");
+$button-display:                        inline-block !default;
+$button-margin-bottom:                  spacing("base") !default;
 
-// $button-font-family:                    $body-font-family;
-// $button-font-weight:                    $font-weight-normal;
-// $button-font-align:                     center;
+$button-font-family:                    $body-font-family !default;
+$button-font-weight:                    $font-weight-normal !default;
+$button-font-align:                     center !default;
 
-$button-border-width:                   1px;
-// $button-border-style:                   solid;
+$button-border-width:                   1px !default;
+$button-border-style:                   solid !default;
 
-$button-radius:                         $global-radius;
+$button-radius:                         $global-radius !default;

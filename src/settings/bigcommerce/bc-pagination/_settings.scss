@@ -13,15 +13,15 @@
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--paginationLimits:            $exportCSS;
+$exportCSS--paginationLimits:   $exportCSS !default;
 
-$pagination-side: right;
+$pagination-side:               right !default;
 
-$pagination-limits-borderStyle: container("borderStyle");
-$pagination-limits-borderColor: container("borderColor", "dark");
-$pagination-limits-borderWidth: 0 0 0 container("borderSize");
+$pagination-limits-borderStyle: container("borderStyle") !default;
+$pagination-limits-borderColor: container("borderColor", "dark") !default;
+$pagination-limits-borderWidth: 0 0 0 container("borderSize") !default;
 
-$pagination-limits-marginLeft: spacing("half");
-$pagination-limits-paddingTop: spacing("third");
-$pagination-limits-paddingSide: spacing("single");
-$pagination-limits-padding: $pagination-limits-paddingTop 0 $pagination-limits-paddingTop $pagination-limits-paddingSide;
+$pagination-limits-marginLeft:  spacing("half") !default;
+$pagination-limits-paddingTop:  spacing("third") !default;
+$pagination-limits-paddingSide: spacing("single") !default;
+$pagination-limits-padding:     $pagination-limits-paddingTop 0 $pagination-limits-paddingTop $pagination-limits-paddingSide !default;

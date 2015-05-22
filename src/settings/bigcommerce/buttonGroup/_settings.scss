@@ -13,7 +13,7 @@
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--buttonGroup:                    $exportCSS; // 1
+$exportCSS--buttonGroup:                    $exportCSS !default; // 1
 
 
 // Foundation Variables
@@ -26,4 +26,4 @@ $exportCSS--buttonGroup:                    $exportCSS; // 1
 //
 // -----------------------------------------------------------------------------
 
-$include-html-button-classes:                $include-html-classes;
+$include-html-button-classes:                $include-html-classes !default;

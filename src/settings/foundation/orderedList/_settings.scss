@@ -13,26 +13,26 @@
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--ordered-list: $exportCSS;
+$exportCSS--ordered-list:     $exportCSS !default;
 
 
 // Ordered-List Variables
 // -----------------------------------------------------------------------------
 
 // ordered list
-$list-style-type: "decimal";
+$list-style-type:             "decimal" !default;
 
 // list item
-$ol-item-border-bot: container("border", "dark");
-$ol-item-font-size: fontSize("base");
-$ol-item-padding: spacing("half") 0;
+$ol-item-border-bot:          container("border", "dark") !default;
+$ol-item-font-size:           fontSize("base") !default;
+$ol-item-padding:             spacing("half") 0 !default;
 
 // list item counter
-$ol-item-counter-color: color("greys", "medium");
-$ol-item-counter-font-family: fontFamily("headingSans");
-$ol-item-counter-font-weight: fontWeight("normal");
-$ol-item-counter-font-size: fontSize("base");
-$ol-item-counter-margin: 0 spacing("half") 0 0;
+$ol-item-counter-color:       color("greys", "medium") !default;
+$ol-item-counter-font-family: fontFamily("headingSans") !default;
+$ol-item-counter-font-weight: fontWeight("normal") !default;
+$ol-item-counter-font-size:   fontSize("base") !default;
+$ol-item-counter-margin:      0 spacing("half") 0 0 !default;
 
 
 // Foundation Variables

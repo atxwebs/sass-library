@@ -13,60 +13,60 @@
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--tabs:                           $exportCSS; // 1
+$exportCSS--tabs:                                $exportCSS !default; // 1
 
-$tab-bg-color:                              transparent;
+$tab-bg-color:                                   transparent !default;
 
-$tabs-bottom-border:                        container("border", "dark");
-$tabs-margin:                               0;
+$tabs-bottom-border:                             container("border", "dark") !default;
+$tabs-margin:                                    0 !default;
 
-$tab-display:                               block;
-$tab-margin:                                0;
+$tab-display:                                    block !default;
+$tab-margin:                                     0 !default;
 
-$tab-title-border-color:                    transparent;
-$tab-title-border-bottom-style:             solid;
-$tab-title-border-bottom-height:            4px;
-$tab-title-border-bottom-offset:            -1px;
+$tab-title-border-color:                         transparent !default;
+$tab-title-border-bottom-style:                  solid !default;
+$tab-title-border-bottom-height:                 4px !default;
+$tab-title-border-bottom-offset:                 -1px !default;
 
-$tab-title-active-border-color:             color("primary", "base");
-$tab-title-active-font-weight:              fontWeight("bold");
+$tab-title-active-border-color:                  color("primary", "base") !default;
+$tab-title-active-font-weight:                   fontWeight("bold") !default;
 
-$tab-navigation-display:                    block;
-$tab-navigation-container-padding:          0;
+$tab-navigation-display:                         block !default;
+$tab-navigation-container-padding:               0 !default;
 
 
 //
 // Vertical tab settings
 // -----------------------------------------------------------------------------
 
-$tabs--vertical-borderBottom:                           0;
-$tabs--vertical-float:                                  $default-float;
-$tabs--vertical-maxWidth:                               20%;
-$tabs--vertical-width:                                  20%;
-$tabs--vertical-tab-float:                              none;
+$tabs--vertical-borderBottom:                    0 !default;
+$tabs--vertical-float:                           $default-float !default;
+$tabs--vertical-maxWidth:                        20% !default;
+$tabs--vertical-width:                           20% !default;
+$tabs--vertical-tab-float:                       none !default;
 
-$tabs-contents--vertical-floatDirection:                $default-float;
-$tabs-contents--vertical-maxWidth:                      80%;
-$tabs-contents--vertical-padding:                       0 spacing("single");
-$tabs-contents--vertical-floatDirection-padding:        spacing("single");
-$tabs-contents--vertical-width:                         80%;
+$tabs-contents--vertical-floatDirection:         $default-float !default;
+$tabs-contents--vertical-maxWidth:               80% !default;
+$tabs-contents--vertical-padding:                0 spacing("single") !default;
+$tabs-contents--vertical-floatDirection-padding: spacing("single") !default;
+$tabs-contents--vertical-width:                  80% !default;
 
 
 // Foundation Variables
 // -----------------------------------------------------------------------------
 
-$include-html-tabs-classes:                 $include-html-classes;
+$include-html-tabs-classes:                      $include-html-classes !default;
 
-$tabs-navigation-padding:                   spacing("half");
-$tabs-navigation-bg-color:                  $tab-bg-color;
-$tabs-navigation-active-bg-color:           $tab-bg-color;
-$tabs-navigation-hover-bg-color:            $tab-bg-color;
-$tabs-navigation-font-color:                color("greys");
-$tabs-navigation-active-font-color:         color("greys", "darker");
-$tabs-navigation-font-size:                 fontSize("base");
-$tabs-navigation-font-family:               fontFamily("sans");
+$tabs-navigation-padding:                        spacing("half") !default;
+$tabs-navigation-bg-color:                       $tab-bg-color !default;
+$tabs-navigation-active-bg-color:                $tab-bg-color !default;
+$tabs-navigation-hover-bg-color:                 $tab-bg-color !default;
+$tabs-navigation-font-color:                     color("greys") !default;
+$tabs-navigation-active-font-color:              color("greys", "darker") !default;
+$tabs-navigation-font-size:                      fontSize("base") !default;
+$tabs-navigation-font-family:                    fontFamily("sans") !default;
 
-$tabs-content-margin-bottom:                spacing("single");
-$tabs-content-padding:                      spacing("single") 0;
+$tabs-content-margin-bottom:                     spacing("single") !default;
+$tabs-content-padding:                           spacing("single") 0 !default;
 
-$tabs-vertical-navigation-margin-bottom:    spacing("single");
+$tabs-vertical-navigation-margin-bottom:         spacing("single") !default;

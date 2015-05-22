@@ -13,29 +13,29 @@
 //
 // -----------------------------------------------------------------------------
 
-$include-html-panel-classes:     $include-html-classes;
+$include-html-panel-classes:     $include-html-classes !default;
 
 // We use these to control the background and border styles
-$panel-bg:                       container("fill");
-$panel-border-style:             container("borderStyle");
-$panel-border-size:              1px;
+$panel-bg:                       container("fill") !default;
+$panel-border-style:             container("borderStyle") !default;
+$panel-border-size:              1px !default;
 
 // We use this % to control how much we darken things on hover
-$panel-function-factor:          0%;
-$panel-border-color:             container("borderColor", "dark");
+$panel-function-factor:          0% !default;
+$panel-border-color:             container("borderColor", "dark") !default;
 
 // We use these to set default inner padding and bottom margin
-$panel-margin-bottom:            container("margin");
-$panel-paddingHorizontal:        container("padding") + spacing("half");
-$panel-paddingVertical:          container("padding");
-$panel-padding:                  $panel-paddingVertical $panel-paddingHorizontal;
+$panel-margin-bottom:            container("margin") !default;
+$panel-paddingHorizontal:        container("padding") + spacing("half") !default;
+$panel-paddingVertical:          container("padding") !default;
+$panel-padding:                  $panel-paddingVertical $panel-paddingHorizontal !default;
 
 // We use these to set default font colors
-$panel-font-color:               $body-font-color;
-$panel-font-color-alt:           color("whites", "bright");
+$panel-font-color:               $body-font-color !default;
+$panel-font-color-alt:           color("whites", "bright") !default;
 
-$panel-header-adjust:            false;
-$callout-panel-link-color:       null;
+$panel-header-adjust:            false !default;
+$callout-panel-link-color:       null !default;
 
 
 // Bigcommerce Variables
@@ -48,26 +48,26 @@ $callout-panel-link-color:       null;
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--panels:              $exportCSS; // 1
+$exportCSS--panels:              $exportCSS !default; // 1
 
-$panel-boxShadow:                none;
+$panel-boxShadow:                none !default;
 
 // Panel header settings
-$panel-header-bg:                $panel-bg;
-$panel-header-borderColor:       $panel-border-color;
-$panel-header-borderStyle:       $panel-border-style;
-$panel-header-borderWidth:       1px 1px 0;
-$panel-header-margin:            0;
-$panel-header-paddingHorizontal: $panel-paddingHorizontal;
-$panel-header-paddingVertical:   $panel-paddingVertical;
-$panel-header-padding:           $panel-header-paddingVertical $panel-header-paddingHorizontal;
+$panel-header-bg:                $panel-bg !default;
+$panel-header-borderColor:       $panel-border-color !default;
+$panel-header-borderStyle:       $panel-border-style !default;
+$panel-header-borderWidth:       1px 1px 0 !default;
+$panel-header-margin:            0 !default;
+$panel-header-paddingHorizontal: $panel-paddingHorizontal !default;
+$panel-header-paddingVertical:   $panel-paddingVertical !default;
+$panel-header-padding:           $panel-header-paddingVertical $panel-header-paddingHorizontal !default;
 
 // Panel title settings
-$panel-title-lineHeight:         lineHeight("base");
-$panel-title-margin:             0;
+$panel-title-lineHeight:         lineHeight("base") !default;
+$panel-title-margin:             0 !default;
 
 // Callout panel settings
-$callout-panel-bg:               color("greys", "lighter");
-$callout-panel-titleColor:       color("whites", "bright");
-$callout-panel-headerBg:         color("greys", "darkest");
-$callout-panel-headerColor:      color("whites", "bright");
+$callout-panel-bg:               color("greys", "lighter") !default;
+$callout-panel-titleColor:       color("whites", "bright") !default;
+$callout-panel-headerBg:         color("greys", "darkest") !default;
+$callout-panel-headerColor:      color("whites", "bright") !default;
