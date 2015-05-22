@@ -13,37 +13,37 @@
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--loading:            $exportCSS;
+$exportCSS--loading:                          $exportCSS !default;
 
 
 // =============================================================================
 // LOADING NOTIFICATION
 // =============================================================================
 
-$loadingNotification-top: spacing("double");
-$loadingNotification-top--startPosition: spacing("double") * 1.2;
-$loadingNotification-textAlign: center;
+$loadingNotification-top:                     spacing("double") !default;
+$loadingNotification-top--startPosition:      spacing("double") * 1.2 !default;
+$loadingNotification-textAlign:               center !default;
 
-$loadingNotification-label-background: color("greys", "dark");
-$loadingNotification-label-color: color("whites", "bright");
-$loadingNotification-label-fontSize: fontSize("smaller");
-$loadingNotification-label-radius: $global-radius;
-$loadingNotification-label-verticalSpacing: spacing("quarter");
-$loadingNotification-label-horizontalSpacing: spacing("half");
+$loadingNotification-label-background:        color("greys", "dark") !default;
+$loadingNotification-label-color:             color("whites", "bright") !default;
+$loadingNotification-label-fontSize:          fontSize("smaller") !default;
+$loadingNotification-label-radius:            $global-radius !default;
+$loadingNotification-label-verticalSpacing:   spacing("quarter") !default;
+$loadingNotification-label-horizontalSpacing: spacing("half") !default;
 
 
 // =============================================================================
 // LOADING OVERLAY
 // =============================================================================
 
-$loadingOverlay-minHeight: 120px;
-$loadingOverlay-background: rgba(color("whites", "bright"), 0.9);
-$loadingOverlay-transitionProperty: all;
-$loadingOverlay-transitionSpeed: 250ms;
-$loadingOverlay-transitionEase: ease-out;
+$loadingOverlay-minHeight:                    120px !default;
+$loadingOverlay-background:                   rgba(color("whites", "bright"), 0.9) !default;
+$loadingOverlay-transitionProperty:           all !default;
+$loadingOverlay-transitionSpeed:              250ms !default;
+$loadingOverlay-transitionEase:               ease-out !default;
 
-$loadingOverlay-spinner-size: 80px;
-$loadingOverlay-spinner-borderWidth: 1px;
-$loadingOverlay-spinner-borderColor: color("whites", "bright") color("whites", "bright") color("greys", "medium")  color("greys", "medium");
-$loadingOverlay-spinner-duration: 500ms;
-$loadingOverlay-spinner-easing: cubic-bezier(0.69, 0.31, 0.56, 0.83);
+$loadingOverlay-spinner-size:                 80px !default;
+$loadingOverlay-spinner-borderWidth:          1px !default;
+$loadingOverlay-spinner-borderColor:          color("whites", "bright") color("whites", "bright") color("greys", "medium")  color("greys", "medium") !default;
+$loadingOverlay-spinner-duration:             500ms !default;
+$loadingOverlay-spinner-easing:               cubic-bezier(0.69, 0.31, 0.56, 0.83) !default;

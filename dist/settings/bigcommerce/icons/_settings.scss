@@ -13,7 +13,7 @@
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--icons:            $exportCSS;
+$exportCSS--icons: $exportCSS !default;
 
-$icon-color: color("greys");
-$icon-size: 18px;
+$icon-color:       color("greys") !default;
+$icon-size:        18px !default;

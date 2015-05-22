@@ -1,18 +1,13 @@
 // =============================================================================
-// InlineList (Settings)
+// NORMALIZE (Settings)
 // =============================================================================
 
 
 // Bigcommerce Variables
 // -----------------------------------------------------------------------------
 //
-// These scoped variables are created by Bigcommerce.
-// All variables that are not from Foundation should be placed here.
-//
-// 1. Choose whether to include the Bigcommerce class names
+// 1. Choose whether to include Normalize
 //
 // -----------------------------------------------------------------------------
 
-$exportCSS--inlineList:            $exportCSS !default; // 1
-
-
+$exportCSS--normalize:                    $exportCSS; // 1
