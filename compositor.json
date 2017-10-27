@@ -1,0 +1,97 @@
+{
+  "name": "atxwebs/sass-library",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "sass library",
+  "branch": "master",
+  "style": {
+    "name": "Future",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BannerHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Avenir Next\", Helvetica, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "textTransform": "uppercase",
+      "letterSpacing": "0.2em"
+    },
+    "alternativeText": {
+      "textTransform": "uppercase",
+      "fontWeight": 400,
+      "letterSpacing": "0.2em",
+      "opacity": 0.75
+    },
+    "colors": {
+      "text": "#333",
+      "background": "#fff",
+      "primary": "#666",
+      "secondary": "#888",
+      "highlight": "#1f80ff",
+      "muted": "#f6f6f6",
+      "border": "#eee"
+    },
+    "layout": {
+      "centered": true,
+      "maxWidth": 1024,
+      "bannerHeight": "80vh"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/atxwebs/sass-library",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/sass-library",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "sass-library",
+      "subhead": "Bigcommerce SCSS Framework & Pattern Library",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "sass-library: Bigcommerce SCSS Framework & Pattern Library",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "atxwebs",
+          "repo": "sass-library"
+        }
+      ],
+      "text": "v2.2.1"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1>SCSS Library</h1>\n<p>Bigcommerce SCSS Framework</p>\n<p>Built based on the Bigcommerce <a href=\"https://github.com/bigcommerce-labs/sass-style-guide\">SASS Style Guide</a>.</p>\n<h1>Get started</h1>\n<p>First mke sure you have Bower and Grunt installed globally on your machine:</p>\n<pre>npm <span class=\"hljs-keyword\">install</span> -g grunt-cli &amp;&amp; npm <span class=\"hljs-keyword\">install</span> -g bower</pre><p>Check out the code and run:</p>\n<pre><span class=\"hljs-keyword\">bundle </span><span class=\"hljs-keyword\">install </span>&amp;&amp; npm <span class=\"hljs-keyword\">install </span>&amp;&amp; <span class=\"hljs-keyword\">bower </span><span class=\"hljs-keyword\">install</span></pre><h2>Development</h2>\n<p>To have continuous code linting while you work and have the Sass files update\nin your working copy of the BCApp Pattern-Lab, first you should <code>bower link</code>\n<a href=\"http://bower.io/docs/api/#link\">more details here</a>\nthe sass-library into the Pattern-Lab:</p>\n<pre>~/sass-library $ bower link</pre><pre>~/bcapp-pattern-lab $ bower link sass-library</pre><p>Now with your symlinked package, just:</p>\n<pre>grunt <span class=\"hljs-keyword\">run</span><span class=\"bash\"></span></pre><p>Or you could just run <code>grunt build</code> to not watch the <code>.scss</code> files.</p>\n<h2>Linting</h2>\n<p>To adhere to the Bigcommerce <a href=\"https://github.com/bigcommerce-labs/sass-style-guide\">SASS Style Guide</a>\nwe have included the use of scss-lint to help you along as a grunt task.</p>\n<pre><span class=\"hljs-attribute\">grunt scsslint</span></pre><h2>Releasing</h2>\n<p>Run <code>grunt release</code> to build, tag and release a new version of the Library.</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/atxwebs/sass-library",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/atxwebs",
+          "text": "atxwebs"
+        }
+      ]
+    }
+  ]
+}
